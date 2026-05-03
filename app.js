@@ -2,7 +2,7 @@ const SUPABASE_URL = "";
 const SUPABASE_ANON_KEY = "";
 
 const CONFIG = {
-  incidentPaths: ["data/incidents.json"],
+  incidentPaths: ["data/incidents.json", "data/northern-incidents.json"],
   fallbackSeedPath: "data/seed-cases.json",
   defaultCenter: [35.1264, 33.4299],
   defaultZoom: 9,
@@ -910,6 +910,14 @@ const VALUE_TRANSLATIONS = {
     "Taxi sector": "Taksi sektörü",
     "Turkish Cypriot public sector": "Kıbrıslı Türk kamu sektörü",
     "PEO and Turkish Cypriot unions": "PEO ve Kıbrıslı Türk sendikaları",
+    "EKTAM Kibris Ltd.": "EKTAM Kıbrıs Ltd.",
+    "Emek-Is / Dev-Is": "Emek-İş / Dev-İş",
+    "Telecommunications Department": "Telekomünikasyon Dairesi",
+    "Tel-Sen; Turk-Sen-affiliated unions and other unions in support": "Tel-Sen; Türk-Sen'e bağlı sendikalar ve destek veren diğer sendikalar",
+    "Health Ministry hospitals and public health centres": "Sağlık Bakanlığı hastaneleri ve kamu sağlık merkezleri",
+    "Tip-Is, KTHES, KTAMS, Kamu-Is, Kamu-Sen": "Tıp-İş, KTHES, KTAMS, Kamu-İş, Kamu-Sen",
+    "Private contracting firm not named in source": "Kaynakta adı verilmeyen özel müteahhitlik firması",
+    "Citrus packaging factory not named in source": "Kaynakta adı verilmeyen narenciye paketleme fabrikası",
     "Energy / utilities": "Enerji / kamu hizmetleri",
     "Delivery platforms": "Teslimat platformları",
     "Education": "Eğitim",
@@ -919,6 +927,11 @@ const VALUE_TRANSLATIONS = {
     "Energy / public sector": "Enerji / kamu sektörü",
     "Construction": "İnşaat",
     "Utilities / construction": "Kamu hizmetleri / inşaat",
+    "Food and beverage manufacturing": "Gıda ve içecek üretimi",
+    "Telecommunications": "Telekomünikasyon",
+    "Health": "Sağlık",
+    "Construction / utilities": "İnşaat / kamu hizmetleri",
+    "Agriculture / solar installation": "Tarım / güneş paneli kurulumu",
     "Limassol": "Limasol",
     "Nicosia": "Lefkoşa",
     "North Nicosia": "Kuzey Lefkoşa",
@@ -926,6 +939,9 @@ const VALUE_TRANSLATIONS = {
     "Lakatamia": "Lakatamia",
     "Kofinou": "Kofinou",
     "Peyia": "Peyia",
+    "Korkuteli": "Korkuteli",
+    "Dortyol-Gecitkale": "Dörtyol-Geçitkale",
+    "Kalkanli": "Kalkanlı",
     "EAC workers stage 24-hour island-wide strike": "EAC çalışanları ada genelinde 24 saatlik grev yaptı",
     "EAC Workers to Stage 24-Hour Strike on April 23": "EAC çalışanları 23 Nisan'da 24 saatlik greve çıkacak",
     "EAC workers strike over 'erratic' govt policy, Cyta expansion into energy": "EAC çalışanları hükümet politikası ve Cyta'nın enerjiye genişlemesi nedeniyle greve çıktı",
@@ -955,6 +971,14 @@ const VALUE_TRANSLATIONS = {
     "Taxi sector": "Κλάδος ταξί",
     "Turkish Cypriot public sector": "Τουρκοκυπριακός δημόσιος τομέας",
     "PEO and Turkish Cypriot unions": "ΠΕΟ και τουρκοκυπριακές συντεχνίες",
+    "EKTAM Kibris Ltd.": "EKTAM Kibris Ltd.",
+    "Emek-Is / Dev-Is": "Emek-Is / Dev-Is",
+    "Telecommunications Department": "Τμήμα Τηλεπικοινωνιών",
+    "Tel-Sen; Turk-Sen-affiliated unions and other unions in support": "Tel-Sen, συντεχνίες της Turk-Sen και άλλες συντεχνίες σε υποστήριξη",
+    "Health Ministry hospitals and public health centres": "Νοσοκομεία Υπουργείου Υγείας και δημόσια κέντρα υγείας",
+    "Tip-Is, KTHES, KTAMS, Kamu-Is, Kamu-Sen": "Tip-Is, KTHES, KTAMS, Kamu-Is, Kamu-Sen",
+    "Private contracting firm not named in source": "Ιδιωτική εργοληπτική εταιρεία που δεν κατονομάστηκε στην πηγή",
+    "Citrus packaging factory not named in source": "Εργοστάσιο συσκευασίας εσπεριδοειδών που δεν κατονομάστηκε στην πηγή",
     "Energy / utilities": "Ενέργεια / υπηρεσίες κοινής ωφελείας",
     "Delivery platforms": "Πλατφόρμες διανομής",
     "Education": "Εκπαίδευση",
@@ -964,6 +988,11 @@ const VALUE_TRANSLATIONS = {
     "Energy / public sector": "Ενέργεια / δημόσιος τομέας",
     "Construction": "Οικοδομές",
     "Utilities / construction": "Υπηρεσίες κοινής ωφελείας / οικοδομές",
+    "Food and beverage manufacturing": "Παραγωγή τροφίμων και ποτών",
+    "Telecommunications": "Τηλεπικοινωνίες",
+    "Health": "Υγεία",
+    "Construction / utilities": "Οικοδομές / υπηρεσίες κοινής ωφελείας",
+    "Agriculture / solar installation": "Γεωργία / εγκατάσταση φωτοβολταϊκών",
     "Limassol": "Λεμεσός",
     "Nicosia": "Λευκωσία",
     "North Nicosia": "Βόρεια Λευκωσία",
@@ -971,6 +1000,9 @@ const VALUE_TRANSLATIONS = {
     "Lakatamia": "Λακατάμια",
     "Kofinou": "Κοφίνου",
     "Peyia": "Πέγεια",
+    "Korkuteli": "Korkuteli",
+    "Dortyol-Gecitkale": "Dortyol-Gecitkale",
+    "Kalkanli": "Kalkanli",
     "EAC workers stage 24-hour island-wide strike": "Οι εργαζόμενοι της ΑΗΚ πραγματοποιούν 24ωρη παγκύπρια απεργία",
     "EAC Workers to Stage 24-Hour Strike on April 23": "Οι εργαζόμενοι της ΑΗΚ θα πραγματοποιήσουν 24ωρη απεργία στις 23 Απριλίου",
     "EAC workers strike over 'erratic' govt policy, Cyta expansion into energy": "Απεργία εργαζομένων της ΑΗΚ για την κυβερνητική πολιτική και την επέκταση της Cyta στην ενέργεια",
@@ -1869,6 +1901,27 @@ function showLoadNotice(message) {
 }
 
 function buildSearchBlob(record) {
+  const translatableRecordValues = [
+    record.title,
+    record.summary,
+    record.worker_name,
+    record.person_name,
+    record.employer,
+    record.labor_organization,
+    record.sector,
+    record.cause,
+    record.legal_status,
+    record.accusation,
+    record.custody_status,
+    ...record.locations.flatMap((location) => [location.label, location.province, location.district, location.location_basis]),
+    ...record.sources.flatMap((source) => [source.title, source.publisher]),
+  ];
+  const valueTranslationValues = Object.values(VALUE_TRANSLATIONS)
+    .flatMap((group) => translatableRecordValues.map((value) => group[value]).filter(Boolean));
+  const areaTranslationValues = record.locations.flatMap((location) => {
+    const area = AREA_BY_KEY[location.province_key] || AREA_BY_NAME[location.province];
+    return area ? [area.name, area.tr, area.el] : [];
+  });
   const translationValues = Object.values(record.translations || {}).flatMap((translation) => [
     translation.title,
     translation.summary,
@@ -1885,24 +1938,11 @@ function buildSearchBlob(record) {
     ...(translation.timeline || []),
     ...(translation.sources || []).map((source) => source.title),
   ]);
-  const areaValues = AREAS.flatMap((area) => [area.name, area.tr, area.el]);
-  const valueTranslationValues = Object.values(VALUE_TRANSLATIONS).flatMap((group) => Object.values(group));
   const values = [
-    record.title,
-    record.summary,
-    record.worker_name,
-    record.person_name,
-    record.employer,
-    record.labor_organization,
-    record.sector,
-    record.cause,
-    record.legal_status,
-    record.accusation,
+    ...translatableRecordValues,
     ...record.demands,
-    ...record.locations.flatMap((location) => [location.label, location.province, location.district]),
-    ...record.sources.flatMap((source) => [source.title, source.publisher]),
     ...translationValues,
-    ...areaValues,
+    ...areaTranslationValues,
     ...valueTranslationValues,
   ];
   return values.filter(Boolean).join(" ").toLocaleLowerCase(localeForLang());

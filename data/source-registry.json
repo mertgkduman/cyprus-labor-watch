@@ -133,18 +133,75 @@
         "union arrest follow-up"
       ],
       "source_type": "news"
+    },
+    {
+      "name": "Yeniduzen",
+      "url": "https://www.yeniduzen.com/",
+      "cadence": "daily/weekly",
+      "use_for": [
+        "Turkish-language Turkish Cypriot labour reporting",
+        "union statements",
+        "strike follow-up",
+        "public-sector labour disputes"
+      ],
+      "source_type": "labor_news"
+    },
+    {
+      "name": "Ozgur Gazete Kibris",
+      "url": "https://ozgurgazetekibris.com/",
+      "cadence": "daily/weekly",
+      "use_for": [
+        "Turkish-language strike reports",
+        "worker-safety incidents",
+        "union statements and action calls"
+      ],
+      "source_type": "labor_news"
+    },
+    {
+      "name": "Kibris Postasi",
+      "url": "https://www.kibrispostasi.com/",
+      "cadence": "daily/weekly",
+      "use_for": [
+        "Turkish-language workplace accident reports",
+        "police and court follow-up",
+        "labour-policy context"
+      ],
+      "source_type": "labor_news"
+    },
+    {
+      "name": "Haber Kibris",
+      "url": "https://haberkibris.com/",
+      "cadence": "weekly",
+      "use_for": [
+        "Turkish-language corroboration for union actions",
+        "labour dispute follow-up",
+        "public-sector action summaries"
+      ],
+      "source_type": "news"
+    },
+    {
+      "name": "Ajans Cyprus",
+      "url": "https://ajanscyprus.com/",
+      "cadence": "weekly",
+      "use_for": [
+        "Turkish-language follow-up reporting",
+        "union arrest follow-up",
+        "strike resolution reports"
+      ],
+      "source_type": "news"
     }
   ],
   "research_notes": {
     "launch_dataset": {
       "updated_at": "2026-05-03",
-      "data_file": "data/incidents.json",
-      "record_count": 13,
+      "data_file": "data/incidents.json + data/northern-incidents.json",
+      "record_count": 18,
       "period_focus": "late 2025 through May 2026, with one May/June 2025 workplace-death backfill to broaden the workplace-safety baseline",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
         "Island-wide labour actions use area-centroid placement and explicit location_basis notes.",
-        "No public current-labour-arrest record is included at launch; the Ahmet Tugcu record is marked released based on follow-up reporting."
+        "No public current-labour-arrest record is included at launch; the Ahmet Tugcu record is marked released based on follow-up reporting.",
+        "Northern Cyprus coverage is supplemented with Turkish-language sources in data/northern-incidents.json."
       ]
     }
   },
@@ -172,6 +229,20 @@
         "https://peo.org.cy/%CF%80%CF%81%CF%89%CF%84%CE%BF%CE%BC%CE%B1%CE%B3%CE%B9%CE%AC%CF%84%CE%B9%CE%BA%CE%B5%CF%82-%CF%83%CF%85%CE%B3%CE%BA%CE%B5%CE%BD%CF%84%CF%81%CF%8E%CF%83%CE%B5%CE%B9%CF%82-%CF%84%CE%B7%CF%82-%CF%80/",
         "https://www.cna.org.cy/en/article/9052449/three-hour-general-strike-over-cola-in-cyprus-several-sectors-affected",
         "https://www.cna.org.cy/press-release/article/10002597/anakoinosi-typoy-sek"
+      ]
+    },
+    {
+      "data_file": "data/northern-incidents.json",
+      "sources": [
+        "https://ajanscyprus.com/2026/03/12/ektam-kibrista-grev-sona-erdi-toplu-is-sozlesmesi-imzalandi/",
+        "https://ozgurgazetekibris.com/ekonomi/203084-tel-sen-peskese-gecit-yok.html",
+        "https://ozgurgazetekibris.com/kibris/206574-kib-tek-kazanin-personelin-grevde-olmasi-ile-ilgili-hicbir-baglantisi-yok.html",
+        "https://www.kibrispostasi.com/c87-LEFKOSA/n571177-is-kazasi-narenciye-fabrikasinin-damindan-dusen-isci-hayatini-kaybetti",
+        "https://www.yeniduzen.com/bakanlar-kurulu-saglik-alanindaki-grevleri-60-gun-sureyle-erteledi-193870h.htm",
+        "https://www.yeniduzen.com/ektamda-suresiz-grev-basladi-191883h.htm",
+        "https://www.yeniduzen.com/karari-tanimiyoruz-hukumet-geri-adim-atana-kadar-grev-devam-edecek-193874h.htm",
+        "https://www.yeniduzen.com/service/amp/hastane-ve-saglik-merkezlerimizde-normal-hizmete-donulmustur-193935h.htm",
+        "https://www.yeniduzen.com/service/amp/ya-sendikalasacagiz-ya-da-bu-iste-calismayacagiz-191748h.htm"
       ]
     }
   ]

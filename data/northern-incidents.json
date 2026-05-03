@@ -1,0 +1,505 @@
+{
+  "updated_at": "2026-05-03",
+  "description": "Supplemental northern Cyprus records sourced from Turkish-language public reporting.",
+  "records": [
+    {
+      "id": "ektam-kibris-union-rights-strike-2026",
+      "record_type": "strike",
+      "status": "ended",
+      "action_type": "legal_strike",
+      "title": "EKTAM Cyprus workers' union-rights strike",
+      "summary": "Workers at EKTAM Kibris Ltd., Pepsi's distributor and producer in the north, struck and maintained a factory-front resistance after employees organised with Emek-Is under Dev-Is and sought a collective agreement. The strike became indefinite on 13 February 2026 and ended in March after a collective agreement was signed.",
+      "employer": "EKTAM Kibris Ltd.",
+      "labor_organization": "Emek-Is / Dev-Is",
+      "sector": "Food and beverage manufacturing",
+      "participant_count": 39,
+      "decision_date": "2026-02-06",
+      "start_date": "2026-02-06",
+      "end_date": "2026-03-12",
+      "demands": [
+        "Recognition of union organisation",
+        "Collective bargaining agreement",
+        "Protection against dismissals",
+        "Job security"
+      ],
+      "last_verified_at": "2026-03-12",
+      "locations": [
+        {
+          "id": "ektam-korkuteli-factory",
+          "label": "EKTAM Korkuteli factory",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Korkuteli",
+          "lat": 35.125,
+          "lng": 33.95,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Source places the strike at EKTAM's Korkuteli factory; Famagusta area centroid used pending exact plant coordinates."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-02-06",
+          "status": "ongoing",
+          "note": "Workers began strike action after unionisation and collective-bargaining demands were met with dismissal pressure."
+        },
+        {
+          "date": "2026-02-13",
+          "status": "ongoing",
+          "note": "Emek-Is announced that the strike had become indefinite."
+        },
+        {
+          "date": "2026-03-12",
+          "status": "ended",
+          "note": "Ajans Cyprus reported that the strike ended after a collective agreement was signed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Ya sendikalasacagiz, ya da bu iste calismayacagiz",
+          "url": "https://www.yeniduzen.com/service/amp/ya-sendikalasacagiz-ya-da-bu-iste-calismayacagiz-191748h.htm",
+          "publisher": "Yeniduzen",
+          "type": "labor_news",
+          "published_at": "2026-02-09"
+        },
+        {
+          "title": "Ektam'da suresiz grev basladi",
+          "url": "https://www.yeniduzen.com/ektamda-suresiz-grev-basladi-191883h.htm",
+          "publisher": "Yeniduzen",
+          "type": "labor_news",
+          "published_at": "2026-02-13"
+        },
+        {
+          "title": "Ektam Kibris'ta Grev Sona Erdi: Toplu Is Sozlesmesi Imzalandi",
+          "url": "https://ajanscyprus.com/2026/03/12/ektam-kibrista-grev-sona-erdi-toplu-is-sozlesmesi-imzalandi/",
+          "publisher": "Ajans Cyprus",
+          "type": "labor_news",
+          "published_at": "2026-03-12"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "EKTAM Kıbrıs çalışanlarının sendikal hak grevi",
+          "summary": "Kıbrıs'ın kuzeyinde Pepsi'nin dağıtıcısı ve üreticisi olan EKTAM Kıbrıs Ltd. çalışanları, Dev-İş'e bağlı Emek-İş'te örgütlenmeleri ve toplu iş sözleşmesi talep etmeleri üzerine işten çıkarma baskısına karşı grev ve fabrika önü direnişi yürüttü. Grev 13 Şubat 2026'da süresiz hale geldi ve Mart ayında toplu iş sözleşmesi imzalanınca sona erdi.",
+          "demands": [
+            "Sendikal örgütlenmenin tanınması",
+            "Toplu iş sözleşmesi",
+            "İşten çıkarmalara karşı koruma",
+            "İş güvencesi"
+          ],
+          "locations": {
+            "ektam-korkuteli-factory": {
+              "label": "EKTAM Korkuteli fabrikası",
+              "location_basis": "Kaynak grevin EKTAM'ın Korkuteli fabrikasında olduğunu belirtiyor; kesin fabrika koordinatı yayımlanmadığı için Gazimağusa bölge merkezi kullanıldı."
+            }
+          },
+          "timeline": [
+            "İşçiler, sendikalaşma ve toplu sözleşme taleplerine işten çıkarma baskısıyla karşılık verilmesi üzerine greve başladı.",
+            "Emek-İş grevin süresiz greve dönüştüğünü açıkladı.",
+            "Ajans Cyprus, toplu iş sözleşmesi imzalanmasının ardından grevin sona erdiğini bildirdi."
+          ]
+        },
+        "el": {
+          "title": "Απεργία εργαζομένων της EKTAM Κύπρου για συνδικαλιστικά δικαιώματα",
+          "summary": "Εργαζόμενοι στην EKTAM Kibris Ltd., διανομέα και παραγωγό της Pepsi στον βορρά, απήργησαν και κράτησαν αντίσταση έξω από το εργοστάσιο αφού οργανώθηκαν στην Emek-Is της Dev-Is και ζήτησαν συλλογική σύμβαση. Η απεργία έγινε αόριστης διάρκειας στις 13 Φεβρουαρίου 2026 και έληξε τον Μάρτιο μετά την υπογραφή συλλογικής σύμβασης.",
+          "demands": [
+            "Αναγνώριση της συνδικαλιστικής οργάνωσης",
+            "Συλλογική σύμβαση",
+            "Προστασία από απολύσεις",
+            "Εργασιακή ασφάλεια"
+          ],
+          "locations": {
+            "ektam-korkuteli-factory": {
+              "label": "Εργοστάσιο EKTAM στο Korkuteli",
+              "location_basis": "Η πηγή τοποθετεί την απεργία στο εργοστάσιο της EKTAM στο Korkuteli. Χρησιμοποιήθηκε κεντρικό σημείο της περιοχής Αμμοχώστου μέχρι να δημοσιευθούν ακριβείς συντεταγμένες."
+            }
+          },
+          "timeline": [
+            "Οι εργαζόμενοι ξεκίνησαν απεργία μετά από πιέσεις για απολύσεις απέναντι στα αιτήματα συνδικαλισμού και συλλογικής διαπραγμάτευσης.",
+            "Η Emek-Is ανακοίνωσε ότι η απεργία έγινε αόριστης διάρκειας.",
+            "Το Ajans Cyprus ανέφερε ότι η απεργία έληξε μετά την υπογραφή συλλογικής σύμβασης."
+          ]
+        }
+      }
+    },
+    {
+      "id": "telsen-telecom-strike-parliament-january-2026",
+      "record_type": "strike",
+      "status": "ended",
+      "action_type": "legal_strike",
+      "title": "Tel-Sen telecommunications strike over fibre-optic protocol",
+      "summary": "Telecommunications Department workers' union Tel-Sen announced a strike against a fibre-optic protocol with Turk Telekom, saying public assets and strategic institutions were being handed over for private interests. The action closed Telecommunications Department branches from 08:00 to 13:00 on 27 January 2026 and included a protest outside the new parliament building.",
+      "employer": "Telecommunications Department",
+      "labor_organization": "Tel-Sen; Turk-Sen-affiliated unions and other unions in support",
+      "sector": "Telecommunications",
+      "decision_date": "2026-01-22",
+      "start_date": "2026-01-27",
+      "end_date": "2026-01-27",
+      "demands": [
+        "Withdrawal or revision of the fibre-optic protocol",
+        "Protection of public telecommunications assets",
+        "Protection of strategic public institutions"
+      ],
+      "last_verified_at": "2026-01-22",
+      "locations": [
+        {
+          "id": "telsen-new-parliament-protest",
+          "label": "New parliament building protest",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "North Nicosia",
+          "lat": 35.1856,
+          "lng": 33.3659,
+          "geocode_precision": "venue_approx"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-01-22",
+          "status": "decision_taken",
+          "note": "Tel-Sen announced the strike decision."
+        },
+        {
+          "date": "2026-01-27",
+          "status": "ended",
+          "note": "Telecommunications Department branches were to close from 08:00 to 13:00 and a protest was planned outside the new parliament building."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tel-sen: Peskese gecit yok!",
+          "url": "https://ozgurgazetekibris.com/ekonomi/203084-tel-sen-peskese-gecit-yok.html",
+          "publisher": "Ozgur Gazete Kibris",
+          "type": "labor_news",
+          "published_at": "2026-01-22"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Tel-Sen'in fiber optik protokolüne karşı telekom grevi",
+          "summary": "Telekomünikasyon Dairesi Çalışanları Sendikası Tel-Sen, Türk Telekom ile fiber optik protokolüne karşı grev kararı aldı; açıklamada kamusal varlıkların ve stratejik kurumların özel çıkarlar için devredildiği savunuldu. 27 Ocak 2026'da Telekomünikasyon Dairesi şubeleri 08.00-13.00 arasında kapalı olacak, aynı saatlerde yeni meclis binası önünde grev ve eylem yapılacaktı.",
+          "demands": [
+            "Fiber optik protokolünün geri çekilmesi veya değiştirilmesi",
+            "Kamusal telekomünikasyon varlıklarının korunması",
+            "Stratejik kamu kurumlarının korunması"
+          ],
+          "locations": {
+            "telsen-new-parliament-protest": {
+              "label": "Yeni meclis binası önü eylemi"
+            }
+          },
+          "timeline": [
+            "Tel-Sen grev kararını açıkladı.",
+            "Telekomünikasyon Dairesi şubelerinin 08.00-13.00 arasında kapatılması ve yeni meclis önünde eylem planlandı."
+          ]
+        },
+        "el": {
+          "title": "Απεργία της Tel-Sen στις τηλεπικοινωνίες για το πρωτόκολλο οπτικών ινών",
+          "summary": "Η συντεχνία εργαζομένων του Τμήματος Τηλεπικοινωνιών Tel-Sen ανακοίνωσε απεργία ενάντια σε πρωτόκολλο οπτικών ινών με την Turk Telekom, υποστηρίζοντας ότι δημόσια αγαθά και στρατηγικοί θεσμοί παραχωρούνται για ιδιωτικά συμφέροντα. Η δράση έκλεισε υποκαταστήματα του Τμήματος Τηλεπικοινωνιών από τις 08:00 έως τις 13:00 στις 27 Ιανουαρίου 2026 και περιλάμβανε διαμαρτυρία έξω από το νέο κτήριο της συνέλευσης.",
+          "demands": [
+            "Απόσυρση ή αναθεώρηση του πρωτοκόλλου οπτικών ινών",
+            "Προστασία των δημόσιων τηλεπικοινωνιακών αγαθών",
+            "Προστασία στρατηγικών δημόσιων θεσμών"
+          ],
+          "locations": {
+            "telsen-new-parliament-protest": {
+              "label": "Διαμαρτυρία έξω από το νέο κτήριο της συνέλευσης"
+            }
+          },
+          "timeline": [
+            "Η Tel-Sen ανακοίνωσε την απόφαση για απεργία.",
+            "Τα υποκαταστήματα του Τμήματος Τηλεπικοινωνιών επρόκειτο να κλείσουν από τις 08:00 έως τις 13:00 και να γίνει διαμαρτυρία έξω από τη νέα συνέλευση."
+          ]
+        }
+      }
+    },
+    {
+      "id": "north-health-unions-strike-postponed-april-2026",
+      "record_type": "strike",
+      "status": "postponed_banned",
+      "action_type": "legal_strike",
+      "title": "Turkish Cypriot health-sector strike postponed for 60 days",
+      "summary": "Public health unions including Tip-Is, the nurses and midwives' union, KTAMS, Kamu-Is and Kamu-Sen said they would continue a health-sector strike after the Council of Ministers postponed strikes in hospitals and health centres for 60 days from 7 April 2026. Yeniduzen later reported that the doctors' union suspended the strike on 9 April and normal service resumed.",
+      "employer": "Health Ministry hospitals and public health centres",
+      "labor_organization": "Tip-Is, KTHES, KTAMS, Kamu-Is, Kamu-Sen",
+      "sector": "Health",
+      "start_date": "2026-04-07",
+      "end_date": "2026-04-09",
+      "demands": [
+        "Respect for strike rights",
+        "Public health staffing and legal commitments",
+        "Withdrawal of strike postponement decision"
+      ],
+      "last_verified_at": "2026-04-09",
+      "locations": [
+        {
+          "id": "dr-burhan-nalbantoglu-health-strike",
+          "label": "Dr. Burhan Nalbantoglu State Hospital and public health services",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "North Nicosia",
+          "lat": 35.209,
+          "lng": 33.326,
+          "geocode_precision": "venue_approx",
+          "location_basis": "Decision covered Dr. Burhan Nalbantoglu State Hospital and other Health Ministry public health units; hospital point used for map placement."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-04-07",
+          "status": "postponed_banned",
+          "note": "The Council of Ministers postponed health-sector strikes for 60 days."
+        },
+        {
+          "date": "2026-04-07",
+          "status": "ongoing",
+          "note": "Health unions said they did not recognise the decision and would continue the strike."
+        },
+        {
+          "date": "2026-04-09",
+          "status": "ended",
+          "note": "The doctors' union announced that strike action was suspended and normal hospital and health-centre services resumed."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bakanlar Kurulu, saglik alanindaki grevleri 60 gun sureyle erteledi",
+          "url": "https://www.yeniduzen.com/bakanlar-kurulu-saglik-alanindaki-grevleri-60-gun-sureyle-erteledi-193870h.htm",
+          "publisher": "Yeniduzen",
+          "type": "labor_news",
+          "published_at": "2026-04-07"
+        },
+        {
+          "title": "Karari tanimiyoruz, hukumet geri adim atana kadar grev devam edecek",
+          "url": "https://www.yeniduzen.com/karari-tanimiyoruz-hukumet-geri-adim-atana-kadar-grev-devam-edecek-193874h.htm",
+          "publisher": "Yeniduzen",
+          "type": "labor_news",
+          "published_at": "2026-04-07"
+        },
+        {
+          "title": "Hastane ve saglik merkezlerimizde normal hizmete donulmustur",
+          "url": "https://www.yeniduzen.com/service/amp/hastane-ve-saglik-merkezlerimizde-normal-hizmete-donulmustur-193935h.htm",
+          "publisher": "Yeniduzen",
+          "type": "labor_news",
+          "published_at": "2026-04-09"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Kıbrıslı Türk sağlık sendikalarının grevi 60 gün ertelendi",
+          "summary": "Tıp-İş, Hemşireler ve Ebeler Sendikası, KTAMS, Kamu-İş ve Kamu-Sen dahil kamu sağlık sendikaları, Bakanlar Kurulu'nun 7 Nisan 2026'dan itibaren hastane ve sağlık merkezlerindeki grevleri 60 gün erteleme kararının ardından grevi sürdüreceklerini açıkladı. Yenidüzen daha sonra hekimler sendikasının 9 Nisan'da grevi askıya aldığını ve normal hizmete dönüldüğünü bildirdi.",
+          "demands": [
+            "Grev hakkına saygı",
+            "Kamusal sağlıkta kadro ve yasal taahhütler",
+            "Grev erteleme kararının geri çekilmesi"
+          ],
+          "locations": {
+            "dr-burhan-nalbantoglu-health-strike": {
+              "label": "Dr. Burhan Nalbantoğlu Devlet Hastanesi ve kamu sağlık hizmetleri",
+              "location_basis": "Karar Dr. Burhan Nalbantoğlu Devlet Hastanesi ile Sağlık Bakanlığı'na bağlı kamu sağlık birimlerini kapsıyordu; harita yerleşimi için hastane noktası kullanıldı."
+            }
+          },
+          "timeline": [
+            "Bakanlar Kurulu sağlık alanındaki grevleri 60 gün erteledi.",
+            "Sağlık sendikaları kararı tanımadıklarını ve greve devam edeceklerini açıkladı.",
+            "Hekimler sendikası grevin askıya alındığını ve hastane ile sağlık merkezlerinde normal hizmete dönüldüğünü duyurdu."
+          ]
+        },
+        "el": {
+          "title": "60ήμερη αναβολή απεργίας τουρκοκυπριακών συντεχνιών υγείας",
+          "summary": "Συντεχνίες της δημόσιας υγείας, ανάμεσά τους η Tip-Is, η συντεχνία νοσηλευτών και μαιών, η KTAMS, η Kamu-Is και η Kamu-Sen, δήλωσαν ότι θα συνεχίσουν την απεργία μετά την απόφαση του Υπουργικού Συμβουλίου να αναβάλει για 60 ημέρες απεργίες σε νοσοκομεία και κέντρα υγείας από τις 7 Απριλίου 2026. Η Yeniduzen ανέφερε αργότερα ότι η συντεχνία γιατρών ανέστειλε την απεργία στις 9 Απριλίου και οι υπηρεσίες επανήλθαν στο κανονικό.",
+          "demands": [
+            "Σεβασμός στο δικαίωμα απεργίας",
+            "Στελέχωση και νομικές δεσμεύσεις στη δημόσια υγεία",
+            "Απόσυρση της απόφασης αναβολής απεργίας"
+          ],
+          "locations": {
+            "dr-burhan-nalbantoglu-health-strike": {
+              "label": "Κρατικό Νοσοκομείο Dr. Burhan Nalbantoglu και δημόσιες υπηρεσίες υγείας",
+              "location_basis": "Η απόφαση κάλυπτε το κρατικό νοσοκομείο Dr. Burhan Nalbantoglu και άλλες δημόσιες μονάδες υγείας. Το σημείο του νοσοκομείου χρησιμοποιείται για τοποθέτηση στον χάρτη."
+            }
+          },
+          "timeline": [
+            "Το Υπουργικό Συμβούλιο ανέβαλε τις απεργίες στον τομέα της υγείας για 60 ημέρες.",
+            "Οι συντεχνίες υγείας δήλωσαν ότι δεν αναγνωρίζουν την απόφαση και θα συνεχίσουν την απεργία.",
+            "Η συντεχνία γιατρών ανακοίνωσε αναστολή της απεργίας και επαναφορά της κανονικής λειτουργίας σε νοσοκομεία και κέντρα υγείας."
+          ]
+        }
+      }
+    },
+    {
+      "id": "dortyol-gecitkale-electrocution-worker-death-2026",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Worker electrocuted during parceling work between Dortyol and Gecitkale",
+      "summary": "Kib-Tek confirmed that a person died after a crane vehicle touched overhead high-voltage lines during private parceling work on private property between Dortyol and Gecitkale. The institution disputed claims that the death was linked to an electricity-workers' strike.",
+      "worker_name": "Name not published",
+      "employer": "Private contracting firm not named in source",
+      "sector": "Construction / utilities",
+      "cause": "Electrocution after crane vehicle contacted overhead high-voltage lines",
+      "death_date": "2026-03-30",
+      "legal_status": "Kib-Tek statement reported the fatal incident; further investigation outcome not published in source",
+      "last_verified_at": "2026-03-30",
+      "locations": [
+        {
+          "id": "dortyol-gecitkale-electrocution",
+          "label": "Dortyol-Gecitkale parceling worksite",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Dortyol-Gecitkale",
+          "lat": 35.125,
+          "lng": 33.95,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Source places the fatal incident between Dortyol and Gecitkale; Famagusta area centroid used pending exact coordinates."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-03-30",
+          "status": "fatality_recorded",
+          "note": "Kib-Tek confirmed a fatal electrocution during private parceling work."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kib-tek: Kazanin personelin grevde olmasi ile ilgili hicbir baglantisi yok",
+          "url": "https://ozgurgazetekibris.com/kibris/206574-kib-tek-kazanin-personelin-grevde-olmasi-ile-ilgili-hicbir-baglantisi-yok.html",
+          "publisher": "Ozgur Gazete Kibris",
+          "type": "labor_news",
+          "published_at": "2026-03-30"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Dörtyol-Geçitkale arasında parselasyon çalışmasında işçi elektrik akımına kapılarak öldü",
+          "summary": "Kıb-Tek, Dörtyol-Geçitkale arasında özel bir şahsa ait mülk içinde özel bir müteahhitlik firmasının yürüttüğü parselasyon çalışmasında vinçli aracın yüksek gerilim hatlarına temas etmesi sonucu bir kişinin elektrik akımına kapılarak öldüğünü doğruladı. Kurum, ölümün elektrik çalışanlarının greviyle bağlantılı olduğu iddialarını reddetti.",
+          "worker_name": "Adı yayımlanmadı",
+          "employer": "Kaynakta adı verilmeyen özel müteahhitlik firması",
+          "sector": "İnşaat / kamu hizmetleri",
+          "cause": "Vinçli aracın yüksek gerilim hatlarına temas etmesi sonucu elektrik akımına kapılma",
+          "legal_status": "Kıb-Tek açıklaması ölümcül olayı bildirdi; kaynakta soruşturmanın sonucu yayımlanmadı",
+          "locations": {
+            "dortyol-gecitkale-electrocution": {
+              "label": "Dörtyol-Geçitkale parselasyon çalışma sahası",
+              "location_basis": "Kaynak ölümcül olayın Dörtyol ile Geçitkale arasında gerçekleştiğini belirtiyor; kesin koordinat yayımlanmadığı için Gazimağusa bölge merkezi kullanıldı."
+            }
+          },
+          "timeline": [
+            "Kıb-Tek, özel parselasyon çalışması sırasında elektrik akımına kapılma sonucu ölümü doğruladı."
+          ]
+        },
+        "el": {
+          "title": "Εργάτης πέθανε από ηλεκτροπληξία σε εργασίες μεταξύ Dortyol και Gecitkale",
+          "summary": "Η Kib-Tek επιβεβαίωσε ότι ένα άτομο πέθανε όταν γερανοφόρο όχημα ακούμπησε εναέριες γραμμές υψηλής τάσης κατά τη διάρκεια ιδιωτικών εργασιών τεμαχισμού γης σε ιδιωτική περιουσία μεταξύ Dortyol και Gecitkale. Ο οργανισμός απέρριψε ισχυρισμούς ότι ο θάνατος συνδεόταν με απεργία εργαζομένων στον ηλεκτρισμό.",
+          "worker_name": "Το όνομα δεν δημοσιεύθηκε",
+          "employer": "Ιδιωτική εργοληπτική εταιρεία που δεν κατονομάστηκε στην πηγή",
+          "sector": "Οικοδομές / υπηρεσίες κοινής ωφελείας",
+          "cause": "Ηλεκτροπληξία μετά από επαφή γερανοφόρου οχήματος με εναέριες γραμμές υψηλής τάσης",
+          "legal_status": "Η ανακοίνωση της Kib-Tek ανέφερε το θανατηφόρο περιστατικό. Δεν δημοσιεύθηκε έκβαση έρευνας στην πηγή",
+          "locations": {
+            "dortyol-gecitkale-electrocution": {
+              "label": "Χώρος εργασιών τεμαχισμού γης Dortyol-Gecitkale",
+              "location_basis": "Η πηγή τοποθετεί το θανατηφόρο περιστατικό μεταξύ Dortyol και Gecitkale. Χρησιμοποιήθηκε κεντρικό σημείο της περιοχής Αμμοχώστου μέχρι να δημοσιευθούν ακριβείς συντεταγμένες."
+            }
+          },
+          "timeline": [
+            "Η Kib-Tek επιβεβαίωσε θάνατο από ηλεκτροπληξία κατά τη διάρκεια ιδιωτικών εργασιών τεμαχισμού γης."
+          ]
+        }
+      }
+    },
+    {
+      "id": "kalkanli-jamshaid-rasheed-worker-death-august-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Jamshaid Rasheed dies after fall from citrus factory roof in Kalkanli",
+      "summary": "Jamshaid Rasheed, a 33-year-old worker, died after falling from the roof of a citrus packaging factory in Kalkanli while installing solar panels. Kibris Postasi reported that two people were arrested and the investigation was continuing.",
+      "worker_name": "Jamshaid Rasheed",
+      "worker_age": 33,
+      "employer": "Citrus packaging factory not named in source",
+      "sector": "Agriculture / solar installation",
+      "cause": "Fall from roof after skylight sheet broke during solar-panel installation",
+      "death_date": "2025-08-07",
+      "legal_status": "Police investigation; two people arrested according to source",
+      "last_verified_at": "2025-08-08",
+      "locations": [
+        {
+          "id": "kalkanli-citrus-factory-roof-death",
+          "label": "Kalkanli citrus packaging factory",
+          "province_key": "MORPHOU",
+          "province": "Morphou / Guzelyurt",
+          "district": "Kalkanli",
+          "lat": 35.198,
+          "lng": 32.991,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Source places the fatal incident at a citrus packaging factory in Kalkanli; Morphou/Guzelyurt area centroid used pending exact factory coordinates."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2025-08-06",
+          "status": "fatality_recorded",
+          "note": "Worker fell approximately 6.85 metres from the factory roof during solar-panel installation."
+        },
+        {
+          "date": "2025-08-07",
+          "status": "fatality_recorded",
+          "note": "Worker died in intensive care at Dr. Burhan Nalbantoglu State Hospital."
+        },
+        {
+          "date": "2025-08-08",
+          "status": "fatality_recorded",
+          "note": "Kibris Postasi reported two arrests and an ongoing police investigation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Is kazasi: Narenciye fabrikasinin damindan dusen isci hayatini kaybetti",
+          "url": "https://www.kibrispostasi.com/c87-LEFKOSA/n571177-is-kazasi-narenciye-fabrikasinin-damindan-dusen-isci-hayatini-kaybetti",
+          "publisher": "Kibris Postasi",
+          "type": "labor_news",
+          "published_at": "2025-08-08"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Jamshaid Rasheed Kalkanlı'da narenciye fabrikasının damından düşerek öldü",
+          "summary": "33 yaşındaki işçi Jamshaid Rasheed, Kalkanlı'daki bir narenciye paketleme fabrikasının damında güneş paneli kurulumu yaparken düşerek hayatını kaybetti. Kıbrıs Postası iki kişinin tutuklandığını ve soruşturmanın sürdüğünü bildirdi.",
+          "employer": "Kaynakta adı verilmeyen narenciye paketleme fabrikası",
+          "sector": "Tarım / güneş paneli kurulumu",
+          "cause": "Güneş paneli kurulumu sırasında aydınlatma saçının kırılması sonucu damdan düşme",
+          "legal_status": "Polis soruşturması; kaynağa göre iki kişi tutuklandı",
+          "locations": {
+            "kalkanli-citrus-factory-roof-death": {
+              "label": "Kalkanlı narenciye paketleme fabrikası",
+              "location_basis": "Kaynak ölümcül olayın Kalkanlı'daki bir narenciye paketleme fabrikasında gerçekleştiğini belirtiyor; kesin fabrika koordinatı yayımlanmadığı için Güzelyurt/Morphou bölge merkezi kullanıldı."
+            }
+          },
+          "timeline": [
+            "İşçi güneş paneli kurulumu sırasında fabrika damından yaklaşık 6,85 metre düşerek ağır yaralandı.",
+            "İşçi Dr. Burhan Nalbantoğlu Devlet Hastanesi yoğun bakım servisinde hayatını kaybetti.",
+            "Kıbrıs Postası iki tutuklama ve süren polis soruşturmasını bildirdi."
+          ]
+        },
+        "el": {
+          "title": "Ο Τζαμσάιντ Ρασίντ πέθανε μετά από πτώση από στέγη εργοστασίου εσπεριδοειδών στο Kalkanli",
+          "summary": "Ο Τζαμσάιντ Ρασίντ, 33χρονος εργάτης, πέθανε μετά από πτώση από τη στέγη εργοστασίου συσκευασίας εσπεριδοειδών στο Kalkanli ενώ εγκαθιστούσε φωτοβολταϊκά πάνελ. Η Kibris Postasi ανέφερε ότι δύο άτομα συνελήφθησαν και η έρευνα συνεχιζόταν.",
+          "employer": "Εργοστάσιο συσκευασίας εσπεριδοειδών που δεν κατονομάστηκε στην πηγή",
+          "sector": "Γεωργία / εγκατάσταση φωτοβολταϊκών",
+          "cause": "Πτώση από στέγη μετά το σπάσιμο φύλλου φωτισμού κατά την εγκατάσταση φωτοβολταϊκών",
+          "legal_status": "Αστυνομική έρευνα. Σύμφωνα με την πηγή, δύο άτομα συνελήφθησαν",
+          "locations": {
+            "kalkanli-citrus-factory-roof-death": {
+              "label": "Εργοστάσιο συσκευασίας εσπεριδοειδών στο Kalkanli",
+              "location_basis": "Η πηγή τοποθετεί το θανατηφόρο περιστατικό σε εργοστάσιο συσκευασίας εσπεριδοειδών στο Kalkanli. Χρησιμοποιήθηκε κεντρικό σημείο της περιοχής Μόρφου/Guzelyurt μέχρι να δημοσιευθούν ακριβείς συντεταγμένες."
+            }
+          },
+          "timeline": [
+            "Ο εργάτης έπεσε περίπου 6,85 μέτρα από τη στέγη του εργοστασίου κατά την εγκατάσταση φωτοβολταϊκών.",
+            "Ο εργάτης πέθανε στη μονάδα εντατικής θεραπείας του κρατικού νοσοκομείου Dr. Burhan Nalbantoglu.",
+            "Η Kibris Postasi ανέφερε δύο συλλήψεις και συνεχιζόμενη αστυνομική έρευνα."
+          ]
+        }
+      }
+    }
+  ]
+}
