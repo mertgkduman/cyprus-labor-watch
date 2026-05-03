@@ -1,4 +1,4 @@
--- GrevTakip public data schema
+-- Cyprus Labor Watch public data schema
 -- Run in Supabase SQL editor. The static app also works without Supabase.
 
 create extension if not exists pgcrypto;
@@ -6,7 +6,7 @@ create extension if not exists pgcrypto;
 create type public.record_type as enum (
   'worker_death',
   'strike',
-  'mesem_school',
+  'action_call',
   'union_labor_arrest'
 );
 
@@ -16,7 +16,8 @@ create type public.record_status as enum (
   'ongoing',
   'ended',
   'postponed_banned',
-  'active_school',
+  'action_call_upcoming',
+  'action_call_happened',
   'currently_arrested',
   'released',
   'unknown'
@@ -51,8 +52,9 @@ create type public.source_type as enum (
 
 create type public.geocode_precision as enum (
   'exact',
+  'venue_approx',
   'district_centroid',
-  'province_centroid',
+  'area_centroid',
   'unknown'
 );
 
@@ -67,8 +69,6 @@ create table public.cases (
   worker_name text,
   worker_age integer check (worker_age is null or worker_age between 0 and 110),
   person_name text,
-  school_name text,
-  institution_code text,
   employer text,
   labor_organization text,
   role text,
@@ -79,24 +79,23 @@ create table public.cases (
   decision_date date,
   start_date date,
   end_date date,
+  event_date date,
   death_date date,
   detention_date date,
-  known_active_date date,
   custody_status text,
   accusation text,
   legal_status text,
-  linked_incident_count integer not null default 0 check (linked_incident_count >= 0),
   verification_status public.verification_status not null default 'draft',
   last_verified_at date,
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
-  constraint strike_action_type_only check (
-    record_type = 'strike' or action_type is null
+  constraint action_type_only_for_actions check (
+    record_type in ('strike', 'action_call') or action_type is null
   ),
   constraint status_matches_type check (
     (record_type = 'worker_death' and status in ('fatality_recorded', 'unknown')) or
     (record_type = 'strike' and status in ('decision_taken', 'ongoing', 'ended', 'postponed_banned', 'unknown')) or
-    (record_type = 'mesem_school' and status in ('active_school', 'unknown')) or
+    (record_type = 'action_call' and status in ('action_call_upcoming', 'action_call_happened', 'unknown')) or
     (record_type = 'union_labor_arrest' and status in ('currently_arrested', 'released', 'unknown'))
   )
 );
@@ -112,6 +111,7 @@ create table public.case_locations (
   lng numeric(9,6) not null,
   geocode_precision public.geocode_precision not null default 'unknown',
   fatality_count integer check (fatality_count is null or fatality_count >= 0),
+  location_basis text,
   created_at timestamptz not null default now(),
   constraint case_locations_lat check (lat between -90 and 90),
   constraint case_locations_lng check (lng between -180 and 180)

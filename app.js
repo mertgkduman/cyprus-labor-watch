@@ -3,100 +3,32 @@ const SUPABASE_ANON_KEY = "";
 
 const CONFIG = {
   incidentPaths: ["data/incidents.json"],
-  mesemPath: "data/mesem-schools.json",
   fallbackSeedPath: "data/seed-cases.json",
-  defaultCenter: [39.05, 35.05],
-  defaultZoom: 6,
+  defaultCenter: [35.1264, 33.4299],
+  defaultZoom: 9,
+  timeZone: "Europe/Nicosia",
+  localSubmissionKey: "cyprus_labor_watch_pending_submissions",
 };
 
-const PROVINCES = [
-  { key: "ADANA", name: "Adana", lat: 37.0, lng: 35.32 },
-  { key: "ADIYAMAN", name: "Adıyaman", lat: 37.76, lng: 38.28 },
-  { key: "AFYONKARAHISAR", name: "Afyonkarahisar", lat: 38.76, lng: 30.54 },
-  { key: "AGRI", name: "Ağrı", lat: 39.72, lng: 43.05 },
-  { key: "AKSARAY", name: "Aksaray", lat: 38.37, lng: 34.04 },
-  { key: "AMASYA", name: "Amasya", lat: 40.65, lng: 35.83 },
-  { key: "ANKARA", name: "Ankara", lat: 39.92, lng: 32.85 },
-  { key: "ANTALYA", name: "Antalya", lat: 37.07, lng: 30.69 },
-  { key: "ARDAHAN", name: "Ardahan", lat: 41.11, lng: 42.7 },
-  { key: "ARTVIN", name: "Artvin", lat: 41.18, lng: 41.82 },
-  { key: "AYDIN", name: "Aydın", lat: 37.84, lng: 28.0 },
-  { key: "BALIKESIR", name: "Balıkesir", lat: 39.64, lng: 27.88 },
-  { key: "BARTIN", name: "Bartın", lat: 41.64, lng: 32.34 },
-  { key: "BATMAN", name: "Batman", lat: 37.88, lng: 41.13 },
-  { key: "BAYBURT", name: "Bayburt", lat: 40.25, lng: 40.23 },
-  { key: "BILECIK", name: "Bilecik", lat: 40.15, lng: 29.98 },
-  { key: "BINGOL", name: "Bingöl", lat: 38.88, lng: 40.5 },
-  { key: "BITLIS", name: "Bitlis", lat: 38.4, lng: 42.11 },
-  { key: "BOLU", name: "Bolu", lat: 40.74, lng: 31.61 },
-  { key: "BURDUR", name: "Burdur", lat: 37.72, lng: 30.29 },
-  { key: "BURSA", name: "Bursa", lat: 40.18, lng: 29.06 },
-  { key: "CANAKKALE", name: "Çanakkale", lat: 40.15, lng: 26.41 },
-  { key: "CANKIRI", name: "Çankırı", lat: 40.6, lng: 33.62 },
-  { key: "CORUM", name: "Çorum", lat: 40.55, lng: 34.96 },
-  { key: "DENIZLI", name: "Denizli", lat: 37.78, lng: 29.09 },
-  { key: "DIYARBAKIR", name: "Diyarbakır", lat: 37.91, lng: 40.22 },
-  { key: "DUZCE", name: "Düzce", lat: 40.84, lng: 31.16 },
-  { key: "EDIRNE", name: "Edirne", lat: 41.68, lng: 26.56 },
-  { key: "ELAZIG", name: "Elazığ", lat: 38.68, lng: 39.22 },
-  { key: "ERZINCAN", name: "Erzincan", lat: 39.75, lng: 39.5 },
-  { key: "ERZURUM", name: "Erzurum", lat: 39.9, lng: 41.27 },
-  { key: "ESKISEHIR", name: "Eskişehir", lat: 39.78, lng: 30.52 },
-  { key: "GAZIANTEP", name: "Gaziantep", lat: 37.06, lng: 37.38 },
-  { key: "GIRESUN", name: "Giresun", lat: 40.91, lng: 38.39 },
-  { key: "GUMUSHANE", name: "Gümüşhane", lat: 40.46, lng: 39.48 },
-  { key: "HAKKARI", name: "Hakkari", lat: 37.58, lng: 43.74 },
-  { key: "HATAY", name: "Hatay", lat: 36.4, lng: 36.35 },
-  { key: "IGDIR", name: "Iğdır", lat: 39.89, lng: 44.05 },
-  { key: "ISPARTA", name: "Isparta", lat: 37.76, lng: 30.55 },
-  { key: "ISTANBUL", name: "İstanbul", lat: 41.01, lng: 28.98 },
-  { key: "IZMIR", name: "İzmir", lat: 38.42, lng: 27.14 },
-  { key: "KAHRAMANMARAS", name: "Kahramanmaraş", lat: 37.58, lng: 36.93 },
-  { key: "KARABUK", name: "Karabük", lat: 41.2, lng: 32.63 },
-  { key: "KARAMAN", name: "Karaman", lat: 37.18, lng: 33.22 },
-  { key: "KARS", name: "Kars", lat: 40.6, lng: 43.1 },
-  { key: "KASTAMONU", name: "Kastamonu", lat: 41.38, lng: 33.78 },
-  { key: "KAYSERI", name: "Kayseri", lat: 38.72, lng: 35.48 },
-  { key: "KILIS", name: "Kilis", lat: 36.72, lng: 37.12 },
-  { key: "KIRIKKALE", name: "Kırıkkale", lat: 39.85, lng: 33.52 },
-  { key: "KIRKLARELI", name: "Kırklareli", lat: 41.73, lng: 27.22 },
-  { key: "KIRSEHIR", name: "Kırşehir", lat: 39.15, lng: 34.16 },
-  { key: "KOCAELI", name: "Kocaeli", lat: 40.77, lng: 29.94 },
-  { key: "KONYA", name: "Konya", lat: 37.87, lng: 32.48 },
-  { key: "KUTAHYA", name: "Kütahya", lat: 39.42, lng: 29.98 },
-  { key: "MALATYA", name: "Malatya", lat: 38.35, lng: 38.31 },
-  { key: "MANISA", name: "Manisa", lat: 38.61, lng: 27.43 },
-  { key: "MARDIN", name: "Mardin", lat: 37.31, lng: 40.74 },
-  { key: "MERSIN", name: "Mersin", lat: 36.8, lng: 34.63 },
-  { key: "MUGLA", name: "Muğla", lat: 37.22, lng: 28.36 },
-  { key: "MUS", name: "Muş", lat: 38.73, lng: 41.49 },
-  { key: "NEVSEHIR", name: "Nevşehir", lat: 38.62, lng: 34.71 },
-  { key: "NIGDE", name: "Niğde", lat: 37.97, lng: 34.68 },
-  { key: "ORDU", name: "Ordu", lat: 40.98, lng: 37.88 },
-  { key: "OSMANIYE", name: "Osmaniye", lat: 37.07, lng: 36.25 },
-  { key: "RIZE", name: "Rize", lat: 41.03, lng: 40.52 },
-  { key: "SAKARYA", name: "Sakarya", lat: 40.78, lng: 30.4 },
-  { key: "SAMSUN", name: "Samsun", lat: 41.29, lng: 36.33 },
-  { key: "SANLIURFA", name: "Şanlıurfa", lat: 37.16, lng: 38.79 },
-  { key: "SIIRT", name: "Siirt", lat: 37.93, lng: 41.94 },
-  { key: "SINOP", name: "Sinop", lat: 42.03, lng: 35.15 },
-  { key: "SIRNAK", name: "Şırnak", lat: 37.52, lng: 42.46 },
-  { key: "SIVAS", name: "Sivas", lat: 39.75, lng: 37.02 },
-  { key: "TEKIRDAG", name: "Tekirdağ", lat: 40.98, lng: 27.51 },
-  { key: "TOKAT", name: "Tokat", lat: 40.31, lng: 36.55 },
-  { key: "TRABZON", name: "Trabzon", lat: 41.0, lng: 39.72 },
-  { key: "TUNCELI", name: "Tunceli", lat: 39.11, lng: 39.55 },
-  { key: "USAK", name: "Uşak", lat: 38.68, lng: 29.41 },
-  { key: "VAN", name: "Van", lat: 38.5, lng: 43.37 },
-  { key: "YALOVA", name: "Yalova", lat: 40.65, lng: 29.27 },
-  { key: "YOZGAT", name: "Yozgat", lat: 39.82, lng: 34.81 },
-  { key: "ZONGULDAK", name: "Zonguldak", lat: 41.45, lng: 31.79 },
+const AREAS = [
+  { key: "NICOSIA", name: "Nicosia / Lefkosia", lat: 35.1856, lng: 33.3823 },
+  { key: "LIMASSOL", name: "Limassol / Lemesos", lat: 34.7071, lng: 33.0226 },
+  { key: "LARNACA", name: "Larnaca / Larnaka", lat: 34.9229, lng: 33.6233 },
+  { key: "PAPHOS", name: "Paphos / Pafos", lat: 34.772, lng: 32.4297 },
+  { key: "FAMAGUSTA", name: "Famagusta / Ammochostos", lat: 35.125, lng: 33.95 },
+  { key: "KYRENIA", name: "Kyrenia / Keryneia", lat: 35.3403, lng: 33.3192 },
+  { key: "MORPHOU", name: "Morphou / Guzelyurt", lat: 35.198, lng: 32.991 },
+  { key: "DHEKELIA", name: "Dhekelia area", lat: 35.05, lng: 33.74 },
+  { key: "AKROTIRI", name: "Akrotiri area", lat: 34.604, lng: 32.956 },
+  { key: "BUFFER_ZONE", name: "Buffer zone", lat: 35.175, lng: 33.365 },
+  { key: "ISLAND_WIDE", name: "Island-wide", lat: 35.1264, lng: 33.4299 },
 ];
 
-const PROVINCE_BY_KEY = Object.fromEntries(PROVINCES.map((item) => [item.key, item]));
-const PROVINCE_BY_NAME = Object.fromEntries(PROVINCES.map((item) => [item.name, item]));
+const AREA_BY_KEY = Object.fromEntries(AREAS.map((item) => [item.key, item]));
+const AREA_BY_NAME = Object.fromEntries(AREAS.map((item) => [item.name, item]));
 
-const RECORD_TYPES = ["worker_death", "strike", "action_call", "mesem_school", "union_labor_arrest"];
+const LANG_ORDER = ["en", "el", "tr"];
+const RECORD_TYPES = ["worker_death", "strike", "action_call", "union_labor_arrest"];
 const ACTION_TYPES = ["legal_strike", "fiili_wildcat", "protest", "bargaining_dispute", "solidarity_action"];
 const LAYER_ORDER = [
   "worker_death_recent",
@@ -108,7 +40,6 @@ const LAYER_ORDER = [
   "union_arrest_released",
   "strike_decision",
   "strike_postponed",
-  "mesem_school",
 ];
 const DEFAULT_LAYERS = ["worker_death_recent", "strike_ongoing", "action_call_upcoming", "union_arrest_current"];
 const QUICK_LAYERS = ["worker_death_recent", "strike_ongoing", "action_call_upcoming", "union_arrest_current"];
@@ -122,177 +53,22 @@ const LAYER_COLORS = {
   action_call_happened: "#60a5fa",
   strike_decision: "#f7f4ea",
   strike_postponed: "#7c6f64",
-  mesem_school: "#e3b505",
   union_arrest_current: "#e76f00",
   union_arrest_released: "#7c6f64",
 };
 
 const COPY = {
-  tr: {
-    nav: { filters: "Filtre", listAll: "Listele", methodology: "Yöntem", sources: "Kaynaklar", submit: "+ Bildir" },
-    common: { cancel: "Vazgeç", close: "Kapat", notSpecified: "Belirtilmedi", source: "Kaynak" },
-    stats: { label: "Genel görünüm", total: "Toplam kayıt", deaths: "İş cinayeti", strikes: "Süren grev", arrests: "Tutuklu emekçi" },
-    filters: {
-      panel: "Filtreler",
-      panelTitle: "Kayıtları daralt",
-      search: "Ara",
-      searchPlaceholder: "İşveren, sendika, okul, il...",
-      dateRange: "Tarih aralığı",
-      province: "İl",
-      sector: "Sektör",
-      dateRanges: {
-        all: "Tüm tarihler",
-        last_30_days: "Son 30 gün",
-        last_3_months: "Son 3 ay",
-        last_6_months: "Son 6 ay",
-      },
-      allProvinces: "Tüm iller",
-      allSectors: "Tüm sektörler",
-      layers: "Katmanlar",
-      actionType: "Grev / eylem türü",
-    },
-    map: { results: "sonuç" },
-    empty: {
-      title: "Haritadan bir kayıt seçin",
-      text: "Varsayılan harita seçili tarih aralığındaki iş cinayetlerini, süren grevleri, yaklaşan eylem çağrılarını ve güncel emek tutuklamalarını gösterir.",
-      context: "Bağlam kaynakları",
-    },
-    list: {
-      label: "Kayıt listesi",
-      title: "Filtredeki kayıtlar",
-      countLabel: "kayıt",
-      empty: "Bu filtrelerde kayıt yok.",
-    },
-    recordType: {
-      worker_death: "İş cinayeti",
-      strike: "Grev / işçi eylemi",
-      action_call: "Eylem / dayanışma çağrısı",
-      mesem_school: "MESEM okulu",
-      union_labor_arrest: "Emek tutuklaması",
-    },
-    status: {
-      fatality_recorded: "İş cinayeti kaydı",
-      decision_taken: "Grev kararı alındı",
-      ongoing: "Sürüyor",
-      ended: "Sona erdi",
-      postponed_banned: "Ertelendi / yasaklandı",
-      action_call_upcoming: "Çağrı",
-      action_call_happened: "Gerçekleşti",
-      active_school: "Aktif okul",
-      currently_arrested: "Tutuklu",
-      released: "Tahliye",
-      unknown: "Bilinmiyor",
-    },
-    layer: {
-      worker_death_recent: "İş cinayeti",
-      strike_ongoing: "Süren grev",
-      strike_ended: "Sona eren grev",
-      action_call_upcoming: "Eylem ve dayanışma çağrısı",
-      action_call_happened: "Gerçekleşen eylem",
-      strike_decision: "Grev kararı",
-      strike_postponed: "Ertelenen / yasaklanan grev",
-      mesem_school: "MESEM okulu",
-      union_arrest_current: "Tutuklu",
-      union_arrest_released: "Tahliye",
-    },
-    quickLayer: {
-      worker_death_recent: "İş cinayeti",
-      strike_ongoing: "Grev",
-      action_call_upcoming: "Çağrı",
-      union_arrest_current: "Tutuklu",
-    },
-    actionType: {
-      legal_strike: "Yasal grev",
-      fiili_wildcat: "Fiili / wildcat",
-      protest: "Protesto",
-      bargaining_dispute: "TİS / pazarlık uyuşmazlığı",
-      solidarity_action: "Dayanışma eylemi",
-    },
-    detail: {
-      summary: "Özet",
-      workerName: "İşçi",
-      age: "Yaş",
-      employer: "İşveren / kurum",
-      sector: "Sektör",
-      date: "Tarih",
-      cause: "Ölüm nedeni / olay",
-      fatalityCount: "İş cinayeti sayısı",
-      legalStatus: "Hukuki süreç",
-      union: "Sendika / örgüt",
-      actionType: "Eylem türü",
-      workers: "Yaklaşık katılımcı",
-      demands: "Talepler / konular",
-      decisionDate: "Karar tarihi",
-      eventDate: "Eylem tarihi",
-      startDate: "Başlangıç",
-      endDate: "Bitiş",
-      schoolName: "Okul adı",
-      institutionCode: "Kurum kodu",
-      activeDate: "Bilinen aktiflik",
-      linkedIncidents: "Bağlı olay sayısı",
-      person: "Kişi / grup",
-      role: "Görev / rol",
-      detentionDate: "Tutuklama tarihi",
-      custodyStatus: "Mevcut durum",
-      accusation: "Suçlama / hukuki durum",
-      locations: "Konumlar",
-      timeline: "Zaman çizelgesi",
-      sources: "Kaynaklar",
-      lastVerified: "Son teyit",
-      geocode: "Konum kesinliği",
-    },
-    geocodePrecision: {
-      exact: "tam koordinat",
-      venue_approx: "miting yeri yaklaşık",
-      district_centroid: "ilçe merkezi",
-      province_centroid: "il merkezi",
-      unknown: "bilinmiyor",
-    },
-    submit: {
-      label: "İnceleme kuyruğu",
-      title: "Eylem veya kaynak bildir",
-      recordType: "Kayıt türü",
-      province: "İl",
-      caseTitle: "Başlık",
-      caseTitlePlaceholder: "Örn. Özel İtalyan Lisesi öğretmenleri grevde",
-      summary: "Kısa özet",
-      summaryPlaceholder: "Ne oldu, kimler dahil, hangi talep veya hak ihlali var?",
-      location: "Konum adı",
-      locationPlaceholder: "Fabrika, okul, adliye, meydan...",
-      date: "Tarih",
-      sourceUrl: "Kaynak URL",
-      sourceTitle: "Kaynak başlığı",
-      contact: "İletişim",
-      contactPlaceholder: "İsteğe bağlı e-posta",
-      note: "Bildirimler editör incelemesinden sonra yayımlanır. Sosyal medya veya tanık aktarımı tek başına doğrulanmış kayıt sayılmaz.",
-      send: "İncelemeye gönder",
-      successTitle: "Bildirim alındı",
-      successLocal: "Supabase yapılandırılmadığı için bildirim bu tarayıcıda demo kuyruğuna kaydedildi.",
-      successRemote: "Bildirim Supabase inceleme kuyruğuna kaydedildi.",
-      missing: "Kayıt türü, başlık, özet, il ve kaynak URL zorunludur.",
-      badUrl: "Kaynak URL http veya https ile başlamalıdır.",
-      badCoords: "Koordinatlar birlikte girilmeli ve sayı olmalıdır.",
-    },
-    methodology: {
-      label: "Yöntem",
-      title: "Kayıt ve doğrulama ilkeleri",
-      p1: "GrevTakip; grev, fiili eylem, iş cinayeti, MESEM okulu ve emek örgütlerine yönelik tutuklama kayıtlarını tek haritada gösterir. Bir nokta bir konum örneğidir; aynı vaka birden çok konuma sahip olabilir.",
-      p2: "Grevler için “grev kararı alındı”, “sürüyor”, “sona erdi” ve “ertelendi/yasaklandı” ayrıdır. İş cinayeti, MESEM okulu ve tutuklama kayıtları kendi durum etiketlerini kullanır.",
-      p3: "EÇT ve Cornell yaklaşımından uyarlanan kaynak disiplini kullanılır: sendika açıklamaları, emek haberleri, resmi belgeler ve araştırma raporları güçlü kaynak sayılır; sosyal medya ve tanık aktarımı ek teyit ister.",
-    },
-    sources: { label: "Kaynaklar", title: "Başlangıç kaynak havuzu" },
-  },
   en: {
     nav: { filters: "Filter", listAll: "List", methodology: "Method", sources: "Sources", submit: "+ Report" },
     common: { cancel: "Cancel", close: "Close", notSpecified: "Not specified", source: "Source" },
-    stats: { label: "Overview", total: "Total records", deaths: "Workplace killings", strikes: "Ongoing strikes", arrests: "Jailed labor figures" },
+    stats: { label: "Overview", total: "Total records", deaths: "Workplace deaths", strikes: "Ongoing strikes", arrests: "Jailed labor figures" },
     filters: {
       panel: "Filters",
       panelTitle: "Narrow records",
       search: "Search",
-      searchPlaceholder: "Employer, union, school, province...",
+      searchPlaceholder: "Employer, union, locality, sector...",
       dateRange: "Date range",
-      province: "Province",
+      province: "District / area",
       sector: "Sector",
       dateRanges: {
         all: "All dates",
@@ -300,7 +76,7 @@ const COPY = {
         last_3_months: "Last 3 months",
         last_6_months: "Last 6 months",
       },
-      allProvinces: "All provinces",
+      allProvinces: "All areas",
       allSectors: "All sectors",
       layers: "Layers",
       actionType: "Strike / action type",
@@ -308,7 +84,7 @@ const COPY = {
     map: { results: "results" },
     empty: {
       title: "Select a record on the map",
-      text: "By default the map shows workplace killings in the selected date range, ongoing strikes, upcoming action calls, and current labor arrests.",
+      text: "By default the map shows recent workplace deaths, ongoing strikes, upcoming action calls, and current labor arrests across Cyprus.",
       context: "Context sources",
     },
     list: {
@@ -318,39 +94,36 @@ const COPY = {
       empty: "No records match these filters.",
     },
     recordType: {
-      worker_death: "Workplace killing",
+      worker_death: "Workplace death",
       strike: "Strike / labor action",
       action_call: "Action / solidarity call",
-      mesem_school: "MESEM school",
       union_labor_arrest: "Labor arrest",
     },
     status: {
-      fatality_recorded: "Workplace killing recorded",
+      fatality_recorded: "Workplace death recorded",
       decision_taken: "Strike decision taken",
       ongoing: "Ongoing",
       ended: "Ended",
       postponed_banned: "Postponed / banned",
       action_call_upcoming: "Call",
       action_call_happened: "Held",
-      active_school: "Active school",
       currently_arrested: "Currently jailed",
       released: "Released",
       unknown: "Unknown",
     },
     layer: {
-      worker_death_recent: "Workplace killing",
+      worker_death_recent: "Workplace death",
       strike_ongoing: "Ongoing strike",
       strike_ended: "Ended strike",
       action_call_upcoming: "Action / solidarity call",
       action_call_happened: "Action held",
       strike_decision: "Strike decision",
       strike_postponed: "Postponed / banned strike",
-      mesem_school: "MESEM school",
       union_arrest_current: "Jailed",
       union_arrest_released: "Released",
     },
     quickLayer: {
-      worker_death_recent: "Killings",
+      worker_death_recent: "Deaths",
       strike_ongoing: "Strikes",
       action_call_upcoming: "Calls",
       union_arrest_current: "Jailed",
@@ -380,10 +153,6 @@ const COPY = {
       eventDate: "Action date",
       startDate: "Start",
       endDate: "End",
-      schoolName: "School name",
-      institutionCode: "Institution code",
-      activeDate: "Known active",
-      linkedIncidents: "Linked incidents",
       person: "Person / group",
       role: "Role",
       detentionDate: "Arrest date",
@@ -399,60 +168,354 @@ const COPY = {
       exact: "exact",
       venue_approx: "approx. venue",
       district_centroid: "district centroid",
-      province_centroid: "province centroid",
+      area_centroid: "area centroid",
       unknown: "unknown",
     },
     submit: {
       label: "Review queue",
       title: "Report an action or source",
       recordType: "Record type",
-      province: "Province",
+      province: "District / area",
       caseTitle: "Title",
-      caseTitlePlaceholder: "E.g. Italian High School teachers are on strike",
+      caseTitlePlaceholder: "E.g. delivery riders strike in Limassol",
       summary: "Short summary",
       summaryPlaceholder: "What happened, who is involved, what demand or rights violation is at issue?",
       location: "Location name",
-      locationPlaceholder: "Factory, school, courthouse, square...",
+      locationPlaceholder: "Worksite, union office, courthouse, square...",
       date: "Date",
       sourceUrl: "Source URL",
       sourceTitle: "Source title",
       contact: "Contact",
       contactPlaceholder: "Optional email",
-      note: "Reports are published after editorial review. Social media or witness accounts alone are not treated as verified records.",
+      note: "Reports are published after editorial review. Social media or witness accounts alone are treated as leads until corroborated.",
       send: "Send for review",
       successTitle: "Report received",
       successLocal: "Supabase is not configured, so the report was saved to this browser's demo queue.",
       successRemote: "The report was saved to the Supabase review queue.",
-      missing: "Record type, title, summary, province, and source URL are required.",
+      missing: "Record type, title, summary, district / area, and source URL are required.",
       badUrl: "The source URL must start with http or https.",
       badCoords: "Coordinates must be entered together and must be numbers.",
     },
     methodology: {
       label: "Method",
       title: "Recording and verification rules",
-      p1: "GrevTakip maps strikes, de facto labor actions, workplace killings, MESEM schools, and labor-organization arrests in one tracker. One dot is one mapped location instance; one case can have multiple locations.",
-      p2: "Strike records distinguish decision taken, ongoing, ended, and postponed / banned. Workplace killing, MESEM school, and arrest records use their own status labels.",
-      p3: "The source discipline adapts EÇT and Cornell practice: union statements, labor news, official documents, and research reports are stronger sources; social media and witness reports need corroboration.",
+      p1: "Cyprus Labor Watch maps strikes, workplace deaths, action calls, and labor-related arrests in one tracker. One dot is one mapped location instance; one case can have multiple locations.",
+      p2: "Strike records distinguish decision taken, ongoing, ended, and postponed / banned. Action calls are separated from strikes and become held after their event date.",
+      p3: "Sources are prioritized by strength: official/public bodies, unions, established news, and then social media only as a lead requiring corroboration.",
     },
     sources: { label: "Sources", title: "Initial source pool" },
+  },
+  el: {
+    nav: { filters: "Φίλτρο", listAll: "Λίστα", methodology: "Μέθοδος", sources: "Πηγές", submit: "+ Αναφορά" },
+    common: { cancel: "Άκυρο", close: "Κλείσιμο", notSpecified: "Δεν αναφέρεται", source: "Πηγή" },
+    stats: { label: "Επισκόπηση", total: "Σύνολο εγγραφών", deaths: "Θάνατοι στην εργασία", strikes: "Απεργίες σε εξέλιξη", arrests: "Κρατούμενοι εργαζόμενοι" },
+    filters: {
+      panel: "Φίλτρα",
+      panelTitle: "Περιορισμός εγγραφών",
+      search: "Αναζήτηση",
+      searchPlaceholder: "Εργοδότης, συντεχνία, περιοχή, κλάδος...",
+      dateRange: "Χρονικό διάστημα",
+      province: "Επαρχία / περιοχή",
+      sector: "Κλάδος",
+      dateRanges: {
+        all: "Όλες οι ημερομηνίες",
+        last_30_days: "Τελευταίες 30 ημέρες",
+        last_3_months: "Τελευταίοι 3 μήνες",
+        last_6_months: "Τελευταίοι 6 μήνες",
+      },
+      allProvinces: "Όλες οι περιοχές",
+      allSectors: "Όλοι οι κλάδοι",
+      layers: "Επίπεδα",
+      actionType: "Τύπος απεργίας / δράσης",
+    },
+    map: { results: "αποτελέσματα" },
+    empty: {
+      title: "Επιλέξτε εγγραφή στον χάρτη",
+      text: "Ο αρχικός χάρτης δείχνει πρόσφατους θανάτους στην εργασία, απεργίες σε εξέλιξη, καλέσματα δράσης και τρέχουσες εργατικές συλλήψεις στην Κύπρο.",
+      context: "Πηγές πλαισίου",
+    },
+    list: {
+      label: "Λίστα εγγραφών",
+      title: "Φιλτραρισμένες εγγραφές",
+      countLabel: "εγγραφές",
+      empty: "Δεν υπάρχουν εγγραφές με αυτά τα φίλτρα.",
+    },
+    recordType: {
+      worker_death: "Θάνατος στην εργασία",
+      strike: "Απεργία / εργατική δράση",
+      action_call: "Κάλεσμα δράσης / αλληλεγγύης",
+      union_labor_arrest: "Εργατική σύλληψη",
+    },
+    status: {
+      fatality_recorded: "Καταγεγραμμένος θάνατος",
+      decision_taken: "Απόφαση απεργίας",
+      ongoing: "Σε εξέλιξη",
+      ended: "Έληξε",
+      postponed_banned: "Αναβλήθηκε / απαγορεύτηκε",
+      action_call_upcoming: "Κάλεσμα",
+      action_call_happened: "Πραγματοποιήθηκε",
+      currently_arrested: "Υπό κράτηση",
+      released: "Αφέθηκε ελεύθερος/η",
+      unknown: "Άγνωστο",
+    },
+    layer: {
+      worker_death_recent: "Θάνατος στην εργασία",
+      strike_ongoing: "Απεργία σε εξέλιξη",
+      strike_ended: "Απεργία που έληξε",
+      action_call_upcoming: "Κάλεσμα δράσης / αλληλεγγύης",
+      action_call_happened: "Δράση που έγινε",
+      strike_decision: "Απόφαση απεργίας",
+      strike_postponed: "Αναβληθείσα / απαγορευμένη απεργία",
+      union_arrest_current: "Υπό κράτηση",
+      union_arrest_released: "Απελευθερώθηκε",
+    },
+    quickLayer: {
+      worker_death_recent: "Θάνατοι",
+      strike_ongoing: "Απεργίες",
+      action_call_upcoming: "Καλέσματα",
+      union_arrest_current: "Κράτηση",
+    },
+    actionType: {
+      legal_strike: "Νόμιμη απεργία",
+      fiili_wildcat: "Άτυπη / αυθόρμητη",
+      protest: "Διαμαρτυρία",
+      bargaining_dispute: "Συλλογική διαφορά",
+      solidarity_action: "Δράση αλληλεγγύης",
+    },
+    detail: {
+      summary: "Περίληψη",
+      workerName: "Εργαζόμενος/η",
+      age: "Ηλικία",
+      employer: "Εργοδότης / φορέας",
+      sector: "Κλάδος",
+      date: "Ημερομηνία",
+      cause: "Αιτία / περιστατικό",
+      fatalityCount: "Θάνατοι",
+      legalStatus: "Νομική διαδικασία",
+      union: "Συντεχνία / οργάνωση",
+      actionType: "Τύπος δράσης",
+      workers: "Περίπου συμμετέχοντες",
+      demands: "Αιτήματα / ζητήματα",
+      decisionDate: "Ημερομηνία απόφασης",
+      eventDate: "Ημερομηνία δράσης",
+      startDate: "Έναρξη",
+      endDate: "Λήξη",
+      person: "Πρόσωπο / ομάδα",
+      role: "Ρόλος",
+      detentionDate: "Ημερομηνία σύλληψης",
+      custodyStatus: "Τρέχουσα κατάσταση",
+      accusation: "Κατηγορία / νομική κατάσταση",
+      locations: "Τοποθεσίες",
+      timeline: "Χρονολόγιο",
+      sources: "Πηγές",
+      lastVerified: "Τελευταία επαλήθευση",
+      geocode: "Ακρίβεια γεωκωδικοποίησης",
+    },
+    geocodePrecision: {
+      exact: "ακριβές",
+      venue_approx: "περίπου χώρος",
+      district_centroid: "κέντρο επαρχίας",
+      area_centroid: "κέντρο περιοχής",
+      unknown: "άγνωστο",
+    },
+    submit: {
+      label: "Ουρά ελέγχου",
+      title: "Αναφορά δράσης ή πηγής",
+      recordType: "Τύπος εγγραφής",
+      province: "Επαρχία / περιοχή",
+      caseTitle: "Τίτλος",
+      caseTitlePlaceholder: "Π.χ. απεργία διανομέων στη Λεμεσό",
+      summary: "Σύντομη περίληψη",
+      summaryPlaceholder: "Τι συνέβη, ποιοι εμπλέκονται, ποιο αίτημα ή παραβίαση αφορά;",
+      location: "Όνομα τοποθεσίας",
+      locationPlaceholder: "Χώρος εργασίας, γραφείο συντεχνίας, δικαστήριο, πλατεία...",
+      date: "Ημερομηνία",
+      sourceUrl: "URL πηγής",
+      sourceTitle: "Τίτλος πηγής",
+      contact: "Επικοινωνία",
+      contactPlaceholder: "Προαιρετικό email",
+      note: "Οι αναφορές δημοσιεύονται μετά από συντακτικό έλεγχο. Τα κοινωνικά δίκτυα ή μαρτυρίες θεωρούνται αρχικές ενδείξεις μέχρι να επιβεβαιωθούν.",
+      send: "Αποστολή για έλεγχο",
+      successTitle: "Η αναφορά λήφθηκε",
+      successLocal: "Το Supabase δεν έχει ρυθμιστεί, οπότε η αναφορά αποθηκεύτηκε στην τοπική δοκιμαστική ουρά του browser.",
+      successRemote: "Η αναφορά αποθηκεύτηκε στην ουρά ελέγχου του Supabase.",
+      missing: "Απαιτούνται τύπος εγγραφής, τίτλος, περίληψη, επαρχία / περιοχή και URL πηγής.",
+      badUrl: "Το URL της πηγής πρέπει να αρχίζει με http ή https.",
+      badCoords: "Οι συντεταγμένες πρέπει να καταχωρούνται μαζί και να είναι αριθμοί.",
+    },
+    methodology: {
+      label: "Μέθοδος",
+      title: "Κανόνες καταγραφής και επαλήθευσης",
+      p1: "Το Cyprus Labor Watch χαρτογραφεί απεργίες, θανάτους στην εργασία, καλέσματα δράσης και εργατικές συλλήψεις σε έναν ενιαίο χάρτη. Κάθε σημείο είναι μία χαρτογραφημένη τοποθεσία· μία υπόθεση μπορεί να έχει πολλές τοποθεσίες.",
+      p2: "Οι απεργίες διακρίνονται σε απόφαση, σε εξέλιξη, λήξη και αναβολή / απαγόρευση. Τα καλέσματα δράσης καταγράφονται χωριστά και σημειώνονται ως πραγματοποιημένα μετά την ημερομηνία τους.",
+      p3: "Οι πηγές ιεραρχούνται ως εξής: επίσημοι/δημόσιοι φορείς, συντεχνίες, καθιερωμένα μέσα ενημέρωσης και κοινωνικά δίκτυα μόνο ως ένδειξη που χρειάζεται επιβεβαίωση.",
+    },
+    sources: { label: "Πηγές", title: "Αρχική δεξαμενή πηγών" },
+  },
+  tr: {
+    nav: { filters: "Filtre", listAll: "Listele", methodology: "Yöntem", sources: "Kaynaklar", submit: "+ Bildir" },
+    common: { cancel: "Vazgeç", close: "Kapat", notSpecified: "Belirtilmedi", source: "Kaynak" },
+    stats: { label: "Genel görünüm", total: "Toplam kayıt", deaths: "İş cinayeti", strikes: "Süren grev", arrests: "Tutuklu emekçi" },
+    filters: {
+      panel: "Filtreler",
+      panelTitle: "Kayıtları daralt",
+      search: "Ara",
+      searchPlaceholder: "İşveren, sendika, bölge, sektör...",
+      dateRange: "Tarih aralığı",
+      province: "Bölge / ilçe",
+      sector: "Sektör",
+      dateRanges: {
+        all: "Tüm tarihler",
+        last_30_days: "Son 30 gün",
+        last_3_months: "Son 3 ay",
+        last_6_months: "Son 6 ay",
+      },
+      allProvinces: "Tüm bölgeler",
+      allSectors: "Tüm sektörler",
+      layers: "Katmanlar",
+      actionType: "Grev / eylem türü",
+    },
+    map: { results: "sonuç" },
+    empty: {
+      title: "Haritadan bir kayıt seçin",
+      text: "Varsayılan harita Kıbrıs genelinde son iş cinayetlerini, süren grevleri, yaklaşan eylem çağrılarını ve güncel emek tutuklamalarını gösterir.",
+      context: "Bağlam kaynakları",
+    },
+    list: {
+      label: "Kayıt listesi",
+      title: "Filtredeki kayıtlar",
+      countLabel: "kayıt",
+      empty: "Bu filtrelerde kayıt yok.",
+    },
+    recordType: {
+      worker_death: "İş cinayeti",
+      strike: "Grev / işçi eylemi",
+      action_call: "Eylem / dayanışma çağrısı",
+      union_labor_arrest: "Emek tutuklaması",
+    },
+    status: {
+      fatality_recorded: "İş cinayeti kaydı",
+      decision_taken: "Grev kararı alındı",
+      ongoing: "Sürüyor",
+      ended: "Sona erdi",
+      postponed_banned: "Ertelendi / yasaklandı",
+      action_call_upcoming: "Çağrı",
+      action_call_happened: "Gerçekleşti",
+      currently_arrested: "Tutuklu",
+      released: "Serbest bırakıldı",
+      unknown: "Bilinmiyor",
+    },
+    layer: {
+      worker_death_recent: "İş cinayeti",
+      strike_ongoing: "Süren grev",
+      strike_ended: "Sona eren grev",
+      action_call_upcoming: "Eylem ve dayanışma çağrısı",
+      action_call_happened: "Gerçekleşen eylem",
+      strike_decision: "Grev kararı",
+      strike_postponed: "Ertelenen / yasaklanan grev",
+      union_arrest_current: "Tutuklu",
+      union_arrest_released: "Serbest bırakıldı",
+    },
+    quickLayer: {
+      worker_death_recent: "İş cinayeti",
+      strike_ongoing: "Grev",
+      action_call_upcoming: "Çağrı",
+      union_arrest_current: "Tutuklu",
+    },
+    actionType: {
+      legal_strike: "Yasal grev",
+      fiili_wildcat: "Fiili / wildcat",
+      protest: "Protesto",
+      bargaining_dispute: "Toplu pazarlık uyuşmazlığı",
+      solidarity_action: "Dayanışma eylemi",
+    },
+    detail: {
+      summary: "Özet",
+      workerName: "İşçi",
+      age: "Yaş",
+      employer: "İşveren / kurum",
+      sector: "Sektör",
+      date: "Tarih",
+      cause: "Ölüm nedeni / olay",
+      fatalityCount: "İş cinayeti sayısı",
+      legalStatus: "Hukuki süreç",
+      union: "Sendika / örgüt",
+      actionType: "Eylem türü",
+      workers: "Yaklaşık katılımcı",
+      demands: "Talepler / konular",
+      decisionDate: "Karar tarihi",
+      eventDate: "Eylem tarihi",
+      startDate: "Başlangıç",
+      endDate: "Bitiş",
+      person: "Kişi / grup",
+      role: "Görev / rol",
+      detentionDate: "Tutuklama tarihi",
+      custodyStatus: "Mevcut durum",
+      accusation: "Suçlama / hukuki durum",
+      locations: "Konumlar",
+      timeline: "Zaman çizelgesi",
+      sources: "Kaynaklar",
+      lastVerified: "Son teyit",
+      geocode: "Konum kesinliği",
+    },
+    geocodePrecision: {
+      exact: "tam koordinat",
+      venue_approx: "mekan yaklaşık",
+      district_centroid: "bölge merkezi",
+      area_centroid: "alan merkezi",
+      unknown: "bilinmiyor",
+    },
+    submit: {
+      label: "İnceleme kuyruğu",
+      title: "Eylem veya kaynak bildir",
+      recordType: "Kayıt türü",
+      province: "Bölge / ilçe",
+      caseTitle: "Başlık",
+      caseTitlePlaceholder: "Örn. Limasol'da kurye grevi",
+      summary: "Kısa özet",
+      summaryPlaceholder: "Ne oldu, kimler dahil, hangi talep veya hak ihlali var?",
+      location: "Konum adı",
+      locationPlaceholder: "İşyeri, sendika ofisi, mahkeme, meydan...",
+      date: "Tarih",
+      sourceUrl: "Kaynak URL",
+      sourceTitle: "Kaynak başlığı",
+      contact: "İletişim",
+      contactPlaceholder: "İsteğe bağlı e-posta",
+      note: "Bildirimler editör incelemesinden sonra yayımlanır. Sosyal medya veya tanık aktarımı teyit edilene kadar yalnızca ipucu sayılır.",
+      send: "İncelemeye gönder",
+      successTitle: "Bildirim alındı",
+      successLocal: "Supabase yapılandırılmadığı için bildirim bu tarayıcıda demo kuyruğuna kaydedildi.",
+      successRemote: "Bildirim Supabase inceleme kuyruğuna kaydedildi.",
+      missing: "Kayıt türü, başlık, özet, bölge / ilçe ve kaynak URL zorunludur.",
+      badUrl: "Kaynak URL http veya https ile başlamalıdır.",
+      badCoords: "Koordinatlar birlikte girilmeli ve sayı olmalıdır.",
+    },
+    methodology: {
+      label: "Yöntem",
+      title: "Kayıt ve doğrulama ilkeleri",
+      p1: "Cyprus Labor Watch; grevleri, iş cinayetlerini, eylem çağrılarını ve emekle bağlantılı tutuklamaları tek haritada gösterir. Bir nokta bir konum örneğidir; aynı vaka birden çok konuma sahip olabilir.",
+      p2: "Grevler için karar alındı, sürüyor, sona erdi ve ertelendi / yasaklandı durumları ayrıdır. Eylem çağrıları grevlerden ayrı tutulur ve etkinlik tarihi geçince gerçekleşti olarak işaretlenir.",
+      p3: "Kaynaklar güven gücüne göre sıralanır: resmi/kamusal kurumlar, sendikalar, yerleşik haber kuruluşları ve yalnızca teyit gerektiren ipucu olarak sosyal medya.",
+    },
+    sources: { label: "Kaynaklar", title: "Başlangıç kaynak havuzu" },
   },
 };
 
 const state = {
-  lang: "tr",
+  map: null,
+  sb: null,
   records: [],
   filtered: [],
   markers: new Map(),
-  selectedRecordId: null,
-  listOpen: false,
-  map: null,
-  sb: null,
   layerFilters: new Set(DEFAULT_LAYERS),
   actionFilters: new Set(ACTION_TYPES),
-  search: "",
   dateRange: "last_6_months",
   province: "",
   sector: "",
+  search: "",
+  selectedRecordId: null,
+  lang: "en",
+  listOpen: false,
 };
 
 document.addEventListener("DOMContentLoaded", init);
@@ -492,19 +555,17 @@ async function loadRecords() {
       state.records = data.map(normalizeSupabaseRecord).filter(hasPublicSource);
       return;
     }
-    showLoadNotice(`Supabase okunamadı, statik veri kullanılıyor: ${error?.message || "bilinmeyen hata"}`);
+    showLoadNotice(`Supabase could not be read; using static data: ${error?.message || "unknown error"}`);
   }
 
   try {
-    const [incidentPayloads, mesemSchools] = await Promise.all([
-      Promise.all(CONFIG.incidentPaths.map(fetchJson)),
-      fetchJson(CONFIG.mesemPath),
-    ]);
-    state.records = [...incidentPayloads.flatMap(extractRecords), ...extractRecords(mesemSchools)]
+    const incidentPayloads = await Promise.all(CONFIG.incidentPaths.map(fetchJson));
+    state.records = incidentPayloads
+      .flatMap(extractRecords)
       .map(normalizeRecord)
       .filter(hasPublicSource);
   } catch (error) {
-    showLoadNotice(`Yeni veri dosyaları okunamadı, seed yedeği deneniyor: ${error.message}`);
+    showLoadNotice(`Current data could not be read; trying seed fallback: ${error.message}`);
     const fallback = await fetchJson(CONFIG.fallbackSeedPath);
     state.records = extractRecords(fallback).map(normalizeRecord).filter(hasPublicSource);
   }
@@ -533,13 +594,13 @@ function normalizeSupabaseRecord(row) {
 }
 
 function normalizeRecord(raw) {
-  const provinceFromKey = raw.province_key ? PROVINCE_BY_KEY[raw.province_key]?.name : null;
-  const fallbackProvince = provinceFromKey || raw.province || "";
-  const topLocation = raw.lat || raw.lng || fallbackProvince ? [{
+  const areaFromKey = raw.province_key ? AREA_BY_KEY[raw.province_key]?.name : null;
+  const fallbackArea = areaFromKey || raw.province || "";
+  const topLocation = raw.lat || raw.lng || fallbackArea ? [{
     id: `${raw.id || raw.public_id || raw.title}-loc`,
-    label: raw.location_label || raw.school_name || raw.employer || raw.title,
+    label: raw.location_label || raw.employer || raw.title,
     province_key: raw.province_key,
-    province: fallbackProvince,
+    province: fallbackArea,
     district: raw.district || "",
     lat: raw.lat,
     lng: raw.lng,
@@ -548,18 +609,18 @@ function normalizeRecord(raw) {
   }] : [];
 
   const locations = (raw.locations?.length ? raw.locations : topLocation).map((location, index) => {
-    const provinceKey = location.province_key || raw.province_key || keyForProvince(location.province || fallbackProvince);
-    const province = PROVINCE_BY_KEY[provinceKey]?.name || location.province || fallbackProvince;
-    const center = PROVINCE_BY_KEY[provinceKey] || PROVINCE_BY_NAME[province] || {};
+    const areaKey = location.province_key || raw.province_key || keyForArea(location.province || fallbackArea);
+    const area = AREA_BY_KEY[areaKey]?.name || location.province || fallbackArea;
+    const center = AREA_BY_KEY[areaKey] || AREA_BY_NAME[area] || {};
     return {
       id: location.id || `${raw.id || raw.public_id || "record"}-${index}`,
-      label: location.label || raw.location_label || raw.school_name || raw.employer || raw.title || province,
-      province_key: provinceKey || "",
-      province,
+      label: location.label || raw.location_label || raw.employer || raw.title || area,
+      province_key: areaKey || "",
+      province: area,
       district: cleanTitle(location.district || raw.district || ""),
       lat: finiteNumber(location.lat) ?? finiteNumber(raw.lat) ?? center.lat ?? null,
       lng: finiteNumber(location.lng) ?? finiteNumber(raw.lng) ?? center.lng ?? null,
-      geocode_precision: location.geocode_precision || raw.geocode_precision || (location.lat && location.lng ? "exact" : "province_centroid"),
+      geocode_precision: location.geocode_precision || raw.geocode_precision || (location.lat && location.lng ? "exact" : "area_centroid"),
       fatality_count: finiteNumber(location.fatality_count) ?? null,
       location_basis: location.location_basis || location.location_note || raw.location_basis || "",
     };
@@ -571,13 +632,11 @@ function normalizeRecord(raw) {
     record_type: raw.record_type || raw.category || "strike",
     status: raw.status || raw.stage || "unknown",
     action_type: raw.action_type || null,
-    title: raw.title || raw.school_name || "İsimsiz kayıt",
+    title: raw.title || "Untitled record",
     summary: raw.summary || "",
     worker_name: raw.worker_name || "",
     worker_age: raw.worker_age || raw.age || null,
     person_name: raw.person_name || raw.person || "",
-    school_name: raw.school_name || "",
-    institution_code: raw.institution_code || "",
     employer: raw.employer || "",
     labor_organization: raw.labor_organization || raw.union || "",
     role: raw.role || "",
@@ -591,11 +650,9 @@ function normalizeRecord(raw) {
     event_date: raw.event_date || null,
     death_date: raw.death_date || null,
     detention_date: raw.detention_date || raw.arrest_date || null,
-    known_active_date: raw.known_active_date || raw.active_date || null,
     custody_status: raw.custody_status || raw.detention_status || "",
     accusation: raw.accusation || "",
     legal_status: raw.legal_status || "",
-    linked_incident_count: raw.linked_incident_count ?? null,
     last_verified_at: raw.last_verified_at || raw.updated_at || null,
     locations,
     sources: (raw.sources || []).map((source) => ({
@@ -626,13 +683,8 @@ function hasPublicSource(record) {
 }
 
 function getLayer(record) {
-  if (record.record_type === "worker_death") {
-    return "worker_death_recent";
-  }
-  if (record.record_type === "action_call") {
-    return record.status === "action_call_upcoming" ? "action_call_upcoming" : "action_call_happened";
-  }
-  if (record.record_type === "mesem_school") return "mesem_school";
+  if (record.record_type === "worker_death") return "worker_death_recent";
+  if (record.record_type === "action_call") return record.status === "action_call_upcoming" ? "action_call_upcoming" : "action_call_happened";
   if (record.record_type === "union_labor_arrest") {
     return isCurrentArrestRecord(record) ? "union_arrest_current" : "union_arrest_released";
   }
@@ -645,18 +697,11 @@ function getLayer(record) {
 function isUpcomingActionCall(record) {
   const eventKey = dateKey(record.event_date || record.start_date || record.decision_date);
   if (!eventKey) return record.status === "action_call_upcoming";
-  return eventKey > turkeyTodayKey();
+  return eventKey > cyprusTodayKey();
 }
 
 function isCurrentArrestRecord(record) {
-  const text = arrestStatusText(record);
-  const hasArrestInfo = record.status === "currently_arrested" || /\btutuk\w*|\barrest\w*|\bjail\w*/i.test(text);
-  const hasReleaseInfo = record.status === "released" || /\btahliye\s+(edil\w*|oldu\w*|karar\w*)|\breleased\b/i.test(text);
-  return hasArrestInfo && !hasReleaseInfo;
-}
-
-function arrestStatusText(record) {
-  return normalizeAscii([
+  const text = normalizeAscii([
     record.status,
     record.title,
     record.summary,
@@ -666,18 +711,9 @@ function arrestStatusText(record) {
     ...(record.timeline || []).flatMap((item) => [item.status, item.note]),
     ...(record.sources || []).flatMap((source) => [source.title, source.publisher]),
   ].filter(Boolean).join(" "));
-}
-
-function workerDeathTotal(records = state.records) {
-  const deaths = records.filter((record) => record.record_type === "worker_death" && recordMatchesDateRange(record));
-  return deaths.reduce((total, record) => total + fatalityCount(record), 0);
-}
-
-function fatalityCount(record) {
-  const linkedCount = finiteNumber(record.linked_incident_count);
-  if (linkedCount > 0) return linkedCount;
-  const locationTotal = record.locations.reduce((total, location) => total + (finiteNumber(location.fatality_count) || 0), 0);
-  return locationTotal > 0 ? locationTotal : 1;
+  const hasArrestInfo = record.status === "currently_arrested" || /\barrest\w*|\bjail\w*|\btutuk\w*|\bdetain\w*/i.test(text);
+  const hasReleaseInfo = record.status === "released" || /\breleased\b|\bserbest\b|\btahliye\b/i.test(text);
+  return hasArrestInfo && !hasReleaseInfo;
 }
 
 function populateControls() {
@@ -685,40 +721,38 @@ function populateControls() {
     .map((range) => `<option value="${range}" ${state.dateRange === range ? "selected" : ""}>${escapeHtml(t(`filters.dateRanges.${range}`))}</option>`)
     .join("");
 
-  const provinceOptions = [`<option value="">${t("filters.allProvinces")}</option>`]
-    .concat(PROVINCES.map((province) => `<option value="${escapeHtml(province.name)}">${escapeHtml(province.name)}</option>`));
-  document.getElementById("province-filter").innerHTML = provinceOptions.join("");
-  document.getElementById("submission-province").innerHTML = `<option value=""></option>${PROVINCES.map((province) => `<option value="${escapeHtml(province.name)}">${escapeHtml(province.name)}</option>`).join("")}`;
+  const areaOptions = [`<option value="">${escapeHtml(t("filters.allProvinces"))}</option>`]
+    .concat(AREAS.map((area) => `<option value="${escapeHtml(area.name)}" ${state.province === area.name ? "selected" : ""}>${escapeHtml(area.name)}</option>`));
+  document.getElementById("province-filter").innerHTML = areaOptions.join("");
+  document.getElementById("submission-province").innerHTML = `<option value=""></option>${AREAS.map((area) => `<option value="${escapeHtml(area.name)}">${escapeHtml(area.name)}</option>`).join("")}`;
 
-  const sectors = Array.from(new Set(state.records.map((item) => item.sector).filter(Boolean))).sort((a, b) => a.localeCompare(b, "tr"));
-  document.getElementById("sector-filter").innerHTML = [`<option value="">${t("filters.allSectors")}</option>`]
-    .concat(sectors.map((sector) => `<option value="${escapeHtml(sector)}">${escapeHtml(sector)}</option>`)).join("");
+  const sectors = Array.from(new Set(state.records.map((item) => item.sector).filter(Boolean)))
+    .sort((a, b) => a.localeCompare(b, localeForLang()));
+  document.getElementById("sector-filter").innerHTML = [`<option value="">${escapeHtml(t("filters.allSectors"))}</option>`]
+    .concat(sectors.map((sector) => `<option value="${escapeHtml(sector)}" ${state.sector === sector ? "selected" : ""}>${escapeHtml(sector)}</option>`))
+    .join("");
 
   document.getElementById("submission-record-type").innerHTML = RECORD_TYPES
-    .map((recordType) => `<option value="${recordType}">${t(`recordType.${recordType}`)}</option>`)
+    .map((type) => `<option value="${type}">${escapeHtml(t(`recordType.${type}`))}</option>`)
     .join("");
 
   renderCheckboxGroup("layer-filters", LAYER_ORDER, state.layerFilters, "layer");
   renderCheckboxGroup("action-filters", ACTION_TYPES, state.actionFilters, "actionType");
 }
 
-function renderCheckboxGroup(containerId, values, selectedSet, labelKey) {
-  document.getElementById(containerId).innerHTML = values.map((value) => {
+function renderCheckboxGroup(id, values, selectedSet, labelKey) {
+  document.getElementById(id).innerHTML = values.map((value) => {
     const checked = selectedSet.has(value) ? "checked" : "";
-    const color = labelKey === "layer" ? LAYER_COLORS[value] : "#ffffff";
-    const border = value === "strike_decision" ? "border-color:#575047" : "";
-    return `
-      <label class="check-row">
-        <input type="checkbox" value="${escapeHtml(value)}" data-filter-group="${labelKey}" ${checked}>
-        <span>${escapeHtml(t(`${labelKey}.${value}`))}</span>
-        <i class="check-dot" style="background:${color};${border}"></i>
-      </label>`;
+    return `<label class="check-row">
+      <input type="checkbox" value="${escapeHtml(value)}" data-filter-group="${labelKey}" ${checked}>
+      <span>${escapeHtml(t(`${labelKey}.${value}`))}</span>
+    </label>`;
   }).join("");
 }
 
 function bindStaticEvents() {
   document.getElementById("search-input").addEventListener("input", (event) => {
-    state.search = event.target.value.trim().toLocaleLowerCase("tr");
+    state.search = event.target.value.trim().toLocaleLowerCase(localeForLang());
     applyFilters();
   });
   document.getElementById("date-range-filter").addEventListener("change", (event) => {
@@ -751,80 +785,77 @@ function bindStaticEvents() {
   document.getElementById("mobile-filter-btn").addEventListener("click", openFilters);
   document.getElementById("close-filter-btn").addEventListener("click", closeFilters);
   document.getElementById("drawer-scrim").addEventListener("click", closeFilters);
-  document.getElementById("lang-btn").addEventListener("click", toggleLanguage);
-  document.getElementById("list-records-btn").addEventListener("click", toggleRecordList);
+  document.getElementById("list-records-btn").addEventListener("click", () => {
+    state.listOpen ? closeRecordList() : renderRecordList();
+  });
+  document.getElementById("lang-btn").addEventListener("click", switchLanguage);
   document.getElementById("open-submit-btn").addEventListener("click", () => openModal("submit-modal"));
   document.getElementById("methodology-btn").addEventListener("click", () => openModal("methodology-modal"));
   document.getElementById("sources-btn").addEventListener("click", () => openModal("sources-modal"));
   document.querySelectorAll("[data-close-modal]").forEach((button) => button.addEventListener("click", closeOpenModal));
-  document.querySelectorAll(".modal-backdrop").forEach((backdrop) => {
-    backdrop.addEventListener("click", (event) => {
-      if (event.target === backdrop) closeOpenModal();
+  document.querySelectorAll(".modal-backdrop").forEach((modal) => {
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeOpenModal();
     });
   });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeOpenModal();
+      closeFilters();
+    }
+  });
   document.getElementById("submission-form").addEventListener("submit", submitReport);
+}
+
+function switchLanguage() {
+  const currentIndex = LANG_ORDER.indexOf(state.lang);
+  state.lang = LANG_ORDER[(currentIndex + 1) % LANG_ORDER.length];
+  state.search = document.getElementById("search-input").value.trim().toLocaleLowerCase(localeForLang());
+  populateControls();
+  applyTranslations();
+  applyFilters();
+  if (state.selectedRecordId) renderDetail(getSelectedRecord());
+  if (state.listOpen) renderRecordList();
 }
 
 function openFilters() {
   document.body.classList.add("filters-open");
   document.getElementById("drawer-scrim").hidden = false;
-  setTimeout(() => state.map.invalidateSize(), 200);
+  setTimeout(() => state.map.invalidateSize(), 220);
 }
 
 function closeFilters() {
   document.body.classList.remove("filters-open");
   document.getElementById("drawer-scrim").hidden = true;
-}
-
-function toggleRecordList() {
-  if (state.listOpen) {
-    closeRecordList();
-    return;
-  }
-  state.listOpen = true;
-  state.selectedRecordId = null;
-  document.body.classList.add("detail-open");
-  closeFilters();
-  renderRecordList();
-  renderMarkers();
   setTimeout(() => state.map.invalidateSize(), 220);
 }
 
 function closeRecordList() {
   state.listOpen = false;
   document.getElementById("record-list-panel").hidden = true;
-  document.getElementById("case-detail").hidden = true;
-  document.getElementById("empty-detail").hidden = false;
-  document.body.classList.remove("detail-open");
+  document.getElementById("empty-detail").hidden = Boolean(state.selectedRecordId);
   updateListButton();
 }
 
 function updateListButton() {
   const button = document.getElementById("list-records-btn");
-  if (!button) return;
-  button.textContent = t("nav.listAll");
   button.classList.toggle("active", state.listOpen);
-  button.setAttribute("aria-pressed", state.listOpen ? "true" : "false");
+  button.setAttribute("aria-pressed", String(state.listOpen));
   button.setAttribute("aria-label", `${t("nav.listAll")} - ${formatCount(state.filtered.length)} ${t("list.countLabel")}`);
 }
 
-function toggleLanguage() {
-  state.lang = state.lang === "tr" ? "en" : "tr";
-  document.documentElement.lang = state.lang;
-  document.getElementById("lang-btn").textContent = state.lang === "tr" ? "EN" : "TR";
-  populateControls();
-  applyTranslations();
-  applyFilters();
-  if (state.selectedRecordId) renderDetail(getSelectedRecord());
-}
-
 function applyTranslations() {
+  document.documentElement.lang = state.lang;
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     node.textContent = t(node.dataset.i18n);
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     node.placeholder = t(node.dataset.i18nPlaceholder);
   });
+  const nextLang = LANG_ORDER[(LANG_ORDER.indexOf(state.lang) + 1) % LANG_ORDER.length].toUpperCase();
+  const langButton = document.getElementById("lang-btn");
+  langButton.textContent = nextLang;
+  langButton.setAttribute("aria-label", `Switch language to ${nextLang}`);
 }
 
 function applyFilters() {
@@ -855,10 +886,21 @@ function applyFilters() {
 
 function updateStats() {
   const displayRecords = state.records.filter((record) => displayLocations(record).length && recordMatchesDateRange(record));
-  document.getElementById("stat-total").textContent = displayRecords.length;
+  document.getElementById("stat-total").textContent = formatCount(displayRecords.length);
   document.getElementById("stat-deaths").textContent = formatCount(workerDeathTotal(displayRecords));
-  document.getElementById("stat-strikes").textContent = displayRecords.filter((record) => record.layer === "strike_ongoing").length;
-  document.getElementById("stat-arrests").textContent = displayRecords.filter((record) => record.layer === "union_arrest_current").length;
+  document.getElementById("stat-strikes").textContent = formatCount(displayRecords.filter((record) => record.layer === "strike_ongoing").length);
+  document.getElementById("stat-arrests").textContent = formatCount(displayRecords.filter((record) => record.layer === "union_arrest_current").length);
+}
+
+function workerDeathTotal(records) {
+  return records
+    .filter((record) => record.record_type === "worker_death")
+    .reduce((sum, record) => sum + fatalityCount(record), 0);
+}
+
+function fatalityCount(record) {
+  const locationTotal = record.locations.reduce((sum, location) => sum + (finiteNumber(location.fatality_count) || 0), 0);
+  return locationTotal || finiteNumber(record.fatality_count) || 1;
 }
 
 function renderLegend() {
@@ -873,7 +915,7 @@ function renderMobileChips() {
   document.getElementById("mobile-chipbar").innerHTML = QUICK_LAYERS.map((layer) => {
     const active = state.layerFilters.has(layer) ? "active" : "";
     return `<button class="quick-chip ${active}" type="button" data-quick-layer="${layer}">
-      <span class="quick-dot" style="background:${LAYER_COLORS[layer]}"></span>${escapeHtml(t(`quickLayer.${layer}`))} ${counts[layer]}
+      <span class="quick-dot" style="background:${LAYER_COLORS[layer]}"></span>${escapeHtml(t(`quickLayer.${layer}`))} ${formatCount(counts[layer])}
     </button>`;
   }).join("");
 }
@@ -923,11 +965,7 @@ function locationKey(location) {
 }
 
 function displayLocations(record) {
-  return (record.locations || []).filter(isTurkeyLocation);
-}
-
-function isTurkeyLocation(location) {
-  return Boolean(location.province_key || location.province === "Türkiye");
+  return (record.locations || []).filter((location) => Number.isFinite(location.lat) && Number.isFinite(location.lng));
 }
 
 function recordMatchesDateRange(record) {
@@ -942,11 +980,12 @@ function recordUsesDateRange(record) {
   return record.record_type === "worker_death"
     || record.record_type === "action_call"
     || record.layer === "strike_ended"
-    || record.layer === "strike_postponed";
+    || record.layer === "strike_postponed"
+    || record.layer === "union_arrest_released";
 }
 
 function dateRangeCutoff(range) {
-  const now = turkeyToday();
+  const now = cyprusToday();
   if (range === "last_30_days") {
     now.setDate(now.getDate() - 30);
     return now;
@@ -964,16 +1003,14 @@ function dateRangeCutoff(range) {
 
 function markerOffset(index, total) {
   if (total <= 1) return { x: 0, y: 0 };
-
-  let ringStart = 0;
   let ring = 0;
+  let ringStart = 0;
   let slots = Math.min(total, 8);
   while (index >= ringStart + slots) {
     ringStart += slots;
     ring += 1;
     slots = Math.min(total - ringStart, 8 * (ring + 1));
   }
-
   const slot = index - ringStart;
   const angle = ((Math.PI * 2) / slots) * slot - Math.PI / 2;
   const zoom = state.map?.getZoom?.() || CONFIG.defaultZoom;
@@ -983,18 +1020,6 @@ function markerOffset(index, total) {
     x: Math.cos(angle) * radius,
     y: Math.sin(angle) * radius,
   };
-}
-
-function markerLetter(record, location) {
-  if (record.record_type === "worker_death") {
-    const count = finiteNumber(location?.fatality_count) ?? fatalityCount(record);
-    if (count > 1) return count > 999 ? "999+" : String(count);
-    return "İC";
-  }
-  if (record.record_type === "mesem_school") return "M";
-  if (record.record_type === "action_call") return record.layer === "action_call_upcoming" ? "Ç" : "E";
-  if (record.record_type === "union_labor_arrest") return "T";
-  return "G";
 }
 
 function renderRecordList() {
@@ -1030,9 +1055,10 @@ function renderRecordList() {
 
 function renderRecordListItem(record) {
   const selected = record.id === state.selectedRecordId ? "selected" : "";
+  const border = record.layer === "strike_decision" ? "border-color:#575047" : "";
   return `
     <button class="record-list-item ${selected}" type="button" data-record-list-id="${escapeAttribute(record.id)}">
-      <span class="record-list-dot" style="background:${LAYER_COLORS[record.layer]};${record.layer === "strike_decision" ? "border-color:#575047" : ""}"></span>
+      <span class="record-list-dot" style="background:${LAYER_COLORS[record.layer]};${border}"></span>
       <span class="record-list-copy">
         <strong>${escapeHtml(record.title)}</strong>
         <span>${escapeHtml(recordListMeta(record))}</span>
@@ -1045,7 +1071,7 @@ function sortedFilteredRecords() {
   return [...state.filtered].sort((a, b) => (
     String(recordDateValue(b)).localeCompare(String(recordDateValue(a)))
     || LAYER_ORDER.indexOf(a.layer) - LAYER_ORDER.indexOf(b.layer)
-    || a.title.localeCompare(b.title, state.lang === "tr" ? "tr" : "en")
+    || a.title.localeCompare(b.title, localeForLang())
   ));
 }
 
@@ -1064,7 +1090,6 @@ function recordDateValue(record) {
   if (record.record_type === "worker_death") return record.death_date || record.last_verified_at || "";
   if (record.record_type === "action_call") return record.event_date || record.start_date || record.decision_date || record.last_verified_at || "";
   if (record.record_type === "union_labor_arrest") return record.detention_date || record.last_verified_at || "";
-  if (record.record_type === "mesem_school") return record.known_active_date || record.last_verified_at || "";
   if (record.status === "ended") return record.end_date || record.last_verified_at || record.start_date || record.decision_date || "";
   if (record.status === "postponed_banned") return record.end_date || record.last_verified_at || record.decision_date || record.start_date || "";
   return record.start_date || record.decision_date || record.end_date || record.last_verified_at || "";
@@ -1078,7 +1103,7 @@ function selectRecord(recordId, location) {
   renderDetail(getSelectedRecord());
   renderMarkers();
   updateListButton();
-  if (location) state.map.flyTo([location.lat, location.lng], Math.max(state.map.getZoom(), 8), { duration: 0.45 });
+  if (location) state.map.flyTo([location.lat, location.lng], Math.max(state.map.getZoom(), 10), { duration: 0.45 });
   setTimeout(() => state.map.invalidateSize(), 220);
 }
 
@@ -1145,16 +1170,6 @@ function renderTypeStats(record) {
       detailStat(t("detail.lastVerified"), formatDate(record.last_verified_at)),
     ].join("");
   }
-  if (record.record_type === "mesem_school") {
-    return [
-      detailStat(t("detail.schoolName"), record.school_name || record.title),
-      detailStat(t("detail.institutionCode"), record.institution_code),
-      detailStat(t("detail.sector"), record.sector),
-      detailStat(t("detail.activeDate"), formatDate(record.known_active_date)),
-      detailStat(t("detail.linkedIncidents"), record.linked_incident_count),
-      detailStat(t("detail.lastVerified"), formatDate(record.last_verified_at)),
-    ].join("");
-  }
   if (record.record_type === "action_call") {
     return [
       detailStat(t("detail.union"), record.labor_organization),
@@ -1209,7 +1224,7 @@ function renderLocations(record) {
 
 function renderLocationSubtitle(location) {
   const parts = [location.district, location.province].filter(Boolean);
-  if (location.fatality_count) parts.push(`${formatCount(location.fatality_count)} ${state.lang === "tr" ? "iş cinayeti" : "fatalities"}`);
+  if (location.fatality_count) parts.push(`${formatCount(location.fatality_count)} ${state.lang === "tr" ? "iş cinayeti" : state.lang === "el" ? "θάνατοι" : "fatalities"}`);
   return parts.join(", ");
 }
 
@@ -1252,9 +1267,9 @@ async function submitReport(event) {
       if (error) throw error;
       showSubmissionSuccess(t("submit.successRemote"));
     } else {
-      const pending = JSON.parse(localStorage.getItem("grevtakip_pending_submissions") || "[]");
+      const pending = JSON.parse(localStorage.getItem(CONFIG.localSubmissionKey) || "[]");
       pending.push({ ...payload, local_id: cryptoRandomId(), created_at: new Date().toISOString() });
-      localStorage.setItem("grevtakip_pending_submissions", JSON.stringify(pending));
+      localStorage.setItem(CONFIG.localSubmissionKey, JSON.stringify(pending));
       showSubmissionSuccess(t("submit.successLocal"));
     }
   } catch (error) {
@@ -1263,21 +1278,21 @@ async function submitReport(event) {
 }
 
 function buildSubmissionPayload() {
-  const province = document.getElementById("submission-province").value;
-  const center = PROVINCE_BY_NAME[province] || {};
+  const area = document.getElementById("submission-province").value;
+  const center = AREA_BY_NAME[area] || {};
   const latRaw = document.getElementById("submission-lat").value;
   const lngRaw = document.getElementById("submission-lng").value;
   return {
     record_type: document.getElementById("submission-record-type").value,
     title: document.getElementById("submission-title").value.trim(),
     summary: document.getElementById("submission-summary").value.trim(),
-    province,
-    province_key: keyForProvince(province),
+    province: area,
+    province_key: keyForArea(area),
     location_label: document.getElementById("submission-location").value.trim(),
     event_date: document.getElementById("submission-date").value || null,
     lat: latRaw ? Number(latRaw) : center.lat || null,
     lng: lngRaw ? Number(lngRaw) : center.lng || null,
-    geocode_precision: latRaw && lngRaw ? "exact" : "province_centroid",
+    geocode_precision: latRaw && lngRaw ? "exact" : "area_centroid",
     source_url: document.getElementById("submission-source-url").value.trim(),
     source_title: document.getElementById("submission-source-title").value.trim(),
     submitter_contact: document.getElementById("submission-contact").value.trim(),
@@ -1328,7 +1343,6 @@ function buildSearchBlob(record) {
     record.summary,
     record.worker_name,
     record.person_name,
-    record.school_name,
     record.employer,
     record.labor_organization,
     record.sector,
@@ -1339,7 +1353,7 @@ function buildSearchBlob(record) {
     ...record.locations.flatMap((location) => [location.label, location.province, location.district]),
     ...record.sources.flatMap((source) => [source.title, source.publisher]),
   ];
-  return values.filter(Boolean).join(" ").toLocaleLowerCase("tr");
+  return values.filter(Boolean).join(" ").toLocaleLowerCase(localeForLang());
 }
 
 function stringList(value) {
@@ -1353,20 +1367,20 @@ function finiteNumber(value) {
   return Number.isFinite(number) ? number : null;
 }
 
-function keyForProvince(name) {
+function keyForArea(name) {
   if (!name) return "";
-  const existing = PROVINCE_BY_NAME[name];
+  const existing = AREA_BY_NAME[name];
   if (existing) return existing.key;
   const normalized = normalizeAscii(name);
-  return PROVINCES.find((province) => normalizeAscii(province.name) === normalized || province.key === normalized)?.key || "";
+  return AREAS.find((area) => normalizeAscii(area.name) === normalized || area.key === normalized)?.key || "";
 }
 
 function cleanTitle(value) {
   if (!value) return "";
   return String(value)
-    .toLocaleLowerCase("tr")
+    .toLocaleLowerCase(localeForLang())
     .split(/\s+/)
-    .map((word) => word ? word[0].toLocaleUpperCase("tr") + word.slice(1) : "")
+    .map((word) => word ? word[0].toLocaleUpperCase(localeForLang()) + word.slice(1) : "")
     .join(" ");
 }
 
@@ -1374,8 +1388,6 @@ function normalizeAscii(value) {
   return String(value)
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/İ/g, "I")
-    .replace(/ı/g, "i")
     .toUpperCase();
 }
 
@@ -1395,13 +1407,13 @@ function dateKey(value) {
   return `${year}-${month}-${day}`;
 }
 
-function turkeyToday() {
-  return parseDate(turkeyTodayKey());
+function cyprusToday() {
+  return parseDate(cyprusTodayKey());
 }
 
-function turkeyTodayKey() {
+function cyprusTodayKey() {
   const parts = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Europe/Istanbul",
+    timeZone: CONFIG.timeZone,
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
@@ -1416,13 +1428,19 @@ function formatDate(value) {
   const options = String(value).length === 7
     ? { year: "numeric", month: "short" }
     : { year: "numeric", month: "short", day: "numeric" };
-  return new Intl.DateTimeFormat(state.lang === "tr" ? "tr-TR" : "en", options).format(date);
+  return new Intl.DateTimeFormat(localeForLang(), options).format(date);
 }
 
 function formatCount(value) {
   const number = Number(value);
   if (!Number.isFinite(number)) return "";
-  return new Intl.NumberFormat(state.lang === "tr" ? "tr-TR" : "en").format(number);
+  return new Intl.NumberFormat(localeForLang()).format(number);
+}
+
+function localeForLang() {
+  if (state.lang === "el") return "el-CY";
+  if (state.lang === "tr") return "tr-TR";
+  return "en-GB";
 }
 
 function slugify(value) {

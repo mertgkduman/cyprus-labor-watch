@@ -12,7 +12,6 @@
   --ended: #2f8f4e;
   --call: #1d4ed8;
   --call-happened: #60a5fa;
-  --mesem: #e3b505;
   --arrest: #e76f00;
   --decision: #f7f4ea;
   --shadow: 0 18px 50px rgba(23, 23, 23, 0.18);
@@ -416,7 +415,6 @@ input:focus, select:focus, textarea:focus {
 .case-marker.strike_ended { background: var(--ended); }
 .case-marker.action_call_upcoming { background: var(--call); }
 .case-marker.action_call_happened { background: var(--call-happened); }
-.case-marker.mesem_school { background: var(--mesem); }
 .case-marker.union_arrest_current { background: var(--arrest); }
 .case-marker.strike_decision {
   background: var(--decision);
