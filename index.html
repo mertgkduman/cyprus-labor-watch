@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cyprus Labor Watch</title>
-  <meta name="description" content="Open map tracking strikes, workplace deaths, action calls, and labor-related arrests across Cyprus.">
+  <meta name="description" content="Kıbrıs genelinde grevleri, iş cinayetlerini, eylem çağrılarını ve emekle bağlantılı tutuklamaları izleyen açık harita.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111111'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial' font-size='24' font-weight='700' fill='white'%3ECL%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,81 +18,81 @@
       <span class="brand-mark">CL</span>
       <span>Cyprus <span>Labor Watch</span></span>
     </div>
-    <nav class="nav-actions" aria-label="Main menu">
-      <button class="ghost-btn mobile-filter-btn" id="mobile-filter-btn" type="button" data-i18n="nav.filters">Filter</button>
-      <button class="ghost-btn desktop-nav" id="methodology-btn" type="button" data-i18n="nav.methodology">Method</button>
-      <button class="ghost-btn desktop-nav" id="sources-btn" type="button" data-i18n="nav.sources">Sources</button>
-      <button class="ghost-btn" id="lang-btn" type="button" aria-label="Switch language">EL</button>
-      <button class="primary-btn" id="open-submit-btn" type="button" data-i18n="nav.submit">+ Report</button>
+    <nav class="nav-actions" aria-label="Ana menü">
+      <button class="ghost-btn mobile-filter-btn" id="mobile-filter-btn" type="button" data-i18n="nav.filters">Filtre</button>
+      <button class="ghost-btn desktop-nav" id="methodology-btn" type="button" data-i18n="nav.methodology">Yöntem</button>
+      <button class="ghost-btn desktop-nav" id="sources-btn" type="button" data-i18n="nav.sources">Kaynaklar</button>
+      <button class="ghost-btn" id="lang-btn" type="button" aria-label="Dili değiştir">EN</button>
+      <button class="primary-btn" id="open-submit-btn" type="button" data-i18n="nav.submit">+ Bildir</button>
     </nav>
   </header>
 
   <div class="drawer-scrim" id="drawer-scrim" hidden></div>
 
   <main class="app-shell">
-    <aside class="left-rail" id="filter-panel" aria-label="Filters">
+    <aside class="left-rail" id="filter-panel" aria-label="Filtreler">
       <div class="rail-header">
         <div>
-          <div class="section-label" data-i18n="filters.panel">Filters</div>
-          <strong data-i18n="filters.panelTitle">Narrow records</strong>
+          <div class="section-label" data-i18n="filters.panel">Filtreler</div>
+          <strong data-i18n="filters.panelTitle">Kayıtları daralt</strong>
         </div>
-        <button class="icon-btn mobile-only" id="close-filter-btn" type="button" aria-label="Close filters">×</button>
+        <button class="icon-btn mobile-only" id="close-filter-btn" type="button" aria-label="Filtreleri kapat">×</button>
       </div>
 
       <section class="summary-block">
-        <div class="section-label" data-i18n="stats.label">Overview</div>
+        <div class="section-label" data-i18n="stats.label">Genel görünüm</div>
         <div class="stat-grid">
-          <div class="stat-tile"><strong id="stat-total">0</strong><span data-i18n="stats.total">Total records</span></div>
-          <div class="stat-tile"><strong id="stat-deaths">0</strong><span data-i18n="stats.deaths">Workplace deaths</span></div>
-          <div class="stat-tile"><strong id="stat-strikes">0</strong><span data-i18n="stats.strikes">Ongoing strikes</span></div>
-          <div class="stat-tile"><strong id="stat-arrests">0</strong><span data-i18n="stats.arrests">Jailed labor figures</span></div>
+          <div class="stat-tile"><strong id="stat-total">0</strong><span data-i18n="stats.total">Toplam kayıt</span></div>
+          <div class="stat-tile"><strong id="stat-deaths">0</strong><span data-i18n="stats.deaths">İş cinayeti</span></div>
+          <div class="stat-tile"><strong id="stat-strikes">0</strong><span data-i18n="stats.strikes">Süren grev</span></div>
+          <div class="stat-tile"><strong id="stat-arrests">0</strong><span data-i18n="stats.arrests">Tutuklu emekçi</span></div>
         </div>
       </section>
 
       <section class="filters">
         <label class="search-wrap" for="search-input">
-          <span data-i18n="filters.search">Search</span>
-          <input id="search-input" type="search" autocomplete="off" data-i18n-placeholder="filters.searchPlaceholder" placeholder="Employer, union, locality, sector...">
+          <span data-i18n="filters.search">Ara</span>
+          <input id="search-input" type="search" autocomplete="off" data-i18n-placeholder="filters.searchPlaceholder" placeholder="İşveren, sendika, bölge, sektör...">
         </label>
-        <label for="date-range-filter"><span data-i18n="filters.dateRange">Date range</span><select id="date-range-filter"></select></label>
+        <label for="date-range-filter"><span data-i18n="filters.dateRange">Tarih aralığı</span><select id="date-range-filter"></select></label>
         <div class="field-pair">
-          <label for="province-filter"><span data-i18n="filters.province">District / area</span><select id="province-filter"></select></label>
-          <label for="sector-filter"><span data-i18n="filters.sector">Sector</span><select id="sector-filter"></select></label>
+          <label for="province-filter"><span data-i18n="filters.province">Bölge / ilçe</span><select id="province-filter"></select></label>
+          <label for="sector-filter"><span data-i18n="filters.sector">Sektör</span><select id="sector-filter"></select></label>
         </div>
         <div class="filter-group">
-          <div class="section-label" data-i18n="filters.layers">Layers</div>
+          <div class="section-label" data-i18n="filters.layers">Katmanlar</div>
           <div id="layer-filters" class="check-list"></div>
         </div>
         <div class="filter-group">
-          <div class="section-label" data-i18n="filters.actionType">Strike / action type</div>
+          <div class="section-label" data-i18n="filters.actionType">Grev / eylem türü</div>
           <div id="action-filters" class="check-list"></div>
         </div>
       </section>
     </aside>
 
-    <section class="map-region" aria-label="Map">
-      <div class="mobile-chipbar" id="mobile-chipbar" aria-label="Quick layers"></div>
+    <section class="map-region" aria-label="Harita">
+      <div class="mobile-chipbar" id="mobile-chipbar" aria-label="Hızlı katmanlar"></div>
       <div id="map"></div>
       <div class="map-tools">
         <div class="legend-card" id="legend-card"></div>
-        <div class="result-count"><span id="result-count">0</span> <span data-i18n="map.results">results</span></div>
+        <div class="result-count"><span id="result-count">0</span> <span data-i18n="map.results">sonuç</span></div>
       </div>
     </section>
 
-    <aside class="detail-panel" id="detail-panel" aria-label="Record details">
+    <aside class="detail-panel" id="detail-panel" aria-label="Kayıt ayrıntıları">
       <div class="detail-toolbar">
         <div>
-          <div class="section-label" data-i18n="list.label">Record list</div>
-          <strong data-i18n="list.title">Filtered records</strong>
+          <div class="section-label" data-i18n="list.label">Kayıt listesi</div>
+          <strong data-i18n="list.title">Filtredeki kayıtlar</strong>
         </div>
-        <button class="ghost-btn" id="list-records-btn" type="button" aria-pressed="false" data-i18n="nav.listAll">List</button>
+        <button class="ghost-btn" id="list-records-btn" type="button" aria-pressed="false" data-i18n="nav.listAll">Listele</button>
       </div>
       <div id="empty-detail" class="empty-state">
         <div class="mini-map-icon">CY</div>
-        <h1 data-i18n="empty.title">Select a record on the map</h1>
-        <p data-i18n="empty.text">By default the map shows recent workplace deaths, ongoing strikes, upcoming action calls, and current labor arrests across Cyprus.</p>
+        <h1 data-i18n="empty.title">Haritadan bir kayıt seçin</h1>
+        <p data-i18n="empty.text">Varsayılan harita Kıbrıs genelinde son iş cinayetlerini, süren grevleri, yaklaşan eylem çağrılarını ve güncel emek tutuklamalarını gösterir.</p>
         <div class="source-context">
-          <div class="section-label" data-i18n="empty.context">Context sources</div>
+          <div class="section-label" data-i18n="empty.context">Bağlam kaynakları</div>
           <a href="https://www.gov.cy/mlsi/en/department-of-labour-relations/" target="_blank" rel="noreferrer">Cyprus Department of Labour Relations</a>
           <a href="https://www.gov.cy/mlsi/en/department-of-labour-inspection/" target="_blank" rel="noreferrer">Cyprus Department of Labour Inspection</a>
           <a href="https://peo.org.cy/" target="_blank" rel="noreferrer">Pancyprian Federation of Labour (PEO)</a>
@@ -107,40 +107,40 @@
   <div class="modal-backdrop" id="submit-modal" aria-hidden="true">
     <section class="modal" role="dialog" aria-modal="true" aria-labelledby="submit-title">
       <div class="modal-header">
-        <div><div class="section-label" data-i18n="submit.label">Review queue</div><h2 id="submit-title" data-i18n="submit.title">Report an action or source</h2></div>
-        <button class="icon-btn" type="button" data-close-modal aria-label="Close">×</button>
+        <div><div class="section-label" data-i18n="submit.label">İnceleme kuyruğu</div><h2 id="submit-title" data-i18n="submit.title">Eylem veya kaynak bildir</h2></div>
+        <button class="icon-btn" type="button" data-close-modal aria-label="Kapat">×</button>
       </div>
       <form id="submission-form" class="modal-body" novalidate>
         <div class="field-pair">
-          <label for="submission-record-type"><span data-i18n="submit.recordType">Record type</span><select id="submission-record-type" required></select></label>
-          <label for="submission-province"><span data-i18n="submit.province">District / area</span><select id="submission-province" required></select></label>
+          <label for="submission-record-type"><span data-i18n="submit.recordType">Kayıt türü</span><select id="submission-record-type" required></select></label>
+          <label for="submission-province"><span data-i18n="submit.province">Bölge / ilçe</span><select id="submission-province" required></select></label>
         </div>
-        <label for="submission-title"><span data-i18n="submit.caseTitle">Title</span><input id="submission-title" type="text" required maxlength="140" data-i18n-placeholder="submit.caseTitlePlaceholder" placeholder="E.g. delivery riders strike in Limassol"></label>
-        <label for="submission-summary"><span data-i18n="submit.summary">Short summary</span><textarea id="submission-summary" required maxlength="900" data-i18n-placeholder="submit.summaryPlaceholder" placeholder="What happened, who is involved, what demand or rights violation is at issue?"></textarea></label>
+        <label for="submission-title"><span data-i18n="submit.caseTitle">Başlık</span><input id="submission-title" type="text" required maxlength="140" data-i18n-placeholder="submit.caseTitlePlaceholder" placeholder="Örn. Limasol'da kurye grevi"></label>
+        <label for="submission-summary"><span data-i18n="submit.summary">Kısa özet</span><textarea id="submission-summary" required maxlength="900" data-i18n-placeholder="submit.summaryPlaceholder" placeholder="Ne oldu, kimler dahil, hangi talep veya hak ihlali var?"></textarea></label>
         <div class="field-pair">
-          <label for="submission-location"><span data-i18n="submit.location">Location name</span><input id="submission-location" type="text" data-i18n-placeholder="submit.locationPlaceholder" placeholder="Worksite, union office, courthouse, square..."></label>
-          <label for="submission-date"><span data-i18n="submit.date">Date</span><input id="submission-date" type="date"></label>
+          <label for="submission-location"><span data-i18n="submit.location">Konum adı</span><input id="submission-location" type="text" data-i18n-placeholder="submit.locationPlaceholder" placeholder="İşyeri, sendika ofisi, mahkeme, meydan..."></label>
+          <label for="submission-date"><span data-i18n="submit.date">Tarih</span><input id="submission-date" type="date"></label>
         </div>
         <div class="field-pair">
           <label for="submission-lat"><span>Lat</span><input id="submission-lat" type="number" step="0.000001" placeholder="35.1856"></label>
           <label for="submission-lng"><span>Lng</span><input id="submission-lng" type="number" step="0.000001" placeholder="33.3823"></label>
         </div>
-        <label for="submission-source-url"><span data-i18n="submit.sourceUrl">Source URL</span><input id="submission-source-url" type="url" required placeholder="https://..."></label>
+        <label for="submission-source-url"><span data-i18n="submit.sourceUrl">Kaynak URL</span><input id="submission-source-url" type="url" required placeholder="https://..."></label>
         <div class="field-pair">
-          <label for="submission-source-title"><span data-i18n="submit.sourceTitle">Source title</span><input id="submission-source-title" type="text" maxlength="180"></label>
-          <label for="submission-contact"><span data-i18n="submit.contact">Contact</span><input id="submission-contact" type="email" data-i18n-placeholder="submit.contactPlaceholder" placeholder="Optional email"></label>
+          <label for="submission-source-title"><span data-i18n="submit.sourceTitle">Kaynak başlığı</span><input id="submission-source-title" type="text" maxlength="180"></label>
+          <label for="submission-contact"><span data-i18n="submit.contact">İletişim</span><input id="submission-contact" type="email" data-i18n-placeholder="submit.contactPlaceholder" placeholder="İsteğe bağlı e-posta"></label>
         </div>
-        <p class="form-note" data-i18n="submit.note">Reports are published after editorial review. Social media or witness accounts alone are treated as leads until corroborated.</p>
+        <p class="form-note" data-i18n="submit.note">Bildirimler editör incelemesinden sonra yayımlanır. Sosyal medya veya tanık aktarımı teyit edilene kadar yalnızca ipucu sayılır.</p>
         <div class="form-error" id="submission-error" role="alert"></div>
         <div class="modal-footer">
-          <button class="ghost-btn" type="button" data-close-modal data-i18n="common.cancel">Cancel</button>
-          <button class="primary-btn" type="submit" data-i18n="submit.send">Send for review</button>
+          <button class="ghost-btn" type="button" data-close-modal data-i18n="common.cancel">Vazgeç</button>
+          <button class="primary-btn" type="submit" data-i18n="submit.send">İncelemeye gönder</button>
         </div>
       </form>
       <div id="submission-success" class="success-pane" hidden>
-        <h3 data-i18n="submit.successTitle">Report received</h3>
+        <h3 data-i18n="submit.successTitle">Bildirim alındı</h3>
         <p id="submission-success-copy"></p>
-        <button class="primary-btn" type="button" data-close-modal data-i18n="common.close">Close</button>
+        <button class="primary-btn" type="button" data-close-modal data-i18n="common.close">Kapat</button>
       </div>
     </section>
   </div>
@@ -148,13 +148,13 @@
   <div class="modal-backdrop" id="methodology-modal" aria-hidden="true">
     <section class="modal text-modal" role="dialog" aria-modal="true" aria-labelledby="methodology-title">
       <div class="modal-header">
-        <div><div class="section-label" data-i18n="methodology.label">Method</div><h2 id="methodology-title" data-i18n="methodology.title">Recording and verification rules</h2></div>
-        <button class="icon-btn" type="button" data-close-modal aria-label="Close">×</button>
+        <div><div class="section-label" data-i18n="methodology.label">Yöntem</div><h2 id="methodology-title" data-i18n="methodology.title">Kayıt ve doğrulama ilkeleri</h2></div>
+        <button class="icon-btn" type="button" data-close-modal aria-label="Kapat">×</button>
       </div>
       <div class="modal-body prose">
-        <p data-i18n="methodology.p1">Cyprus Labor Watch maps strikes, workplace deaths, action calls, and labor-related arrests in one tracker. One dot is one mapped location instance; one case can have multiple locations.</p>
-        <p data-i18n="methodology.p2">Strike records distinguish decision taken, ongoing, ended, and postponed / banned. Action calls are separated from strikes and become held after their event date.</p>
-        <p data-i18n="methodology.p3">Sources are prioritized by strength: official/public bodies, unions, established news, and then social media only as a lead requiring corroboration.</p>
+        <p data-i18n="methodology.p1">Cyprus Labor Watch; grevleri, iş cinayetlerini, eylem çağrılarını ve emekle bağlantılı tutuklamaları tek haritada gösterir. Bir nokta bir konum örneğidir; aynı vaka birden çok konuma sahip olabilir.</p>
+        <p data-i18n="methodology.p2">Grevler için karar alındı, sürüyor, sona erdi ve ertelendi / yasaklandı durumları ayrıdır. Eylem çağrıları grevlerden ayrı tutulur ve etkinlik tarihi geçince gerçekleşti olarak işaretlenir.</p>
+        <p data-i18n="methodology.p3">Kaynaklar güven gücüne göre sıralanır: resmi/kamusal kurumlar, sendikalar, yerleşik haber kuruluşları ve yalnızca teyit gerektiren ipucu olarak sosyal medya.</p>
       </div>
     </section>
   </div>
@@ -162,8 +162,8 @@
   <div class="modal-backdrop" id="sources-modal" aria-hidden="true">
     <section class="modal text-modal" role="dialog" aria-modal="true" aria-labelledby="sources-title">
       <div class="modal-header">
-        <div><div class="section-label" data-i18n="sources.label">Sources</div><h2 id="sources-title" data-i18n="sources.title">Initial source pool</h2></div>
-        <button class="icon-btn" type="button" data-close-modal aria-label="Close">×</button>
+        <div><div class="section-label" data-i18n="sources.label">Kaynaklar</div><h2 id="sources-title" data-i18n="sources.title">Başlangıç kaynak havuzu</h2></div>
+        <button class="icon-btn" type="button" data-close-modal aria-label="Kapat">×</button>
       </div>
       <div class="modal-body source-list">
         <a href="https://www.gov.cy/mlsi/en/department-of-labour-relations/" target="_blank" rel="noreferrer">Cyprus Department of Labour Relations</a>

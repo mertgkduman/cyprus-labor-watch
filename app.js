@@ -11,17 +11,17 @@ const CONFIG = {
 };
 
 const AREAS = [
-  { key: "NICOSIA", name: "Nicosia / Lefkosia", lat: 35.1856, lng: 33.3823 },
-  { key: "LIMASSOL", name: "Limassol / Lemesos", lat: 34.7071, lng: 33.0226 },
-  { key: "LARNACA", name: "Larnaca / Larnaka", lat: 34.9229, lng: 33.6233 },
-  { key: "PAPHOS", name: "Paphos / Pafos", lat: 34.772, lng: 32.4297 },
-  { key: "FAMAGUSTA", name: "Famagusta / Ammochostos", lat: 35.125, lng: 33.95 },
-  { key: "KYRENIA", name: "Kyrenia / Keryneia", lat: 35.3403, lng: 33.3192 },
-  { key: "MORPHOU", name: "Morphou / Guzelyurt", lat: 35.198, lng: 32.991 },
-  { key: "DHEKELIA", name: "Dhekelia area", lat: 35.05, lng: 33.74 },
-  { key: "AKROTIRI", name: "Akrotiri area", lat: 34.604, lng: 32.956 },
-  { key: "BUFFER_ZONE", name: "Buffer zone", lat: 35.175, lng: 33.365 },
-  { key: "ISLAND_WIDE", name: "Island-wide", lat: 35.1264, lng: 33.4299 },
+  { key: "NICOSIA", name: "Nicosia / Lefkosia", tr: "Lefkoşa / Nicosia", el: "Λευκωσία / Lefkoşa", lat: 35.1856, lng: 33.3823 },
+  { key: "LIMASSOL", name: "Limassol / Lemesos", tr: "Limasol / Limassol", el: "Λεμεσός / Limassol", lat: 34.7071, lng: 33.0226 },
+  { key: "LARNACA", name: "Larnaca / Larnaka", tr: "Larnaka / Larnaca", el: "Λάρνακα / Larnaca", lat: 34.9229, lng: 33.6233 },
+  { key: "PAPHOS", name: "Paphos / Pafos", tr: "Baf / Paphos", el: "Πάφος / Paphos", lat: 34.772, lng: 32.4297 },
+  { key: "FAMAGUSTA", name: "Famagusta / Ammochostos", tr: "Gazimağusa / Famagusta", el: "Αμμόχωστος / Famagusta", lat: 35.125, lng: 33.95 },
+  { key: "KYRENIA", name: "Kyrenia / Keryneia", tr: "Girne / Kyrenia", el: "Κερύνεια / Kyrenia", lat: 35.3403, lng: 33.3192 },
+  { key: "MORPHOU", name: "Morphou / Guzelyurt", tr: "Güzelyurt / Morphou", el: "Μόρφου / Güzelyurt", lat: 35.198, lng: 32.991 },
+  { key: "DHEKELIA", name: "Dhekelia area", tr: "Dikelya bölgesi", el: "Περιοχή Δεκέλειας", lat: 35.05, lng: 33.74 },
+  { key: "AKROTIRI", name: "Akrotiri area", tr: "Akrotiri bölgesi", el: "Περιοχή Ακρωτηρίου", lat: 34.604, lng: 32.956 },
+  { key: "BUFFER_ZONE", name: "Buffer zone", tr: "Ara bölge", el: "Νεκρή ζώνη", lat: 35.175, lng: 33.365 },
+  { key: "ISLAND_WIDE", name: "Island-wide", tr: "Ada geneli", el: "Παγκύπρια", lat: 35.1264, lng: 33.4299 },
 ];
 
 const AREA_BY_KEY = Object.fromEntries(AREAS.map((item) => [item.key, item]));
@@ -277,7 +277,7 @@ const COPY = {
     },
     actionType: {
       legal_strike: "Νόμιμη απεργία",
-      fiili_wildcat: "Άτυπη / αυθόρμητη",
+      fiili_wildcat: "Άτυπη / αυθόρμητη απεργία",
       protest: "Διαμαρτυρία",
       bargaining_dispute: "Συλλογική διαφορά",
       solidarity_action: "Δράση αλληλεγγύης",
@@ -424,7 +424,7 @@ const COPY = {
     },
     actionType: {
       legal_strike: "Yasal grev",
-      fiili_wildcat: "Fiili / wildcat",
+      fiili_wildcat: "Fiili / kendiliğinden grev",
       protest: "Protesto",
       bargaining_dispute: "Toplu pazarlık uyuşmazlığı",
       solidarity_action: "Dayanışma eylemi",
@@ -501,6 +501,497 @@ const COPY = {
   },
 };
 
+const RECORD_TRANSLATIONS = {
+  "eac-workers-24h-strike-april-2026": {
+    tr: {
+      title: "Kıbrıs Elektrik Kurumu çalışanlarının ada genelinde 24 saatlik grevi",
+      summary: "Kıbrıs Elektrik Kurumu çalışanları 23 Nisan 2026'da ada genelinde 24 saatlik greve çıktı. Müşteri hizmetleri merkezleri ve ofisler kapatılırken, elektrik arzının kesintiye uğramaması için güvenlik personeli görevde bırakıldı.",
+      demands: ["Enerji politikalarına ilişkin kaygılar", "Elektrik maliyeti ve arz yeterliliği", "Bekleyen çalışma sorunları", "Kamusal elektrik hizmeti kapasitesinin korunması"],
+      locations: {
+        "eac-strike-island-wide": {
+          label: "Ada geneli EAC grevi",
+          location_basis: "Ada genelindeki grev; merkez noktası yalnızca harita yerleşimi için kullanıldı.",
+        },
+      },
+      timeline: [
+        "Sendikalar 24 saatlik greve yükseltme kararını duyurdu.",
+        "24 saatlik iş bırakma gece yarısından gece yarısına kadar sürdü.",
+      ],
+    },
+    el: {
+      title: "24ωρη παγκύπρια απεργία εργαζομένων στην ΑΗΚ",
+      summary: "Οι εργαζόμενοι στην Αρχή Ηλεκτρισμού Κύπρου πραγματοποίησαν 24ωρη παγκύπρια απεργία στις 23 Απριλίου 2026. Τα κέντρα εξυπηρέτησης και τα γραφεία έκλεισαν, ενώ προσωπικό ασφαλείας παρέμεινε σε υπηρεσία για να μη διαταραχθεί η παροχή ηλεκτρικού ρεύματος.",
+      demands: ["Ανησυχίες για την ενεργειακή πολιτική", "Κόστος ηλεκτρικής ενέργειας και επάρκεια εφοδιασμού", "Εκκρεμή εργασιακά ζητήματα", "Προστασία της δημόσιας δυναμικότητας ηλεκτρισμού"],
+      locations: {
+        "eac-strike-island-wide": {
+          label: "Παγκύπρια απεργία στην ΑΗΚ",
+          location_basis: "Παγκύπρια απεργία. Το κεντρικό σημείο χρησιμοποιείται μόνο για τοποθέτηση στον χάρτη.",
+        },
+      },
+      timeline: [
+        "Οι συντεχνίες ανακοίνωσαν την απόφαση για κλιμάκωση σε 24ωρη απεργία.",
+        "Η 24ωρη στάση εργασίας διήρκεσε από τα μεσάνυχτα έως τα μεσάνυχτα.",
+      ],
+    },
+  },
+  "eac-workers-warning-strike-february-2026": {
+    tr: {
+      title: "EAC çalışanlarının iki saatlik uyarı grevi",
+      summary: "Kıbrıs Elektrik Kurumu çalışanları 27 Şubat 2026'da hükümetin enerji politikası, Cyta'nın enerji piyasasına planlanan girişi ve kurumda çözülmemiş çalışma sorunları nedeniyle iki saatlik uyarı grevi yaptı.",
+      demands: ["EAC'yi etkileyen enerji piyasası düzenlemesinin geri çekilmesi", "Bekleyen çalışma sorunlarının çözülmesi", "Dikelya santralinin yükseltilmesi"],
+      locations: {
+        "eac-warning-nicosia": {
+          label: "EAC ofisleri ve müşteri hizmetleri merkezleri",
+          location_basis: "Grev Kıbrıs genelindeki EAC ofislerini etkiledi; merkez noktası yalnızca harita yerleşimi için kullanıldı.",
+        },
+      },
+      timeline: ["İki saatlik grev sabah saatlerinde yapıldı."],
+    },
+    el: {
+      title: "Δίωρη προειδοποιητική απεργία εργαζομένων στην ΑΗΚ",
+      summary: "Οι εργαζόμενοι στην Αρχή Ηλεκτρισμού Κύπρου πραγματοποίησαν δίωρη προειδοποιητική απεργία στις 27 Φεβρουαρίου 2026 για την κυβερνητική ενεργειακή πολιτική, την προγραμματισμένη είσοδο της Cyta στην αγορά ενέργειας και εκκρεμή εργασιακά ζητήματα στην ΑΗΚ.",
+      demands: ["Απόσυρση νομοθεσίας για την αγορά ενέργειας που επηρεάζει την ΑΗΚ", "Επίλυση εκκρεμών εργασιακών ζητημάτων", "Αναβάθμιση του σταθμού Δεκέλειας"],
+      locations: {
+        "eac-warning-nicosia": {
+          label: "Γραφεία και κέντρα εξυπηρέτησης της ΑΗΚ",
+          location_basis: "Η απεργία επηρέασε γραφεία της ΑΗΚ σε όλη την Κύπρο. Το κεντρικό σημείο χρησιμοποιείται μόνο για τοποθέτηση στον χάρτη.",
+        },
+      },
+      timeline: ["Η δίωρη απεργία πραγματοποιήθηκε το πρωί."],
+    },
+  },
+  "wolt-delivery-riders-limassol-strike-2026": {
+    tr: {
+      title: "Wolt kuryelerinin Limasol grevi",
+      summary: "Limasol'daki Wolt kuryeleri düşen ücretler ve güvenlik sorunları nedeniyle iş bırakma eylemi başlattı. Kuryeler eylemi hem grev hem protesto olarak tanımladı ve sorunları çözülmezse başka kentlere yayılabileceğini söyledi.",
+      demands: ["Daha adil ücret oranları", "Saldırı ve tacize karşı koruma", "Kurye temsilcileriyle diyalog", "Greve katılım hakkına saygı"],
+      locations: {
+        "wolt-limassol": {
+          label: "Limasol kurye eylemi",
+          location_basis: "Kent ölçeğinde eylem; kesin toplanma noktaları belirlenene kadar merkez noktası kullanıldı.",
+        },
+      },
+      timeline: [
+        "Kuryeler Limasol'da iş bırakma eylemi başlattı.",
+        "Cyprus Mail, grevdeki kuryelere bir Wolt işe alım sorumlusu tarafından tehditler yöneltildiğini bildirdi.",
+      ],
+    },
+    el: {
+      title: "Απεργία διανομέων της Wolt στη Λεμεσό",
+      summary: "Διανομείς της Wolt στη Λεμεσό ξεκίνησαν εργατική κινητοποίηση για τη μείωση των αμοιβών και ζητήματα ασφάλειας. Οι διανομείς περιέγραψαν τη δράση ως απεργία και διαμαρτυρία, με πιθανότητα επέκτασης σε άλλες πόλεις αν δεν αντιμετωπιστούν οι ανησυχίες τους.",
+      demands: ["Δικαιότερες αμοιβές", "Προστασία από επιθέσεις και παρενόχληση", "Διάλογος με εκπροσώπους των διανομέων", "Σεβασμός στη συμμετοχή στην απεργία"],
+      locations: {
+        "wolt-limassol": {
+          label: "Κινητοποίηση διανομέων στη Λεμεσό",
+          location_basis: "Κινητοποίηση σε επίπεδο πόλης. Χρησιμοποιείται κεντρικό σημείο μέχρι να δημοσιευθούν ακριβή σημεία συγκέντρωσης.",
+        },
+      },
+      timeline: [
+        "Οι διανομείς ξεκίνησαν εργατική κινητοποίηση στη Λεμεσό.",
+        "Η Cyprus Mail ανέφερε απειλές προς απεργούς διανομείς από υπεύθυνο προσλήψεων της Wolt.",
+      ],
+    },
+  },
+  "education-support-programmes-strike-march-2026": {
+    tr: {
+      title: "Eğitim destek programı çalışanlarının 24 saatlik grevi",
+      summary: "Eğitim Bakanlığı destek programlarında çalışanlar 26 Mart 2026 için 24 saatlik grev ve Cumhurbaşkanlığı Sarayı önünde protesto duyurdu. PASEY-PEO ve OEKDY-SEK, çalışanların işçi haklarını ve mahkeme kararlarını yok sayan ertelemeleri ve önerileri reddettiğini belirtti.",
+      demands: ["İş güvencesi", "Mahkeme kararlarına saygı", "Hizmet alımı istihdam rejiminin kaldırılması", "İşçi haklarının tanınması"],
+      locations: {
+        "presidential-palace-education-support": { label: "Cumhurbaşkanlığı Sarayı protesto güzergahı" },
+      },
+      timeline: [
+        "Sendikalar 24 saatlik grev kararını duyurdu.",
+        "Grev ve Cumhurbaşkanlığı Sarayı protestosunun tarihi.",
+      ],
+    },
+    el: {
+      title: "24ωρη απεργία εργαζομένων σε υποστηρικτικά προγράμματα εκπαίδευσης",
+      summary: "Εργαζόμενοι σε υποστηρικτικά προγράμματα του Υπουργείου Παιδείας ανακοίνωσαν 24ωρη απεργία για τις 26 Μαρτίου 2026 και διαμαρτυρία έξω από το Προεδρικό. Η ΠΑΣΕΥ-ΠΕΟ και η ΟΕΚΔΥ-ΣΕΚ δήλωσαν ότι οι εργαζόμενοι απορρίπτουν καθυστερήσεις και προτάσεις που αγνοούν εργασιακά δικαιώματα και δικαστικές αποφάσεις.",
+      demands: ["Εργασιακή ασφάλεια", "Σεβασμός στις δικαστικές αποφάσεις", "Κατάργηση του καθεστώτος αγοράς υπηρεσιών", "Αναγνώριση εργασιακών δικαιωμάτων"],
+      locations: {
+        "presidential-palace-education-support": { label: "Διαδρομή διαμαρτυρίας προς το Προεδρικό" },
+      },
+      timeline: [
+        "Οι συντεχνίες ανακοίνωσαν την απόφαση για 24ωρη απεργία.",
+        "Ημερομηνία απεργίας και διαμαρτυρίας έξω από το Προεδρικό.",
+      ],
+    },
+  },
+  "taxi-drivers-pan-cyprus-strike-january-2026": {
+    tr: {
+      title: "Taksi şoförlerinin 24 saatlik ada geneli grevi",
+      summary: "Kıbrıs genelindeki taksi şoförleri, önceki iş bırakma eyleminin taleplerini çözmemesinin ardından 20 Ocak 2026'da 24 saatlik greve çıktı. Kıbrıs Kentsel Taksi Sendikası, anlaşmazlığın taksi sektöründe yasallık ve kuralların adil uygulanmasıyla ilgili olduğunu açıkladı.",
+      demands: ["Taksi sektöründe yasallığın uygulanması", "Kuralların adil uygulanması", "Yetkililerle diyalog"],
+      locations: {
+        "larnaca-airport-taxi-strike": { label: "Larnaka Havalimanı taksi toplanması" },
+        "taxi-strike-island-wide": {
+          label: "Ada geneli taksi grevi",
+          location_basis: "Ada genelindeki grev; merkez noktası yalnızca harita yerleşimi için kullanıldı.",
+        },
+      },
+      timeline: ["24 saatlik grev sabah 06.00'da başladı."],
+    },
+    el: {
+      title: "24ωρη παγκύπρια απεργία οδηγών ταξί",
+      summary: "Οδηγοί ταξί σε όλη την Κύπρο ξεκίνησαν 24ωρη απεργία στις 20 Ιανουαρίου 2026, αφού προηγούμενη στάση εργασίας δεν οδήγησε σε λύση των αιτημάτων τους. Η Παγκύπρια Ομοσπονδία Αστικών Ταξί ανέφερε ότι η διαφορά αφορά τη νομιμότητα και τη δίκαιη εφαρμογή των κανόνων στον κλάδο.",
+      demands: ["Εφαρμογή της νομιμότητας στον κλάδο των ταξί", "Δίκαιη εφαρμογή των κανόνων", "Διάλογος με τις αρχές"],
+      locations: {
+        "larnaca-airport-taxi-strike": { label: "Συγκέντρωση ταξί στο αεροδρόμιο Λάρνακας" },
+        "taxi-strike-island-wide": {
+          label: "Παγκύπρια απεργία ταξί",
+          location_basis: "Παγκύπρια απεργία. Το κεντρικό σημείο χρησιμοποιείται μόνο για τοποθέτηση στον χάρτη.",
+        },
+      },
+      timeline: ["Η 24ωρη απεργία άρχισε στις 6 π.μ."],
+    },
+  },
+  "cola-general-strike-september-2025": {
+    tr: {
+      title: "CoLA için üç saatlik ülke geneli genel grev",
+      summary: "Kıbrıs genelindeki çalışanlar 11 Eylül 2025'te Hayat Pahalılığı Ödeneği'nin tam uygulanması, korunması ve tüm çalışanları kapsaması talebiyle üç saatlik genel grev yaptı.",
+      demands: ["CoLA'nın tam olarak geri getirilmesi", "CoLA'nın tüm çalışanları kapsaması", "Satın alma gücünün korunması", "Toplu sözleşmelere saygı"],
+      locations: {
+        "cola-finance-ministry-nicosia": { label: "Maliye Bakanlığı merkezi mitingi" },
+        "cola-strike-island-wide": {
+          label: "CoLA için ada geneli grev",
+          location_basis: "Ülke çapında iş bırakma; merkez noktası yalnızca harita yerleşimi için kullanıldı.",
+        },
+      },
+      timeline: [
+        "Sendikalar, CoLA görüşmeleri sonuçsuz kalınca grev çağrısı yaptı.",
+        "Üç saatlik iş bırakma 11.00 ile 14.00 arasında gerçekleşti.",
+      ],
+    },
+    el: {
+      title: "Τρίωρη παγκύπρια γενική απεργία για την ΑΤΑ",
+      summary: "Εργαζόμενοι σε όλη την Κύπρο πραγματοποίησαν τρίωρη γενική απεργία στις 11 Σεπτεμβρίου 2025, απαιτώντας πλήρη εφαρμογή και προστασία της Αυτόματης Τιμαριθμικής Αναπροσαρμογής και επέκταση της κάλυψης της ΑΤΑ σε όλους τους εργαζόμενους.",
+      demands: ["Πλήρης αποκατάσταση της ΑΤΑ", "Κάλυψη όλων των εργαζομένων από την ΑΤΑ", "Προστασία της αγοραστικής δύναμης", "Σεβασμός στις συλλογικές συμβάσεις"],
+      locations: {
+        "cola-finance-ministry-nicosia": { label: "Κεντρική συγκέντρωση στο Υπουργείο Οικονομικών" },
+        "cola-strike-island-wide": {
+          label: "Παγκύπρια απεργία για την ΑΤΑ",
+          location_basis: "Παγκύπρια στάση εργασίας. Το κεντρικό σημείο χρησιμοποιείται μόνο για τοποθέτηση στον χάρτη.",
+        },
+      },
+      timeline: [
+        "Οι συντεχνίες κάλεσαν απεργία μετά την αποτυχία των συνομιλιών για την ΑΤΑ.",
+        "Η τρίωρη στάση εργασίας πραγματοποιήθηκε από τις 11:00 έως τις 14:00.",
+      ],
+    },
+  },
+  "turkish-cypriot-cola-strikes-april-2026": {
+    tr: {
+      title: "Kıbrıslı Türk kamu çalışanlarının CoLA grevleri",
+      summary: "Kıbrıslı Türk kamu sektörü sendikaları Nisan 2026'da hayat pahalılığı ödeneği ödemelerini etkileyen düzenlemelere karşı Kuzey Lefkoşa'da grevler ve protestolar yaptı. Eylemler meclis binası çevresinde yoğunlaştı ve birkaç gün sürdü.",
+      demands: ["Hayat pahalılığı kararnamesi ve yasa tasarısının geri çekilmesi", "Hayat pahalılığı ödeneğinin korunması", "Hükümetin istifası / siyasi hesap verebilirlik"],
+      locations: {
+        "north-nicosia-assembly-cola": { label: "Meclis binası protesto alanı" },
+      },
+      timeline: [
+        "Genel grev ve protesto meclis binası çevresinde yükseldi.",
+        "Gösteriler sürdü ve çatışmalar bildirildi.",
+        "Yeni grev eylemleri ve mobilizasyonun süreceğine dair uyarılar bildirildi.",
+      ],
+    },
+    el: {
+      title: "Απεργίες Τουρκοκύπριων δημόσιων υπαλλήλων για την ΑΤΑ",
+      summary: "Τουρκοκυπριακές συντεχνίες του δημόσιου τομέα πραγματοποίησαν απεργίες και διαμαρτυρίες στη βόρεια Λευκωσία τον Απρίλιο του 2026 για μέτρα που επηρέαζαν τις πληρωμές του τιμαριθμικού επιδόματος. Οι κινητοποιήσεις επικεντρώθηκαν γύρω από το κτήριο της συνέλευσης και συνεχίστηκαν για αρκετές ημέρες.",
+      demands: ["Απόσυρση διατάγματος και νομοσχεδίου για την ΑΤΑ", "Προστασία του τιμαριθμικού επιδόματος", "Παραίτηση κυβέρνησης / πολιτική λογοδοσία"],
+      locations: {
+        "north-nicosia-assembly-cola": { label: "Χώρος διαμαρτυρίας κοντά στη συνέλευση" },
+      },
+      timeline: [
+        "Η γενική απεργία και η διαμαρτυρία κλιμακώθηκαν γύρω από το κτήριο της συνέλευσης.",
+        "Οι διαδηλώσεις συνεχίστηκαν και αναφέρθηκαν συγκρούσεις.",
+        "Αναφέρθηκαν νέες απεργιακές δράσεις και προειδοποιήσεις για συνέχιση της κινητοποίησης.",
+      ],
+    },
+  },
+  "ahmet-tugcu-arrest-release-april-2026": {
+    tr: {
+      title: "El-Sen Başkanı Ahmet Tuğcu CoLA protestolarında gözaltına alındı",
+      summary: "El-Sen Başkanı Ahmet Tuğcu 7 Nisan 2026'da Kıbrıslı Türk meclisi önündeki protestolar sırasında gözaltına alındı ve aynı akşam serbest bırakıldı. Haberlerde suçlamaların serbest bırakıldıktan sonra okunduğu ve Tuğcu'nun suçlamaları reddettiği belirtildi.",
+      role: "Başkan",
+      custody_status: "7 Nisan 2026'da serbest bırakıldı",
+      accusation: "Ajans Cyprus tarafından aktarılan savunma açıklamalarına göre isyan, polisi engelleme ve kasten zarar verme",
+      legal_status: "Serbest bırakıldı; suçlamaları reddetti",
+      locations: {
+        "ahmet-tugcu-north-nicosia-assembly": { label: "Meclis protesto alanı" },
+      },
+      timeline: [
+        "Sigmalive, Tuğcu'nun olaylar sırasında tutuklandığını bildirdi.",
+        "Ajans Cyprus, Tuğcu'nun saat 20.30 civarında serbest bırakıldığını bildirdi.",
+      ],
+    },
+    el: {
+      title: "Ο πρόεδρος της El-Sen Αχμέτ Τουγτζού κρατήθηκε στις διαμαρτυρίες για την ΑΤΑ",
+      summary: "Ο πρόεδρος της El-Sen, Αχμέτ Τουγτζού, κρατήθηκε στις 7 Απριλίου 2026 κατά τη διάρκεια διαμαρτυριών έξω από την τουρκοκυπριακή συνέλευση και αφέθηκε ελεύθερος αργότερα το ίδιο βράδυ. Δημοσιεύματα ανέφεραν ότι οι κατηγορίες διαβάστηκαν μετά την απελευθέρωσή του και ότι ο Τουγτζού τις απέρριψε.",
+      role: "Πρόεδρος",
+      custody_status: "Αφέθηκε ελεύθερος στις 7 Απριλίου 2026",
+      accusation: "Εξέγερση, παρεμπόδιση αστυνομίας και εσκεμμένη ζημιά σύμφωνα με δηλώσεις υπεράσπισης που μετέδωσε το Ajans Cyprus",
+      legal_status: "Αφέθηκε ελεύθερος. Οι κατηγορίες απορρίφθηκαν από τον ίδιο",
+      locations: {
+        "ahmet-tugcu-north-nicosia-assembly": { label: "Χώρος διαμαρτυρίας στη συνέλευση" },
+      },
+      timeline: [
+        "Το Sigmalive ανέφερε ότι ο Τουγτζού συνελήφθη κατά την αναταραχή.",
+        "Το Ajans Cyprus ανέφερε ότι ο Τουγτζού αφέθηκε ελεύθερος γύρω στις 20:30.",
+      ],
+    },
+  },
+  "lakatiamia-construction-worker-death-february-2026": {
+    tr: {
+      title: "Lakatamia'da inşaat işçisi düşme sonucu hayatını kaybetti",
+      summary: "Üçüncü ülke vatandaşı 43 yaşındaki bir inşaat işçisi, Lakatamia'da yapımı süren bir apartmandan düşerek hayatını kaybetti. PEO, olayın iş güvenliği denetimindeki zayıflıkları gösterdiğini belirterek daha güçlü eğitim ve denetim çağrısı yaptı.",
+      worker_name: "Adı yayımlanmadı",
+      employer: "İnşaat işvereni yayımlanmadı",
+      sector: "İnşaat",
+      cause: "Yapımı süren apartmandan düşme",
+      legal_status: "Polis ve iş güvenliği bağlamı bildirildi; kaynakta belirli dava sonucu yayımlanmadı",
+      locations: {
+        "lakatamia-worker-death": { label: "Lakatamia inşaat sahası" },
+      },
+      timeline: [
+        "İşçi yapımı süren apartmandaki düşme sonrası hayatını kaybetti.",
+        "PEO, ölümü güvenlik denetimindeki zayıflıklarla ilişkilendiren açıklama yaptı.",
+      ],
+    },
+    el: {
+      title: "Εργάτης οικοδομής πέθανε μετά από πτώση στη Λακατάμια",
+      summary: "43χρονος εργάτης οικοδομής, υπήκοος τρίτης χώρας, πέθανε μετά από πτώση από υπό ανέγερση πολυκατοικία στη Λακατάμια. Η ΠΕΟ δήλωσε ότι το περιστατικό δείχνει αδυναμίες στην εποπτεία της ασφάλειας στην εργασία και ζήτησε ισχυρότερη εκπαίδευση και επιθεωρήσεις.",
+      worker_name: "Το όνομα δεν δημοσιεύθηκε",
+      employer: "Ο εργοδότης στην οικοδομή δεν δημοσιεύθηκε",
+      sector: "Οικοδομές",
+      cause: "Πτώση από υπό ανέγερση πολυκατοικία",
+      legal_status: "Αναφέρθηκε αστυνομικό και εργασιακό πλαίσιο ασφάλειας. Συγκεκριμένη έκβαση υπόθεσης δεν δημοσιεύθηκε στην πηγή",
+      locations: {
+        "lakatamia-worker-death": { label: "Εργοτάξιο στη Λακατάμια" },
+      },
+      timeline: [
+        "Ο εργάτης πέθανε μετά από πτώση σε υπό ανέγερση πολυκατοικία.",
+        "Η ΠΕΟ εξέδωσε ανακοίνωση συνδέοντας τον θάνατο με αδυναμίες στην εποπτεία της ασφάλειας.",
+      ],
+    },
+  },
+  "kofinou-finis-alexandru-worker-death-january-2026": {
+    tr: {
+      title: "Finis Alexandru Kofinou'da karşı ağırlık boşaltılırken hayatını kaybetti",
+      summary: "Kıbrıs Elektrik Kurumu için direk montajı yapan özel bir şirkette çalışan 55 yaşındaki Romanyalı işçi Finis Alexandru, Kofinou yakınlarında boşaltma sırasında ağır beton karşı ağırlığın çarpması sonucu hayatını kaybetti.",
+      employer: "EAC için çalışan özel direk montaj taşeronu",
+      sector: "Kamu hizmetleri / inşaat",
+      cause: "Boşaltma sırasında kamyon devrildi ve beton karşı ağırlık işçiye çarptı",
+      legal_status: "Polis ve Çalışma Teftiş Dairesi soruşturması; kaynağa göre kamyon şoförü mahkeme emriyle tutuklandı",
+      locations: {
+        "kofinou-counterweight-death": { label: "Kofinou çalışma sahası" },
+      },
+      timeline: [
+        "Ölümcül boşaltma kazası öğleden sonra meydana geldi.",
+        "KNEWS polis ve çalışma müfettişlerinin soruşturmasını bildirdi.",
+      ],
+    },
+    el: {
+      title: "Ο Φίνις Αλεξάντρου σκοτώθηκε κατά την εκφόρτωση αντίβαρου στην Κοφίνου",
+      summary: "Ο Φίνις Αλεξάντρου, 55χρονος Ρουμάνος εργάτης σε ιδιωτική εταιρεία που συναρμολογούσε πυλώνες για την Αρχή Ηλεκτρισμού Κύπρου, χτυπήθηκε θανάσιμα από βαρύ τσιμεντένιο αντίβαρο κατά την εκφόρτωση κοντά στην Κοφίνου.",
+      employer: "Ιδιωτικός εργολάβος συναρμολόγησης πυλώνων για την ΑΗΚ",
+      sector: "Υπηρεσίες κοινής ωφελείας / οικοδομές",
+      cause: "Φορτηγό ανατράπηκε κατά την εκφόρτωση και τσιμεντένιο αντίβαρο χτύπησε τον εργάτη",
+      legal_status: "Έρευνα αστυνομίας και Τμήματος Επιθεώρησης Εργασίας. Σύμφωνα με την πηγή, ο οδηγός φορτηγού συνελήφθη με ένταλμα",
+      locations: {
+        "kofinou-counterweight-death": { label: "Χώρος εργασίας στην Κοφίνου" },
+      },
+      timeline: [
+        "Το θανατηφόρο ατύχημα κατά την εκφόρτωση έγινε το απόγευμα.",
+        "Το KNEWS ανέφερε έρευνες της αστυνομίας και των επιθεωρητών εργασίας.",
+      ],
+    },
+  },
+  "peyia-aldahdouh-housain-worker-death-may-2025": {
+    tr: {
+      title: "Aldahdouh Housain Peyia'da düşen kerestelerin altında kalarak öldü",
+      summary: "34 yaşındaki Suriyeli inşaat işçisi Aldahdouh Housain, Peyia'da forklift üzerindeki kereste yükünün düşmesi sonucu hayatını kaybetti. Cyprus Mail'e göre polis, forklift sürücüsünü ve proje müteahhidini sorgulamak üzere gözaltına aldı.",
+      employer: "Kaynakta adı verilmeyen inşaat proje müteahhidi",
+      sector: "İnşaat",
+      cause: "Sabitleme kayışının kopması sonrası kereste yükünün altında kalma",
+      legal_status: "Polis soruşturması; kaynağa göre forklift sürücüsü ve proje müteahhidi sorgulanmak üzere tutuldu",
+      locations: {
+        "peyia-st-george-worker-death": { label: "St George Kilisesi yakınındaki park alanı" },
+      },
+      timeline: [
+        "İşçi yaralandı ve daha sonra Baf Genel Hastanesi'nde hayatını kaybetti.",
+        "Cyprus Mail polis soruşturmasını bildirdi.",
+      ],
+    },
+    el: {
+      title: "Ο Αλνταχτούχ Χουσεΐν σκοτώθηκε από πτώση ξυλείας στην Πέγεια",
+      summary: "Ο Αλνταχτούχ Χουσεΐν, 34χρονος Σύρος εργάτης οικοδομής, πέθανε όταν φορτίο ξυλείας έπεσε από περονοφόρο στην Πέγεια. Σύμφωνα με την Cyprus Mail, η αστυνομία συνέλαβε για ανάκριση τον οδηγό του περονοφόρου και τον εργολάβο του έργου.",
+      employer: "Εργολάβος κατασκευαστικού έργου που δεν κατονομάστηκε στην πηγή",
+      sector: "Οικοδομές",
+      cause: "Καταπλακώθηκε από φορτίο ξυλείας μετά το σπάσιμο ιμάντα πρόσδεσης",
+      legal_status: "Αστυνομική έρευνα. Σύμφωνα με την πηγή, ο οδηγός του περονοφόρου και ο εργολάβος κρατήθηκαν για ανάκριση",
+      locations: {
+        "peyia-st-george-worker-death": { label: "Χώρος στάθμευσης κοντά στην εκκλησία Αγίου Γεωργίου" },
+      },
+      timeline: [
+        "Ο εργάτης τραυματίστηκε και αργότερα πέθανε στο Γενικό Νοσοκομείο Πάφου.",
+        "Η Cyprus Mail ανέφερε την αστυνομική έρευνα.",
+      ],
+    },
+  },
+  "limassol-gela-kaltsidis-worker-death-june-2025": {
+    tr: {
+      title: "Gela Kaltsidis Limasol inşaatında düşerek hayatını kaybetti",
+      summary: "47 yaşındaki Gürcü inşaat işçisi Gela Kaltsidis, Limasol'da yapımı süren bir binanın altıncı katından düşerek hayatını kaybetti. KNEWS, polis ve Çalışma Teftiş Dairesi'nin soruşturma yürüttüğünü bildirdi.",
+      employer: "İnşaat işvereni yayımlanmadı",
+      sector: "İnşaat",
+      cause: "İnşaat sahasının altıncı katından düşme",
+      legal_status: "Polis ve Çalışma Teftiş Dairesi soruşturması bildirildi",
+      locations: {
+        "limassol-construction-fall-death": {
+          label: "Limasol inşaat sahası",
+          location_basis: "Kaynağa göre kent düzeyinde konum; kesin işyeri yayımlanmadı.",
+        },
+      },
+      timeline: ["İşçi yapımı süren bir binadan düşerek hayatını kaybetti."],
+    },
+    el: {
+      title: "Ο Γκέλα Καλτσίδης πέθανε μετά από πτώση σε εργοτάξιο στη Λεμεσό",
+      summary: "Ο Γκέλα Καλτσίδης, 47χρονος Γεωργιανός εργάτης οικοδομής, πέθανε μετά από πτώση από τον έκτο όροφο υπό ανέγερση κτηρίου στη Λεμεσό. Το KNEWS ανέφερε ότι η αστυνομία και το Τμήμα Επιθεώρησης Εργασίας διερευνούσαν την υπόθεση.",
+      employer: "Ο εργοδότης στην οικοδομή δεν δημοσιεύθηκε",
+      sector: "Οικοδομές",
+      cause: "Πτώση από τον έκτο όροφο εργοταξίου",
+      legal_status: "Αναφέρθηκε έρευνα αστυνομίας και Τμήματος Επιθεώρησης Εργασίας",
+      locations: {
+        "limassol-construction-fall-death": {
+          label: "Εργοτάξιο στη Λεμεσό",
+          location_basis: "Τοποθεσία σε επίπεδο πόλης από την πηγή. Το ακριβές εργοτάξιο δεν δημοσιεύθηκε.",
+        },
+      },
+      timeline: ["Ο εργάτης πέθανε μετά από πτώση από υπό ανέγερση κτήριο."],
+    },
+  },
+  "peo-may-day-gatherings-cyprus-2026": {
+    tr: {
+      title: "PEO 1 Mayıs buluşmaları ve Ledra Palace ortak yürüyüşü",
+      summary: "PEO, 2026 yılı için Kıbrıs genelinde 1 Mayıs buluşmaları duyurdu. Programda Eleftheria Meydanı'nda merkezi Lefkoşa buluşması ve ara bölgedeki Ledra Palace'ta Kıbrıslı Türk sendikalarla birleşmek üzere yürüyüş yer aldı.",
+      demands: ["İşçi hakları", "Sosyal adalet", "Kolektif eylem", "İki toplumlu emek dayanışması"],
+      locations: {
+        "eleftheria-square-may-day-2026": { label: "Eleftheria Meydanı" },
+        "ledra-palace-may-day-2026": { label: "Ledra Palace ara bölge buluşma noktası" },
+      },
+      timeline: [
+        "PEO 1 Mayıs programını yayımladı.",
+        "Buluşmalar ve ortak yürüyüş için planlanan tarih.",
+      ],
+    },
+    el: {
+      title: "Πρωτομαγιάτικες συγκεντρώσεις της ΠΕΟ και κοινή πορεία στο Ledra Palace",
+      summary: "Η ΠΕΟ ανακοίνωσε πρωτομαγιάτικες συγκεντρώσεις σε όλη την Κύπρο για το 2026, με κεντρική συγκέντρωση στην πλατεία Ελευθερίας στη Λευκωσία και πορεία για συνάντηση με τουρκοκυπριακές συντεχνίες στο Ledra Palace στη νεκρή ζώνη.",
+      demands: ["Εργατικά δικαιώματα", "Κοινωνική δικαιοσύνη", "Συλλογική δράση", "Δικοινοτική εργατική αλληλεγγύη"],
+      locations: {
+        "eleftheria-square-may-day-2026": { label: "Πλατεία Ελευθερίας" },
+        "ledra-palace-may-day-2026": { label: "Σημείο συνάντησης Ledra Palace στη νεκρή ζώνη" },
+      },
+      timeline: [
+        "Η ΠΕΟ δημοσίευσε το πρόγραμμα της Πρωτομαγιάς.",
+        "Προγραμματισμένη ημερομηνία για συγκεντρώσεις και κοινή πορεία.",
+      ],
+    },
+  },
+};
+
+const VALUE_TRANSLATIONS = {
+  tr: {
+    "Electricity Authority of Cyprus": "Kıbrıs Elektrik Kurumu",
+    "EAC trade unions": "EAC sendikaları",
+    "Wolt / fleet management contractors": "Wolt / filo yönetimi taşeronları",
+    "Wolt riders' collective; PEO informed": "Wolt kuryeleri kolektifi; PEO bilgilendirildi",
+    "Ministry of Education, Sport and Youth support programmes": "Eğitim, Spor ve Gençlik Bakanlığı destek programları",
+    "Taxi sector": "Taksi sektörü",
+    "Turkish Cypriot public sector": "Kıbrıslı Türk kamu sektörü",
+    "PEO and Turkish Cypriot unions": "PEO ve Kıbrıslı Türk sendikaları",
+    "Energy / utilities": "Enerji / kamu hizmetleri",
+    "Delivery platforms": "Teslimat platformları",
+    "Education": "Eğitim",
+    "Transport": "Ulaşım",
+    "Multi-sector": "Çok sektörlü",
+    "Public sector": "Kamu sektörü",
+    "Energy / public sector": "Enerji / kamu sektörü",
+    "Construction": "İnşaat",
+    "Utilities / construction": "Kamu hizmetleri / inşaat",
+    "Limassol": "Limasol",
+    "Nicosia": "Lefkoşa",
+    "North Nicosia": "Kuzey Lefkoşa",
+    "Larnaca": "Larnaka",
+    "Lakatamia": "Lakatamia",
+    "Kofinou": "Kofinou",
+    "Peyia": "Peyia",
+    "EAC workers stage 24-hour island-wide strike": "EAC çalışanları ada genelinde 24 saatlik grev yaptı",
+    "EAC Workers to Stage 24-Hour Strike on April 23": "EAC çalışanları 23 Nisan'da 24 saatlik greve çıkacak",
+    "EAC workers strike over 'erratic' govt policy, Cyta expansion into energy": "EAC çalışanları hükümet politikası ve Cyta'nın enerjiye genişlemesi nedeniyle greve çıktı",
+    "Wolt delivery riders in Limassol take industrial action over falling pay rates, safety issues": "Limasol'da Wolt kuryeleri düşen ücretler ve güvenlik sorunları nedeniyle eylem yaptı",
+    "Wolt recruiter threatens striking riders with the sack": "Wolt işe alım sorumlusu grevdeki kuryeleri işten atmakla tehdit etti",
+    "Education support staff to stage 24-hour strike on March 26": "Eğitim destek personeli 26 Mart'ta 24 saatlik grev yapacak",
+    "ΑΝΑΚΟΙΝΩΣΗ ΤΥΠΟΥ - ΣΕΚ": "SEK basın açıklaması",
+    "Taxi drivers launch 24-hour strike across Cyprus": "Taksi şoförleri Kıbrıs genelinde 24 saatlik grev başlattı",
+    "Three-hour general strike over CoLA in Cyprus, several sectors affected": "Kıbrıs'ta CoLA için üç saatlik genel grev, birçok sektör etkilendi",
+    "Nationwide strike paralyses Cyprus over cost-of-living allowance": "Hayat pahalılığı ödeneği için ülke geneli grev Kıbrıs'ı durdurdu",
+    "Calls Grow for Ruling Coalition to Step Down Over CoLA Cuts": "CoLA kesintileri nedeniyle iktidar koalisyonunun istifa etmesi çağrıları artıyor",
+    "Strikes Continue in the North for Another Day": "Kuzeyde grevler bir gün daha sürüyor",
+    "Protests during Turkish Cypriot strike over cost-of-living adjustments": "Kıbrıslı Türklerin hayat pahalılığı ödeneği grevinde protestolar",
+    "PEO: worker's death not an 'unfortunate event'": "PEO: işçinin ölümü 'talihsiz olay' değil",
+    "Tragic workplace accident claims life of 55-year-old worker in Kofinou": "Kofinou'da trajik iş kazası 55 yaşındaki işçinin yaşamını aldı",
+    "Worker dies in Peyia after being crushed by falling timber": "Peyia'da düşen kerestelerin altında kalan işçi öldü",
+    "Another worker falls to death from construction site": "Bir işçi daha inşaat sahasında düşerek öldü",
+    "Πρωτομαγιάτικες συγκεντρώσεις της ΠΕΟ σε όλη την Κύπρο": "PEO'nun Kıbrıs genelindeki 1 Mayıs buluşmaları",
+    "Urgent need for Cyprus solution to be highlighted on May Day": "1 Mayıs'ta Kıbrıs çözümünün acil gerekliliği vurgulanacak",
+  },
+  el: {
+    "Electricity Authority of Cyprus": "Αρχή Ηλεκτρισμού Κύπρου",
+    "EAC trade unions": "Συντεχνίες ΑΗΚ",
+    "Wolt / fleet management contractors": "Wolt / εργολάβοι διαχείρισης στόλου",
+    "Wolt riders' collective; PEO informed": "Συλλογικότητα διανομέων Wolt. Η ΠΕΟ ενημερώθηκε",
+    "Ministry of Education, Sport and Youth support programmes": "Υποστηρικτικά προγράμματα Υπουργείου Παιδείας, Αθλητισμού και Νεολαίας",
+    "Taxi sector": "Κλάδος ταξί",
+    "Turkish Cypriot public sector": "Τουρκοκυπριακός δημόσιος τομέας",
+    "PEO and Turkish Cypriot unions": "ΠΕΟ και τουρκοκυπριακές συντεχνίες",
+    "Energy / utilities": "Ενέργεια / υπηρεσίες κοινής ωφελείας",
+    "Delivery platforms": "Πλατφόρμες διανομής",
+    "Education": "Εκπαίδευση",
+    "Transport": "Μεταφορές",
+    "Multi-sector": "Πολλοί κλάδοι",
+    "Public sector": "Δημόσιος τομέας",
+    "Energy / public sector": "Ενέργεια / δημόσιος τομέας",
+    "Construction": "Οικοδομές",
+    "Utilities / construction": "Υπηρεσίες κοινής ωφελείας / οικοδομές",
+    "Limassol": "Λεμεσός",
+    "Nicosia": "Λευκωσία",
+    "North Nicosia": "Βόρεια Λευκωσία",
+    "Larnaca": "Λάρνακα",
+    "Lakatamia": "Λακατάμια",
+    "Kofinou": "Κοφίνου",
+    "Peyia": "Πέγεια",
+    "EAC workers stage 24-hour island-wide strike": "Οι εργαζόμενοι της ΑΗΚ πραγματοποιούν 24ωρη παγκύπρια απεργία",
+    "EAC Workers to Stage 24-Hour Strike on April 23": "Οι εργαζόμενοι της ΑΗΚ θα πραγματοποιήσουν 24ωρη απεργία στις 23 Απριλίου",
+    "EAC workers strike over 'erratic' govt policy, Cyta expansion into energy": "Απεργία εργαζομένων της ΑΗΚ για την κυβερνητική πολιτική και την επέκταση της Cyta στην ενέργεια",
+    "Wolt delivery riders in Limassol take industrial action over falling pay rates, safety issues": "Διανομείς της Wolt στη Λεμεσό κινητοποιούνται για μειωμένες αμοιβές και ζητήματα ασφάλειας",
+    "Wolt recruiter threatens striking riders with the sack": "Υπεύθυνος προσλήψεων της Wolt απειλεί απεργούς διανομείς με απόλυση",
+    "Education support staff to stage 24-hour strike on March 26": "Προσωπικό υποστήριξης εκπαίδευσης θα πραγματοποιήσει 24ωρη απεργία στις 26 Μαρτίου",
+    "Taxi drivers launch 24-hour strike across Cyprus": "Οδηγοί ταξί ξεκινούν 24ωρη απεργία σε όλη την Κύπρο",
+    "Three-hour general strike over CoLA in Cyprus, several sectors affected": "Τρίωρη γενική απεργία για την ΑΤΑ στην Κύπρο, επηρεάστηκαν πολλοί κλάδοι",
+    "Nationwide strike paralyses Cyprus over cost-of-living allowance": "Παγκύπρια απεργία παραλύει την Κύπρο για την αυτόματη τιμαριθμική αναπροσαρμογή",
+    "Calls Grow for Ruling Coalition to Step Down Over CoLA Cuts": "Πληθαίνουν οι εκκλήσεις για παραίτηση του κυβερνητικού συνασπισμού λόγω περικοπών στην ΑΤΑ",
+    "Strikes Continue in the North for Another Day": "Οι απεργίες συνεχίζονται στον βορρά για άλλη μία ημέρα",
+    "Protests during Turkish Cypriot strike over cost-of-living adjustments": "Διαμαρτυρίες κατά την τουρκοκυπριακή απεργία για τις τιμαριθμικές αναπροσαρμογές",
+    "El-Sen Başkanı Ahmet Tuğcu Serbest Bırakıldı: 'Suçlamaları Reddediyoruz'": "Ο πρόεδρος της El-Sen Αχμέτ Τουγτζού αφέθηκε ελεύθερος: απορρίπτουμε τις κατηγορίες",
+    "PEO: worker's death not an 'unfortunate event'": "ΠΕΟ: ο θάνατος εργάτη δεν είναι 'ατυχές γεγονός'",
+    "Tragic workplace accident claims life of 55-year-old worker in Kofinou": "Τραγικό εργατικό ατύχημα στοιχίζει τη ζωή 55χρονου εργάτη στην Κοφίνου",
+    "Worker dies in Peyia after being crushed by falling timber": "Εργάτης πέθανε στην Πέγεια αφού καταπλακώθηκε από ξυλεία",
+    "Another worker falls to death from construction site": "Άλλος ένας εργάτης πέφτει θανάσιμα από εργοτάξιο",
+    "Urgent need for Cyprus solution to be highlighted on May Day": "Η επείγουσα ανάγκη για λύση του Κυπριακού θα τονιστεί την Πρωτομαγιά",
+  },
+};
+
 const state = {
   map: null,
   sb: null,
@@ -514,7 +1005,7 @@ const state = {
   sector: "",
   search: "",
   selectedRecordId: null,
-  lang: "en",
+  lang: "tr",
   listOpen: false,
 };
 
@@ -667,6 +1158,10 @@ function normalizeRecord(raw) {
       status: item.status || item.stage || raw.status || "unknown",
       note: item.note || "",
     })),
+    translations: {
+      ...(raw.translations || {}),
+      ...(RECORD_TRANSLATIONS[String(raw.id || raw.public_id || "")] || {}),
+    },
   };
 
   if (record.record_type === "action_call") {
@@ -722,9 +1217,9 @@ function populateControls() {
     .join("");
 
   const areaOptions = [`<option value="">${escapeHtml(t("filters.allProvinces"))}</option>`]
-    .concat(AREAS.map((area) => `<option value="${escapeHtml(area.name)}" ${state.province === area.name ? "selected" : ""}>${escapeHtml(area.name)}</option>`));
+    .concat(AREAS.map((area) => `<option value="${escapeHtml(area.name)}" ${state.province === area.name ? "selected" : ""}>${escapeHtml(localizedAreaName(area.key))}</option>`));
   document.getElementById("province-filter").innerHTML = areaOptions.join("");
-  document.getElementById("submission-province").innerHTML = `<option value=""></option>${AREAS.map((area) => `<option value="${escapeHtml(area.name)}">${escapeHtml(area.name)}</option>`).join("")}`;
+  document.getElementById("submission-province").innerHTML = `<option value=""></option>${AREAS.map((area) => `<option value="${escapeHtml(area.name)}">${escapeHtml(localizedAreaName(area.key))}</option>`).join("")}`;
 
   const sectors = Array.from(new Set(state.records.map((item) => item.sector).filter(Boolean)))
     .sort((a, b) => a.localeCompare(b, localeForLang()));
@@ -951,7 +1446,7 @@ function renderMarkers() {
             iconSize: [18, 18],
             iconAnchor: [9 - offset.x, 9 - offset.y],
           }),
-          title: record.title,
+          title: localizedRecordValue(record, "title"),
           zIndexOffset: selected ? 2000 : 0,
         }).addTo(state.map);
         marker.on("click", () => selectRecord(record.id, location));
@@ -966,6 +1461,42 @@ function locationKey(location) {
 
 function displayLocations(record) {
   return (record.locations || []).filter((location) => Number.isFinite(location.lat) && Number.isFinite(location.lng));
+}
+
+function localizedRecordValue(record, field) {
+  return localizedValue(record.translations?.[state.lang]?.[field] ?? record[field] ?? "");
+}
+
+function localizedValue(value) {
+  return VALUE_TRANSLATIONS[state.lang]?.[value] || value;
+}
+
+function localizedDemands(record) {
+  return record.translations?.[state.lang]?.demands || record.demands || [];
+}
+
+function localizedLocationValue(record, location, field) {
+  return record.translations?.[state.lang]?.locations?.[location.id]?.[field] ?? location[field] ?? "";
+}
+
+function localizedTimelineNote(record, item, index) {
+  return record.translations?.[state.lang]?.timeline?.[index] ?? item.note ?? "";
+}
+
+function localizedSourceTitle(record, source, index) {
+  return record.translations?.[state.lang]?.sources?.[index]?.title || localizedValue(source.title) || t("common.source");
+}
+
+function localizedAreaName(nameOrKey) {
+  const area = AREA_BY_KEY[nameOrKey] || AREA_BY_NAME[nameOrKey];
+  if (!area) return nameOrKey || "";
+  return area[state.lang] || area.name;
+}
+
+function fatalityWord() {
+  if (state.lang === "tr") return "iş cinayeti";
+  if (state.lang === "el") return "θάνατοι";
+  return "fatalities";
 }
 
 function recordMatchesDateRange(record) {
@@ -1060,7 +1591,7 @@ function renderRecordListItem(record) {
     <button class="record-list-item ${selected}" type="button" data-record-list-id="${escapeAttribute(record.id)}">
       <span class="record-list-dot" style="background:${LAYER_COLORS[record.layer]};${border}"></span>
       <span class="record-list-copy">
-        <strong>${escapeHtml(record.title)}</strong>
+        <strong>${escapeHtml(localizedRecordValue(record, "title"))}</strong>
         <span>${escapeHtml(recordListMeta(record))}</span>
       </span>
     </button>
@@ -1071,13 +1602,13 @@ function sortedFilteredRecords() {
   return [...state.filtered].sort((a, b) => (
     String(recordDateValue(b)).localeCompare(String(recordDateValue(a)))
     || LAYER_ORDER.indexOf(a.layer) - LAYER_ORDER.indexOf(b.layer)
-    || a.title.localeCompare(b.title, localeForLang())
+    || localizedRecordValue(a, "title").localeCompare(localizedRecordValue(b, "title"), localeForLang())
   ));
 }
 
 function recordListMeta(record) {
   const location = record.locations[0] || {};
-  const place = [location.district, location.province].filter(Boolean).join(", ");
+  const place = [localizedValue(location.district), localizedAreaName(location.province)].filter(Boolean).join(", ");
   return [
     t(`recordType.${record.record_type}`),
     t(`status.${record.status}`),
@@ -1144,11 +1675,11 @@ function renderDetail(record) {
           <button class="icon-btn" type="button" data-close-detail aria-label="${escapeHtml(t("common.close"))}">×</button>
         </div>
       </div>
-      <h2>${escapeHtml(record.title)}</h2>
-      <p class="case-summary">${escapeHtml(record.summary || t("common.notSpecified"))}</p>
+      <h2>${escapeHtml(localizedRecordValue(record, "title"))}</h2>
+      <p class="case-summary">${escapeHtml(localizedRecordValue(record, "summary") || t("common.notSpecified"))}</p>
     </header>
     <div class="detail-stats">${renderTypeStats(record)}</div>
-    ${record.demands.length ? detailSection(t("detail.demands"), `<div class="chip-row">${record.demands.map((demand) => chip(demand)).join("")}</div>`) : ""}
+    ${localizedDemands(record).length ? detailSection(t("detail.demands"), `<div class="chip-row">${localizedDemands(record).map((demand) => chip(demand)).join("")}</div>`) : ""}
     ${detailSection(t("detail.locations"), renderLocations(record))}
     ${detailSection(t("detail.timeline"), renderTimeline(record))}
     ${detailSection(t("detail.sources"), renderSources(record))}
@@ -1159,21 +1690,21 @@ function renderDetail(record) {
 function renderTypeStats(record) {
   if (record.record_type === "worker_death") {
     return [
-      detailStat(t("detail.workerName"), record.worker_name),
+      detailStat(t("detail.workerName"), localizedRecordValue(record, "worker_name")),
       detailStat(t("detail.age"), record.worker_age),
-      detailStat(t("detail.employer"), record.employer),
-      detailStat(t("detail.sector"), record.sector),
+      detailStat(t("detail.employer"), localizedRecordValue(record, "employer")),
+      detailStat(t("detail.sector"), localizedRecordValue(record, "sector")),
       detailStat(t("detail.date"), formatDate(record.death_date)),
-      detailStat(t("detail.cause"), record.cause),
+      detailStat(t("detail.cause"), localizedRecordValue(record, "cause")),
       detailStat(t("detail.fatalityCount"), formatCount(fatalityCount(record))),
-      detailStat(t("detail.legalStatus"), record.legal_status),
+      detailStat(t("detail.legalStatus"), localizedRecordValue(record, "legal_status")),
       detailStat(t("detail.lastVerified"), formatDate(record.last_verified_at)),
     ].join("");
   }
   if (record.record_type === "action_call") {
     return [
-      detailStat(t("detail.union"), record.labor_organization),
-      detailStat(t("detail.sector"), record.sector),
+      detailStat(t("detail.union"), localizedRecordValue(record, "labor_organization")),
+      detailStat(t("detail.sector"), localizedRecordValue(record, "sector")),
       detailStat(t("detail.actionType"), record.action_type ? t(`actionType.${record.action_type}`) : ""),
       detailStat(t("detail.eventDate"), formatDate(record.event_date || record.start_date)),
       detailStat(t("detail.lastVerified"), formatDate(record.last_verified_at)),
@@ -1181,19 +1712,19 @@ function renderTypeStats(record) {
   }
   if (record.record_type === "union_labor_arrest") {
     return [
-      detailStat(t("detail.person"), record.person_name || record.title),
-      detailStat(t("detail.union"), record.labor_organization),
-      detailStat(t("detail.role"), record.role),
+      detailStat(t("detail.person"), localizedRecordValue(record, "person_name") || localizedRecordValue(record, "title")),
+      detailStat(t("detail.union"), localizedRecordValue(record, "labor_organization")),
+      detailStat(t("detail.role"), localizedRecordValue(record, "role")),
       detailStat(t("detail.detentionDate"), formatDate(record.detention_date)),
-      detailStat(t("detail.custodyStatus"), t(`status.${record.status}`)),
-      detailStat(t("detail.accusation"), record.accusation || record.legal_status),
+      detailStat(t("detail.custodyStatus"), localizedRecordValue(record, "custody_status") || t(`status.${record.status}`)),
+      detailStat(t("detail.accusation"), localizedRecordValue(record, "accusation") || localizedRecordValue(record, "legal_status")),
       detailStat(t("detail.lastVerified"), formatDate(record.last_verified_at)),
     ].join("");
   }
   return [
-    detailStat(t("detail.employer"), record.employer),
-    detailStat(t("detail.union"), record.labor_organization),
-    detailStat(t("detail.sector"), record.sector),
+    detailStat(t("detail.employer"), localizedRecordValue(record, "employer")),
+    detailStat(t("detail.union"), localizedRecordValue(record, "labor_organization")),
+    detailStat(t("detail.sector"), localizedRecordValue(record, "sector")),
     detailStat(t("detail.actionType"), record.action_type ? t(`actionType.${record.action_type}`) : ""),
     detailStat(t("detail.workers"), formatCount(record.participant_count)),
     detailStat(t("detail.decisionDate"), formatDate(record.decision_date)),
@@ -1215,32 +1746,32 @@ function detailSection(title, content) {
 function renderLocations(record) {
   return `<div class="location-list">${record.locations.map((location) => `
     <div class="location-row">
-      <strong>${escapeHtml(location.label)}</strong>
+      <strong>${escapeHtml(localizedLocationValue(record, location, "label"))}</strong>
       <span>${escapeHtml(renderLocationSubtitle(location))}</span><br>
       <span>${escapeHtml(t("detail.geocode"))}: ${escapeHtml(t(`geocodePrecision.${location.geocode_precision || "unknown"}`))}</span>
-      ${location.location_basis ? `<br><span>${escapeHtml(location.location_basis)}</span>` : ""}
+      ${localizedLocationValue(record, location, "location_basis") ? `<br><span>${escapeHtml(localizedLocationValue(record, location, "location_basis"))}</span>` : ""}
     </div>`).join("")}</div>`;
 }
 
 function renderLocationSubtitle(location) {
-  const parts = [location.district, location.province].filter(Boolean);
-  if (location.fatality_count) parts.push(`${formatCount(location.fatality_count)} ${state.lang === "tr" ? "iş cinayeti" : state.lang === "el" ? "θάνατοι" : "fatalities"}`);
+  const parts = [localizedValue(location.district), localizedAreaName(location.province)].filter(Boolean);
+  if (location.fatality_count) parts.push(`${formatCount(location.fatality_count)} ${fatalityWord()}`);
   return parts.join(", ");
 }
 
 function renderTimeline(record) {
   if (!record.timeline.length) return `<p class="case-summary">${escapeHtml(t("common.notSpecified"))}</p>`;
-  return `<div class="timeline-list">${record.timeline.map((item) => `
+  return `<div class="timeline-list">${record.timeline.map((item, index) => `
     <div class="timeline-row">
       <div class="timeline-date">${escapeHtml(formatDate(item.date) || "")}</div>
-      <div class="timeline-body"><strong>${escapeHtml(t(`status.${item.status}`))}</strong>${escapeHtml(item.note)}</div>
+      <div class="timeline-body"><strong>${escapeHtml(t(`status.${item.status}`))}</strong>${escapeHtml(localizedTimelineNote(record, item, index))}</div>
     </div>`).join("")}</div>`;
 }
 
 function renderSources(record) {
-  return `<div class="source-list">${record.sources.map((source) => `
+  return `<div class="source-list">${record.sources.map((source, index) => `
     <a class="source-row" href="${escapeAttribute(source.url)}" target="_blank" rel="noreferrer">
-      <strong>${escapeHtml(source.title || t("common.source"))}</strong>
+      <strong>${escapeHtml(localizedSourceTitle(record, source, index))}</strong>
       <span>${escapeHtml([source.publisher, formatDate(source.published_at)].filter(Boolean).join(" · "))}</span>
     </a>`).join("")}</div>`;
 }
@@ -1338,6 +1869,24 @@ function showLoadNotice(message) {
 }
 
 function buildSearchBlob(record) {
+  const translationValues = Object.values(record.translations || {}).flatMap((translation) => [
+    translation.title,
+    translation.summary,
+    translation.worker_name,
+    translation.employer,
+    translation.labor_organization,
+    translation.sector,
+    translation.cause,
+    translation.legal_status,
+    translation.accusation,
+    translation.custody_status,
+    ...(translation.demands || []),
+    ...Object.values(translation.locations || {}).flatMap((location) => [location.label, location.location_basis]),
+    ...(translation.timeline || []),
+    ...(translation.sources || []).map((source) => source.title),
+  ]);
+  const areaValues = AREAS.flatMap((area) => [area.name, area.tr, area.el]);
+  const valueTranslationValues = Object.values(VALUE_TRANSLATIONS).flatMap((group) => Object.values(group));
   const values = [
     record.title,
     record.summary,
@@ -1352,6 +1901,9 @@ function buildSearchBlob(record) {
     ...record.demands,
     ...record.locations.flatMap((location) => [location.label, location.province, location.district]),
     ...record.sources.flatMap((source) => [source.title, source.publisher]),
+    ...translationValues,
+    ...areaValues,
+    ...valueTranslationValues,
   ];
   return values.filter(Boolean).join(" ").toLocaleLowerCase(localeForLang());
 }
@@ -1432,6 +1984,7 @@ function formatDate(value) {
 }
 
 function formatCount(value) {
+  if (value === null || value === undefined || value === "") return "";
   const number = Number(value);
   if (!Number.isFinite(number)) return "";
   return new Intl.NumberFormat(localeForLang()).format(number);
