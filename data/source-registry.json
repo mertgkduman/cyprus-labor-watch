@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 105,
+      "record_count": 106,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,8 +421,15 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2019-12, decremented by one after adding Andys Evangelis's Vasilikos generator-loading crane-hook death; current December 2019 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2018-11, decremented by one after adding Omari Tornikov's Mouttayiaka marble-slab crush death; current November 2018 leads are complete.",
       "backfill_month_progress": [
+        {
+          "month": "2018-11",
+          "target_count_from_current_leads": 1,
+          "added_count": 1,
+          "remaining_count": 0,
+          "note": "Omari Tornikov's Mouttayiaka marble-slab crush death added from Cyprus Mail archive and KNEWS."
+        },
         {
           "month": "2019-12",
           "target_count_from_current_leads": 2,
@@ -1069,6 +1076,7 @@
         "https://archive.cyprus-mail.com/2019/12/17/labour-accident-kills-man-at-vasilikos/",
         "https://archive.cyprus-mail.com/2019/07/09/limassol-man-dies-in-labour-accident/",
         "https://archive.cyprus-mail.com/2019/05/06/man-dies-after-being-crushed-by-tractor/",
+        "https://archive.cyprus-mail.com/2018/11/23/man-dies-17-days-after-work-accident/",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
@@ -1097,6 +1105,7 @@
         "https://cyprus-mail.com/2025/05/07/worker-dies-after-falling-down-lift-shaft-in-limassol",
         "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
         "https://in-cyprus.philenews.com/local/plumber-dies-germasogeia-construction-site-accident/",
+        "https://knews.kathimerini.com.cy/en/news/georgian-worker-succumbs-to-injuries",
         "https://knews.kathimerini.com.cy/en/news/construction-painter-falls-to-his-death",
         "https://knews.kathimerini.com.cy/en/news/eac-burn-victim-loses-fight-for-life",
         "https://knews.kathimerini.com.cy/en/news/factory-worker-crushed-to-death-by-falling-glass-pane",

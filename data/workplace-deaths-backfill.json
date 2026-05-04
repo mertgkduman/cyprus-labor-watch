@@ -3405,6 +3405,51 @@
           "published_at": "2019-12-17"
         }
       ]
+    },
+    {
+      "id": "mouttayiaka-omari-tornikov-marble-slab-crush-november-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Omari Tornikov dies after marble slabs fall at Mouttayiaka factory",
+      "summary": "Omari Tornikov, a 48-year-old worker from Georgia, died in Nicosia General Hospital after being seriously injured on November 6 while working at a marble factory in Mouttayiaka. Sources say he was attempting to separate marble slabs so they could be moved when the slabs fell on him; he died after around two weeks in intensive care.",
+      "worker_name": "Omari Tornikov",
+      "worker_age": 48,
+      "employer": "Marble factory employer not named in sources",
+      "sector": "Marble factory / stone processing",
+      "cause": "Crushed by falling marble slabs while separating them for movement",
+      "death_date": "2018-11-22",
+      "legal_status": "Police, fire service and labour inspector attended the scene; Labour Ministry examination of causes reported by sources",
+      "last_verified_at": "2018-11-23",
+      "locations": [
+        {
+          "id": "mouttayiaka-marble-factory-slab-crush-omari-tornikov",
+          "label": "Mouttayiaka marble factory",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Mouttayiaka / Mouttagiaka",
+          "lat": 34.7202,
+          "lng": 33.1007,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "KNEWS places the accident at a factory in Mouttayiaka and Cyprus Times describes a marble factory in Limassol district; Mouttayiaka area centroid used pending exact factory coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies 17 days after work accident",
+          "url": "https://archive.cyprus-mail.com/2018/11/23/man-dies-17-days-after-work-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2018-11-23"
+        },
+        {
+          "title": "Georgian worker succumbs to injuries",
+          "url": "https://knews.kathimerini.com.cy/en/news/georgian-worker-succumbs-to-injuries",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_context",
+          "published_at": "2018-11-23"
+        }
+      ]
     }
   ]
 }
