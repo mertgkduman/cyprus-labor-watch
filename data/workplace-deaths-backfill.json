@@ -2448,6 +2448,57 @@
           "published_at": "2009-11-10"
         }
       ]
+    },
+    {
+      "id": "geri-femisberto-novele-demining-mine-explosion-october-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Femisberto Novele killed in MACC demining explosion near Geri",
+      "summary": "Femisberto Novele, a Mine Action Centre Cyprus deminer from Mozambique, died while working in a buffer-zone minefield near Geri, about 10 kilometres south-east of Nicosia. Reports state that an anti-tank mine or large explosion occurred during demining work.",
+      "worker_name": "Femisberto Novele",
+      "employer": "Mine Action Centre Cyprus / UNDP Partnership for the Future contractor",
+      "sector": "Humanitarian demining",
+      "cause": "Mine explosion during demining work",
+      "death_date": "2009-10-28",
+      "legal_status": "MACC board of inquiry and UN reporting noted after the fatal demining accident",
+      "last_verified_at": "2009-10-30",
+      "locations": [
+        {
+          "id": "geri-buffer-zone-demining-femisberto-novele",
+          "label": "Buffer-zone minefield near Geri/Yeri",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Geri / Yeri",
+          "lat": 35.1047,
+          "lng": 33.4193,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal demining explosion in a buffer-zone minefield near Geri/Yeri, about 10 kilometres south-east of Nicosia; Geri/Yeri area centroid used pending exact minefield coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "UN solder killed in demining accident",
+          "url": "https://archive.cyprus-mail.com/2009/10/29/un-solder-killed-in-demining-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-10-29"
+        },
+        {
+          "title": "Life and limb on the line for EUR400 a month?",
+          "url": "https://archive.cyprus-mail.com/2009/10/30/life-and-limb-on-the-line-for-400-a-month/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-10-30"
+        },
+        {
+          "title": "In Remembrance: Femisberto Novele",
+          "url": "https://commons.lib.jmu.edu/cisr-journal/vol13/iss3/30/",
+          "publisher": "Journal of ERW and Mine Action / CISR",
+          "type": "research_reference",
+          "published_at": "2009"
+        }
+      ]
     }
   ]
 }
