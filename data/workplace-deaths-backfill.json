@@ -3208,6 +3208,44 @@
           "published_at": "2005-08-02"
         }
       ]
+    },
+    {
+      "id": "latsia-sulman-sikandar-sewerage-drainage-hole-collapse-april-2004",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Sulman Sikandar buried by sand while installing sewerage system in Latsia",
+      "summary": "Sulman Sikandar, a 24-year-old worker from Pakistan, died while working on the installation of a sewerage system in Latsia. The source says he was trapped by tons of sand in a 3.5-metre drainage hole and was pronounced dead on arrival at Nicosia General Hospital.",
+      "worker_name": "Sulman Sikandar",
+      "worker_age": 24,
+      "employer": "Sewerage-system contractor not named in source",
+      "sector": "Sewerage infrastructure / excavation",
+      "cause": "Buried by sand in 3.5-metre drainage hole",
+      "death_date": "2004-04-20",
+      "legal_status": "Police investigation into the cause of the accident reported by source",
+      "last_verified_at": "2004-04-21",
+      "locations": [
+        {
+          "id": "latsia-sewerage-drainage-hole-collapse-sulman-sikandar",
+          "label": "Latsia sewerage-system worksite",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Latsia",
+          "lat": 35.101,
+          "lng": 33.378,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal drainage-hole collapse during sewerage-system installation in Latsia; Latsia area centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker dies installing sewerage system",
+          "url": "https://archive.cyprus-mail.com/2004/04/21/worker-dies-installing-sewerage-system/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2004-04-21"
+        }
+      ]
     }
   ]
 }
