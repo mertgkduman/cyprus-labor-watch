@@ -3036,6 +3036,50 @@
           "type": "coordinate_reference"
         }
       ]
+    },
+    {
+      "id": "dromolaxia-unnamed-indian-worker-electrocution-building-site-november-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Indian man electrocuted at Dromolaxia construction site",
+      "summary": "An unnamed 35-year-old Indian national died after being electrocuted at a construction site in Dromolaxia. The source says he was visiting the site looking for work and, while speaking with workers and apparently demonstrating his skills, picked up two iron bars that touched exposed power cables.",
+      "worker_name": "Name not published",
+      "worker_age": 35,
+      "employer": "Not employed at site according to source; job-seeking visit",
+      "sector": "Construction / job demonstration",
+      "cause": "Electrocution after iron bars contacted exposed power cables",
+      "death_date": "2008-11-20",
+      "legal_status": "Authorities investigated whether construction-site working conditions were safe according to source",
+      "last_verified_at": "2008-11-21",
+      "locations": [
+        {
+          "id": "dromolaxia-construction-site-electrocution-unnamed-indian-worker",
+          "label": "Dromolaxia construction site",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Dromolaxia",
+          "lat": 34.8833,
+          "lng": 33.5833,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal electrocution at a construction site in Dromolaxia; village area centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man electrocuted on building site",
+          "url": "https://archive.cyprus-mail.com/2008/11/21/man-electrocuted-on-building-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-11-21"
+        },
+        {
+          "title": "Dromolaxia, Cyprus latitude/longitude",
+          "url": "https://latitude.to/satellite-map/cy/cyprus/155793/dromolaxia",
+          "publisher": "Latitude.to",
+          "type": "coordinate_reference"
+        }
+      ]
     }
   ]
 }
