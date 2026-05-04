@@ -3246,6 +3246,44 @@
           "published_at": "2004-04-21"
         }
       ]
+    },
+    {
+      "id": "simou-stefanos-lefkati-tractor-crush-vineyard-may-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Stefanos Lefkati crushed by tractor while working in Simou vineyard",
+      "summary": "Stefanos Lefkati, a 76-year-old man from Arodes, died after being crushed by his hand-operated tractor while working in his vineyard in Simou, Paphos. The source says he lost control of the vehicle, relatives later found him, and he was officially declared dead at Paphos hospital.",
+      "worker_name": "Stefanos Lefkati",
+      "worker_age": 76,
+      "employer": "Self-employed / family vineyard",
+      "sector": "Agriculture / vineyard work",
+      "cause": "Crushed by hand-operated tractor after loss of control",
+      "death_date": "2019-05-05",
+      "legal_status": "Causes of the work accident under investigation according to source",
+      "last_verified_at": "2019-05-06",
+      "locations": [
+        {
+          "id": "simou-vineyard-tractor-crush-stefanos-lefkati",
+          "label": "Simou vineyard worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Simou",
+          "lat": 34.9414,
+          "lng": 32.5047,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor crush while the worker was working in his vineyard in Simou, Paphos; Simou area centroid used pending exact vineyard coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after being crushed by tractor",
+          "url": "https://archive.cyprus-mail.com/2019/05/06/man-dies-after-being-crushed-by-tractor/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-05-06"
+        }
+      ]
     }
   ]
 }
