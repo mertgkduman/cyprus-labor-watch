@@ -2372,6 +2372,44 @@
           "type": "project_location_context"
         }
       ]
+    },
+    {
+      "id": "limnis-polis-neophytos-makrantonis-lorry-van-crush-november-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Neophytos Makrantonis killed after lorry crashes into van at Limnis construction site",
+      "summary": "Neophytos Makrantonis, a 60-year-old electrician for the contractor, died at a construction site in the Limnis region of Polis Chrysochou after a 150-ton lorry driven by a coworker crashed into the small van where he was sitting.",
+      "worker_name": "Neophytos Makrantonis",
+      "worker_age": 60,
+      "employer": "Construction contractor not named in source",
+      "sector": "Construction / electrical work",
+      "cause": "Crushed when 150-ton lorry crashed into stationary van at construction site",
+      "death_date": "2009-11-11",
+      "legal_status": "Circumstances under investigation according to source",
+      "last_verified_at": "2009-11-12",
+      "locations": [
+        {
+          "id": "limnis-polis-construction-site-neophytos-makrantonis",
+          "label": "Limnis region construction site, Polis Chrysochou",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Polis Chrysochou / Limnis region",
+          "lat": 35.0347,
+          "lng": 32.424,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal lorry-van crash at a construction site in the Limnis region of Polis Chrysochou; Polis/Limni area centroid used pending exact construction-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies in new work accident",
+          "url": "https://archive.cyprus-mail.com/2009/11/12/man-dies-in-new-work-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-11-12"
+        }
+      ]
     }
   ]
 }
