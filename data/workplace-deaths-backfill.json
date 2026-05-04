@@ -3284,6 +3284,44 @@
           "published_at": "2019-05-06"
         }
       ]
+    },
+    {
+      "id": "ayiou-sila-andreas-panayi-garage-lifting-machinery-crush-july-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Andreas Panayi crushed under lifting machinery at Ayiou Sila garage",
+      "summary": "Andreas Panayi, a 32-year-old Limassol resident, died while working at a garage in the Ayiou Sila industrial area of Limassol. Police said he was crushed under lifting machinery while repairing a heavy transport vehicle, and doctors pronounced him dead on arrival at Limassol general hospital.",
+      "worker_name": "Andreas Panayi",
+      "worker_age": 32,
+      "employer": "Garage employer not named in source",
+      "sector": "Vehicle repair / garage work",
+      "cause": "Crushed under lifting machinery while repairing a heavy transport vehicle",
+      "death_date": "2019-07-09",
+      "legal_status": "Police and labour department investigation reported by source",
+      "last_verified_at": "2019-07-09",
+      "locations": [
+        {
+          "id": "ayiou-sila-garage-lifting-machinery-crush-andreas-panayi",
+          "label": "Ayiou Sila industrial-area garage",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Ayiou Sila / Agios Sylas",
+          "lat": 34.7323,
+          "lng": 32.9445,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a garage in the industrial area of Limassol's Ayiou Sila; industrial-area centroid used pending exact garage coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Limassol man dies in labour accident (updated)",
+          "url": "https://archive.cyprus-mail.com/2019/07/09/limassol-man-dies-in-labour-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-07-09"
+        }
+      ]
     }
   ]
 }
