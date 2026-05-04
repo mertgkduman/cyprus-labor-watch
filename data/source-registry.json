@@ -189,6 +189,74 @@
         "strike resolution reports"
       ],
       "source_type": "news"
+    },
+    {
+      "name": "KKTC Labour Department / Calisma Dairesi",
+      "url": "https://calisma.gov.ct.tr/",
+      "cadence": "manual review",
+      "use_for": [
+        "work accident reporting rules and forms",
+        "occupational safety inspection context",
+        "official workplace-safety announcements",
+        "baseline context for northern Cyprus work-related deaths"
+      ],
+      "source_type": "official"
+    },
+    {
+      "name": "Turkish News Agency Cyprus (TAK)",
+      "url": "https://tak.gov.ct.tr/",
+      "cadence": "daily/weekly",
+      "use_for": [
+        "police-bulletin workplace accident reports",
+        "official/public agency confirmations",
+        "northern Cyprus work-related death follow-up"
+      ],
+      "source_type": "public_news_agency"
+    },
+    {
+      "name": "Isci Sagligi ve Is Guvenligi Meclisi (ISIG Meclisi)",
+      "url": "https://www.isigmeclisi.org/",
+      "cadence": "monthly",
+      "use_for": [
+        "Turkish-language work-related death monitoring",
+        "is cinayetleri monthly and annual reports",
+        "North Cyprus entries that appear under overseas death totals",
+        "leads requiring corroboration from local Cyprus sources"
+      ],
+      "source_type": "workplace_death_monitor"
+    },
+    {
+      "name": "Sosyal Guvenlik Dergisi / DergiPark - KKTC workplace accident analysis",
+      "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+      "cadence": "reference",
+      "use_for": [
+        "2015-2020 northern Cyprus fatal workplace accident baseline",
+        "sector and district patterns",
+        "research context for work-related death data quality"
+      ],
+      "source_type": "research"
+    },
+    {
+      "name": "Kibris Turk Elektrik Muteahhitleri Birligi (KTEMB)",
+      "url": "https://www.ktemb.org/",
+      "cadence": "manual review",
+      "use_for": [
+        "electrical-work fatality statements",
+        "technical context on medium-voltage and contractor safety",
+        "professional-body follow-up for electrical workplace deaths"
+      ],
+      "source_type": "professional_body"
+    },
+    {
+      "name": "Kibris Turk Tabipleri Birligi (KTTB)",
+      "url": "https://www.kttb.org/",
+      "cadence": "manual review",
+      "use_for": [
+        "public-health framing of worker deaths",
+        "occupational safety statements",
+        "corroborating context when work deaths are described as preventable"
+      ],
+      "source_type": "professional_body"
     }
   ],
   "research_notes": {
@@ -202,6 +270,64 @@
         "Island-wide labour actions use area-centroid placement and explicit location_basis notes.",
         "No public current-labour-arrest record is included at launch; the Ahmet Tugcu record is marked released based on follow-up reporting.",
         "Northern Cyprus coverage is supplemented with Turkish-language sources in data/northern-incidents.json."
+      ]
+    },
+    "work_related_deaths_source_review": {
+      "updated_at": "2026-05-03",
+      "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
+      "priority_sources": [
+        {
+          "title": "ISIG Meclisi monthly and annual is cinayetleri reports",
+          "url": "https://www.isigmeclisi.org/",
+          "note": "Best purpose-specific Turkish monitor; use North Cyprus entries as leads and corroborate with Cyprus-local sources before publishing records."
+        },
+        {
+          "title": "Kibris'ta is cinayetleri suruyor - ISIG Meclisi",
+          "url": "https://www.isigmeclisi.org/17228-kibrista-is-cinayetleri-suruyor",
+          "note": "Older Cyprus-specific ISIG page useful for terminology and historical framing."
+        },
+        {
+          "title": "KKTC 2015-2020 workplace accident analysis - Sosyal Guvenlik Dergisi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "note": "Research baseline based on Social Insurance Department data; useful for sector/district death patterns rather than individual current records."
+        },
+        {
+          "title": "KKTC Labour Department",
+          "url": "https://calisma.gov.ct.tr/",
+          "note": "Official occupational safety and accident-reporting context; check for forms, inspection notices, and public statements."
+        },
+        {
+          "title": "TAK Cyprus official/public news feed",
+          "url": "https://tak.gov.ct.tr/",
+          "note": "High-value lead source for police-bulletin workplace death confirmations in northern Cyprus."
+        },
+        {
+          "title": "KTEMB electrical fatality technical statements",
+          "url": "https://www.ktemb.org/hakkimizda/bizden-haberler/item/305-gecitkale-dortyol-bolgesindeki-i-s-kazasi-hakkinda.html",
+          "note": "Professional-body source for the 31 March 2026 Geçitkale-Dortyol electrocution death and future electrical work-fatality context."
+        }
+      ],
+      "candidate_record_leads": [
+        {
+          "record_hint": "Dortyol construction fall, Hammad Pakistani, 23 April 2026",
+          "source_url": "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
+          "status": "strong candidate; corroborate with TAK or police bulletin before adding."
+        },
+        {
+          "record_hint": "Taskent telecom tower/base-station work death, Fatih Safakoglu, 8 April 2025",
+          "source_url": "https://www.kibrisgercek.com/fatih-safakoglunun-vefati-ile-sonuclanan-is-kazasinin-zanlilari-mahkemeye-cikarildi",
+          "status": "strong candidate; includes court follow-up and alleged OSH failures."
+        },
+        {
+          "record_hint": "Gazimagusa warehouse death, Mustafa Kilinc, 2 January 2025",
+          "source_url": "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
+          "status": "candidate; seek second local source."
+        },
+        {
+          "record_hint": "South Cyprus 2025 fatal workplace accidents Turkish-language summary",
+          "source_url": "https://www.kibristurk.com/guney-kibrista-bu-yil-is-kazalarinda-olenlerin-sayisi-6ya-ulasti",
+          "status": "summary source; use to identify individual records, then corroborate with original Greek/English or official sources."
+        }
       ]
     }
   },
