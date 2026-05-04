@@ -2328,6 +2328,50 @@
           "published_at": "2010-05-05"
         }
       ]
+    },
+    {
+      "id": "kouklia-unnamed-bulgarian-desalination-crawler-crane-death-february-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Bulgarian worker killed by crawler-crane part at Paphos desalination construction site",
+      "summary": "An unnamed 38-year-old Bulgarian worker died while dismantling a crawler crane at the construction site of a desalination plant in Paphos district. Part of the crane fell on him, the Fire Service freed him from under the crane part, and doctors at Paphos hospital confirmed his death.",
+      "worker_name": "Name not published",
+      "worker_age": 38,
+      "employer": "Construction employer not named in source",
+      "sector": "Desalination plant construction",
+      "cause": "Crushed by falling crawler-crane part during dismantling work",
+      "death_date": "2010-02-24",
+      "legal_status": "Police and Labour Inspection Office investigation reported by source",
+      "last_verified_at": "2010-02-25",
+      "locations": [
+        {
+          "id": "kouklia-paphos-desalination-crawler-crane-unnamed-bulgarian-worker",
+          "label": "Paphos desalination plant construction site, Kouklia area",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Kouklia / Paphos district",
+          "lat": 34.7099,
+          "lng": 32.5733,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Fatality source places the incident at a Paphos district desalination-plant construction site. Project source places the 2009-2010 Paphos desalination construction project by the sea in the Kouklia area; Kouklia area centroid used pending exact plant coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "One dead and another injured in separate workplace accidents",
+          "url": "https://archive.cyprus-mail.com/2010/02/25/one-dead-and-another-injured-in-separate-workplace-accidents/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-02-25"
+        },
+        {
+          "title": "Paphos Desalination",
+          "url": "https://sakyrco.com/construction/desalination-paphos/",
+          "publisher": "Sakyrco",
+          "type": "project_location_context"
+        }
+      ]
     }
   ]
 }
