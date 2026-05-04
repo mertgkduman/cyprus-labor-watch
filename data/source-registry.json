@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 78,
+      "record_count": 79,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-05, decremented by one after adding Spyros Haholis's Kapparis/Paralimni painting fall death; one current May 2010 lead remains.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-05, decremented by one after adding the unnamed Yermasoyia construction-worker balcony fall death; current May 2010 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -524,9 +524,9 @@
         {
           "month": "2010-05",
           "target_count_from_current_leads": 3,
-          "added_count": 2,
-          "remaining_count": 1,
-          "note": "Unnamed Syrian roof-tiler fall death in Paphos and Spyros Haholis's Kapparis/Paralimni painting fall death added from Cyprus Mail archive. The unnamed Yermasoyia construction-worker balcony fall remains as the next current lead."
+          "added_count": 3,
+          "remaining_count": 0,
+          "note": "Unnamed Syrian roof-tiler fall death in Paphos, Spyros Haholis's Kapparis/Paralimni painting fall death, and the unnamed Yermasoyia construction-worker balcony fall death added from Cyprus Mail archive."
         }
       ],
       "priority_sources": [
@@ -894,6 +894,7 @@
         "https://archive.cyprus-mail.com/2010/08/10/man-killed-by-faulty-tractor/",
         "https://archive.cyprus-mail.com/2010/05/18/workman-falls-to-his-death-from-roof/",
         "https://archive.cyprus-mail.com/2010/05/07/father-of-two-dies-in-work-accident/",
+        "https://archive.cyprus-mail.com/2010/05/05/work-death/",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",

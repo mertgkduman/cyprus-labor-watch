@@ -2290,6 +2290,44 @@
           "published_at": "2010-05-07"
         }
       ]
+    },
+    {
+      "id": "yermasoyia-unnamed-limassol-construction-worker-balcony-fall-may-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Limassol construction worker dies after Yermasoyia balcony fall",
+      "summary": "An unnamed 52-year-old Limassol construction worker died after slipping and falling from the third-floor balcony of a building under construction in Yermasoyia. The source said he was taken to Limassol General Hospital, where doctors pronounced him dead.",
+      "worker_name": "Name not published",
+      "worker_age": 52,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from third-floor balcony at building under construction",
+      "death_date": "2010-05-04",
+      "legal_status": "Limassol CID investigation reported by source",
+      "last_verified_at": "2010-05-05",
+      "locations": [
+        {
+          "id": "yermasoyia-balcony-fall-unnamed-limassol-construction-worker",
+          "label": "Yermasoyia building-under-construction balcony",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Yermasoyia / Germasogeia",
+          "lat": 34.7202,
+          "lng": 33.0833,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall on a third-floor balcony of a building under construction in Yermasoyia/Germasogeia; district centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Work death",
+          "url": "https://archive.cyprus-mail.com/2010/05/05/work-death/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-05-05"
+        }
+      ]
     }
   ]
 }
