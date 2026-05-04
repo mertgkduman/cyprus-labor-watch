@@ -2024,6 +2024,44 @@
           "published_at": "2012-01-31"
         }
       ]
+    },
+    {
+      "id": "xylofagou-unnamed-indian-student-tractor-repair-death-august-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Indian student killed while repairing tractor near Xylofagou",
+      "summary": "An unnamed 28-year-old Indian student studying at an institute in Sotira was killed while repairing a tractor in the Pefkos area near Xylofagou. The tractor moved during the repair work, fatally injuring him and seriously injuring a 38-year-old man working with him.",
+      "worker_name": "Name not published",
+      "worker_age": 28,
+      "employer": "Employer not named in source",
+      "sector": "Tractor repair / agriculture",
+      "cause": "Fatally injured after tractor moved during repair work",
+      "death_date": "2010-08-13",
+      "legal_status": "Dhekelia British bases police and the Labour Ministry's Safety Department investigating according to source",
+      "last_verified_at": "2010-08-15",
+      "locations": [
+        {
+          "id": "xylofagou-pefkos-tractor-repair-unnamed-indian-student",
+          "label": "Pefkos area near Xylofagou tractor repair site",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Xylofagou / Pefkos area",
+          "lat": 34.98,
+          "lng": 33.85,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor-repair accident in the Pefkos area near Xylofagou; Xylofagou/Pefkos area centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Indian student killed in work accident",
+          "url": "https://archive.cyprus-mail.com/2010/08/15/indian-student-killed-in-work-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-08-15"
+        }
+      ]
     }
   ]
 }
