@@ -1606,6 +1606,44 @@
           "published_at": "2014-10-25"
         }
       ]
+    },
+    {
+      "id": "yermasoyia-david-hopkins-water-tank-crush-july-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "David Hopkins dies after being crushed by water tank in Yermasoyia",
+      "summary": "David Hopkins, a 52-year-old British plumber, died in a fatal labour accident in Yermasoyia, Limassol, after the structure supporting a rooftop water tank collapsed while he was trying to fix it. He fell from the roof of a five-storey building to a first-floor porch and was crushed by the falling tank.",
+      "worker_name": "David Hopkins",
+      "worker_age": 52,
+      "employer": "Plumbing employer not named in source",
+      "sector": "Construction / plumbing",
+      "cause": "Crushed by falling water tank after rooftop support structure collapsed",
+      "death_date": "2014-07-08",
+      "legal_status": "Police, fire brigade, ambulance and Labour Inspection Department attended according to source",
+      "last_verified_at": "2014-07-08",
+      "locations": [
+        {
+          "id": "yermasoyia-water-tank-david-hopkins",
+          "label": "Yermasoyia rooftop water-tank worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Yermasoyia / Germasogeia",
+          "lat": 34.7202,
+          "lng": 33.0833,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal labour accident on the roof of a five-storey building in Yermasoyia/Germasogeia, Limassol; district centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Plumber crushed by water tank",
+          "url": "https://archive.cyprus-mail.com/2014/07/08/plumber-crushed-by-water-tank/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-07-08"
+        }
+      ]
     }
   ]
 }
