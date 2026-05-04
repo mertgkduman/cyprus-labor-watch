@@ -2746,6 +2746,44 @@
       ]
     },
     {
+      "id": "larnaca-unnamed-romanian-builder-hotel-wall-collapse-february-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Romanian builder crushed during hotel demolition work in Larnaca",
+      "summary": "An unnamed Romanian builder, believed to be around 55 years old, died after being crushed while trying to demolish an internal wall at a Larnaca hotel on Demosthenis Mitsi Street. The source says he was taken to Larnaca General Hospital, where he was pronounced dead on arrival.",
+      "worker_name": "Name not published",
+      "worker_age": 55,
+      "employer": "Hotel construction/demolition contractor not named in source",
+      "sector": "Construction demolition",
+      "cause": "Crushed during internal wall demolition",
+      "death_date": "2008-02-25",
+      "legal_status": "Police investigation into the exact circumstances reported by source",
+      "last_verified_at": "2008-02-26",
+      "locations": [
+        {
+          "id": "larnaca-demosthenis-mitsi-hotel-wall-collapse-unnamed-romanian-builder",
+          "label": "Hotel on Demosthenis Mitsi Street, Larnaca",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Larnaca",
+          "lat": 34.918,
+          "lng": 33.62,
+          "geocode_precision": "venue_approx",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal wall-collapse accident at a Larnaca hotel on Demosthenis Mitsi Street; approximate Larnaca street-area point used pending exact hotel coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Romanian builder killed on building site",
+          "url": "https://archive.cyprus-mail.com/2008/02/26/romanian-builder-killed-on-building-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-02-26"
+        }
+      ]
+    },
+    {
       "id": "aglandja-unnamed-georgian-worker-school-hole-collapse-april-2007",
       "record_type": "worker_death",
       "status": "fatality_recorded",

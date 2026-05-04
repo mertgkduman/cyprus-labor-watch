@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 90,
+      "record_count": 91,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2007-04, decremented by one after adding the unnamed 37-year-old Georgian co-worker from the Aglandja school excavation-collapse death; current April 2007 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2008-02, decremented by one after adding the unnamed Romanian builder's Larnaca hotel wall-demolition death; current February 2008 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -572,10 +572,10 @@
         },
         {
           "month": "2008-02",
-          "target_count_from_current_leads": 1,
-          "added_count": 1,
+          "target_count_from_current_leads": 2,
+          "added_count": 2,
           "remaining_count": 0,
-          "note": "Alexandros Georgiades's Dhekelia desalination-project bulldozer death added from Cyprus Mail archive, with WDD and Global Energy Monitor location context."
+          "note": "Alexandros Georgiades's Dhekelia desalination-project bulldozer death and the unnamed Romanian builder's Larnaca hotel wall-demolition death added from Cyprus Mail archive, with WDD and Global Energy Monitor location context for the Dhekelia record."
         },
         {
           "month": "2007-04",
@@ -962,6 +962,7 @@
         "https://archive.cyprus-mail.com/2009/01/14/builder-killed-in-site-accident/",
         "https://archive.cyprus-mail.com/2008/04/15/man-killed-in-work-accident-2/",
         "https://archive.cyprus-mail.com/2008/02/24/worker-killed-in-accident/",
+        "https://archive.cyprus-mail.com/2008/02/26/romanian-builder-killed-on-building-site/",
         "https://www.moa.gov.cy/moa/wdd/wdd.nsf/page23_en/page23_en",
         "https://www.gem.wiki/Dhekelia_power_station",
         "https://archive.cyprus-mail.com/2007/04/21/buried-alive-in-horror-accident/",
