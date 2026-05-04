@@ -1872,6 +1872,44 @@
           "published_at": "2012-03-17"
         }
       ]
+    },
+    {
+      "id": "limassol-unnamed-greek-cypriot-painter-ladder-fall-march-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Greek Cypriot painter dies after ladder fall in Limassol",
+      "summary": "An unnamed 46-year-old Greek Cypriot painter died after falling head-first from a 3.5-metre ladder while painting a house in Limassol. A labour inspection department official said the lack of safety measures had once again cost a life.",
+      "worker_name": "Name not published",
+      "worker_age": 46,
+      "employer": "Painting employer or client not named in source",
+      "sector": "Construction / painting",
+      "cause": "Head-first fall from ladder while painting a house",
+      "death_date": "2012-03-08",
+      "legal_status": "Labour inspection department safety concern and expected post-mortem reported by source",
+      "last_verified_at": "2012-03-09",
+      "locations": [
+        {
+          "id": "limassol-painter-ladder-fall-unnamed-worker",
+          "label": "Limassol house painting worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol",
+          "lat": 34.7071,
+          "lng": 33.0226,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal ladder fall at a house in Limassol where the painter was working; city centroid used pending exact house coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies in ladder fall",
+          "url": "https://archive.cyprus-mail.com/2012/03/09/man-dies-in-ladder-fall/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2012-03-09"
+        }
+      ]
     }
   ]
 }
