@@ -2062,6 +2062,44 @@
           "published_at": "2010-08-15"
         }
       ]
+    },
+    {
+      "id": "paphos-unnamed-syrian-roof-tiler-fall-may-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Syrian roof tiler dies after fall from Paphos roof",
+      "summary": "An unnamed 28-year-old Syrian man died after falling about six metres from a roof in Paphos where he was working. The source said he had been employed by a foreign contractor to install tiles, and police arrested the contractor for employing him illegally while labour inspectors examined site conditions.",
+      "worker_name": "Name not published",
+      "worker_age": 28,
+      "employer": "Foreign contractor not named in source",
+      "sector": "Construction / roof tiling",
+      "cause": "Fall from roof while installing tiles",
+      "death_date": "2010-05-17",
+      "legal_status": "Police arrested the contractor for employing the worker illegally; labour ministry inspectors examined construction-site conditions according to source",
+      "last_verified_at": "2010-05-18",
+      "locations": [
+        {
+          "id": "paphos-roof-tiling-fall-unnamed-syrian-worker",
+          "label": "Paphos roof-tiling worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Paphos",
+          "lat": 34.772,
+          "lng": 32.429,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal roof fall at a Paphos worksite while the worker was installing tiles; city centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Workman falls to his death from roof",
+          "url": "https://archive.cyprus-mail.com/2010/05/18/workman-falls-to-his-death-from-roof/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-05-18"
+        }
+      ]
     }
   ]
 }
