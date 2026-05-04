@@ -1524,6 +1524,44 @@
           "published_at": "2015-03-02"
         }
       ]
+    },
+    {
+      "id": "yeri-unnamed-refuse-collector-garbage-truck-crush-november-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed refuse collector dies after being crushed by garbage truck in Yeri",
+      "summary": "An unnamed 36-year-old Romanian refuse collector died in Yeri, Nicosia district, after falling from the rear of a reversing garbage truck and being crushed under its rear wheels while working with a coworker.",
+      "worker_name": "Name not published",
+      "worker_age": 36,
+      "employer": "Waste-collection employer not named in source",
+      "sector": "Waste collection / municipal services",
+      "cause": "Crushed by reversing garbage truck after falling from rear work position",
+      "death_date": "2014-11-06",
+      "legal_status": "Police reported the incident according to source",
+      "last_verified_at": "2014-11-07",
+      "locations": [
+        {
+          "id": "yeri-garbage-truck-crush-unnamed-refuse-collector",
+          "label": "Yeri/Geri garbage-truck worksite",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Yeri / Geri",
+          "lat": 35.1053,
+          "lng": 33.4193,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident in Yeri/Geri, on the outskirts of Nicosia; village area centroid used pending exact street coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man crushed by garbage truck",
+          "url": "https://archive.cyprus-mail.com/2014/11/07/man-crushed-by-garbage-truck/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-11-07"
+        }
+      ]
     }
   ]
 }
