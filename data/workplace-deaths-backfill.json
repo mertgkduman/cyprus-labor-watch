@@ -2611,6 +2611,56 @@
           "published_at": "2009-01-14"
         }
       ]
+    },
+    {
+      "id": "dhekelia-alexandros-georgiades-bulldozer-desalination-death-february-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Alexandros Georgiades killed by bulldozer at Dhekelia desalination project",
+      "summary": "Alexandros Georgiades, a 57-year-old Limassol engine driver, died while working on a project to extend and upgrade the desalination plant near the Dhekelia coastal area. The source says he is believed to have been hit by a bulldozer and killed instantly.",
+      "worker_name": "Alexandros Georgiades",
+      "worker_age": 57,
+      "employer": "Desalination project contractor not named in source",
+      "sector": "Desalination plant construction / heavy equipment",
+      "cause": "Struck by bulldozer during desalination-plant extension work",
+      "death_date": "2008-02-23",
+      "legal_status": "Police investigation and autopsy reported by source",
+      "last_verified_at": "2008-02-24",
+      "locations": [
+        {
+          "id": "dhekelia-desalination-project-bulldozer-alexandros-georgiades",
+          "label": "Dhekelia desalination-plant extension project",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Dhekelia coastal area",
+          "lat": 34.9804,
+          "lng": 33.7457,
+          "geocode_precision": "venue_approx",
+          "fatality_count": 1,
+          "location_basis": "Fatality source places the bulldozer strike at a project to extend and upgrade the desalination plant near the Dhekelia coastal area. Official WDD context confirms the Dhekelia desalination plant and expansion timing; nearby Dhekelia industrial-plant coordinates used as an approximate project-area point pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker killed in accident",
+          "url": "https://archive.cyprus-mail.com/2008/02/24/worker-killed-in-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-02-24"
+        },
+        {
+          "title": "Desalination Plants",
+          "url": "https://www.moa.gov.cy/moa/wdd/wdd.nsf/page23_en/page23_en",
+          "publisher": "Republic of Cyprus Water Development Department",
+          "type": "project_location_context"
+        },
+        {
+          "title": "Dhekelia power station",
+          "url": "https://www.gem.wiki/Dhekelia_power_station",
+          "publisher": "Global Energy Monitor",
+          "type": "coordinate_reference"
+        }
+      ]
     }
   ]
 }
