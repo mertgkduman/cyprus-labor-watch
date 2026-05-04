@@ -1519,15 +1519,31 @@ function localizedValue(value) {
 }
 
 function generatedLocalizedRecordValue(record, field, lang = state.lang) {
-  if (lang === "en" || record.record_type !== "worker_death") return "";
-  const death = workerDeathLocalizationParts(record, lang);
-  if (field === "title") return death.title;
-  if (field === "summary") return death.summary;
-  if (field === "worker_name") return localizedWorkerName(record.worker_name, lang);
-  if (field === "employer") return localizedEmployer(record.employer, lang);
-  if (field === "sector") return localizedSector(record.sector, lang);
-  if (field === "cause") return localizedCause(record.cause, lang, "detail");
-  if (field === "legal_status") return localizedLegalStatus(record.legal_status, lang);
+  if (lang === "en") return "";
+  if (record.record_type === "worker_death") {
+    const death = workerDeathLocalizationParts(record, lang);
+    if (field === "title") return death.title;
+    if (field === "summary") return death.summary;
+    if (field === "worker_name") return localizedWorkerName(record.worker_name, lang);
+    if (field === "employer") return localizedEmployer(record.employer, lang);
+    if (field === "sector") return localizedSector(record.sector, lang);
+    if (field === "cause") return localizedCause(record.cause, lang, "detail");
+    if (field === "legal_status") return localizedLegalStatus(record.legal_status, lang);
+  }
+  if (record.record_type === "strike" || record.record_type === "action_call" || record.record_type === "union_labor_arrest") {
+    const laborRecord = laborRecordLocalizationParts(record, lang);
+    if (field === "title") return laborRecord.title;
+    if (field === "summary") return laborRecord.summary;
+    if (field === "employer") return localizedOrganizationName(record.employer, lang);
+    if (field === "labor_organization") return localizedOrganizationName(record.labor_organization, lang);
+    if (field === "sector") return localizedSector(record.sector, lang);
+    if (field === "action_type") return localizedActionTypeValue(record.action_type, lang);
+    if (field === "person_name") return localizedPersonName(record.person_name, lang);
+    if (field === "role") return localizedRole(record.role, lang);
+    if (field === "custody_status") return localizedCustodyStatus(record, lang);
+    if (field === "legal_status") return localizedLegalStatus(record.legal_status, lang);
+    if (field === "accusation") return localizedAccusation(record, lang);
+  }
   return "";
 }
 
@@ -1561,6 +1577,192 @@ function workerDeathLocalizationParts(record, lang) {
   };
 }
 
+function laborRecordLocalizationParts(record, lang) {
+  if (record.record_type === "strike") return strikeLocalizationParts(record, lang);
+  if (record.record_type === "action_call") return actionCallLocalizationParts(record, lang);
+  if (record.record_type === "union_labor_arrest") return unionRetaliationLocalizationParts(record, lang);
+  return { title: "", summary: "" };
+}
+
+function strikeLocalizationParts(record, lang) {
+  const org = localizedOrganizationName(record.labor_organization, lang);
+  const employer = localizedOrganizationName(record.employer, lang);
+  const actor = org || employer || localizedRecordTypeActor(record, lang);
+  const place = localizedRecordPlace(record, lang);
+  const date = formatDate(record.start_date || record.decision_date || record.end_date || record.last_verified_at);
+  const status = localizedStatusValue(record.status, lang);
+  const actionType = localizedActionTypeValue(record.action_type, lang);
+  const demands = localizedDemandsFallback(record, lang);
+
+  if (lang === "tr") {
+    const title = `${actor} ${place ? `${place} bölgesinde ` : ""}${actionType || "grev / işçi eylemi"}`.replace(/\s+/g, " ").trim();
+    const summary = `${date ? `${date} tarihinde ` : ""}${actor}, ${employer && employer !== actor ? `${employer} ile ilgili ` : ""}${place ? `${place} bölgesinde ` : ""}${actionType || "grev / işçi eylemi"} kaydıyla izlendi. ${demands.length ? `Talepler/konular: ${demands.join("; ")}. ` : ""}${status ? `Durum: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+    return { title, summary };
+  }
+
+  const title = `${actor} ${place ? `στην περιοχή ${place} ` : ""}${actionType || "απεργία / εργατική δράση"}`.replace(/\s+/g, " ").trim();
+  const summary = `${date ? `Στις ${date}, ` : ""}${actor} καταγράφηκε ${place ? `στην περιοχή ${place} ` : ""}για ${actionType || "απεργία / εργατική δράση"}${employer && employer !== actor ? ` που αφορά ${employer}` : ""}. ${demands.length ? `Αιτήματα/ζητήματα: ${demands.join("; ")}. ` : ""}${status ? `Κατάσταση: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+  return { title, summary };
+}
+
+function actionCallLocalizationParts(record, lang) {
+  const org = localizedOrganizationName(record.labor_organization, lang) || localizedRecordTypeActor(record, lang);
+  const place = localizedRecordPlace(record, lang);
+  const date = formatDate(record.event_date || record.start_date || record.decision_date || record.last_verified_at);
+  const actionType = localizedActionTypeValue(record.action_type, lang);
+  const status = localizedStatusValue(record.status, lang);
+  const demands = localizedDemandsFallback(record, lang);
+
+  if (lang === "tr") {
+    const title = `${org} ${place ? `${place} için ` : ""}${actionType || "eylem / dayanışma çağrısı"}`.replace(/\s+/g, " ").trim();
+    const summary = `${org}, ${date ? `${date} tarihi için ` : ""}${place ? `${place} bölgesinde ` : ""}${actionType || "eylem / dayanışma çağrısı"} yaptı. ${demands.length ? `Talepler/konular: ${demands.join("; ")}. ` : ""}${status ? `Durum: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+    return { title, summary };
+  }
+
+  const title = `${org} ${place ? `για την περιοχή ${place} ` : ""}${actionType || "κάλεσμα σε δράση / αλληλεγγύη"}`.replace(/\s+/g, " ").trim();
+  const summary = `${org} απηύθυνε ${date ? `για τις ${date} ` : ""}${actionType || "κάλεσμα σε δράση / αλληλεγγύη"}${place ? ` στην περιοχή ${place}` : ""}. ${demands.length ? `Αιτήματα/ζητήματα: ${demands.join("; ")}. ` : ""}${status ? `Κατάσταση: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+  return { title, summary };
+}
+
+function unionRetaliationLocalizationParts(record, lang) {
+  const person = localizedPersonName(record.person_name, lang);
+  const org = localizedOrganizationName(record.labor_organization, lang);
+  const actor = person || org || localizedRecordTypeActor(record, lang);
+  const place = localizedRecordPlace(record, lang);
+  const date = formatDate(record.detention_date || record.last_verified_at || record.start_date);
+  const status = localizedCustodyStatus(record, lang) || localizedStatusValue(record.status, lang);
+  const accusation = localizedAccusation(record, lang);
+
+  if (lang === "tr") {
+    const title = `${actor} için emek hakkı baskısı / gözaltı kaydı`.replace(/\s+/g, " ").trim();
+    const summary = `${date ? `${date} tarihinde ` : ""}${actor}${org && person ? ` (${org})` : ""} için ${place ? `${place} bölgesinde ` : ""}emek ve sendika hakkıyla bağlantılı gözaltı, tutuklama veya baskı kaydı izlendi. ${accusation ? `Suçlama/hukuki durum: ${accusation}. ` : ""}${status ? `Durum: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+    return { title, summary };
+  }
+
+  const title = `Καταγραφή εργατικής δίωξης / κράτησης για ${actor}`.replace(/\s+/g, " ").trim();
+  const summary = `${date ? `Στις ${date}, ` : ""}καταγράφηκε υπόθεση κράτησης, σύλληψης ή πίεσης συνδεδεμένης με εργατικά και συνδικαλιστικά δικαιώματα για ${actor}${org && person ? ` (${org})` : ""}${place ? ` στην περιοχή ${place}` : ""}. ${accusation ? `Κατηγορία/νομική κατάσταση: ${accusation}. ` : ""}${status ? `Κατάσταση: ${status}.` : ""}`.replace(/\s+/g, " ").trim();
+  return { title, summary };
+}
+
+function localizedRecordTypeActor(record, lang) {
+  if (record.record_type === "strike") return lang === "tr" ? "İşçiler / sendika" : "Εργαζόμενοι / συντεχνία";
+  if (record.record_type === "action_call") return lang === "tr" ? "Emek örgütleri" : "Εργατικές οργανώσεις";
+  if (record.record_type === "union_labor_arrest") return lang === "tr" ? "Emek hakkı savunucuları" : "Υπερασπιστές εργατικών δικαιωμάτων";
+  return "";
+}
+
+function localizedRecordPlace(record, lang) {
+  const location = displayLocations(record)[0] || record.locations?.[0] || {};
+  return localizedWorkerDeathPlace(location, lang);
+}
+
+function localizedOrganizationName(value, lang) {
+  if (!value) return "";
+  const text = normalizeAscii(value).toLowerCase();
+  const translations = {
+    "electricity authority of cyprus": { tr: "Kıbrıs Elektrik Kurumu", el: "Αρχή Ηλεκτρισμού Κύπρου" },
+    "eac": { tr: "Kıbrıs Elektrik Kurumu", el: "Αρχή Ηλεκτρισμού Κύπρου" },
+    "peo": { tr: "PEO", el: "ΠΕΟ" },
+    "sek": { tr: "SEK", el: "ΣΕΚ" },
+    "ktams": { tr: "KTAMS", el: "KTAMS" },
+    "kamu-is": { tr: "Kamu-İş", el: "Kamu-İş" },
+    "kamusen": { tr: "Kamu-Sen", el: "Kamu-Sen" },
+    "el-sen": { tr: "EL-SEN", el: "EL-SEN" },
+    "wolt": { tr: "Wolt", el: "Wolt" },
+  };
+  const exact = translations[text]?.[lang];
+  if (exact) return exact;
+  if (/not named|not published|not specified|unknown/.test(text)) {
+    return lang === "tr" ? "Kaynakta adlandırılmayan örgüt / işveren" : "οργάνωση / εργοδότης που δεν κατονομάζεται στην πηγή";
+  }
+  return value;
+}
+
+function localizedPersonName(value, lang) {
+  if (!value || /not named|not published|unnamed|unknown/i.test(value)) {
+    return lang === "tr" ? "Adı yayımlanmayan kişi" : "πρόσωπο του οποίου το όνομα δεν δημοσιεύθηκε";
+  }
+  return value;
+}
+
+function localizedRole(value, lang) {
+  const text = normalizeAscii(value || "").toLowerCase();
+  if (!text) return "";
+  if (/president|chair/.test(text)) return lang === "tr" ? "sendika başkanı" : "πρόεδρος συντεχνίας";
+  if (/secretary/.test(text)) return lang === "tr" ? "sendika sekreteri" : "γραμματέας συντεχνίας";
+  if (/teacher|educator/.test(text)) return lang === "tr" ? "eğitim emekçisi" : "εκπαιδευτικός";
+  if (/worker|employee/.test(text)) return lang === "tr" ? "işçi / çalışan" : "εργαζόμενος/η";
+  if (/protester|demonstrator/.test(text)) return lang === "tr" ? "eylemci" : "διαδηλωτής/τρια";
+  return lang === "tr" ? "emek hakkı öznesi" : "πρόσωπο συνδεδεμένο με εργατικά δικαιώματα";
+}
+
+function localizedActionTypeValue(value, lang) {
+  if (!value) return "";
+  const text = normalizeAscii(value).toLowerCase();
+  const type = ACTION_TYPES.includes(value) ? value : ACTION_TYPES.find((item) => text.includes(normalizeAscii(item).toLowerCase()));
+  if (type && COPY[lang]?.actionType?.[type]) return COPY[lang].actionType[type];
+  if (/strike|grev/.test(text)) return lang === "tr" ? "grev" : "απεργία";
+  if (/protest|demonstration|eylem/.test(text)) return lang === "tr" ? "protesto / eylem" : "διαμαρτυρία / δράση";
+  if (/solidarity|dayan/.test(text)) return lang === "tr" ? "dayanışma eylemi" : "δράση αλληλεγγύης";
+  return lang === "tr" ? "emek eylemi" : "εργατική δράση";
+}
+
+function localizedStatusValue(value, lang) {
+  return COPY[lang]?.status?.[value] || "";
+}
+
+function localizedCustodyStatus(record, lang) {
+  const text = normalizeAscii([record.custody_status, record.legal_status, record.status].filter(Boolean).join(" ")).toLowerCase();
+  if (!text) return "";
+  if (/released|serbest/.test(text)) return lang === "tr" ? "serbest bırakıldı" : "αφέθηκε ελεύθερος/η";
+  if (/arrest|detain|custody|jail|remand|tutuk|gozalti|gözalti|gözalt/.test(text)) return lang === "tr" ? "gözaltı / tutuklama bildirildi" : "αναφέρθηκε κράτηση / σύλληψη";
+  if (/summon|police statement|statement/.test(text)) return lang === "tr" ? "polis ifadesi / çağrısı bildirildi" : "αναφέρθηκε κλήση ή κατάθεση στην αστυνομία";
+  return localizedStatusValue(record.status, lang) || (lang === "tr" ? "emek hakkı baskısı bildirildi" : "αναφέρθηκε πίεση σε εργατικά δικαιώματα");
+}
+
+function localizedAccusation(record, lang) {
+  const text = normalizeAscii([record.accusation, record.legal_status, record.summary].filter(Boolean).join(" ")).toLowerCase();
+  if (!text) return "";
+  if (/cola/.test(text)) return lang === "tr" ? "CoLA / hayat pahalılığı eylemleriyle bağlantılı süreç" : "διαδικασία συνδεδεμένη με κινητοποιήσεις για την ΑΤΑ / CoLA";
+  if (/strike|protest|demonstration|union|sendika|grev|eylem/.test(text)) return lang === "tr" ? "sendikal faaliyet veya protestoyla bağlantılı hukuki süreç" : "νομική διαδικασία συνδεδεμένη με συνδικαλιστική δράση ή διαμαρτυρία";
+  if (/police|court|arrest|detain|summon/.test(text)) return lang === "tr" ? "polis veya mahkeme süreci bildirildi" : "αναφέρθηκε αστυνομική ή δικαστική διαδικασία";
+  return lang === "tr" ? "kaynakta emek hakkı bağlamında hukuki süreç bildirildi" : "η πηγή αναφέρει νομική διαδικασία σε πλαίσιο εργατικών δικαιωμάτων";
+}
+
+function localizedDemandsFallback(record, lang) {
+  const explicit = record.translations?.[lang]?.demands;
+  if (explicit?.length) return explicit;
+  const rawDemands = Array.isArray(record.demands) ? record.demands : [];
+  if (!rawDemands.length) return [];
+  return rawDemands.map((demand) => localizedDemandText(demand, lang)).filter(Boolean);
+}
+
+function localizedDemandText(value, lang) {
+  const text = normalizeAscii(value || "").toLowerCase();
+  const trRules = [
+    [/collective|agreement|bargain|sozlesme|sözlesme/, "Toplu iş sözleşmesi ve pazarlık hakkı"],
+    [/pay|wage|salary|rate|cola|allowance|cost of living|ücret|maas|maaş/, "Ücret, ödenek ve hayat pahalılığı düzenlemesi"],
+    [/staff|shortage|vacant|workload|kad(ro|ro)|personel/, "Personel eksikliği ve iş yükünün azaltılması"],
+    [/safety|health|protect|risk|safe/, "İşçi sağlığı ve güvenliği önlemleri"],
+    [/dismiss|reinstat|termination|fired|işten/, "İşten çıkarılanların geri alınması ve sendikal baskının durması"],
+    [/privat|protocol|public|asset/, "Kamusal hizmetlerin ve kurumların korunması"],
+    [/service|delay|patient|education|school/, "Kamu hizmetlerinin ve çalışma koşullarının iyileştirilmesi"],
+    [/solidarity|support/, "Dayanışma ve hak ihlallerinin görünür kılınması"],
+  ];
+  const elRules = [
+    [/collective|agreement|bargain|sozlesme|sözlesme/, "Συλλογική σύμβαση και δικαίωμα διαπραγμάτευσης"],
+    [/pay|wage|salary|rate|cola|allowance|cost of living|ücret|maas|maaş/, "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA"],
+    [/staff|shortage|vacant|workload|kad(ro|ro)|personel/, "Ελλείψεις προσωπικού και μείωση φόρτου εργασίας"],
+    [/safety|health|protect|risk|safe/, "Μέτρα υγείας και ασφάλειας στην εργασία"],
+    [/dismiss|reinstat|termination|fired|işten/, "Επαναπρόσληψη απολυμένων και παύση αντισυνδικαλιστικής πίεσης"],
+    [/privat|protocol|public|asset/, "Προστασία δημόσιων υπηρεσιών και θεσμών"],
+    [/service|delay|patient|education|school/, "Βελτίωση δημόσιων υπηρεσιών και συνθηκών εργασίας"],
+    [/solidarity|support/, "Αλληλεγγύη και ανάδειξη παραβιάσεων δικαιωμάτων"],
+  ];
+  const rules = lang === "tr" ? trRules : elRules;
+  return rules.find(([pattern]) => pattern.test(text))?.[1] || (lang === "tr" ? "Kaynakta belirtilen işçi talepleri" : "εργατικά αιτήματα που αναφέρονται στην πηγή");
+}
+
 function localizedWorkerName(value, lang) {
   if (!value || /name not published|not published|unnamed/i.test(value)) {
     return lang === "tr" ? "Adı yayımlanmadı" : "Το όνομα δεν δημοσιεύθηκε";
@@ -1582,7 +1784,7 @@ function localizedAreaNameForLang(nameOrKey, lang) {
 
 function localizedSector(value, lang) {
   if (!value) return "";
-  const text = normalizeAscii(value);
+  const text = normalizeAscii(value).toLowerCase();
   const tr = [
     [/construction|building|plumbing|painting|scaffold|site/, "İnşaat"],
     [/electric|utilities|telecommunication|installation|power/, "Elektrik / altyapı"],
@@ -1605,7 +1807,7 @@ function localizedSector(value, lang) {
 
 function localizedEmployer(value, lang) {
   if (!value) return "";
-  const text = normalizeAscii(value);
+  const text = normalizeAscii(value).toLowerCase();
   if (/not named|not published|not specified|unknown|direct employer not named/.test(text)) {
     if (/construction/.test(text)) return lang === "tr" ? "Kaynakta adı verilmeyen inşaat işvereni" : "εργοδότης οικοδομής που δεν κατονομάστηκε στην πηγή";
     if (/factory|warehouse|industrial/.test(text)) return lang === "tr" ? "Kaynakta adı verilmeyen işyeri" : "χώρος εργασίας που δεν κατονομάστηκε στην πηγή";
@@ -1615,7 +1817,7 @@ function localizedEmployer(value, lang) {
 }
 
 function localizedCause(value, lang, style = "detail") {
-  const text = normalizeAscii(value || "");
+  const text = normalizeAscii(value || "").toLowerCase();
   const tr = causePhrase(text, "tr");
   const el = causePhrase(text, "el");
   const phrase = lang === "tr" ? tr : el;
@@ -1694,7 +1896,7 @@ function causePhrase(text, lang) {
 }
 
 function localizedLegalStatus(value, lang) {
-  const text = normalizeAscii(value || "");
+  const text = normalizeAscii(value || "").toLowerCase();
   if (!text) return "";
   const parts = [];
   if (/police/.test(text)) parts.push(lang === "tr" ? "polis soruşturması bildirildi" : "αναφέρθηκε αστυνομική έρευνα");
@@ -1706,7 +1908,9 @@ function localizedLegalStatus(value, lang) {
 }
 
 function localizedDemands(record) {
-  return record.translations?.[state.lang]?.demands || record.demands || [];
+  if (record.translations?.[state.lang]?.demands?.length) return record.translations[state.lang].demands;
+  if (state.lang !== "en") return localizedDemandsFallback(record, state.lang);
+  return record.demands || [];
 }
 
 function localizedLocationValue(record, location, field) {
@@ -1724,29 +1928,56 @@ function localizedTimelineNote(record, item, index) {
 }
 
 function localizedSourceTitle(record, source, index) {
-  return record.translations?.[state.lang]?.sources?.[index]?.title || localizedValue(source.title) || t("common.source");
+  const explicitValue = record.translations?.[state.lang]?.sources?.[index]?.title;
+  if (explicitValue) return explicitValue;
+  const translatedValue = localizedValue(source.title);
+  if (state.lang === "en" || translatedValue !== source.title) return translatedValue || t("common.source");
+  const publisher = source.publisher || "";
+  if (state.lang === "tr") return publisher ? `${publisher} kaynağı` : "Kamusal kaynak";
+  if (state.lang === "el") return publisher ? `Πηγή: ${publisher}` : "Δημόσια πηγή";
+  return t("common.source");
 }
 
 function generatedLocalizedLocationValue(record, location, field, lang) {
-  if (lang === "en" || record.record_type !== "worker_death") return "";
+  if (lang === "en") return "";
   const place = localizedWorkerDeathPlace(location, lang);
   if (field === "label") {
-    const sector = localizedSector(record.sector, lang);
-    if (lang === "tr") return place ? `${place} ${sector ? `${sector} sahası` : "çalışma sahası"}` : "";
-    return place ? `${sector ? `χώρος ${sector}` : "χώρος εργασίας"} ${place}` : "";
+    if (record.record_type === "worker_death") {
+      const sector = localizedSector(record.sector, lang);
+      if (lang === "tr") return place ? `${place} ${sector ? `${sector} sahası` : "çalışma sahası"}` : "";
+      return place ? `${sector ? `χώρος ${sector}` : "χώρος εργασίας"} ${place}` : "";
+    }
+    if (record.record_type === "strike") return lang === "tr" ? `${place || "Kıbrıs"} grev / eylem konumu` : `${place || "Κύπρος"} τόπος απεργίας / δράσης`;
+    if (record.record_type === "action_call") return lang === "tr" ? `${place || "Kıbrıs"} eylem çağrısı konumu` : `${place || "Κύπρος"} τόπος καλέσματος δράσης`;
+    if (record.record_type === "union_labor_arrest") return lang === "tr" ? `${place || "Kıbrıs"} gözaltı / baskı kaydı konumu` : `${place || "Κύπρος"} τόπος κράτησης / πίεσης`;
   }
   if (field === "location_basis") {
     if (lang === "tr") return `Kaynak olayı ${place || "bu konum"} çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır.`;
-    return `Η πηγή τοποθετεί το περιστατικό στην περιοχή ${place || "αυτής της τοποθεσίας"}. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη.`;
+    return `Η πηγή τοποθετεί την υπόθεση στην περιοχή ${place || "αυτής της τοποθεσίας"}. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη.`;
   }
   return "";
 }
 
 function generatedLocalizedTimelineNote(record, item, lang) {
-  if (lang === "en" || record.record_type !== "worker_death") return "";
-  const date = item.date || record.death_date || record.start_date || "";
-  if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}Ölümcül iş kazası kayda geçirildi.`;
-  return `${date ? `${formatDate(date)}: ` : ""}Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.`;
+  if (lang === "en") return "";
+  const date = item.date || record.death_date || record.start_date || record.event_date || record.detention_date || "";
+  if (record.record_type === "worker_death") {
+    if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}Ölümcül iş kazası kayda geçirildi.`;
+    return `${date ? `${formatDate(date)}: ` : ""}Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.`;
+  }
+  if (record.record_type === "strike") {
+    if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}${localizedStatusValue(item.status, lang) || "Grev / işçi eylemi"} kayda geçirildi.`;
+    return `${date ? `${formatDate(date)}: ` : ""}Καταγράφηκε ${localizedStatusValue(item.status, lang) || "απεργία / εργατική δράση"}.`;
+  }
+  if (record.record_type === "action_call") {
+    if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}Eylem / dayanışma çağrısı kayda geçirildi.`;
+    return `${date ? `${formatDate(date)}: ` : ""}Καταγράφηκε κάλεσμα σε δράση / αλληλεγγύη.`;
+  }
+  if (record.record_type === "union_labor_arrest") {
+    if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}Emek hakkı baskısı, gözaltı veya tutuklama kaydı güncellendi.`;
+    return `${date ? `${formatDate(date)}: ` : ""}Ενημερώθηκε καταγραφή πίεσης, κράτησης ή σύλληψης συνδεδεμένης με εργατικά δικαιώματα.`;
+  }
+  return "";
 }
 
 function localizedAreaName(nameOrKey) {
