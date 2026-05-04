@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 74,
+      "record_count": 75,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-08, decremented by one after adding Yannakis Ioannou's Pareklissia tractor-crush death; current August 2010 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-12, decremented by one after adding Krisium Syprian Gabriel's Aradippou digger-strike death.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -499,6 +499,13 @@
           "added_count": 1,
           "remaining_count": 0,
           "note": "Unnamed Romanian fruit-packing worker crane-crush death in Kokkinotrimithia added from Cyprus Mail archive."
+        },
+        {
+          "month": "2010-12",
+          "target_count_from_current_leads": 1,
+          "added_count": 1,
+          "remaining_count": 0,
+          "note": "Krisium Syprian Gabriel's Aradippou industrial-area digger-strike death added from Cyprus Mail archive."
         },
         {
           "month": "2010-08",
@@ -874,6 +881,7 @@
         "https://archive.cyprus-mail.com/2012/02/24/paphos-man-dies-under-tractor/",
         "https://archive.cyprus-mail.com/2012/02/21/bull-kills-farm-worker/",
         "https://archive.cyprus-mail.com/2012/01/31/man-killed-in-work-accident/",
+        "https://archive.cyprus-mail.com/2010/12/15/man-killed-after-being-hit-by-digger/",
         "https://archive.cyprus-mail.com/2010/08/15/indian-student-killed-in-work-accident/",
         "https://archive.cyprus-mail.com/2010/08/10/man-killed-by-faulty-tractor/",
         "https://archive.cyprus-mail.com/2010/05/18/workman-falls-to-his-death-from-roof/",

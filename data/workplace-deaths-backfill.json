@@ -2026,6 +2026,44 @@
       ]
     },
     {
+      "id": "aradippou-krisium-syprian-gabriel-digger-strike-december-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Krisium Syprian Gabriel dies after being hit by digger in Aradippou industrial area",
+      "summary": "Krisium Syprian Gabriel, a 25-year-old man from Romania, died after being hit by a digger while trying to widen a ditch in the industrial area of Aradippou. The source reported that the digger driver had failed to notice Gabriel standing behind the machine.",
+      "worker_name": "Krisium Syprian Gabriel",
+      "worker_age": 25,
+      "employer": "Employer not named in source",
+      "sector": "Excavation / construction",
+      "cause": "Hit by digger while widening ditch",
+      "death_date": "2010-12-14",
+      "legal_status": "Labour Inspection Department and Aradippou police investigation reported by source",
+      "last_verified_at": "2010-12-15",
+      "locations": [
+        {
+          "id": "aradippou-industrial-area-digger-krisium-syprian-gabriel",
+          "label": "Aradippou industrial area ditch-widening worksite",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Aradippou",
+          "lat": 34.954,
+          "lng": 33.596,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal digger accident in the industrial area of Aradippou; industrial-area centroid used pending exact ditch-worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man killed after being hit by digger",
+          "url": "https://archive.cyprus-mail.com/2010/12/15/man-killed-after-being-hit-by-digger/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-12-15"
+        }
+      ]
+    },
+    {
       "id": "xylofagou-unnamed-indian-student-tractor-repair-death-august-2010",
       "record_type": "worker_death",
       "status": "fatality_recorded",
