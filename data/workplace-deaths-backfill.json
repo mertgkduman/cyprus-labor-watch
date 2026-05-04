@@ -2252,6 +2252,44 @@
           "published_at": "2010-05-18"
         }
       ]
+    },
+    {
+      "id": "kapparis-spyros-haholis-painter-fall-may-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Spyros Haholis dies after fall while painting Kapparis apartment block",
+      "summary": "Spyros Haholis, a 53-year-old father of two from Liopetri, died after falling about 12 metres while painting a newly constructed three-storey apartment block at Kapparis in Paralimni. The source said police and the labour office investigated whether proper safety measures had been taken.",
+      "worker_name": "Spyros Haholis",
+      "worker_age": 53,
+      "employer": "Painting or construction employer not named in source",
+      "sector": "Construction / painting",
+      "cause": "Fall from roof while painting building",
+      "death_date": "2010-05-06",
+      "legal_status": "Police and labour office investigation into safety measures reported by source",
+      "last_verified_at": "2010-05-07",
+      "locations": [
+        {
+          "id": "kapparis-apartment-block-painting-fall-spyros-haholis",
+          "label": "Kapparis newly constructed apartment block",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Kapparis / Paralimni",
+          "lat": 35.0555,
+          "lng": 34.0038,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall at a newly constructed three-storey apartment block at Kapparis in Paralimni; Kapparis area centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Father of two dies in work accident",
+          "url": "https://archive.cyprus-mail.com/2010/05/07/father-of-two-dies-in-work-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-05-07"
+        }
+      ]
     }
   ]
 }
