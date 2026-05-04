@@ -1682,6 +1682,44 @@
           "published_at": "2014-07-05"
         }
       ]
+    },
+    {
+      "id": "frenaros-unnamed-romanian-worker-trench-collapse-april-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Romanian construction worker dies in Frenaros trench collapse",
+      "summary": "An unnamed 33-year-old Romanian construction worker died after the walls of a four-metre-deep trench collapsed while he was working on the Frenaros sewage-system construction project. Co-workers pulled him from the rubble and he was taken to Famagusta General Hospital, where doctors were unable to revive him.",
+      "worker_name": "Name not published",
+      "worker_age": 33,
+      "employer": "Frenaros sewage-system construction employer not named in source",
+      "sector": "Construction / sewage infrastructure",
+      "cause": "Collapse of four-metre-deep trench during sewage-system works",
+      "death_date": "2014-04-15",
+      "legal_status": "Police and Labour Ministry safety officials inspected the scene according to source",
+      "last_verified_at": "2014-04-16",
+      "locations": [
+        {
+          "id": "frenaros-sewage-trench-collapse-unnamed-worker",
+          "label": "Frenaros sewage-system trench worksite",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Frenaros",
+          "lat": 35.0417,
+          "lng": 33.9242,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal trench collapse at the Frenaros sewage-system construction works; Frenaros area centroid used pending exact trench coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Construction worker killed on building site",
+          "url": "https://archive.cyprus-mail.com/2014/04/16/construction-worker-killed-on-building-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-04-16"
+        }
+      ]
     }
   ]
 }
