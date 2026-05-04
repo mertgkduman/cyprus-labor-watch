@@ -1562,6 +1562,50 @@
           "published_at": "2014-11-07"
         }
       ]
+    },
+    {
+      "id": "psimolofou-unnamed-field-worker-pickup-crash-october-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed field worker dies in Psimolofou pickup crash while being taken to work",
+      "summary": "An unnamed Arab field worker died in Psimolofou, Nicosia district, when a pickup truck carrying five foreign workers to work overturned after hitting a wall. The victim and two other workers were riding in the truck's cargo area, and a follow-up report said the driver was remanded in connection with the fatal crash.",
+      "worker_name": "Name not published",
+      "employer": "Agricultural employer not named in source",
+      "sector": "Agriculture / work transport",
+      "cause": "Pickup truck crash while workers were being transported to work in cargo area",
+      "death_date": "2014-10-24",
+      "legal_status": "Driver remanded for four days; possible employer liability was reported as dependent on statements",
+      "last_verified_at": "2014-10-25",
+      "locations": [
+        {
+          "id": "psimolofou-pickup-crash-unnamed-field-worker",
+          "label": "Psimolofou work-transport crash",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Psimolofou",
+          "lat": 35.0648,
+          "lng": 33.2623,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal crash in Psimolofou, Nicosia district, while workers were being transported to work; village area centroid used pending exact crash coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker dies in road accident",
+          "url": "https://archive.cyprus-mail.com/2014/10/24/worker-dies-in-road-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-10-24"
+        },
+        {
+          "title": "Remand in connection with fatal traffic accident",
+          "url": "https://archive.cyprus-mail.com/2014/10/25/remand-in-connection-with-fatal-traffic-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-10-25"
+        }
+      ]
     }
   ]
 }
