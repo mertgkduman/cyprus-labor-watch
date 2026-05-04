@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 63,
+      "record_count": 64,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2014-04, decremented by one after adding the unnamed Frenaros trench-collapse death.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2013-09, decremented by one after adding Panayiotis Sophocleous; one September 2013 tractor lead remains for review.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -464,6 +464,13 @@
           "added_count": 1,
           "remaining_count": 0,
           "note": "Unnamed Romanian construction worker in Frenaros trench collapse added from Cyprus Mail archive."
+        },
+        {
+          "month": "2013-09",
+          "target_count_from_current_leads": 2,
+          "added_count": 1,
+          "remaining_count": 1,
+          "note": "Panayiotis Sophocleous added from Cyprus Mail archive; remaining current lead for review: Michalis Kyriacou, Apliki tractor accident."
         }
       ],
       "priority_sources": [
@@ -817,6 +824,7 @@
         "https://archive.cyprus-mail.com/2014/07/08/plumber-crushed-by-water-tank/",
         "https://archive.cyprus-mail.com/2014/07/05/truck-driver-crushed-to-death/",
         "https://archive.cyprus-mail.com/2014/04/16/construction-worker-killed-on-building-site/",
+        "https://archive.cyprus-mail.com/2013/09/21/man-crushed-by-tractor/",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",

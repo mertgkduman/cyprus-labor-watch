@@ -1720,6 +1720,44 @@
           "published_at": "2014-04-16"
         }
       ]
+    },
+    {
+      "id": "alektora-pissouri-panayiotis-sophocleous-tractor-crush-september-2013",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Panayiotis Sophocleous dies after tractor crushes him between Alektora and Pissouri",
+      "summary": "Panayiotis Sophocleous, a 51-year-old man from Anogyra and a Paphos resident, died in a field between Alektora and Pissouri after the tractor he was driving fell into a 10-metre ditch and crushed him while he was spreading manure on his land with one of his sons.",
+      "worker_name": "Panayiotis Sophocleous",
+      "worker_age": 51,
+      "employer": "Self-employed farmer or landholder",
+      "sector": "Agriculture",
+      "cause": "Crushed by tractor after it fell into a ditch during manure spreading",
+      "death_date": "2013-09-21",
+      "legal_status": "Limassol CID statement and British Bases fire-service recovery reported",
+      "last_verified_at": "2013-09-21",
+      "locations": [
+        {
+          "id": "alektora-pissouri-tractor-panayiotis-sophocleous",
+          "label": "Field between Alektora and Pissouri",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Alektora / Pissouri",
+          "lat": 34.685,
+          "lng": 32.705,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor accident in a field between Alektora and Pissouri; area centroid used pending exact field coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man crushed by tractor",
+          "url": "https://archive.cyprus-mail.com/2013/09/21/man-crushed-by-tractor/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2013-09-21"
+        }
+      ]
     }
   ]
 }
