@@ -1986,6 +1986,44 @@
           "published_at": "2012-02-21"
         }
       ]
+    },
+    {
+      "id": "kokkinotrimithia-unnamed-romanian-fruit-packing-crane-crush-january-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Romanian fruit-packing worker dies after crane crush in Kokkinotrimithia",
+      "summary": "An unnamed 22-year-old Romanian worker died in Kokkinotrimithia after being pinned between a mobile crane and a parked truck while he and a 45-year-old coworker, both employed at a fruit-packing company, were trying to move the crane out of a car park.",
+      "worker_name": "Name not published",
+      "worker_age": 22,
+      "employer": "Fruit-packing company not named in source",
+      "sector": "Fruit packing / logistics",
+      "cause": "Pinned between mobile crane and parked truck",
+      "death_date": "2012-01-29",
+      "legal_status": "Coworker detained for questioning according to source",
+      "last_verified_at": "2012-01-31",
+      "locations": [
+        {
+          "id": "kokkinotrimithia-fruit-packing-crane-crush-unnamed-worker",
+          "label": "Kokkinotrimithia fruit-packing company car park",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Kokkinotrimithia",
+          "lat": 35.153,
+          "lng": 33.1997,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal crane crush in Kokkinotrimithia at a fruit-packing company car park; village area centroid used pending exact company coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man killed in work accident",
+          "url": "https://archive.cyprus-mail.com/2012/01/31/man-killed-in-work-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2012-01-31"
+        }
+      ]
     }
   ]
 }
