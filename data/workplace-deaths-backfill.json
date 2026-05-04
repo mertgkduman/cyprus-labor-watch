@@ -2499,6 +2499,43 @@
           "published_at": "2009"
         }
       ]
+    },
+    {
+      "id": "panthea-unnamed-syrian-painter-cherry-picker-collapse-first-death-may-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Syrian painter killed after cherry-picker collapse in Panthea",
+      "summary": "One of two unnamed Syrian painters died after a cherry-picker collapsed while they were painting the exterior walls of a newly completed Limassol apartment block in the Panthea area. The source says both workers fell three storeys and were killed instantly; this record covers the worker reported as thrown onto the adjacent property.",
+      "worker_name": "Name not published",
+      "employer": "Construction contractor/subcontractor not named in source",
+      "sector": "Construction / exterior painting",
+      "cause": "Fall from collapsed cherry-picker while painting apartment block",
+      "death_date": "2009-05-09",
+      "legal_status": "Police and Labour Inspection Office investigation reported; labour inspectors suspected negligence and questioned the contractor, painting subcontractor and lift operator",
+      "last_verified_at": "2009-05-10",
+      "locations": [
+        {
+          "id": "panthea-apartment-block-cherry-picker-syrian-painter-first",
+          "label": "Panthea apartment-block worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Panthea",
+          "lat": 34.7112,
+          "lng": 33.0403,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal cherry-picker collapse at a newly completed apartment block in the Panthea area of Limassol; Panthea area centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Two die in construction site accident",
+          "url": "https://archive.cyprus-mail.com/2009/05/10/two-die-in-construction-site-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-05-10"
+        }
+      ]
     }
   ]
 }
