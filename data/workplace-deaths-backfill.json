@@ -2410,6 +2410,44 @@
           "published_at": "2009-11-12"
         }
       ]
+    },
+    {
+      "id": "ypsonas-christodoulos-kyprou-falling-pipes-factory-death-november-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Christodoulos Kyprou killed by falling pipes during Ypsonas factory renovation",
+      "summary": "Christodoulos Kyprou, a 51-year-old mechanic from the Pancyprian Bakers Company, died while working on the renovation of a factory in Ypsonas, Limassol. He was trying to remove a heat inverter from a freezer when two large metal pipes came loose and struck him on the head.",
+      "worker_name": "Christodoulos Kyprou",
+      "worker_age": 51,
+      "employer": "Pancyprian Bakers Company",
+      "sector": "Factory maintenance / bakery production",
+      "cause": "Struck by falling metal pipes while removing heat inverter",
+      "death_date": "2009-11-09",
+      "legal_status": "Police and Labour Inspection Department investigation into possible negligence, planning failures and safety measures reported by source",
+      "last_verified_at": "2009-11-10",
+      "locations": [
+        {
+          "id": "ypsonas-factory-falling-pipes-christodoulos-kyprou",
+          "label": "Ypsonas factory renovation site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Ypsonas",
+          "lat": 34.688,
+          "lng": 32.9619,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal falling-pipes incident at a factory under renovation in Ypsonas, Limassol; Ypsonas area centroid used pending exact factory coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man killed by falling pipes in factory",
+          "url": "https://archive.cyprus-mail.com/2009/11/10/man-killed-by-falling-pipes-in-factory/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-11-10"
+        }
+      ]
     }
   ]
 }
