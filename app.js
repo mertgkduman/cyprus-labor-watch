@@ -42,7 +42,7 @@ const LAYER_ORDER = [
   "strike_postponed",
 ];
 const DEFAULT_LAYERS = ["worker_death_recent", "strike_ongoing", "strike_ended", "action_call_upcoming", "union_arrest_current"];
-const QUICK_LAYERS = ["worker_death_recent", "strike_ongoing", "action_call_upcoming", "union_arrest_current"];
+const QUICK_LAYERS = ["worker_death_recent", "strike_ongoing", "strike_ended", "action_call_upcoming", "union_arrest_current"];
 const DATE_RANGES = ["all", "last_30_days", "last_3_months", "last_6_months"];
 const MAX_YEAR_DATE_RANGE = 2026;
 
