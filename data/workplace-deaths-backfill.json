@@ -1448,6 +1448,44 @@
           "published_at": "2016-02-02"
         }
       ]
+    },
+    {
+      "id": "paralimni-dimitrakis-kyriakou-bishopric-fall-july-2015",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Dimitrakis Kyriakou dies after fall during Paralimni bishopric renovation work",
+      "summary": "Dimitrakis Kyriakou, a 52-year-old worker responsible for a renovation team, died after losing his balance and falling about six metres from a window sill during renovation work at the Holy Bishopric of Constantia-Ammochostos in Paralimni.",
+      "worker_name": "Dimitrakis Kyriakou",
+      "worker_age": 52,
+      "employer": "Renovation employer not named in source",
+      "sector": "Construction / renovation",
+      "cause": "Fall from window sill during renovation work",
+      "death_date": "2015-07-13",
+      "legal_status": "Police experts and a labour office safety inspector investigated according to source",
+      "last_verified_at": "2015-07-14",
+      "locations": [
+        {
+          "id": "paralimni-bishopric-dimitrakis-kyriakou",
+          "label": "Holy Bishopric of Constantia-Ammochostos, Paralimni",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Paralimni",
+          "lat": 35.0395,
+          "lng": 33.9818,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall at the Holy Bishopric of Constantia-Ammochostos in Paralimni; Paralimni area centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after fall during construction work",
+          "url": "https://archive.cyprus-mail.com/2015/07/14/man-dies-after-fall-during-construction-work/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2015-07-14"
+        }
+      ]
     }
   ]
 }

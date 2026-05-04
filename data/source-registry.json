@@ -406,8 +406,8 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 56,
-      "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2016 and official/research fatality baselines shown as context only",
+      "record_count": 57,
+      "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
         "Island-wide labour actions use area-centroid placement and explicit location_basis notes.",
@@ -421,6 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2015-07, decremented by one after adding Dimitrakis Kyriakou.",
       "priority_sources": [
         {
           "title": "ISIG Meclisi monthly and annual is cinayetleri reports",
@@ -764,6 +765,7 @@
       "data_file": "data/workplace-deaths-backfill.json",
       "sources": [
         "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
+        "https://archive.cyprus-mail.com/2015/07/14/man-dies-after-fall-during-construction-work/",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
