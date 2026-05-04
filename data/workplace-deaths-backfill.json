@@ -2948,6 +2948,50 @@
           "published_at": "2007-10-20"
         }
       ]
+    },
+    {
+      "id": "polemi-mohammed-sabani-electrocution-building-site-may-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Mohammed Sabani electrocuted while wiring Polemi building site",
+      "summary": "Mohammed Sabani, a 27-year-old Jordanian worker, died after being electrocuted while laying wiring at a building site in Polemi, Paphos. The source says he apparently touched an Electricity Authority wire while placing the wiring and was pronounced dead on arrival at hospital.",
+      "worker_name": "Mohammed Sabani",
+      "worker_age": 27,
+      "employer": "Building-site contractor not named in source",
+      "sector": "Construction / electrical wiring",
+      "cause": "Electrocution while laying wiring at building site",
+      "death_date": "2008-05-13",
+      "legal_status": "Police investigation and autopsy reported by source",
+      "last_verified_at": "2008-05-14",
+      "locations": [
+        {
+          "id": "polemi-building-site-electrocution-mohammed-sabani",
+          "label": "Polemi building site",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Polemi",
+          "lat": 34.8875,
+          "lng": 32.5,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal electrocution at a building site in Polemi, Paphos; Polemi village area centroid used pending exact construction-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man electrocuted on building site",
+          "url": "https://archive.cyprus-mail.com/2008/05/14/man-electrocuted-on-building-site-2/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-05-14"
+        },
+        {
+          "title": "Polemi geographic coordinates",
+          "url": "https://geographic.org/geographic_names/name.php?c=cyprus&fid=1514&uni=-3800282",
+          "publisher": "Geographic.org / NGA GEOnet Names Server",
+          "type": "coordinate_reference"
+        }
+      ]
     }
   ]
 }
