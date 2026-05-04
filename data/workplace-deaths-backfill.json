@@ -3367,6 +3367,44 @@
           "published_at": "2019-12-17"
         }
       ]
+    },
+    {
+      "id": "vasilikos-andys-evangelis-crane-hook-generator-loading-december-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Andys Evangelis killed by falling crane hook during generator loading at Vasilikos",
+      "summary": "Andys Evangelis, a 56-year-old truck driver from Dherynia, died after a work accident in Vasilikos during the loading of a generator from a truck with a crane. The source says the crane wire broke and its hook fell, hitting Evangelis on the head and shoulder; he died later the same day at Limassol general hospital.",
+      "worker_name": "Andys Evangelis",
+      "worker_age": 56,
+      "employer": "Transport or loading employer not named in source",
+      "sector": "Transport / crane loading",
+      "cause": "Falling crane hook after wire broke during generator loading",
+      "death_date": "2019-12-17",
+      "legal_status": "Police and labour ministry labour inspection office investigation reported by source",
+      "last_verified_at": "2019-12-17",
+      "locations": [
+        {
+          "id": "vasilikos-generator-loading-crane-hook-andys-evangelis",
+          "label": "Vasilikos generator-loading worksite",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Vasilikos / Vassilikos",
+          "lat": 34.719,
+          "lng": 33.308,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal loading incident in Vasilikos/Vassilikos but does not name the exact site; Vasilikos industrial/port-area centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Labour accident kills man at Vasilikos, second in 24 hours",
+          "url": "https://archive.cyprus-mail.com/2019/12/17/labour-accident-kills-man-at-vasilikos/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-12-17"
+        }
+      ]
     }
   ]
 }
