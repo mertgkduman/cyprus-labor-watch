@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03",
+  "updated_at": "2026-05-04",
   "purpose": "Regular update checklist and archive of source URLs used in Cyprus Labor Watch public data. When a source is used for a public record, keep the exact URL, title, publisher, date, source type, and related data file here.",
   "archive_policy": [
     "Prefer stable article, report, official statement, or union statement URLs over category pages.",
@@ -44,6 +44,53 @@
       "source_type": "union"
     },
     {
+      "name": "Cyprus Workers' Confederation (SEK)",
+      "url": "https://www.sek.org.cy/",
+      "cadence": "weekly",
+      "use_for": [
+        "strike calls and strike information",
+        "sector federation announcements",
+        "collective bargaining disputes",
+        "joint union statements"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "Ergatiki Foni - SEK weekly labour publication",
+      "url": "https://ergatikifoni.sek.org.cy/",
+      "cadence": "weekly",
+      "use_for": [
+        "SEK-affiliated strike coverage",
+        "public-sector and sectoral strike updates",
+        "strike suspension and continuation notices"
+      ],
+      "source_type": "union_publication"
+    },
+    {
+      "name": "Pancyprian Public Employees Trade Union (PASYDY)",
+      "url": "https://www.pasydy.org/",
+      "cadence": "weekly",
+      "use_for": [
+        "public-sector strike calls",
+        "work-stoppage announcements",
+        "public-service labour disputes",
+        "solidarity statements with Turkish Cypriot unions"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "Cyprus Union of Bank Employees (ETYK)",
+      "url": "https://www.etyk.org.cy/",
+      "cadence": "weekly",
+      "use_for": [
+        "banking-sector strike calls",
+        "work-stoppage announcements",
+        "strike-right legal context",
+        "financial-sector collective disputes"
+      ],
+      "source_type": "union"
+    },
+    {
       "name": "KTAMS - Cyprus Turkish Civil Servants Trade Union",
       "url": "https://www.ktams.org/en/",
       "cadence": "weekly",
@@ -51,6 +98,54 @@
         "Turkish Cypriot public-sector union actions",
         "press releases",
         "labour rights context"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "KTOEOS - Cyprus Turkish Secondary Education Teachers Union",
+      "url": "https://www.ktoeos.org/",
+      "cadence": "weekly",
+      "use_for": [
+        "education-sector strike calls",
+        "school work-stoppage schedules",
+        "northern Cyprus public-sector labour actions",
+        "solidarity strike announcements"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "KAMU-IS - Cyprus Turkish Public Workers Union",
+      "url": "https://www.kamuis.org/",
+      "cadence": "weekly",
+      "use_for": [
+        "public-worker strike calls",
+        "multi-union strike statements",
+        "strike outcomes and suspensions",
+        "public-service collective disputes"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "KAMUSEN - Cyprus Turkish Public Servants Union",
+      "url": "https://www.kktckamusen.org/",
+      "cadence": "weekly",
+      "use_for": [
+        "public-servant strike decisions",
+        "multi-union public-sector actions",
+        "northern Cyprus collective disputes",
+        "strike corroboration alongside KTAMS and KAMU-IS"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "EL-SEN - Cyprus Turkish Electricity Authority Workers Union",
+      "url": "https://www.el-sen.org/",
+      "cadence": "manual review",
+      "use_for": [
+        "electricity-sector strike and action context",
+        "KIB-TEK labour disputes",
+        "union rights and strike-fund context",
+        "sector corroboration when public power actions are reported elsewhere"
       ],
       "source_type": "union"
     },
@@ -327,6 +422,124 @@
           "record_hint": "South Cyprus 2025 fatal workplace accidents Turkish-language summary",
           "source_url": "https://www.kibristurk.com/guney-kibrista-bu-yil-is-kazalarinda-olenlerin-sayisi-6ya-ulasti",
           "status": "summary source; use to identify individual records, then corroborate with original Greek/English or official sources."
+        }
+      ]
+    },
+    "strike_source_review": {
+      "updated_at": "2026-05-04",
+      "focus": "Purpose-specific resources for strikes and work stoppages, prioritising official labour-relations/statistical sources and primary union feeds over general news.",
+      "search_patterns": [
+        "apergia, stasi ergasias, pansyndikalistiki kinitopoiisi, ATA, SEK, PEO, PASYDY, DEOK",
+        "grev, uyarı grevi, genel grev, eylem çağrısı, KTAMS, KTOEOS, KAMU-IS, KAMUSEN, EL-SEN",
+        "strike, work stoppage, industrial dispute, Cyprus Department of Labour Relations"
+      ],
+      "priority_sources": [
+        {
+          "title": "Republic of Cyprus Department of Labour Relations",
+          "url": "https://www.mlsi.gov.cy/mlsi/dlr/dlr.nsf/home_en/",
+          "note": "Best official source for industrial-relations system, mediation, labour disputes statistics, Industrial Relations Code, and collective-agreement context."
+        },
+        {
+          "title": "ILOStat Cyprus strikes and lockouts metadata",
+          "url": "https://webapps.ilo.org/ilostat-files/SSM/SSM7/E/CY.html",
+          "note": "Purpose-specific statistical definitions and coverage notes for strikes, lockouts, workers involved, duration, and time not worked."
+        },
+        {
+          "title": "Industrial Relations Code",
+          "url": "https://www.mlsi.gov.cy/mlsi/dlr/dlr.nsf/All/2F3F042BE716A91EC22586E900410E72/$file/Industrial%20Relations%20Code.pdf?OpenElement=",
+          "note": "Legal/procedural context for labour disputes, mediation, and industrial action in the Republic of Cyprus."
+        },
+        {
+          "title": "PEO official site",
+          "url": "https://peo.org.cy/",
+          "note": "Primary federation source for strike calls, joint union announcements, and labour mobilisation context."
+        },
+        {
+          "title": "SEK official site",
+          "url": "https://www.sek.org.cy/",
+          "note": "Primary federation source; includes direct strike-information pages such as the 11 September 2025 all-union mobilisation."
+        },
+        {
+          "title": "Ergatiki Foni - SEK weekly labour publication",
+          "url": "https://ergatikifoni.sek.org.cy/",
+          "note": "Useful strike-focused feed where SEK-affiliated strike continuations, suspensions, and sector disputes are listed."
+        },
+        {
+          "title": "PASYDY official site",
+          "url": "https://www.pasydy.org/",
+          "note": "Primary source for public-sector union statements and strike participation."
+        },
+        {
+          "title": "ETYK official site",
+          "url": "https://www.etyk.org.cy/",
+          "note": "Primary source for banking-sector industrial action and strike-right legal statements."
+        },
+        {
+          "title": "KTAMS official site",
+          "url": "https://www.ktams.org/",
+          "note": "Primary Turkish-language source for northern Cyprus public-sector strikes, strike suspensions, and multi-union actions."
+        },
+        {
+          "title": "KTOEOS official site",
+          "url": "https://www.ktoeos.org/",
+          "note": "Primary Turkish-language source for school and education-sector strike calls in northern Cyprus."
+        },
+        {
+          "title": "KAMU-IS official site",
+          "url": "https://www.kamuis.org/",
+          "note": "Primary Turkish-language source for public-worker strike calls, multi-union actions, and strike outcomes."
+        },
+        {
+          "title": "KAMUSEN official site",
+          "url": "https://www.kktckamusen.org/",
+          "note": "Primary Turkish-language source for public-servant strike decisions and corroboration of joint actions."
+        },
+        {
+          "title": "EL-SEN official site",
+          "url": "https://www.el-sen.org/",
+          "note": "Sector union source for electricity/KIB-TEK labour disputes; use with external corroboration when its news feed is sparse."
+        },
+        {
+          "title": "KKTC Collective Labour Agreement, Strike and Referendum Law",
+          "url": "https://hr.emu.edu.tr/tr/ilgili-kktc-yasalari/toplu-is-sozlesmesi-grev-ve-referandum-yasasi",
+          "note": "Northern Cyprus legal context for collective agreements, strikes, disputes, conciliation, and arbitration."
+        },
+        {
+          "title": "EPSU Cyprus strike bulletins",
+          "url": "https://www.epsu.org/",
+          "note": "European public-service union source for major Cyprus public-sector or general strike actions; use as corroboration rather than the sole source."
+        }
+      ],
+      "candidate_record_leads": [
+        {
+          "record_hint": "Government Printing Office hourly staff indefinite strike, April 2026",
+          "source_url": "https://ergatikifoni.sek.org.cy/",
+          "status": "candidate; find direct article URL and second source before adding."
+        },
+        {
+          "record_hint": "Gazimagusa and Iskele tax offices full-day strike by KTAMS, KAMUSEN and KAMU-IS, 23 January 2026",
+          "source_url": "https://www.ktams.org/tr/2026/01/23/ktams-kamusen-ve-kamu-is-gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti/",
+          "status": "strong candidate; primary KTAMS source exists, corroborate with KAMU-IS or TAK."
+        },
+        {
+          "record_hint": "KTOEOS Lefkosa schools strike/action over fibre infrastructure, 17 February 2026",
+          "source_url": "https://www.ktoeos.org/grev-ve-eylem-cagrisi-fiber-altyapimiza-peskese-gecit-yok/",
+          "status": "strong candidate; primary union source exists, corroborate with KTOS, Tel-Sen, or local reporting."
+        },
+        {
+          "record_hint": "Tel-Sen telecommunications strikes over fibre/Turk Telekom protocol, January-February 2026",
+          "source_url": "https://haberkibris.com/turk-telekom-protokolu-krizi-tel-senden-grev-karari-0203-2026-02-17.html",
+          "status": "candidate; no stable official Tel-Sen feed verified, so require corroboration."
+        },
+        {
+          "record_hint": "Pancyprian CoLA/ATA general strike, 11 September 2025",
+          "source_url": "https://www.sek.org.cy/news/plirofories-gia-pansyndikalistiki-kinitopoiisi/",
+          "status": "already represented in launch data; direct union strike-info source can strengthen citations."
+        },
+        {
+          "record_hint": "ETYK banking-sector strike actions over bank disputes",
+          "source_url": "https://www.etyk.org.cy/",
+          "status": "candidate source stream; add individual records only from direct ETYK announcements or corroborated CNA/established reporting."
         }
       ]
     }
