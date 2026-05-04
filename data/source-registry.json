@@ -150,6 +150,54 @@
       "source_type": "union"
     },
     {
+      "name": "International Labour Organization NORMLEX",
+      "url": "https://normlex.ilo.org/",
+      "cadence": "manual reference",
+      "use_for": [
+        "freedom of association standards",
+        "anti-union discrimination context",
+        "retaliation complaint research",
+        "country-level convention and supervisory-body references"
+      ],
+      "source_type": "international_standard"
+    },
+    {
+      "name": "International Trade Union Confederation (ITUC)",
+      "url": "https://www.ituc-csi.org/",
+      "cadence": "annual/manual review",
+      "use_for": [
+        "trade union rights violations",
+        "union repression context",
+        "arrests and intimidation of unionists",
+        "Global Rights Index background"
+      ],
+      "source_type": "international_union"
+    },
+    {
+      "name": "Industrial Workers of the World Cyprus (IWW Cyprus)",
+      "url": "https://iww.cy/en_GB/",
+      "cadence": "monthly",
+      "use_for": [
+        "grassroots organising leads",
+        "workplace retaliation reports",
+        "strike and direct-action testimony requiring corroboration",
+        "worker-led campaign follow-up"
+      ],
+      "source_type": "union"
+    },
+    {
+      "name": "World Federation of Trade Unions (WFTU)",
+      "url": "https://www.wftucentral.org/",
+      "cadence": "manual review",
+      "use_for": [
+        "international solidarity statements",
+        "anti-union retaliation leads",
+        "union repression context",
+        "cross-border labour-rights corroboration"
+      ],
+      "source_type": "international_union"
+    },
+    {
       "name": "Northern Cyprus union registry",
       "url": "https://csgb.gov.ct.tr/SENDIKALAR",
       "cadence": "manual refresh",
@@ -541,6 +589,129 @@
           "source_url": "https://www.etyk.org.cy/",
           "status": "candidate source stream; add individual records only from direct ETYK announcements or corroborated CNA/established reporting."
         }
+      ]
+    },
+    "union_retaliation_source_review": {
+      "updated_at": "2026-05-04",
+      "focus": "Purpose-specific resources for retaliation against unionists and union activity, including arrests, detentions, police summons, dismissals for organising, forced resignation pressure, threats, legal action, and strike-related intimidation.",
+      "search_patterns": [
+        "trade unionist arrested Cyprus, anti-union dismissal Cyprus, retaliation against union activity, union repression",
+        "sendikaci gozaltina alindi, sendikaci tutuklandi, sendika yetkilileri polis, sendikalastigi icin isten cikarildi, zorla istifa kagidi, grev eylem suclama",
+        "syndikalistis syllipsi Kypros, apolysi logo syndikalistikis drasis, parempodisi syndikalistikis drasis"
+      ],
+      "priority_sources": [
+        {
+          "title": "KTOEOS statement rejecting accusations after union action",
+          "url": "https://www.ktoeos.org/suclamalari-kabul-etmiyoruz/",
+          "note": "Primary Turkish Cypriot union source for protest/action-related accusations; use with police, court, or established-news corroboration before publishing individual retaliation records."
+        },
+        {
+          "title": "KTOEOS press statement at Lefkosa Police Directorate",
+          "url": "https://www.ktoeos.org/anayasal-eylem-hakkini-kullanan-ancak-polisin-dava-okudugu-uyelerimizle-birlikte-lefkosa-polis-mudurlugunde-basinaciklamamiz/",
+          "note": "Primary union source for police-summons and protest follow-up context involving union officials."
+        },
+        {
+          "title": "ITUC repression of trade unions in northern Cyprus",
+          "url": "https://www.ituc-csi.org/repression-of-trade-unions-in.html?lang=en",
+          "note": "Purpose-specific historical union-rights repression source, including arrests of trade unionists and teachers; useful as context rather than current launch-period data."
+        },
+        {
+          "title": "ILO NORMLEX",
+          "url": "https://normlex.ilo.org/",
+          "note": "Reference source for freedom-of-association and anti-union discrimination standards; use for legal framing and country-level supervisory material."
+        },
+        {
+          "title": "Republic of Cyprus Trade Unions Laws",
+          "url": "https://www.gov.cy/mlsi/en/publication/the-trade-unions-laws-of-1965-to-1996/",
+          "note": "Official legal context for union registration and protections in the Republic of Cyprus."
+        },
+        {
+          "title": "Republic of Cyprus unfair dismissal / termination source",
+          "url": "https://www.mlsi.gov.cy/mlsi/sid/sidv2.nsf/All/EBEB6893D5DAED39C2257A85002D61A9",
+          "note": "Official legal context for dismissal protections; use when assessing employer retaliation linked to union membership or union activity."
+        },
+        {
+          "title": "IWW Cyprus",
+          "url": "https://iww.cy/en_GB/",
+          "note": "Worker-organisation source for grassroots organising and workplace retaliation leads; publish only with corroboration or clear source attribution."
+        },
+        {
+          "title": "IWW Cyprus Optilink work stoppage report",
+          "url": "https://www.iww.cy/news/work-stoppage-optilink-protest/",
+          "note": "Lead source for a workplace organising/direct-action case; useful for monitoring dismissal and disciplinary-threat claims around organising and work stoppage activity."
+        },
+        {
+          "title": "IWW Cyprus Optilink firing follow-up",
+          "url": "https://www.iww.cy/news/optilink-solutions-fires-strikers/",
+          "note": "Lead source for alleged strike-related mass dismissals; publish only if corroborated by legal, official, or established-news reporting."
+        },
+        {
+          "title": "WFTU solidarity statement with workers of EKTAM Soft Drinks",
+          "url": "https://www.wftucentral.org/wftu-solidarity-statement-with-workers-of-ektam-soft-drinks/",
+          "note": "International union source for alleged anti-union practices, dismissals, harassment, and threats connected to organising at EKTAM; corroborate with local Turkish Cypriot reporting."
+        },
+        {
+          "title": "MYKibris EKTAM strike and forced-resignation allegation report",
+          "url": "https://www.mykibris.com/kktc/haber/ektamdaki-grev-suresize-donustu-66645",
+          "note": "Local Turkish Cypriot report summarising allegations that EKTAM workers were pressured to sign resignation papers after unionising."
+        },
+        {
+          "title": "soL Haber EKTAM court follow-up",
+          "url": "https://haber.sol.org.tr/haber/ektam-direnisi-kazanimla-devam-ediyor-mahkeme-isten-cikarmalari-gecersiz-saydi-407162",
+          "note": "Lead source for court-related follow-up on alleged dismissals of unionised EKTAM workers; corroborate with local Cyprus sources before using as a public-record source."
+        },
+        {
+          "title": "Kibris Turk KTOS police statement report",
+          "url": "https://www.kibristurk.com/ktosten-polis-onunde-basin-aciklamasi",
+          "note": "Local Turkish-language report on KTOS members called to give statements and a police-headquarters press statement; seek KTOS primary source before publishing."
+        },
+        {
+          "title": "Ajans Cyprus EL-SEN president Ahmet Tugcu follow-up",
+          "url": "https://ajanscyprus.com/2026/04/08/el-sen-baskani-ahmet-tugcu-serbest-birakildi-suclamalari-reddediyoruz/",
+          "note": "Current launch-period union-arrest follow-up source already used in public data; keep monitoring for police/court outcomes."
+        }
+      ],
+      "candidate_record_leads": [
+        {
+          "record_hint": "EL-SEN president Ahmet Tugcu detention/release, April 2026",
+          "source_url": "https://ajanscyprus.com/2026/04/08/el-sen-baskani-ahmet-tugcu-serbest-birakildi-suclamalari-reddediyoruz/",
+          "status": "already represented in launch data; enrich only with official police/court follow-up or additional established reporting."
+        },
+        {
+          "record_hint": "KTOEOS protest-related accusations and police-directorate statements, 2026",
+          "source_url": "https://www.ktoeos.org/suclamalari-kabul-etmiyoruz/",
+          "status": "candidate lead; needs exact event date, named persons or organisations, and corroboration before adding as a public record."
+        },
+        {
+          "record_hint": "EKTAM Kibris anti-union pressure during organising/strike, March 2026",
+          "source_url": "https://www.wftucentral.org/wftu-solidarity-statement-with-workers-of-ektam-soft-drinks/",
+          "status": "candidate lead; compare with Yeniduzen, Bugun Kibris, MyKibris, soL Haber, court follow-up, and Dev-Is statements before creating a retaliation record or enriching the existing strike record."
+        },
+        {
+          "record_hint": "Five union officials summoned to police after protest",
+          "source_url": "https://kibrisligazetesi.com/kibris/sendika-yetkilisi-5-kisi-polis-mudurlugune-cagrildi/",
+          "status": "candidate lead; corroborate with union statements or established local reporting before publishing."
+        },
+        {
+          "record_hint": "KTOS members called to give statements before Lefkosa Police Headquarters, 15 April 2026",
+          "source_url": "https://www.kibristurk.com/ktosten-polis-onunde-basin-aciklamasi",
+          "status": "candidate lead; find KTOS primary statement and confirm affected members before publishing."
+        },
+        {
+          "record_hint": "IWW Cyprus / Optilink organising and retaliation-monitoring lead",
+          "source_url": "https://www.iww.cy/news/optilink-solutions-fires-strikers/",
+          "status": "source stream lead; use as testimony/organising context unless independently corroborated."
+        },
+        {
+          "record_hint": "Historical ITUC report of arrested trade unionists and teachers in northern Cyprus",
+          "source_url": "https://www.ituc-csi.org/repression-of-trade-unions-in.html?lang=en",
+          "status": "context only; outside launch period and not suitable for a current public record without archival event reconstruction."
+        }
+      ],
+      "coverage_notes": [
+        "Turkish-language searches produced the strongest current-period leads for union arrests, police summons, and anti-union pressure.",
+        "Greek-language searches in this pass produced mostly legal and general labour-rights context, not a high-confidence recent Greek-language primary event lead.",
+        "Employer-retaliation claims should not be promoted from lead to public record until the record has either a primary union statement plus corroboration, or an official/legal/court/public-body source."
       ]
     }
   },
