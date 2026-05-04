@@ -1486,6 +1486,44 @@
           "published_at": "2015-07-14"
         }
       ]
+    },
+    {
+      "id": "anarita-unnamed-worker-truck-trailer-crush-march-2015",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed worker dies after being crushed by truck trailer in Anarita",
+      "summary": "An unnamed 36-year-old Greek Cypriot worker, a father of two, died during a workplace accident in Anarita, Paphos, after being crushed by his truck's trailer while working underneath it. The trailer had reportedly malfunctioned while unloading manure.",
+      "worker_name": "Name not published",
+      "worker_age": 36,
+      "employer": "Agricultural or transport employer not named in source",
+      "sector": "Agriculture / transport",
+      "cause": "Crushed by truck trailer while working underneath it",
+      "death_date": "2015-03-02",
+      "legal_status": "Paphos CID and Labour Ministry officials investigated according to source",
+      "last_verified_at": "2015-03-02",
+      "locations": [
+        {
+          "id": "anarita-truck-trailer-crush-unnamed-worker",
+          "label": "Anarita workplace accident",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Anarita",
+          "lat": 34.7417,
+          "lng": 32.5336,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal workplace accident in Anarita, Paphos; village area centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after being crushed by his truck",
+          "url": "https://archive.cyprus-mail.com/2015/03/02/man-dies-after-being-crushed-by-his-truck/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2015-03-02"
+        }
+      ]
     }
   ]
 }
