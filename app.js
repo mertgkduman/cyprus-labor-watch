@@ -86,6 +86,10 @@ const COPY = {
       title: "Select a record on the map",
       text: "By default the map shows recent workplace deaths, ongoing strikes, upcoming action calls, and current labor arrests across Cyprus.",
       context: "Context sources",
+      aggregateTitle: "Official fatality baselines",
+      aggregateRoc: "Republic-controlled areas: 147 fatal workplace accidents recorded by CYSTAT/DLI for 2008-2024.",
+      aggregateNorth: "Northern Cyprus: 32 fatal workplace accidents reported in SSD-based research for 2015-2020.",
+      aggregateNote: "These totals are shown as context only. They are not mapped as aggregate dots; individual deaths are added one-by-one when a stable public source and usable location can be verified.",
     },
     list: {
       label: "Record list",
@@ -233,6 +237,10 @@ const COPY = {
       title: "Επιλέξτε εγγραφή στον χάρτη",
       text: "Ο αρχικός χάρτης δείχνει πρόσφατους θανάτους στην εργασία, απεργίες σε εξέλιξη, καλέσματα δράσης και τρέχουσες εργατικές συλλήψεις στην Κύπρο.",
       context: "Πηγές πλαισίου",
+      aggregateTitle: "Επίσημες βάσεις θανάτων",
+      aggregateRoc: "Περιοχές υπό έλεγχο της Κυπριακής Δημοκρατίας: 147 θανατηφόρα εργατικά ατυχήματα καταγεγραμμένα από CYSTAT/DLI για το 2008-2024.",
+      aggregateNorth: "Βόρεια Κύπρος: 32 θανατηφόρα εργατικά ατυχήματα σε έρευνα βασισμένη σε δεδομένα SSD για το 2015-2020.",
+      aggregateNote: "Τα σύνολα εμφανίζονται μόνο ως πλαίσιο. Δεν χαρτογραφούνται ως συνολικά σημεία. Οι ατομικοί θάνατοι προστίθενται ένας-ένας όταν υπάρχει σταθερή δημόσια πηγή και χρήσιμη τοποθεσία.",
     },
     list: {
       label: "Λίστα εγγραφών",
@@ -380,6 +388,10 @@ const COPY = {
       title: "Haritadan bir kayıt seçin",
       text: "Varsayılan harita Kıbrıs genelinde son iş cinayetlerini, süren grevleri, yaklaşan eylem çağrılarını ve güncel emek tutuklamalarını gösterir.",
       context: "Bağlam kaynakları",
+      aggregateTitle: "Resmi ölüm veri tabanları",
+      aggregateRoc: "Kıbrıs Cumhuriyeti kontrolündeki bölgeler: CYSTAT/DLI verilerinde 2008-2024 için 147 ölümlü iş kazası.",
+      aggregateNorth: "Kuzey Kıbrıs: SSD verilerine dayalı araştırmada 2015-2020 için 32 ölümlü iş kazası.",
+      aggregateNote: "Bu toplamlar yalnızca bağlam olarak gösterilir. Toplu nokta olarak haritalanmaz; sabit kamusal kaynak ve kullanılabilir konum bulunduğunda ölümler tek tek eklenir.",
     },
     list: {
       label: "Kayıt listesi",

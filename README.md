@@ -9,7 +9,7 @@ Static, GitHub Pages friendly labor tracker for Cyprus. It maps workplace deaths
 - `app.js` - Leaflet map, filters, trilingual UI, local/Supabase data loading, and submission fallback.
 - `data/incidents.json` - reviewed Cyprus MVP records with source URLs.
 - `data/northern-incidents.json` - supplemental records sourced from Turkish-language reporting in northern Cyprus.
-- `data/workplace-deaths-backfill.json` - work-related death backfill with recent individual cases and official annual aggregate fatality counts.
+- `data/workplace-deaths-backfill.json` - individual work-related death backfill; official/research fatality totals are shown in the app context panel, not mapped as aggregate records.
 - `data/source-registry.json` - regular update source checklist and archive of used source URLs.
 - `data/seed-cases.json` - compatibility fallback copy of the incident seed records.
 - `data/import-template.csv` - CSV field template for manual imports.

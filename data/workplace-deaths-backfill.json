@@ -1,6 +1,6 @@
 {
   "updated_at": "2026-05-04",
-  "description": "Work-related death backfill for Cyprus Labor Watch. Recent named cases are recorded individually. Older official/research totals are recorded as annual aggregate markers with fatality_count values so they do not imply a single exact incident.",
+  "description": "Work-related death backfill for Cyprus Labor Watch. Records are individual cases with stable public sources and usable Cyprus locations. Official annual fatality totals are shown as context in the app panel, not mapped as aggregate records.",
   "records": [
     {
       "id": "dortyol-hammad-pakistani-construction-fall-april-2026",
@@ -207,837 +207,1245 @@
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2024",
+      "id": "moni-evanthis-nikolaou-factory-pit-death-february-2025",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2024",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2024 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2024-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Evanthis Nikolaou dies after fall into water-filled excavation at Moni factory",
+      "summary": "Evanthis Nikolaou, a 64-year-old worker from Limassol, died after an industrial accident at a factory in the Moni industrial area. Cyprus Mail reported that he had gone to repair a water leak and was later found unconscious in a water-filled excavation.",
+      "worker_name": "Evanthis Nikolaou",
+      "worker_age": 64,
+      "employer": "Factory in Moni industrial area not named in source",
+      "sector": "Industrial maintenance / manufacturing",
+      "cause": "Fall into water-filled excavation while repairing a water leak",
+      "death_date": "2025-02-03",
+      "legal_status": "Moni police station investigation continuing according to source",
+      "last_verified_at": "2025-02-03",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2024",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "moni-factory-excavation-evanthis-nikolaou",
+          "label": "Moni industrial area factory",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Moni",
+          "lat": 34.736,
+          "lng": 33.195,
           "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a factory in the Moni industrial area; area centroid used pending exact factory coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Worker dies in industrial accident in Limassol",
+          "url": "https://cyprus-mail.com/2025/02/03/worker-dies-in-industrial-accident-in-limassol",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2025-02-03"
+        }
+      ]
+    },
+    {
+      "id": "anogyra-petros-papadopoulos-oil-mill-machine-death-february-2024",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Petros Papadopoulos crushed while repairing olive-collection machine in Anogyra",
+      "summary": "Petros Papadopoulos, a 36-year-old man from Strovolos, died while repairing a machine used to collect olives at an oil mill in Anogyra village. Police, electromechanical service members, and labour department officials investigated the accident.",
+      "worker_name": "Petros Papadopoulos",
+      "worker_age": 36,
+      "employer": "Oil mill not named in source",
+      "sector": "Agriculture / oil mill",
+      "cause": "Crushed by part of an olive-collection machine during repair work",
+      "death_date": "2024-02-09",
+      "legal_status": "Police, electromechanical service, and labour department investigation reported",
+      "last_verified_at": "2024-02-10",
+      "locations": [
+        {
+          "id": "anogyra-oil-mill-petros-papadopoulos",
+          "label": "Anogyra oil mill",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Anogyra",
+          "lat": 34.7389,
+          "lng": 32.729,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at an oil mill in Anogyra village; village centroid used pending exact mill coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies in labour accident",
+          "url": "https://cyprus-mail.com/2024/02/10/man-dies-in-labour-accident",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2024-02-10"
+        }
+      ]
+    },
+    {
+      "id": "aradippou-stavros-ioakim-glass-pane-death-march-2023",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Stavros Ioakim killed by falling glass pane at Aradippou factory",
+      "summary": "Stavros Ioakim, a 57-year-old worker from Dali, died after a large glass pane shattered and fell while he and his brother were moving it at a glass factory in the Aradippou industrial area.",
+      "worker_name": "Stavros Ioakim",
+      "worker_age": 57,
+      "employer": "Glass factory not named in source",
+      "sector": "Glass manufacturing / installation",
+      "cause": "Crushed and cut by falling oversized glass pane",
+      "death_date": "2023-03-16",
+      "legal_status": "Police and labour department inspection reported",
+      "last_verified_at": "2023-03-16",
+      "locations": [
+        {
+          "id": "aradippou-glass-factory-stavros-ioakim",
+          "label": "Aradippou industrial area glass factory",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Aradippou",
+          "lat": 34.954,
+          "lng": 33.596,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatality at a glass factory in the Aradippou industrial area; industrial-area centroid used pending exact factory coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker bleeds to death in glass factory accident",
+          "url": "https://knews.kathimerini.com.cy/en/news/factory-worker-crushed-to-death-by-falling-glass-pane",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2023-03-16"
+        }
+      ]
+    },
+    {
+      "id": "germasogeia-angelos-mandela-landscaper-fall-january-2023",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Angelos Mandela dies after fall while pruning olive tree in Germasogeia",
+      "summary": "Angelos Mandela, a 67-year-old landscaper originally from Greece, died after falling about 4.5 metres while pruning an olive tree at a Germasogeia residence.",
+      "worker_name": "Angelos Mandela",
+      "worker_age": 67,
+      "employer": "Residence / landscaping employer not named in source",
+      "sector": "Landscaping / agriculture",
+      "cause": "Fall from height while pruning an olive tree",
+      "death_date": "2023-01-03",
+      "legal_status": "Police, medical examiner, and labour department inspection reported",
+      "last_verified_at": "2023-01-04",
+      "locations": [
+        {
+          "id": "germasogeia-landscaper-angelos-mandela",
+          "label": "Germasogeia residence",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Germasogeia",
+          "lat": 34.7202,
+          "lng": 33.0833,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a residence in Germasogeia; district centroid used pending exact address."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies tragically while pruning",
+          "url": "https://cyprus-mail.com/2023/01/04/man-dies-tragically-while-pruning",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2023-01-04"
+        }
+      ]
+    },
+    {
+      "id": "lakatamia-andreas-savvas-excavation-collapse-august-2022",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Andreas Savvas killed after excavation ground collapses in Lakatamia",
+      "summary": "Andreas Savvas, a 38-year-old worker from Lythrodontas, died during excavation works in Lakatamia after the ground gave way, he fell into a pit, and loose earth collapsed onto him.",
+      "worker_name": "Andreas Savvas",
+      "worker_age": 38,
+      "employer": "Land subdivision / construction employer not named in source",
+      "sector": "Construction / excavation",
+      "cause": "Crushed by loose earth after excavation collapse",
+      "death_date": "2022-08-05",
+      "legal_status": "Police statement and work-accident investigation reported",
+      "last_verified_at": "2022-08-05",
+      "locations": [
+        {
+          "id": "lakatamia-excavation-andreas-savvas",
+          "label": "Lakatamia excavation site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Lakatamia",
+          "lat": 35.1139,
+          "lng": 33.3157,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident in Lakatamia; district centroid used pending exact land-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Labourer, 38, killed in work accident",
+          "url": "https://cyprus-mail.com/2022/08/05/labourer-38-killed-in-work-accident",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-08-05"
         },
         {
-          "title": "Department of Labour Inspection Annual Report 2024",
-          "url": "https://www.mlsi.gov.cy/mlsi/dli/dliup.nsf/All/8A178D71E8AB1B36C2258C90003D83CC/$file/ANNUAL_REPORT_EN_2024.pdf?OpenElement=",
-          "publisher": "Department of Labour Inspection",
-          "type": "official",
-          "published_at": null
+          "title": "Realtor employee suffocates under pile of dirt",
+          "url": "https://knews.kathimerini.com.cy/en/news/realtor-employee-suffocates-under-pile-of-dirt",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2022-08-05"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2023",
+      "id": "stroumbi-nicos-demosthenous-harvester-death-july-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2023",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 14 people involved in fatal accidents at work in 2023 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2023-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Nicos Demosthenous crushed under combine harvester near Stroumbi",
+      "summary": "Nicos Demosthenous, a 53-year-old farmer from Inia, died after a combine harvester overturned near Stroumbi while he was driving the machine after harvesting a wheat field.",
+      "worker_name": "Nicos Demosthenous",
+      "worker_age": 53,
+      "employer": "Agricultural work / field owner not named as employer",
+      "sector": "Agriculture",
+      "cause": "Crushed under overturned combine harvester",
+      "death_date": "2022-07-11",
+      "legal_status": "Labour inspection and road transport investigation reported",
+      "last_verified_at": "2022-07-12",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2023",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "stroumbi-harvester-nicos-demosthenous",
+          "label": "Stroumbi-Kathikas road harvester accident",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Stroumbi",
+          "lat": 34.887,
+          "lng": 32.482,
           "geocode_precision": "area_centroid",
-          "fatality_count": 14,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the accident as the harvester tried to enter the Stroumbi-Kathikas road; area centroid used pending exact field coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Investigators look at front axle in Stroumbi combine harvester fatality",
+          "url": "https://cyprus-mail.com/2022/07/12/investigators-look-at-front-axle-in-stroumbi-combine-harvester-fatality-update",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-07-12"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2022",
+      "id": "stroumbi-panicos-ioannides-harvester-death-july-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2022",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2022 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2022-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Panicos Ioannides killed in Stroumbi combine harvester accident",
+      "summary": "Panicos Ioannides, a 62-year-old man from Stroumbi and the field owner according to Cyprus Mail, died in the same combine harvester overturning that killed Nicos Demosthenous near the Stroumbi-Kathikas road.",
+      "worker_name": "Panicos Ioannides",
+      "worker_age": 62,
+      "employer": "Agricultural work / field owner",
+      "sector": "Agriculture",
+      "cause": "Crushed or fatally injured in overturned combine harvester accident",
+      "death_date": "2022-07-11",
+      "legal_status": "Labour inspection and road transport investigation reported",
+      "last_verified_at": "2022-07-12",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2022",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "stroumbi-harvester-panicos-ioannides",
+          "label": "Stroumbi-Kathikas road harvester accident",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Stroumbi",
+          "lat": 34.887,
+          "lng": 32.482,
           "geocode_precision": "area_centroid",
-          "fatality_count": 9,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the accident as the harvester tried to enter the Stroumbi-Kathikas road; area centroid used pending exact field coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Investigators look at front axle in Stroumbi combine harvester fatality",
+          "url": "https://cyprus-mail.com/2022/07/12/investigators-look-at-front-axle-in-stroumbi-combine-harvester-fatality-update",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-07-12"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2021",
+      "id": "limassol-port-foreign-worker-ship-fire-fall-april-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2021",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2021 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2021-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Foreign worker dies after fire and fall on ship docked at Limassol port",
+      "summary": "An unnamed 38-year-old foreign worker died after a labour accident on a Bahamas-flagged ship docked at Limassol port. Police said he had been working at height with flammable material when fire started, burned the supporting rope, and caused him to fall onto the deck.",
+      "worker_name": "Name not published",
+      "worker_age": 38,
+      "employer": "Ship / contractor not named in source",
+      "sector": "Maritime maintenance",
+      "cause": "Burns and fall from height during ship maintenance work",
+      "death_date": "2022-04-03",
+      "legal_status": "Police investigation and autopsy reported",
+      "last_verified_at": "2022-04-03",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2021",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "limassol-port-ship-worker-fire-fall",
+          "label": "Ship docked at Limassol port",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol port",
+          "lat": 34.651,
+          "lng": 33.018,
           "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident on a ship docked at Limassol port; port centroid used pending vessel berth details."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Worker on ship anchored off Limassol dies",
+          "url": "https://cyprus-mail.com/2022/04/03/worker-on-ship-anchored-off-limassol-dies",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-04-03"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2020",
+      "id": "nicosia-soteris-antoniou-ladder-fall-september-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2020",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 16 people involved in fatal accidents at work in 2020 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2020-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Soteris Antoniou dies after ladder fall during Nicosia house renovation",
+      "summary": "Soteris Antoniou, a 64-year-old construction worker, died after falling about four metres while attempting to descend from a mobile aluminium ladder during house-renovation work in Nicosia.",
+      "worker_name": "Soteris Antoniou",
+      "worker_age": 64,
+      "employer": "Renovation employer not named in source",
+      "sector": "Construction / renovation",
+      "cause": "Fall from mobile aluminium ladder",
+      "death_date": "2022-09-12",
+      "legal_status": "Police and labour inspection investigation reported",
+      "last_verified_at": "2022-09-12",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2020",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 16,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "nicosia-ladder-fall-soteris-antoniou",
+          "label": "Nicosia house renovation site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Nicosia",
+          "lat": 35.1856,
+          "lng": 33.3823,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a Nicosia house-renovation worksite; city centroid used pending exact address."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Construction worker falls to his death",
+          "url": "https://cyprus-mail.com/2022/09/12/construction-worker-falls-to-his-death",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-09-12"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2019",
+      "id": "nicosia-unnamed-electrician-ladder-fall-december-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2019",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 10 people involved in fatal accidents at work in 2019 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2019-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Unnamed electrician dies after falling from moving ladder in Nicosia",
+      "summary": "An unnamed 57-year-old electrician, formerly of Paphos, died after falling from a moving ladder while carrying out electrical work on a house in Nicosia.",
+      "worker_name": "Name not published",
+      "worker_age": 57,
+      "employer": "Electrical work employer not named in source",
+      "sector": "Electrical work / construction",
+      "cause": "Fall from moving ladder during electrical work",
+      "death_date": "2022-12-12",
+      "legal_status": "Lakatamia police investigation reported",
+      "last_verified_at": "2022-12-13",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2019",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 10,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "nicosia-electrician-ladder-fall",
+          "label": "Nicosia house electrical worksite",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Nicosia",
+          "lat": 35.1856,
+          "lng": 33.3823,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a house in Nicosia; city centroid used pending exact address."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man falls to his death in Nicosia work accident",
+          "url": "https://cyprus-mail.com/2022/12/13/man-falls-to-his-death-in-nicosia-work-accident",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-12-13"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2018",
+      "id": "linou-nikos-idalia-tractor-death-november-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2018",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2018 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2018-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Nikos Idalia crushed by agricultural tractor near Linou",
+      "summary": "Nikos Idalia, a 54-year-old man formerly of Geri, died after being crushed by an agricultural tractor in a field along the Atsa-Marathasa road near Linou village.",
+      "worker_name": "Nikos Idalia",
+      "worker_age": 54,
+      "employer": "Agricultural employer not named in source",
+      "sector": "Agriculture",
+      "cause": "Crushed by agricultural tractor",
+      "death_date": "2022-11-07",
+      "legal_status": "Morphou police investigation reported",
+      "last_verified_at": "2022-11-08",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2018",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "linou-tractor-nikos-idalia",
+          "label": "Atsa-Marathasa road field near Linou",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Linou",
+          "lat": 35.0753,
+          "lng": 32.8956,
           "geocode_precision": "area_centroid",
-          "fatality_count": 9,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal accident in a field along the Atsa-Marathasa road near Linou; village centroid used pending exact field coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man crushed in fatal work accident",
+          "url": "https://cyprus-mail.com/2022/11/08/man-crushed-by-tractor-in-fatal-work-accident",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-11-08"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2017",
+      "id": "ayios-georgios-fasoulas-fotis-stavrou-tractor-death-march-2022",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2017",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 2 people involved in fatal accidents at work in 2017 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2017-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Fotis Stavrou crushed by tractor in Ayios Georgios Fasoulas field",
+      "summary": "Fotis Stavrou, a 62-year-old man, died after being crushed by his tractor while operating it in a field in the Ayios Georgios Fasoulas area of Limassol district.",
+      "worker_name": "Fotis Stavrou",
+      "worker_age": 62,
+      "employer": "Agricultural employer not named in source",
+      "sector": "Agriculture",
+      "cause": "Crushed by overturned tractor",
+      "death_date": "2022-03-30",
+      "legal_status": "Police examination and post-mortem reported",
+      "last_verified_at": "2022-03-30",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2017",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "ayios-georgios-fasoulas-tractor-fotis-stavrou",
+          "label": "Ayios Georgios Fasoulas field",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Ayios Georgios Fasoulas",
+          "lat": 34.746,
+          "lng": 33.017,
           "geocode_precision": "area_centroid",
-          "fatality_count": 2,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the death in a field in the Ayios Georgios Fasoulas area; area centroid used pending exact field coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man, 62, dies after being crushed by tractor",
+          "url": "https://cyprus-mail.com/2022/03/30/man-62-dies-after-being-crushed-by-tractor",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2022-03-30"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2016",
+      "id": "paralimni-unnamed-painter-construction-fall-january-2021",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2016",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2016 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2016-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Unnamed painter dies after Paralimni construction-site fall",
+      "summary": "An unnamed 32-year-old foreign worker died in Nicosia general hospital after being seriously injured while working as a painter at a house under construction in Paralimni.",
+      "worker_name": "Name not published",
+      "worker_age": 32,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction / painting",
+      "cause": "Fall or head injury at construction site",
+      "death_date": "2021-01-09",
+      "legal_status": "Post-mortem and work-accident reporting noted by source",
+      "last_verified_at": "2021-01-10",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2016",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "paralimni-painter-fall-unnamed-worker",
+          "label": "Paralimni house construction site",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Paralimni",
+          "lat": 35.039,
+          "lng": 33.982,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the accident at a house under construction in Paralimni; district centroid used pending exact address."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man, 32, injured in work accident dies",
+          "url": "https://cyprus-mail.com/2021/01/10/man-32-injured-in-work-accident-dies",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2021-01-10"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2015",
+      "id": "latsia-kyriacos-argyrou-eac-substation-blast-june-2021",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2015",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 4 people involved in fatal accidents at work in 2015 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2015-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Kyriacos Argyrou dies after EAC substation blast in Latsia",
+      "summary": "Kyriacos Argyrou, a 48-year-old EAC network technician, died in Athens after severe burns from a May 2021 accident at a utility substation in Latsia. Later reporting said EAC was prosecuted over the fatal substation accident.",
+      "worker_name": "Kyriacos Argyrou",
+      "worker_age": 48,
+      "employer": "Electricity Authority of Cyprus",
+      "sector": "Energy / utilities",
+      "cause": "Electrical explosion and severe burns during substation maintenance",
+      "death_date": "2021-06-22",
+      "legal_status": "EAC prosecuted as corporate defendant in later reporting; Nicosia District Court fine reported in 2025",
+      "last_verified_at": "2025-12-22",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2015",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "latsia-eac-substation-kyriacos-argyrou",
+          "label": "EAC utility substation in Latsia",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Latsia",
+          "lat": 35.101,
+          "lng": 33.378,
           "geocode_precision": "area_centroid",
-          "fatality_count": 4,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Sources place the accident at a utility substation in Latsia; area centroid used pending exact substation coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "EAC burn victim loses fight for life",
+          "url": "https://knews.kathimerini.com.cy/en/news/eac-burn-victim-loses-fight-for-life",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2021-06-22"
+        },
+        {
+          "title": "EAC fined over fatal safety failures",
+          "url": "https://www.ekathimerini.com/economy/1290484/eac-fined-over-fatal-safety-failures/",
+          "publisher": "eKathimerini",
+          "type": "news",
+          "published_at": "2025-12-22"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2014",
+      "id": "idali-unnamed-worker-interior-construction-fall-may-2021",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2014",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2014 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2014-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Unnamed worker dies after fall at Idali industrial-area construction site",
+      "summary": "An unnamed 30-year-old worker died after being in intensive care following a three-metre fall at an interior construction site in the Idali industrial area.",
+      "worker_name": "Name not published",
+      "worker_age": 30,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from height at interior construction site",
+      "death_date": "2021-05-23",
+      "legal_status": "Police investigation continuing according to source",
+      "last_verified_at": "2021-05-23",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2014",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "idali-industrial-area-worker-fall",
+          "label": "Idali industrial area construction site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Idali / Dali",
+          "lat": 35.022,
+          "lng": 33.421,
           "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the accident at an interior construction site in the Idali industrial area; area centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man dies after work fall",
+          "url": "https://cyprus-mail.com/2021/05/23/man-dies-after-work-fall",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2021-05-23"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2013",
+      "id": "peyia-almir-tomboulides-forklift-basket-fall-june-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2013",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2013 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2013-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Almir Tomboulides dies after forklift basket strike at Peyia construction site",
+      "summary": "Almir Tomboulides, a 53-year-old construction worker from Georgia, died after a forklift man-basket struck the area where he was standing at a Peyia construction site and he fell about eight metres.",
+      "worker_name": "Almir Tomboulides",
+      "worker_age": 53,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction / blacksmith work",
+      "cause": "Fall from height after forklift man-basket struck work area",
+      "death_date": "2020-06-27",
+      "legal_status": "Forklift operator arrested and remanded; labour inspection cited absence of safety measures according to sources",
+      "last_verified_at": "2020-06-29",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2013",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 9,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "peyia-forklift-basket-almir-tomboulides",
+          "label": "Peyia construction site",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Peyia",
+          "lat": 34.8832,
+          "lng": 32.3812,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal incident at a construction site in Peyia; district centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Remand of worker over fatal labour accident",
+          "url": "https://archive.cyprus-mail.com/2020/06/28/remand-of-worker-for-fatal-labour-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-06-28"
+        },
+        {
+          "title": "Forklift operator arrested after fatal accident",
+          "url": "https://knews.kathimerini.com.cy/en/news/forklift-operator-arrested-after-fatal-accident",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2020-06-29"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2012",
+      "id": "armenochori-unnamed-worker-crane-crush-september-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2012",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2012 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2012-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Unnamed worker crushed by crane while unloading materials in Armenochori",
+      "summary": "An unnamed 60-year-old worker died after being crushed by a crane while unloading construction materials from a truck in Armenochori, Limassol district.",
+      "worker_name": "Name not published",
+      "worker_age": 60,
+      "employer": "Construction materials employer not named in source",
+      "sector": "Construction logistics",
+      "cause": "Crushed by truck-mounted crane during unloading",
+      "death_date": "2020-09-08",
+      "legal_status": "Circumstances under investigation according to source",
+      "last_verified_at": "2020-09-08",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2012",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "armenochori-crane-crush-unnamed-worker",
+          "label": "Armenochori unloading site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Armenochori",
+          "lat": 34.725,
+          "lng": 33.154,
           "geocode_precision": "area_centroid",
-          "fatality_count": 9,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the accident in Armenochori while unloading construction materials; village/area centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Worker crushed by crane in labour accident dies",
+          "url": "https://archive.cyprus-mail.com/2020/09/08/worker-crushed-by-crane-in-labour-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-09-08"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2011",
+      "id": "aradippou-christakis-ashikkis-warehouse-fall-august-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2011",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2011 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2011-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Christakis Ashikkis dies after scissor-lift fall in Aradippou warehouse",
+      "summary": "Christakis Ashikkis, a 58-year-old man from Kamares, died after falling about four metres while working on what was understood to be a scissor lift in a warehouse.",
+      "worker_name": "Christakis Ashikkis",
+      "worker_age": 58,
+      "employer": "Warehouse employer not named in source",
+      "sector": "Warehouse / logistics",
+      "cause": "Fall from scissor lift",
+      "death_date": "2020-08-03",
+      "legal_status": "Aradippou police and labour inspection department investigation reported",
+      "last_verified_at": "2020-08-03",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2011",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "aradippou-warehouse-christakis-ashikkis",
+          "label": "Aradippou warehouse",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Aradippou",
+          "lat": 34.951,
+          "lng": 33.591,
           "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source reports Aradippou police were investigating a warehouse death; Aradippou area centroid used pending exact warehouse coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Larnaca man dies in labour accident",
+          "url": "https://archive.cyprus-mail.com/2020/08/03/larnaca-man-dies-in-labour-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-08-03"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2010",
+      "id": "limassol-andreas-constantinou-construction-fall-july-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2010",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 19 people involved in fatal accidents at work in 2010 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2010-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Andreas Constantinou dies after walkway fall at Limassol construction site",
+      "summary": "Andreas Constantinou, a 54-year-old co-owner of the company conducting work at a Limassol construction site, died after falling about 4.5 metres while crossing a narrow walkway over the basement.",
+      "worker_name": "Andreas Constantinou",
+      "worker_age": 54,
+      "employer": "Construction company co-owned by worker; name not published in source",
+      "sector": "Construction",
+      "cause": "Fall from unprotected narrow walkway over basement",
+      "death_date": "2020-07-23",
+      "legal_status": "Labour inspection department identified missing protective barriers according to source",
+      "last_verified_at": "2020-07-23",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2010",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 19,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "limassol-construction-walkway-andreas-constantinou",
+          "label": "Limassol construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol",
+          "lat": 34.7071,
+          "lng": 33.0226,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a Limassol construction site; city centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Second man loses life at work hours after site accident claims first victim",
+          "url": "https://archive.cyprus-mail.com/2020/07/23/second-man-loses-life-at-work-hours-after-site-accident-claimed-first-victim-updated/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-07-23"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2009",
+      "id": "limassol-shaesh-ousama-aloumar-high-rise-fall-july-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2009",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2009 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2009-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Shaesh Ousama Aloumar dies after high-rise fall on Limassol coastal avenue",
+      "summary": "Shaesh Ousama Aloumar, a 20-year-old Syrian worker, died after falling about 23 metres from a high-rise under construction on Limassol's coastal avenue.",
+      "worker_name": "Shaesh Ousama Aloumar",
+      "worker_age": 20,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from high-rise under construction",
+      "death_date": "2020-07-23",
+      "legal_status": "Fatal work-related accident reported by Cyprus Mail",
+      "last_verified_at": "2020-07-23",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2009",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
+          "id": "limassol-coastal-highrise-shaesh-ousama-aloumar",
+          "label": "Limassol coastal avenue high-rise construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol",
+          "lat": 34.677,
+          "lng": 33.046,
           "geocode_precision": "area_centroid",
-          "fatality_count": 9,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a high-rise under construction on Limassol's coastal avenue; coastal area centroid used pending exact building coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Second man loses life at work hours after site accident claims first victim",
+          "url": "https://archive.cyprus-mail.com/2020/07/23/second-man-loses-life-at-work-hours-after-site-accident-claimed-first-victim-updated/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-07-23"
         }
       ]
     },
     {
-      "id": "roc-official-fatal-workplace-accidents-2008",
+      "id": "dherynia-unnamed-air-conditioning-installer-fall-june-2020",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Republic of Cyprus official fatal workplace accident count, 2008",
-      "summary": "CYSTAT's Department of Labour Inspection source table reports 12 people involved in fatal accidents at work in 2008 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal accidents at work, all NACE activities",
-      "death_date": "2008-12-31",
-      "legal_status": "Official annual aggregate",
-      "last_verified_at": "2025-06-25",
+      "title": "Unnamed air-conditioning installer dies after ladder fall in Dherynia",
+      "summary": "An unnamed 64-year-old foreign man died after slipping from an aluminium ladder while installing an air-conditioning system at a house in Dherynia.",
+      "worker_name": "Name not published",
+      "worker_age": 64,
+      "employer": "Air-conditioning installation employer not named in source",
+      "sector": "Air-conditioning installation / building services",
+      "cause": "Fall from ladder during air-conditioning installation",
+      "death_date": "2020-06-13",
+      "legal_status": "Police and labour inspection investigation reported",
+      "last_verified_at": "2020-06-14",
       "locations": [
         {
-          "id": "roc-workplace-deaths-2008",
-          "label": "Republic-controlled areas, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Republic-controlled areas",
-          "lat": 34.98,
-          "lng": 33.3,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 12,
-          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+          "id": "dherynia-ac-installer-ladder-fall",
+          "label": "Dherynia house air-conditioning worksite",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Dherynia",
+          "lat": 35.066,
+          "lng": 33.958,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a house in Dherynia; district centroid used pending exact address."
         }
       ],
       "sources": [
         {
-          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
-          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-          "publisher": "CYSTAT / Department of Labour Inspection",
-          "type": "official",
-          "published_at": "2025-06-25"
+          "title": "Man dies after falling from ladder in Dherynia",
+          "url": "https://archive.cyprus-mail.com/2020/06/14/man-dies-after-falling-from-ladder-in-dherynia/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2020-06-14"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2020",
+      "id": "kyrenia-huseyin-kurt-scaffold-fall-march-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2020",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2020. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2020-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Huseyin Kurt dies after scaffold fall at Kyrenia construction site",
+      "summary": "Huseyin Kurt, a 27-year-old plaster worker from Diyarbakir, died after losing his balance and falling from second-floor scaffolding at an under-construction building in Kyrenia.",
+      "worker_name": "Huseyin Kurt",
+      "worker_age": 27,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction / plastering",
+      "cause": "Fall from second-floor scaffold",
+      "death_date": "2019-03-09",
+      "legal_status": "Investigation started according to source",
+      "last_verified_at": "2019-03-09",
       "locations": [
         {
-          "id": "north-workplace-deaths-2020",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 4,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "id": "kyrenia-scaffold-fall-huseyin-kurt",
+          "label": "Kyrenia construction site",
+          "province_key": "KYRENIA",
+          "province": "Kyrenia / Girne",
+          "district": "Kyrenia / Girne",
+          "lat": 35.341,
+          "lng": 33.319,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at an under-construction building in Kyrenia; city centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "KKTC'de is kazasi: 1 isci oldu",
+          "url": "https://www.hukukihaber.net/kktcde-is-kazasi-1-isci-oldu",
+          "publisher": "Hukuki Haber / IHA",
+          "type": "labor_news",
+          "published_at": "2019-03-09"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2019",
+      "id": "linopetra-demitris-georgiou-scaffolding-fall-august-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2019",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 5 fatal workplace accidents in northern Cyprus in 2019. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2019-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Demitris Georgiou dies after scaffolding fall in Linopetra",
+      "summary": "Demitris Georgiou, a 62-year-old worker, died after falling from scaffolding on the fourth floor of a building under construction in Linopetra. The labour inspection department said work stopped immediately and noted inadequate platform width and missing side rails.",
+      "worker_name": "Demitris Georgiou",
+      "worker_age": 62,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from scaffold platform",
+      "death_date": "2019-08-30",
+      "legal_status": "Labour inspection department investigation and work stoppage reported",
+      "last_verified_at": "2019-08-30",
       "locations": [
         {
-          "id": "north-workplace-deaths-2019",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
+          "id": "linopetra-scaffold-demitris-georgiou",
+          "label": "Linopetra construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Linopetra",
+          "lat": 34.7,
+          "lng": 33.066,
           "geocode_precision": "area_centroid",
-          "fatality_count": 5,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident on a building under construction in Linopetra; area centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "Man dies after falling from scaffolding",
+          "url": "https://archive.cyprus-mail.com/2019/08/30/man-dies-after-falling-from-scaffolding/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-08-30"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2018",
+      "id": "paphos-charalambos-sahpatzidis-staircase-fall-august-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2018",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2018. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2018-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Charalambos Sahpatzidis dies after fall at Paphos building site",
+      "summary": "Charalambos Sahpatzidis, a 63-year-old Georgian man with Greek nationality, died two days after falling from an internal staircase in the Paphos building where he was working.",
+      "worker_name": "Charalambos Sahpatzidis",
+      "worker_age": 63,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from internal staircase at building site",
+      "death_date": "2019-08-10",
+      "legal_status": "Police investigation reported",
+      "last_verified_at": "2019-08-10",
       "locations": [
         {
-          "id": "north-workplace-deaths-2018",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 4,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "id": "paphos-staircase-fall-charalambos-sahpatzidis",
+          "label": "Paphos building site",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Paphos",
+          "lat": 34.772,
+          "lng": 32.429,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fall at a building site in Paphos; city centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "Construction worker dies two days after site accident",
+          "url": "https://archive.cyprus-mail.com/2019/08/10/construction-worker-dies-two-days-after-site-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-08-10"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2017",
+      "id": "alethriko-renos-nicolaou-electrocution-april-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2017",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2017. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2017-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Renos Nicolaou electrocuted during petrol-station construction work in Alethriko",
+      "summary": "Renos Nicolaou, a 54-year-old worker from Anglisides, died after the pump of a cement mixer came into contact with an EAC power line during construction work at a petrol station in Alethriko.",
+      "worker_name": "Renos Nicolaou",
+      "worker_age": 54,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Electrocution after cement-mixer pump contacted power line",
+      "death_date": "2019-04-18",
+      "legal_status": "Work accident reported; second worker injured according to source",
+      "last_verified_at": "2019-04-18",
       "locations": [
         {
-          "id": "north-workplace-deaths-2017",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 4,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "id": "alethriko-petrol-station-renos-nicolaou",
+          "label": "Alethriko petrol-station construction site",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Alethriko",
+          "lat": 34.861,
+          "lng": 33.497,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a petrol-station construction site in Alethriko; village centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "Worker dies after being electrocuted during construction",
+          "url": "https://archive.cyprus-mail.com/2019/04/18/worker-dies-after-being-electrocuted-during-construction/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-04-18"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2016",
+      "id": "larnaca-anastasios-thoma-construction-painter-fall-april-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2016",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 8 fatal workplace accidents in northern Cyprus in 2016. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2016-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Anastasios Thoma dies after fall from Larnaca construction site",
+      "summary": "Anastasios Thoma, a 60-year-old construction painter, died after falling from the third floor of a building under construction near Larnaca state hospital.",
+      "worker_name": "Anastasios Thoma",
+      "worker_age": 60,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction / painting",
+      "cause": "Fall from third floor while painting at construction site",
+      "death_date": "2019-04-20",
+      "legal_status": "Labour inspection office and Larnaca police investigation reported",
+      "last_verified_at": "2019-04-22",
       "locations": [
         {
-          "id": "north-workplace-deaths-2016",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
-          "geocode_precision": "area_centroid",
-          "fatality_count": 8,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "id": "larnaca-construction-painter-anastasios-thoma",
+          "label": "Construction site near Larnaca state hospital",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Larnaca",
+          "lat": 34.919,
+          "lng": 33.619,
+          "geocode_precision": "venue_approx",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident near Larnaca state hospital; approximate hospital-area point used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "Construction painter falls to his death",
+          "url": "https://knews.kathimerini.com.cy/en/news/construction-painter-falls-to-his-death",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2019-04-22"
         }
       ]
     },
     {
-      "id": "north-cyprus-fatal-workplace-accidents-2015",
+      "id": "zakaki-unnamed-painter-scaffold-fall-january-2019",
       "record_type": "worker_death",
       "status": "fatality_recorded",
-      "title": "Northern Cyprus fatal workplace accident count, 2015",
-      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 7 fatal workplace accidents in northern Cyprus in 2015. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
-      "worker_name": "Aggregate count - names not listed in source",
-      "sector": "All sectors",
-      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
-      "death_date": "2015-12-31",
-      "legal_status": "Research aggregate based on official Social Insurance Department data",
-      "last_verified_at": "2026-05-04",
+      "title": "Unnamed painter dies after scaffold fall at Zakaki warehouse construction site",
+      "summary": "An unnamed 52-year-old man died after falling from a five-metre scaffold and hitting his head while painting warehouses under construction in Zakaki.",
+      "worker_name": "Name not published",
+      "worker_age": 52,
+      "employer": "Self-employed according to source; construction employer not named",
+      "sector": "Construction / painting",
+      "cause": "Fall from unsuitable scaffold platform",
+      "death_date": "2019-01-31",
+      "legal_status": "Labour inspection preliminary findings reported lack of safety measures",
+      "last_verified_at": "2019-01-31",
       "locations": [
         {
-          "id": "north-workplace-deaths-2015",
-          "label": "Northern Cyprus, annual aggregate",
-          "province_key": "ISLAND_WIDE",
-          "province": "Island-wide",
-          "district": "Northern Cyprus aggregate",
-          "lat": 35.24,
-          "lng": 33.35,
+          "id": "zakaki-warehouse-painter-scaffold-fall",
+          "label": "Zakaki warehouse construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Zakaki",
+          "lat": 34.653,
+          "lng": 33.008,
           "geocode_precision": "area_centroid",
-          "fatality_count": 7,
-          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at warehouses under construction in Zakaki; area centroid used pending exact site coordinates."
         }
       ],
       "sources": [
         {
-          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
-          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
-          "publisher": "Sosyal Guvenlik Dergisi",
-          "type": "research",
-          "published_at": "2022-06-29"
+          "title": "Painter dies after fall from scaffolding",
+          "url": "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-01-31"
+        }
+      ]
+    },
+    {
+      "id": "limassol-omar-alkhani-scaffolding-fall-november-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Omar Alkhani dies after fourth-floor scaffolding fall in Limassol",
+      "summary": "Omar Alkhani, a 22-year-old Syrian worker, died after falling from scaffolding on the fourth floor of a Limassol construction site. KNEWS reported additional accounts that there were no guardrails as he worked about 12 metres above ground.",
+      "worker_name": "Omar Alkhani",
+      "worker_age": 22,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from fourth-floor scaffolding",
+      "death_date": "2019-11-13",
+      "legal_status": "Agios Ioannis police station investigation reported",
+      "last_verified_at": "2019-11-14",
+      "locations": [
+        {
+          "id": "limassol-scaffold-omar-alkhani",
+          "label": "Limassol construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol",
+          "lat": 34.7071,
+          "lng": 33.0226,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a construction site in Limassol; city centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Young builder falls to his death",
+          "url": "https://knews.kathimerini.com.cy/en/news/young-builder-falls-to-his-death",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2019-11-14"
+        }
+      ]
+    },
+    {
+      "id": "bafra-ismail-kizildemir-hotel-balcony-fall-june-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Ismail Kizildemir dies after hotel balcony fall in Bafra",
+      "summary": "Ismail Kizildemir, a worker sent by a firm to deal with an air-conditioning fault at a hotel in Bafra, died after falling from a conference-hall balcony about 4.5 metres high.",
+      "worker_name": "Ismail Kizildemir",
+      "employer": "Air-conditioning service firm not named in source",
+      "sector": "Hotel maintenance / air conditioning",
+      "cause": "Fall from hotel conference-hall balcony",
+      "death_date": "2018-06-16",
+      "legal_status": "Investigation continuing according to source",
+      "last_verified_at": "2018-06-16",
+      "locations": [
+        {
+          "id": "bafra-hotel-balcony-ismail-kizildemir",
+          "label": "Bafra hotel",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Bafra",
+          "lat": 35.378,
+          "lng": 34.071,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a hotel in the Bafra area; area centroid used pending exact hotel coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "KKTC'de is kazasi: 1 olu",
+          "url": "https://www.bursahaber.com/genel/kktcde-is-kazasi-1-olu-1304341",
+          "publisher": "Bursa Haber / IHA",
+          "type": "labor_news",
+          "published_at": "2018-06-16"
+        }
+      ]
+    },
+    {
+      "id": "larnaca-giorgos-giorgiou-eac-lift-cage-fall-july-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Giorgos Giorgiou dies after EAC lifting-cage fall in Larnaca",
+      "summary": "Giorgos Giorgiou, a 42-year-old Electricity Authority of Cyprus employee and father of three, died after a lifting cage fell from an aerial lift while he was pruning trees near electrical cables on Tirnavos Street in Larnaca.",
+      "worker_name": "Giorgos Giorgiou",
+      "worker_age": 42,
+      "employer": "Electricity Authority of Cyprus",
+      "sector": "Energy / utilities",
+      "cause": "Fall from lifting cage after aerial-lift mechanical failure",
+      "death_date": "2018-07-02",
+      "legal_status": "EAC fined EUR28,000 in 2024 after labour inspection investigation found safety failures",
+      "last_verified_at": "2024-03-20",
+      "locations": [
+        {
+          "id": "larnaca-tirnavos-street-eac-giorgos-giorgiou",
+          "label": "Tirnavos Street, Larnaca",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Larnaca",
+          "lat": 34.918,
+          "lng": 33.62,
+          "geocode_precision": "venue_approx",
+          "fatality_count": 1,
+          "location_basis": "Archive source places the accident on Tirnavos Street in Larnaca; approximate city point used pending exact street coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "EAC employee dies after fall",
+          "url": "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2018-07-02"
+        },
+        {
+          "title": "EAC fined EUR28,000 for worker death",
+          "url": "https://cyprus-mail.com/2024/03/20/eac-fined-e28000-for-worker-death",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2024-03-20"
+        }
+      ]
+    },
+    {
+      "id": "chlorakas-andreas-constantinou-scaffold-fall-january-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Andreas Constantinou dies weeks after Chlorakas scaffolding fall",
+      "summary": "Andreas Constantinou, a 53-year-old labourer, died weeks after falling from scaffolding while plastering the community nursing-home building in Chlorakas.",
+      "worker_name": "Andreas Constantinou",
+      "worker_age": 53,
+      "employer": "Construction employer not named in source",
+      "sector": "Construction / plastering",
+      "cause": "Fall from scaffolding during plastering work",
+      "death_date": "2018-01-15",
+      "legal_status": "Fatal work accident reported by Cyprus Mail archive",
+      "last_verified_at": "2018-01-15",
+      "locations": [
+        {
+          "id": "chlorakas-nursing-home-andreas-constantinou",
+          "label": "Chlorakas community nursing-home building",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Chlorakas",
+          "lat": 34.798,
+          "lng": 32.412,
+          "geocode_precision": "venue_approx",
+          "fatality_count": 1,
+          "location_basis": "Source places the fall at the community nursing-home building in Chlorakas; approximate Chlorakas point used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Labourer dies weeks after fall",
+          "url": "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2018-01-15"
+        }
+      ]
+    },
+    {
+      "id": "karaoglanoglu-abdulhakim-bayraktar-gau-hospital-fall-february-2016",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Abdulhakim Bayraktar dies after fall at GAU hospital construction site",
+      "summary": "Abdulhakim Bayraktar, a 27-year-old worker, died at the Girne American University hospital construction site in Karaoglanoglu after falling from the third floor into a service-shaft area.",
+      "worker_name": "Abdulhakim Bayraktar",
+      "worker_age": 27,
+      "employer": "GAU hospital construction employer not named in source",
+      "sector": "Construction",
+      "cause": "Fall from third floor into service-shaft area",
+      "death_date": "2016-02-01",
+      "legal_status": "Police investigation continuing according to source",
+      "last_verified_at": "2016-02-02",
+      "locations": [
+        {
+          "id": "karaoglanoglu-gau-hospital-abdulhakim-bayraktar",
+          "label": "GAU hospital construction site, Karaoglanoglu",
+          "province_key": "KYRENIA",
+          "province": "Kyrenia / Girne",
+          "district": "Karaoglanoglu",
+          "lat": 35.343,
+          "lng": 33.254,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at the GAU hospital construction site in Karaoglanoglu; area centroid used pending exact construction-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Is kazasi can aldi",
+          "url": "https://www.kktcmedya.com/is-kazasi-can-aldi-h9587.html",
+          "publisher": "KKTC Medya",
+          "type": "labor_news",
+          "published_at": "2016-02-02"
         }
       ]
     }

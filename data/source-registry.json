@@ -404,21 +404,23 @@
   ],
   "research_notes": {
     "launch_dataset": {
-      "updated_at": "2026-05-03",
+      "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 46,
-      "period_focus": "late 2025 through May 2026 for current individual records, plus official/research annual workplace-death aggregates back to 2008 for Republic-controlled areas and 2015 for northern Cyprus",
+      "record_count": 55,
+      "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2016 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
         "Island-wide labour actions use area-centroid placement and explicit location_basis notes.",
         "No public current-labour-arrest record is included at launch; the Ahmet Tugcu record is marked released based on follow-up reporting.",
         "Northern Cyprus coverage is supplemented with Turkish-language sources in data/northern-incidents.json.",
-        "Historical workplace-death totals in data/workplace-deaths-backfill.json use annual aggregate markers with fatality_count values; they should be split into individual records only when stable public case sources are found."
+        "data/workplace-deaths-backfill.json now contains only individual worker-death records with stable public sources and finite coordinates.",
+        "Official/research workplace-death totals are shown in the app context panel with links; no aggregate fatality markers remain in the map datasets."
       ]
     },
     "work_related_deaths_source_review": {
-      "updated_at": "2026-05-03",
+      "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
+      "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
       "priority_sources": [
         {
           "title": "ISIG Meclisi monthly and annual is cinayetleri reports",
@@ -760,15 +762,53 @@
       "data_file": "data/workplace-deaths-backfill.json",
       "sources": [
         "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
+        "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
+        "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
+        "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
+        "https://archive.cyprus-mail.com/2019/04/18/worker-dies-after-being-electrocuted-during-construction/",
+        "https://archive.cyprus-mail.com/2019/08/10/construction-worker-dies-two-days-after-site-accident/",
+        "https://archive.cyprus-mail.com/2019/08/30/man-dies-after-falling-from-scaffolding/",
+        "https://archive.cyprus-mail.com/2020/06/14/man-dies-after-falling-from-ladder-in-dherynia/",
+        "https://archive.cyprus-mail.com/2020/06/28/remand-of-worker-for-fatal-labour-accident/",
+        "https://archive.cyprus-mail.com/2020/07/23/second-man-loses-life-at-work-hours-after-site-accident-claimed-first-victim-updated/",
+        "https://archive.cyprus-mail.com/2020/08/03/larnaca-man-dies-in-labour-accident/",
+        "https://archive.cyprus-mail.com/2020/09/08/worker-crushed-by-crane-in-labour-accident/",
+        "https://cyprus-mail.com/2021/01/10/man-32-injured-in-work-accident-dies",
+        "https://cyprus-mail.com/2021/05/23/man-dies-after-work-fall",
+        "https://cyprus-mail.com/2022/03/30/man-62-dies-after-being-crushed-by-tractor",
+        "https://cyprus-mail.com/2022/04/03/worker-on-ship-anchored-off-limassol-dies",
+        "https://cyprus-mail.com/2022/07/12/investigators-look-at-front-axle-in-stroumbi-combine-harvester-fatality-update",
+        "https://cyprus-mail.com/2022/08/05/labourer-38-killed-in-work-accident",
+        "https://cyprus-mail.com/2022/09/12/construction-worker-falls-to-his-death",
+        "https://cyprus-mail.com/2022/11/08/man-crushed-by-tractor-in-fatal-work-accident",
+        "https://cyprus-mail.com/2022/12/13/man-falls-to-his-death-in-nicosia-work-accident",
+        "https://cyprus-mail.com/2023/01/04/man-dies-tragically-while-pruning",
+        "https://cyprus-mail.com/2024/02/10/man-dies-in-labour-accident",
+        "https://cyprus-mail.com/2024/03/20/eac-fined-e28000-for-worker-death",
         "https://cyprus-mail.com/2025/01/03/construction-worker-died-after-falling-from-great-height",
+        "https://cyprus-mail.com/2025/02/03/worker-dies-in-industrial-accident-in-limassol",
         "https://cyprus-mail.com/2025/05/07/worker-dies-after-falling-down-lift-shaft-in-limassol",
-        "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
-        "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
         "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
         "https://in-cyprus.philenews.com/local/plumber-dies-germasogeia-construction-site-accident/",
+        "https://knews.kathimerini.com.cy/en/news/construction-painter-falls-to-his-death",
+        "https://knews.kathimerini.com.cy/en/news/eac-burn-victim-loses-fight-for-life",
+        "https://knews.kathimerini.com.cy/en/news/factory-worker-crushed-to-death-by-falling-glass-pane",
         "https://knews.kathimerini.com.cy/en/news/fatal-workplace-accident-at-limassol-construction-site",
+        "https://knews.kathimerini.com.cy/en/news/forklift-operator-arrested-after-fatal-accident",
+        "https://knews.kathimerini.com.cy/en/news/realtor-employee-suffocates-under-pile-of-dirt",
+        "https://knews.kathimerini.com.cy/en/news/young-builder-falls-to-his-death",
+        "https://www.bursahaber.com/genel/kktcde-is-kazasi-1-olu-1304341",
+        "https://www.ekathimerini.com/economy/1290484/eac-fined-over-fatal-safety-failures/",
+        "https://www.hukukihaber.net/kktcde-is-kazasi-1-isci-oldu",
         "https://www.kibrisgercek.com/fatih-safakoglunun-vefati-ile-sonuclanan-is-kazasinin-zanlilari-mahkemeye-cikarildi",
-        "https://www.mlsi.gov.cy/mlsi/dli/dliup.nsf/All/8A178D71E8AB1B36C2258C90003D83CC/$file/ANNUAL_REPORT_EN_2024.pdf?OpenElement="
+        "https://www.kktcmedya.com/is-kazasi-can-aldi-h9587.html"
+      ]
+    },
+    {
+      "data_file": "index.html context panel",
+      "sources": [
+        "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+        "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378"
       ]
     }
   ]
