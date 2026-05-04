@@ -3080,6 +3080,44 @@
           "type": "coordinate_reference"
         }
       ]
+    },
+    {
+      "id": "panthea-unnamed-iranian-refugee-scaffolding-fall-january-2005",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Iranian political refugee killed after scaffolding fall in Panthea",
+      "summary": "An unnamed 33-year-old Iranian political refugee died after falling from nine-metre scaffolding at a building site in the Pantheas area of Limassol. The source says he was killed on impact, and the site's two directors and construction supervisor were arrested in connection with placing employees to work in unsafe conditions.",
+      "worker_name": "Name not published",
+      "worker_age": 33,
+      "employer": "Construction site directors/supervisor not named in source",
+      "sector": "Construction",
+      "cause": "Fall from nine-metre scaffolding",
+      "death_date": "2005-01-26",
+      "legal_status": "Two site directors and the construction supervisor arrested in connection with unsafe working conditions; police investigation and autopsy reported",
+      "last_verified_at": "2005-01-27",
+      "locations": [
+        {
+          "id": "panthea-scaffolding-fall-unnamed-iranian-refugee",
+          "label": "Panthea building site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Panthea",
+          "lat": 34.7112,
+          "lng": 33.0403,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal scaffolding fall at a building site in the Pantheas area of Limassol; Panthea area centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker dies on Limassol site",
+          "url": "https://archive.cyprus-mail.com/2005/01/27/worker-dies-on-limassol-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2005-01-27"
+        }
+      ]
     }
   ]
 }
