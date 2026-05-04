@@ -2573,6 +2573,44 @@
           "published_at": "2009-05-10"
         }
       ]
+    },
+    {
+      "id": "paphos-kolcev-tanyo-stoyanov-air-conditioning-fall-january-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Kolcev Tanyo Stoyanov killed after fall while removing air-conditioning unit in Paphos",
+      "summary": "Kolcev Tanyo Stoyanov, a 46-year-old Bulgarian worker, died in Paphos after falling about 2.5 metres while trying to remove an air-conditioning unit. The source says he landed on his head and was killed instantly.",
+      "worker_name": "Kolcev Tanyo Stoyanov",
+      "worker_age": 46,
+      "employer": "Employer not named in source",
+      "sector": "Construction / building maintenance",
+      "cause": "Fall while removing air-conditioning unit",
+      "death_date": "2009-01-13",
+      "legal_status": "Paphos police and the Labour Ministry investigated the cause of the work accident according to source",
+      "last_verified_at": "2009-01-14",
+      "locations": [
+        {
+          "id": "paphos-air-conditioning-removal-fall-kolcev-tanyo-stoyanov",
+          "label": "Paphos air-conditioning removal worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Paphos",
+          "lat": 34.772,
+          "lng": 32.429,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall in Paphos while the worker was removing an air-conditioning unit; city centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Builder killed in site accident",
+          "url": "https://archive.cyprus-mail.com/2009/01/14/builder-killed-in-site-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2009-01-14"
+        }
+      ]
     }
   ]
 }
