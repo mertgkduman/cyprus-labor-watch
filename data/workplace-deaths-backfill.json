@@ -1834,6 +1834,44 @@
           "published_at": "2013-08-26"
         }
       ]
+    },
+    {
+      "id": "yermasoyia-unnamed-filipina-domestic-worker-drowning-march-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Filipina domestic worker drowns at Yermasoyia house where she worked",
+      "summary": "An unnamed 42-year-old domestic worker from the Philippines died in Yermasoyia after falling into the swimming pool of the house where she worked. Police said she was carrying a clothes hanger from the garden, her employers called for help, and she was declared dead at Limassol General Hospital.",
+      "worker_name": "Name not published",
+      "worker_age": 42,
+      "employer": "Private household employer not named in source",
+      "sector": "Domestic work",
+      "cause": "Drowning after falling into swimming pool at workplace",
+      "death_date": "2012-03-16",
+      "legal_status": "Police reported CCTV recording of the scene and a post-mortem was expected according to source",
+      "last_verified_at": "2012-03-17",
+      "locations": [
+        {
+          "id": "yermasoyia-domestic-worker-pool-drowning",
+          "label": "Yermasoyia private-household workplace",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Yermasoyia / Germasogeia",
+          "lat": 34.7202,
+          "lng": 33.0833,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the drowning at a house where the domestic worker worked in Yermasoyia/Germasogeia; district centroid used pending exact household coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Domestic worker drowns",
+          "url": "https://archive.cyprus-mail.com/2012/03/17/domestic-worker-drowns/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2012-03-17"
+        }
+      ]
     }
   ]
 }
