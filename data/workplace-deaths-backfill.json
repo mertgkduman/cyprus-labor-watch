@@ -3585,6 +3585,58 @@
           "published_at": "2018-07-12"
         }
       ]
+    },
+    {
+      "id": "lefkosa-dumlupinar-dogan-turan-white-lotus-construction-fall-january-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Dogan Turan dies after fifth-floor fall at Lefkosa-Dumlupinar construction site",
+      "summary": "Dogan Turan, a 41-year-old construction worker, died after falling from the fifth floor of the White Lotus construction site in Lefkosa-Dumlupinar into a ventilation shaft or concrete floor area. Follow-up court reporting said worker statements changed after the incident, identifying him as an undocumented worker at the site, and police testimony cited missing safety measures under workplace and construction safety rules.",
+      "worker_name": "Dogan Turan",
+      "worker_age": 41,
+      "employer": "White Lotus construction subcontractor Cengiz Topel Konakli named in court reporting",
+      "sector": "Construction",
+      "cause": "Fall from fifth floor into ventilation shaft or concrete floor area",
+      "death_date": "2018-01-31",
+      "legal_status": "Subcontractor and three workers were brought before court; police testimony reported missing safety measures and false initial statements about the worker's role",
+      "last_verified_at": "2018-02-03",
+      "locations": [
+        {
+          "id": "lefkosa-dumlupinar-white-lotus-construction-fall-dogan-turan",
+          "label": "White Lotus construction site, Lefkosa-Dumlupinar",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Lefkosa-Dumlupinar",
+          "lat": 35.1856,
+          "lng": 33.371,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal fall at a White Lotus construction site in Lefkosa-Dumlupinar; Dumlupinar/North Nicosia area centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dogan Turan 'kacak isci' cikti",
+          "url": "https://kibrisgazetesi.com/doan-turan-kaak-ii-kt/",
+          "publisher": "Kibris Gazetesi",
+          "type": "labor_news",
+          "published_at": "2018-02-03"
+        },
+        {
+          "title": "Dogan Turan'in Olumu Kaza Degil, Cinayet!",
+          "url": "https://ajanscyprus.com/index.php/2018/02/03/dogan-turanin-olumu-kaza-degil-cinayet/",
+          "publisher": "Ajans Cyprus",
+          "type": "labor_context",
+          "published_at": "2018-02-03"
+        },
+        {
+          "title": "Lefkosa'da bir kisi insaattan dustu agir yaralandi",
+          "url": "https://www.havadiskibris.com/lefkosada-bir-kisi-insaattan-dustu-agir-yaralandi/",
+          "publisher": "Havadis",
+          "type": "labor_context",
+          "published_at": "2018-01-31"
+        }
+      ]
     }
   ]
 }
