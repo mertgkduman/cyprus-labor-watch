@@ -3675,6 +3675,400 @@
           "published_at": "2018-01-14"
         }
       ]
+    },
+    {
+      "id": "amathounta-marios-loukas-scaffolding-fall-january-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Marios Loukas dies after scaffolding fall at Amathounta construction site",
+      "summary": "Marios Loukas, a 59-year-old worker from Limassol, died after losing his balance and falling about 1.8 metres while dismantling scaffolding at a building under construction in the Amathounta area.",
+      "worker_name": "Marios Loukas",
+      "worker_age": 59,
+      "employer": "Construction employer not published",
+      "sector": "Construction",
+      "cause": "Fall while dismantling scaffolding",
+      "death_date": "2025-01-10",
+      "legal_status": "Police and labour office officials examined the scene; Germasogeia police station investigation continued according to source",
+      "last_verified_at": "2025-01-10",
+      "locations": [
+        {
+          "id": "amathounta-scaffolding-fall-marios-loukas",
+          "label": "Amathounta construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Amathounta",
+          "lat": 34.713,
+          "lng": 33.129,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall at a building under construction in the Amathounta area; area centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tragodia sti Lemeso: O 59chronos Marios to thyma tou ergatikou dystychimatos",
+          "url": "https://www.ant1live.com/kypros/koinonia/616513_tragodia-sti-lemeso-o-59hronos-marios-thyma-toy-ergatikoy-dystyhimatos",
+          "publisher": "Ant1 Live",
+          "type": "labor_news",
+          "published_at": "2025-01-10"
+        }
+      ]
+    },
+    {
+      "id": "pissouri-ioannis-nikolaou-tractor-olive-branches-april-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Ioannis Nikolaou dies during agricultural work in Pissouri area",
+      "summary": "Ioannis Nikolaou, a 67-year-old man from Alektora, died during agricultural work in the Pissouri area after thick olive branches struck him in the chest while he was operating an agricultural tractor.",
+      "worker_name": "Ioannis Nikolaou",
+      "worker_age": 67,
+      "employer": "Agricultural work / employer not published",
+      "sector": "Agriculture",
+      "cause": "Chest injuries from olive branches while operating agricultural tractor",
+      "death_date": "2025-04-05",
+      "legal_status": "Pissouri police station investigation continued according to source",
+      "last_verified_at": "2025-04-06",
+      "locations": [
+        {
+          "id": "pissouri-agricultural-tractor-branches-ioannis-nikolaou",
+          "label": "Pissouri agricultural plot",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Pissouri",
+          "lat": 34.67,
+          "lng": 32.702,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal agricultural incident in a plot in the Pissouri area; area centroid used pending exact field coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tragodia sti Lemeso: Ekhase ti zoi tou eno ektelouse georgikes ergasies 67chronos",
+          "url": "https://www.ant1live.com/kypros/koinonia/627712_tragodia-sti-lemeso-ehase-ti-zoi-toy-eno-ekteloyse-georgikes-ergasies",
+          "publisher": "Ant1 Live",
+          "type": "labor_news",
+          "published_at": "2025-04-06"
+        }
+      ]
+    },
+    {
+      "id": "nicosia-omar-alkata-construction-fall-delayed-death-january-2024",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Omar Alkata dies months after Nicosia construction-site fall",
+      "summary": "Omar Alkata, a 36-year-old worker from Syria, died after spending months in hospital following a September 2023 labour accident at a Nicosia construction site.",
+      "worker_name": "Omar Alkata",
+      "worker_age": 36,
+      "employer": "Construction employer not published",
+      "sector": "Construction",
+      "cause": "Delayed death after construction-site fall",
+      "death_date": "2024-01-29",
+      "legal_status": "Earlier labour accident investigation reported; death reported after hospitalisation",
+      "last_verified_at": "2024-01-29",
+      "locations": [
+        {
+          "id": "nicosia-construction-fall-delayed-death-omar-alkata",
+          "label": "Nicosia construction site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Nicosia",
+          "lat": 35.1856,
+          "lng": 33.3823,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the earlier labour accident at a Nicosia construction site; district centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker dies four months after accident",
+          "url": "https://cyprus-mail.com/2024/01/29/worker-dies-four-months-after-accident/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2024-01-29"
+        }
+      ]
+    },
+    {
+      "id": "strovolos-efstathios-hadjialexandrou-repair-work-fall-january-2021",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Efstathios Panteli Hadjialexandrou dies after fall during repair work in Strovolos",
+      "summary": "Efstathios Panteli Hadjialexandrou, a 66-year-old worker from Anayia, died after falling while doing repair work at a private residence in the Nicosia/Strovolos area. Follow-up reporting described the case as a labour fatality involving a self-employed plumber repairing a solar heater.",
+      "worker_name": "Efstathios Panteli Hadjialexandrou",
+      "worker_age": 66,
+      "employer": "Self-employed plumber",
+      "sector": "Repair work / plumbing",
+      "cause": "Fall from external staircase or roof-access area during repair work",
+      "death_date": "2021-01-21",
+      "legal_status": "Police and Labour Inspection investigation reported according to source",
+      "last_verified_at": "2021-01-22",
+      "locations": [
+        {
+          "id": "strovolos-repair-work-fall-efstathios-hadjialexandrou",
+          "label": "Strovolos private residence",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Strovolos",
+          "lat": 35.1497,
+          "lng": 33.3442,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal roof fall at an apartment building in Strovolos; district centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man died in fall from staircase",
+          "url": "https://cyprus-mail.com/2021/01/21/man-died-in-fall-from-staircase/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2021-01-21"
+        },
+        {
+          "title": "One in two labour fatalities result of falling from height",
+          "url": "https://cyprus-mail.com/2021/01/22/one-in-two-labour-fatalities-result-of-falling-from-height",
+          "publisher": "Cyprus Mail",
+          "type": "labor_context",
+          "published_at": "2021-01-22"
+        }
+      ]
+    },
+    {
+      "id": "paralimni-loukas-mosfilis-wooden-panels-crush-july-2020",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Loukas Mosfilis crushed by wooden panels in Paralimni",
+      "summary": "Loukas Mosfilis, a 68-year-old worker, died after being crushed by wooden panels while handling materials at a site in Paralimni.",
+      "worker_name": "Loukas Mosfilis",
+      "worker_age": 68,
+      "employer": "Worksite / employer not published",
+      "sector": "Materials handling / warehouse",
+      "cause": "Crushed by wooden panels",
+      "death_date": "2020-07-14",
+      "legal_status": "Police and Department of Labour Inspection investigation reported",
+      "last_verified_at": "2020-07-14",
+      "locations": [
+        {
+          "id": "paralimni-wooden-panels-crush-loukas-mosfilis",
+          "label": "Paralimni materials-handling site",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Paralimni",
+          "lat": 35.0395,
+          "lng": 33.9818,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal crush incident in Paralimni; district centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after he was crushed by wooden panels",
+          "url": "https://archive.cyprus-mail.com/2020/07/14/man-dies-after-he-was-crushed-by-wooden-panels/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2020-07-14"
+        }
+      ]
+    },
+    {
+      "id": "livadia-yiorgos-katsiou-municipal-roadwork-lorry-october-2017",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Yiorgos Katsiou killed while working on Livadia road",
+      "summary": "Yiorgos Katsiou, a 61-year-old municipal worker, was killed while working on a road in Livadia when he was struck by a lorry.",
+      "worker_name": "Yiorgos Katsiou",
+      "worker_age": 61,
+      "employer": "Livadia municipality",
+      "sector": "Municipal road work",
+      "cause": "Struck by lorry while working on road",
+      "death_date": "2017-10-17",
+      "legal_status": "Police and Labour Inspection investigation reported",
+      "last_verified_at": "2017-10-17",
+      "locations": [
+        {
+          "id": "livadia-roadwork-lorry-yiorgos-katsiou",
+          "label": "Livadia roadwork site",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Livadia",
+          "lat": 34.952,
+          "lng": 33.626,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal roadwork incident in Livadia; district centroid used pending exact road coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Municipal worker killed while working on road",
+          "url": "https://archive.cyprus-mail.com/2017/10/17/municipal-worker-killed-working-road/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2017-10-17"
+        }
+      ]
+    },
+    {
+      "id": "kato-polemidia-kyriacos-charalambous-roofing-sheets-fall-february-2017",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Kyriacos Charalambous dies after fall while placing roofing sheets in Kato Polemidia",
+      "summary": "Kyriacos Charalambous, a 62-year-old man, died after falling about 10 metres while helping workers place metal roofing sheets on a three-storey house in Kato Polemidia.",
+      "worker_name": "Kyriacos Charalambous",
+      "worker_age": 62,
+      "employer": "Private building work / employer not published",
+      "sector": "Construction / roofing",
+      "cause": "Fall from about 10 metres while placing metal roofing sheets",
+      "death_date": "2017-02-16",
+      "legal_status": "Police and Labour Inspection department officials examined the case according to source",
+      "last_verified_at": "2017-02-16",
+      "locations": [
+        {
+          "id": "kato-polemidia-roofing-sheets-fall-kyriacos-charalambous",
+          "label": "Kato Polemidia roofing worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Kato Polemidia",
+          "lat": 34.6917,
+          "lng": 32.9958,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source reports a fatal labour accident during building work in Kato Polemidia; district centroid used pending exact address."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after falling from roof",
+          "url": "https://archive.cyprus-mail.com/2017/02/16/man-dies-falling-roof/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2017-02-16"
+        },
+        {
+          "title": "Akariaios thanatos sti Lemeso",
+          "url": "https://www.elemesos.com/akariaiosthanatossthlemeso16217/",
+          "publisher": "Elemesos",
+          "type": "labor_context",
+          "published_at": "2017-02-16"
+        }
+      ]
+    },
+    {
+      "id": "yiolou-andreas-petrou-agricultural-tractor-crush-february-2016",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Andreas Petrou crushed by agricultural tractor in Yiolou",
+      "summary": "Andreas Petrou, a 64-year-old man from Yiolou, died after being crushed by an agricultural tractor during agricultural work.",
+      "worker_name": "Andreas Petrou",
+      "worker_age": 64,
+      "employer": "Agricultural work / employer not published",
+      "sector": "Agriculture",
+      "cause": "Crushed by agricultural tractor",
+      "death_date": "2016-02-15",
+      "legal_status": "Police investigation reported according to source",
+      "last_verified_at": "2016-02-15",
+      "locations": [
+        {
+          "id": "yiolou-agricultural-tractor-crush-andreas-petrou",
+          "label": "Yiolou agricultural worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Yiolou",
+          "lat": 34.9216,
+          "lng": 32.4789,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor incident in Yiolou; district centroid used pending exact field coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Tragikos thanatos 64chronou, kataplakothike apo georgiko elkystira",
+          "url": "https://www.ant1live.com/arheio/235888_tragikos-thanatos-64hronoy-kataplakothike-apo-georgiko-elkystira",
+          "publisher": "Ant1 Live",
+          "type": "labor_news",
+          "published_at": "2016-02-15"
+        }
+      ]
+    },
+    {
+      "id": "kaimakli-spyros-groutas-billboard-fall-february-2003",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Spyros Groutas dies after fall while erecting billboard in Kaimakli",
+      "summary": "Spyros Groutas, a 32-year-old sign writer, died after falling from a height while erecting a billboard in the Nicosia suburb of Kaimakli.",
+      "worker_name": "Spyros Groutas",
+      "worker_age": 32,
+      "employer": "Sign-writing / billboard employer not published",
+      "sector": "Sign writing / billboard installation",
+      "cause": "Fall from height while erecting billboard",
+      "death_date": "2003-02-20",
+      "legal_status": "Police investigation reported according to source",
+      "last_verified_at": "2003-02-20",
+      "locations": [
+        {
+          "id": "kaimakli-billboard-fall-spyros-groutas",
+          "label": "Kaimakli billboard worksite",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Kaimakli",
+          "lat": 35.185,
+          "lng": 33.396,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall while erecting a billboard in Kaimakli; district centroid used pending exact billboard coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after fall",
+          "url": "https://archive.cyprus-mail.com/2003/02/20/man-dies-after-fall-2/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2003-02-20"
+        }
+      ]
+    },
+    {
+      "id": "xylotymbou-kyriakos-elia-tractor-road-collision-april-2003",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Kyriakos Elia killed while driving tractor near Xylotymbou",
+      "summary": "Kyriakos Elia, a 50-year-old farmer, was killed while driving his tractor on the Larnaca-Agia Napa highway near the Xylotymbou area when it was involved in a collision with a lorry.",
+      "worker_name": "Kyriakos Elia",
+      "worker_age": 50,
+      "employer": "Self-employed farmer",
+      "sector": "Agriculture / tractor transport",
+      "cause": "Road collision while driving tractor",
+      "death_date": "2003-04-28",
+      "legal_status": "Police investigation reported according to source",
+      "last_verified_at": "2003-04-28",
+      "locations": [
+        {
+          "id": "xylotymbou-tractor-road-collision-kyriakos-elia",
+          "label": "Larnaca-Agia Napa highway near Xylotymbou",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Xylotymbou area",
+          "lat": 35.017,
+          "lng": 33.742,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the tractor collision on the Larnaca-Agia Napa highway near the Xylotymbou area; area centroid used pending exact road marker."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Two killed in road accidents",
+          "url": "https://archive.cyprus-mail.com/2003/04/28/two-killed-in-road-accidents/",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2003-04-28"
+        }
+      ]
     }
   ]
 }
