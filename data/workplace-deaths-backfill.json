@@ -3450,6 +3450,44 @@
           "published_at": "2018-11-23"
         }
       ]
+    },
+    {
+      "id": "gerakies-gavriel-gavriel-mini-digger-overturn-november-2017",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Gavriel Gavriel crushed after mini-digger overturns near Gerakies",
+      "summary": "Gavriel Gavriel, a 53-year-old man from Gerakies, died in a labour accident after the ground caved in while he was driving a mini-digger in a fenced-off area, causing the vehicle to flip and crush him. He was taken to Nicosia General Hospital, where doctors pronounced him dead on arrival.",
+      "worker_name": "Gavriel Gavriel",
+      "worker_age": 53,
+      "employer": "Worksite employer not named in source",
+      "sector": "Earthmoving / mini-digger operation",
+      "cause": "Crushed by overturned mini-digger after ground cave-in",
+      "death_date": "2017-11-17",
+      "legal_status": "Pedoulas police station investigation reported by source",
+      "last_verified_at": "2017-11-17",
+      "locations": [
+        {
+          "id": "gerakies-pedoulas-area-mini-digger-overturn-gavriel-gavriel",
+          "label": "Gerakies / Pedoulas-area fenced-off worksite",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Gerakies / Pedoulas area",
+          "lat": 35.0001,
+          "lng": 32.8051,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source identifies the worker as from Gerakies and says Pedoulas police station investigated, but does not name the exact fenced-off worksite; Gerakies-area centroid used pending exact coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after digger overturns",
+          "url": "https://archive.cyprus-mail.com/2017/11/17/man-dies-digger-overturns/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2017-11-17"
+        }
+      ]
     }
   ]
 }
