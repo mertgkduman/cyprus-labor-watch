@@ -1044,7 +1044,7 @@ const state = {
   markers: new Map(),
   layerFilters: new Set(DEFAULT_LAYERS),
   actionFilters: new Set(ACTION_TYPES),
-  dateRange: "last_6_months",
+  dateRange: "all",
   province: "",
   sector: "",
   search: "",
