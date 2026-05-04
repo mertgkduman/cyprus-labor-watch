@@ -1948,6 +1948,44 @@
           "published_at": "2012-02-24"
         }
       ]
+    },
+    {
+      "id": "troulli-unnamed-vietnamese-farm-worker-bull-attack-february-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Vietnamese farm worker dies after bull attack at Troulli cattle farm",
+      "summary": "An unnamed 23-year-old Vietnamese worker died after being attacked by a bull at a cattle farm in Troulli, Larnaca. The worker, who had been employed at the farm for three years, was kneeling near a water fountain in a fenced area for bulls and cows when the bull gored him multiple times.",
+      "worker_name": "Name not published",
+      "worker_age": 23,
+      "employer": "Troulli cattle farm not named in source",
+      "sector": "Agriculture / cattle farming",
+      "cause": "Bull attack while working in fenced cattle area",
+      "death_date": "2012-02-21",
+      "legal_status": "Police, veterinary services, and district labour inspection department investigation reported",
+      "last_verified_at": "2012-02-21",
+      "locations": [
+        {
+          "id": "troulli-cattle-farm-bull-attack-unnamed-worker",
+          "label": "Troulli cattle farm",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Troulli / Troulloi",
+          "lat": 35.032,
+          "lng": 33.615,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal bull attack at a cattle farm in Troulli village, Larnaca; village area centroid used pending exact farm coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bull kills farm worker",
+          "url": "https://archive.cyprus-mail.com/2012/02/21/bull-kills-farm-worker/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2012-02-21"
+        }
+      ]
     }
   ]
 }
