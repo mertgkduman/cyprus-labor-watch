@@ -2064,6 +2064,44 @@
       ]
     },
     {
+      "id": "pareklissia-yannakis-ioannou-tractor-crush-august-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Yannakis Ioannou killed after tractor rolls over him in Pareklissia field",
+      "summary": "Yannakis Ioannou, 74, was found dead under the wheel of his tractor in his field in Pareklissia after going to his plot of land to remove weeds and wild shrub. A labour inspector said no mechanical fault was found and the initial investigation suggested the tractor rolled forward on uneven land after the handbrake was not properly engaged.",
+      "worker_name": "Yannakis Ioannou",
+      "worker_age": 74,
+      "employer": "Self-employed land worker or employer not named in source",
+      "sector": "Agriculture / land maintenance",
+      "cause": "Crushed under tractor wheel after tractor rolled on uneven land",
+      "death_date": "2010-08-09",
+      "legal_status": "Initial labour-inspector investigation reported no mechanical fault and examined handbrake use according to source",
+      "last_verified_at": "2010-08-10",
+      "locations": [
+        {
+          "id": "pareklissia-tractor-crush-yannakis-ioannou",
+          "label": "Pareklissia field / plot of land",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Pareklissia / Parekklisia",
+          "lat": 34.7458,
+          "lng": 33.1583,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor crush in Ioannou's field or plot of land in Pareklissia; village area centroid used pending exact field coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man killed by faulty tractor",
+          "url": "https://archive.cyprus-mail.com/2010/08/10/man-killed-by-faulty-tractor/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-08-10"
+        }
+      ]
+    },
+    {
       "id": "paphos-unnamed-syrian-roof-tiler-fall-may-2010",
       "record_type": "worker_death",
       "status": "fatality_recorded",
