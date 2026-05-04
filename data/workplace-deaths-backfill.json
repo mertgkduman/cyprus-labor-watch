@@ -1,0 +1,1045 @@
+{
+  "updated_at": "2026-05-04",
+  "description": "Work-related death backfill for Cyprus Labor Watch. Recent named cases are recorded individually. Older official/research totals are recorded as annual aggregate markers with fatality_count values so they do not imply a single exact incident.",
+  "records": [
+    {
+      "id": "dortyol-hammad-pakistani-construction-fall-april-2026",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Hammad Pakistani dies after fall from sixth floor at Dortyol construction site",
+      "summary": "Hammad Pakistani, a 26-year-old Pakistani worker, died after losing his balance and falling about 19 metres from the sixth floor of a construction site in Dortyol. Police said the investigation was continuing.",
+      "worker_name": "Hammad Pakistani",
+      "worker_age": 26,
+      "employer": "Construction employer not published",
+      "sector": "Construction",
+      "cause": "Fall from sixth floor of construction site",
+      "death_date": "2026-04-23",
+      "legal_status": "Police investigation continuing according to source",
+      "last_verified_at": "2026-04-23",
+      "locations": [
+        {
+          "id": "dortyol-construction-fall-hammad-pakistani",
+          "label": "Dortyol construction site",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Dortyol",
+          "lat": 35.125,
+          "lng": 33.95,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal incident at a construction site in Dortyol; Famagusta area centroid used pending exact coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Dortyol'da Insaat Faciasi: 26 Yasindaki Isci Hayatini Kaybetti",
+          "url": "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
+          "publisher": "Ajans Cyprus",
+          "type": "labor_news",
+          "published_at": "2026-04-23"
+        }
+      ]
+    },
+    {
+      "id": "germasogeia-giorgos-konstantinou-lift-shaft-death-may-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Giorgos Konstantinou dies in Germasogeia lift-shaft workplace fall",
+      "summary": "Giorgos Konstantinou, a 43-year-old plumber from Limassol, was found dead in a lift shaft at a construction site in Germasogeia where he was working. Police and the Department of Labour Inspection investigated the fall and site safety conditions.",
+      "worker_name": "Giorgos Konstantinou",
+      "worker_age": 43,
+      "employer": "Construction employer not published",
+      "sector": "Construction / plumbing",
+      "cause": "Fall into lift shaft at construction site",
+      "death_date": "2025-05-07",
+      "legal_status": "Police and Department of Labour Inspection investigation reported",
+      "last_verified_at": "2025-05-08",
+      "locations": [
+        {
+          "id": "germasogeia-lift-shaft-giorgos-konstantinou",
+          "label": "Germasogeia construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Germasogeia",
+          "lat": 34.7202,
+          "lng": 33.0833,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal incident at a construction site in Germasogeia; district centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker loses life after falling down lift shaft in Limassol",
+          "url": "https://cyprus-mail.com/2025/05/07/worker-dies-after-falling-down-lift-shaft-in-limassol",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2025-05-07"
+        },
+        {
+          "title": "Fatal workplace accident at Limassol construction site",
+          "url": "https://knews.kathimerini.com.cy/en/news/fatal-workplace-accident-at-limassol-construction-site",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2025-05-07"
+        },
+        {
+          "title": "Plumber dies after fall in lift shaft at Limassol construction site",
+          "url": "https://in-cyprus.philenews.com/local/plumber-dies-germasogeia-construction-site-accident/",
+          "publisher": "In-Cyprus / Phileleftheros",
+          "type": "labor_news",
+          "published_at": "2025-05-07"
+        }
+      ]
+    },
+    {
+      "id": "peyia-kissonerga-polish-worker-fall-january-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Polish worker found dead after fall at Kissonerga construction site",
+      "summary": "A 26-year-old Polish man was found dead at the bottom of an elevator shaft in an incomplete two-storey building under construction in Kissonerga. The Labour Inspection Department suspended work after finding that some safety measures were not being followed.",
+      "worker_name": "Name not published",
+      "worker_age": 26,
+      "employer": "Construction contractor not named in source",
+      "sector": "Construction",
+      "cause": "Fall from height into elevator shaft",
+      "death_date": "2025-01-02",
+      "legal_status": "Work suspended after Labour Inspection Department safety check; possible extrajudicial fine under examination according to source",
+      "last_verified_at": "2025-01-03",
+      "locations": [
+        {
+          "id": "kissonerga-elevator-shaft-polish-worker",
+          "label": "Kissonerga construction site",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Kissonerga",
+          "lat": 34.8243,
+          "lng": 32.4019,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the death at an incomplete building in Kissonerga; district centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Construction worker died after falling from great height",
+          "url": "https://cyprus-mail.com/2025/01/03/construction-worker-died-after-falling-from-great-height",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2025-01-03"
+        }
+      ]
+    },
+    {
+      "id": "taskent-fatih-safakoglu-base-station-death-april-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Fatih Safakoglu killed during base-station installation work near Taskent",
+      "summary": "Fatih Safakoglu, a 35-year-old worker from Bogazkoy, died at a Turkcell base-station worksite southeast of Taskent after a three-kilogram material being hoisted to a tower fell from about 20 metres and struck his head. Kibris Gercek reported that company representatives were brought to court and released pending trial with conditions.",
+      "worker_name": "Fatih Safakoglu",
+      "worker_age": 35,
+      "employer": "Natek Muhendislik Limited; work connected to KKTC Turkcell and Reon Teknoloji Limited according to source",
+      "sector": "Telecommunications / installation",
+      "cause": "Struck by falling material during tower installation work",
+      "death_date": "2025-04-08",
+      "legal_status": "Four suspects taken to court and released pending trial with conditions according to source",
+      "last_verified_at": "2025-04-09",
+      "locations": [
+        {
+          "id": "taskent-base-station-fatih-safakoglu",
+          "label": "Turkcell base station southeast of Taskent",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Taskent",
+          "lat": 35.265,
+          "lng": 33.53,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the worksite southeast of Taskent; area centroid used pending exact base-station coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Fatih Safakoglu'nun vefati ile sonuclanan is kazasinin zanlilari mahkemeye cikarildi",
+          "url": "https://www.kibrisgercek.com/fatih-safakoglunun-vefati-ile-sonuclanan-is-kazasinin-zanlilari-mahkemeye-cikarildi",
+          "publisher": "Kibris Gercek",
+          "type": "labor_news",
+          "published_at": "2025-04-09"
+        }
+      ]
+    },
+    {
+      "id": "gazimagusa-mustafa-kilinc-warehouse-death-january-2025",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Mustafa Kilinc dies after iron profiles fall in Gazimagusa warehouse",
+      "summary": "Mustafa Kilinc, a 55-year-old worker, died after block profile irons fell on him from about two metres while being placed on shelves in a warehouse belonging to Ceten Yapi Market in Gazimagusa's Great Industrial Zone.",
+      "worker_name": "Mustafa Kilinc",
+      "worker_age": 55,
+      "employer": "Ceten Yapi Market",
+      "sector": "Warehouse / building materials retail",
+      "cause": "Crushed by falling profile irons in warehouse",
+      "death_date": "2025-01-02",
+      "legal_status": "Police investigation continuing according to source",
+      "last_verified_at": "2025-01-02",
+      "locations": [
+        {
+          "id": "gazimagusa-ceten-yapi-warehouse-mustafa-kilinc",
+          "label": "Ceten Yapi Market warehouse, Great Industrial Zone",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Gazimagusa",
+          "lat": 35.128,
+          "lng": 33.93,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the death at Ceten Yapi Market's warehouse in Gazimagusa Great Industrial Zone, 3rd Street; industrial-area centroid used pending exact warehouse coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Gazimagusa'daki is kazasinda Mustafa Kilinc hayatini kaybetti",
+          "url": "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
+          "publisher": "Haber Plus Kibris",
+          "type": "labor_news",
+          "published_at": "2025-01-02"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2024",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2024",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2024 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2024-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2024",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        },
+        {
+          "title": "Department of Labour Inspection Annual Report 2024",
+          "url": "https://www.mlsi.gov.cy/mlsi/dli/dliup.nsf/All/8A178D71E8AB1B36C2258C90003D83CC/$file/ANNUAL_REPORT_EN_2024.pdf?OpenElement=",
+          "publisher": "Department of Labour Inspection",
+          "type": "official",
+          "published_at": null
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2023",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2023",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 14 people involved in fatal accidents at work in 2023 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2023-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2023",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 14,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2022",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2022",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2022 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2022-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2022",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 9,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2021",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2021",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2021 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2021-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2021",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2020",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2020",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 16 people involved in fatal accidents at work in 2020 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2020-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2020",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 16,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2019",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 10 people involved in fatal accidents at work in 2019 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2019-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2019",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 10,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2018",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2018 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2018-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2018",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 9,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2017",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2017",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 2 people involved in fatal accidents at work in 2017 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2017-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2017",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 2,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2016",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2016",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2016 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2016-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2016",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2015",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2015",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 4 people involved in fatal accidents at work in 2015 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2015-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2015",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 4,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2014",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2014 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2014-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2014",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2013",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2013",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2013 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2013-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2013",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 9,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2012",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2012 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2012-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2012",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 9,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2011",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2011",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 5 people involved in fatal accidents at work in 2011 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2011-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2011",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2010",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 19 people involved in fatal accidents at work in 2010 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2010-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2010",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 19,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2009",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2009",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 9 people involved in fatal accidents at work in 2009 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2009-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2009",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 9,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "roc-official-fatal-workplace-accidents-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Republic of Cyprus official fatal workplace accident count, 2008",
+      "summary": "CYSTAT's Department of Labour Inspection source table reports 12 people involved in fatal accidents at work in 2008 across all NACE activities. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal accidents at work, all NACE activities",
+      "death_date": "2008-12-31",
+      "legal_status": "Official annual aggregate",
+      "last_verified_at": "2025-06-25",
+      "locations": [
+        {
+          "id": "roc-workplace-deaths-2008",
+          "label": "Republic-controlled areas, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Republic-controlled areas",
+          "lat": 34.98,
+          "lng": 33.3,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 12,
+          "location_basis": "Official annual aggregate; representative centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Persons Involved in Accidents at Work by Economic Activity and Severity of Injury, Annual",
+          "url": "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+          "publisher": "CYSTAT / Department of Labour Inspection",
+          "type": "official",
+          "published_at": "2025-06-25"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2020",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2020",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2020. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2020-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2020",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 4,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2019",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 5 fatal workplace accidents in northern Cyprus in 2019. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2019-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2019",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 5,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2018",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2018. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2018-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2018",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 4,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2017",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2017",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 4 fatal workplace accidents in northern Cyprus in 2017. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2017-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2017",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 4,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2016",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2016",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 8 fatal workplace accidents in northern Cyprus in 2016. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2016-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2016",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 8,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    },
+    {
+      "id": "north-cyprus-fatal-workplace-accidents-2015",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Northern Cyprus fatal workplace accident count, 2015",
+      "summary": "A 2022 Sosyal Guvenlik Dergisi study using Social Insurance Department data reports 7 fatal workplace accidents in northern Cyprus in 2015. This aggregate marker preserves the historical fatality count without implying a single exact incident location.",
+      "worker_name": "Aggregate count - names not listed in source",
+      "sector": "All sectors",
+      "cause": "Fatal workplace accidents recorded by Social Insurance Department data",
+      "death_date": "2015-12-31",
+      "legal_status": "Research aggregate based on official Social Insurance Department data",
+      "last_verified_at": "2026-05-04",
+      "locations": [
+        {
+          "id": "north-workplace-deaths-2015",
+          "label": "Northern Cyprus, annual aggregate",
+          "province_key": "ISLAND_WIDE",
+          "province": "Island-wide",
+          "district": "Northern Cyprus aggregate",
+          "lat": 35.24,
+          "lng": 33.35,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 7,
+          "location_basis": "Research aggregate based on official data; representative northern Cyprus centroid used only for map placement."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kuzey Kibris Turk Cumhuriyeti'nde 2015-2020 Yillari Arasinda Meydana Gelen Is Kazalarinin Sektorlere ve Ilcelere Gore Analizi",
+          "url": "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+          "publisher": "Sosyal Guvenlik Dergisi",
+          "type": "research",
+          "published_at": "2022-06-29"
+        }
+      ]
+    }
+  ]
+}

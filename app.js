@@ -2,7 +2,7 @@ const SUPABASE_URL = "";
 const SUPABASE_ANON_KEY = "";
 
 const CONFIG = {
-  incidentPaths: ["data/incidents.json", "data/northern-incidents.json"],
+  incidentPaths: ["data/incidents.json", "data/northern-incidents.json", "data/workplace-deaths-backfill.json"],
   fallbackSeedPath: "data/seed-cases.json",
   defaultCenter: [35.1264, 33.4299],
   defaultZoom: 9,

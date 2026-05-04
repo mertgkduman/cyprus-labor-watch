@@ -405,14 +405,15 @@
   "research_notes": {
     "launch_dataset": {
       "updated_at": "2026-05-03",
-      "data_file": "data/incidents.json + data/northern-incidents.json",
-      "record_count": 18,
-      "period_focus": "late 2025 through May 2026, with one May/June 2025 workplace-death backfill to broaden the workplace-safety baseline",
+      "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
+      "record_count": 46,
+      "period_focus": "late 2025 through May 2026 for current individual records, plus official/research annual workplace-death aggregates back to 2008 for Republic-controlled areas and 2015 for northern Cyprus",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
         "Island-wide labour actions use area-centroid placement and explicit location_basis notes.",
         "No public current-labour-arrest record is included at launch; the Ahmet Tugcu record is marked released based on follow-up reporting.",
-        "Northern Cyprus coverage is supplemented with Turkish-language sources in data/northern-incidents.json."
+        "Northern Cyprus coverage is supplemented with Turkish-language sources in data/northern-incidents.json.",
+        "Historical workplace-death totals in data/workplace-deaths-backfill.json use annual aggregate markers with fatality_count values; they should be split into individual records only when stable public case sources are found."
       ]
     },
     "work_related_deaths_source_review": {
@@ -454,22 +455,22 @@
         {
           "record_hint": "Dortyol construction fall, Hammad Pakistani, 23 April 2026",
           "source_url": "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
-          "status": "strong candidate; corroborate with TAK or police bulletin before adding."
+          "status": "added to data/workplace-deaths-backfill.json from Ajans Cyprus police-based report; continue seeking TAK or police bulletin corroboration."
         },
         {
           "record_hint": "Taskent telecom tower/base-station work death, Fatih Safakoglu, 8 April 2025",
           "source_url": "https://www.kibrisgercek.com/fatih-safakoglunun-vefati-ile-sonuclanan-is-kazasinin-zanlilari-mahkemeye-cikarildi",
-          "status": "strong candidate; includes court follow-up and alleged OSH failures."
+          "status": "added to data/workplace-deaths-backfill.json; includes court follow-up and alleged OSH failures."
         },
         {
           "record_hint": "Gazimagusa warehouse death, Mustafa Kilinc, 2 January 2025",
           "source_url": "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
-          "status": "candidate; seek second local source."
+          "status": "added to data/workplace-deaths-backfill.json; seek second local source for future enrichment."
         },
         {
           "record_hint": "South Cyprus 2025 fatal workplace accidents Turkish-language summary",
           "source_url": "https://www.kibristurk.com/guney-kibrista-bu-yil-is-kazalarinda-olenlerin-sayisi-6ya-ulasti",
-          "status": "summary source; use to identify individual records, then corroborate with original Greek/English or official sources."
+          "status": "used to identify Giorgos Konstantinou and existing Peyia/Aldahdouh Housain coverage; corroborated individual records should use original Greek/English or official sources."
         }
       ]
     },
@@ -753,6 +754,21 @@
         "https://www.yeniduzen.com/karari-tanimiyoruz-hukumet-geri-adim-atana-kadar-grev-devam-edecek-193874h.htm",
         "https://www.yeniduzen.com/service/amp/hastane-ve-saglik-merkezlerimizde-normal-hizmete-donulmustur-193935h.htm",
         "https://www.yeniduzen.com/service/amp/ya-sendikalasacagiz-ya-da-bu-iste-calismayacagiz-191748h.htm"
+      ]
+    },
+    {
+      "data_file": "data/workplace-deaths-backfill.json",
+      "sources": [
+        "https://ajanscyprus.com/2026/04/23/dortyolda-insaat-faciasi-26-yasindaki-isci-hayatini-kaybetti/",
+        "https://cyprus-mail.com/2025/01/03/construction-worker-died-after-falling-from-great-height",
+        "https://cyprus-mail.com/2025/05/07/worker-dies-after-falling-down-lift-shaft-in-limassol",
+        "https://cystatdb.cystat.gov.cy/pxweb/en/8.CYSTAT-DB/8.CYSTAT-DB__Health__Health%20and%20Safety%20at%20Work/2180010E.px/",
+        "https://dergipark.org.tr/tr/pub/sgd/issue/70879/1135378",
+        "https://haberpluskibris.com/gazimagusadaki-is-kazasinda-mustafa-kilinc-hayatini-kaybetti/63107/",
+        "https://in-cyprus.philenews.com/local/plumber-dies-germasogeia-construction-site-accident/",
+        "https://knews.kathimerini.com.cy/en/news/fatal-workplace-accident-at-limassol-construction-site",
+        "https://www.kibrisgercek.com/fatih-safakoglunun-vefati-ile-sonuclanan-is-kazasinin-zanlilari-mahkemeye-cikarildi",
+        "https://www.mlsi.gov.cy/mlsi/dli/dliup.nsf/All/8A178D71E8AB1B36C2258C90003D83CC/$file/ANNUAL_REPORT_EN_2024.pdf?OpenElement="
       ]
     }
   ]
