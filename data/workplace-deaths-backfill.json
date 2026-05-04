@@ -2699,6 +2699,51 @@
           "published_at": "2008-04-15"
         }
       ]
+    },
+    {
+      "id": "aglandja-panayiotis-prodromou-anastasi-school-hole-collapse-april-2007",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Panayiotis Prodromou Anastasi buried alive in Aglandja school construction collapse",
+      "summary": "Panayiotis Prodromou Anastasi, a 42-year-old construction worker, died after he and a Georgian co-worker were buried alive when the land around a six-metre-deep hole collapsed during construction works at a school in Nicosia. A follow-up Cyprus Mail report placed the fatal school-site accident in Aglandja.",
+      "worker_name": "Panayiotis Prodromou Anastasi",
+      "worker_age": 42,
+      "employer": "School construction contractor not named in source",
+      "sector": "School construction / excavation",
+      "cause": "Buried by soil collapse while digging six-metre-deep hole",
+      "death_date": "2007-04-20",
+      "legal_status": "Nicosia police investigation reported by source",
+      "last_verified_at": "2007-05-01",
+      "locations": [
+        {
+          "id": "aglandja-school-hole-collapse-panayiotis-prodromou-anastasi",
+          "label": "Aglandja school construction site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Aglandja / Aglantzia",
+          "lat": 35.1542,
+          "lng": 33.3964,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Primary source places the fatal collapse at a school construction site in Nicosia; follow-up source says pupils at a secondary school in Aglandja reacted after the same accident. Aglantzia area centroid used pending exact school coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Buried alive in horror accident",
+          "url": "https://archive.cyprus-mail.com/2007/04/21/buried-alive-in-horror-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2007-04-21"
+        },
+        {
+          "title": "Seven work-related accidents a day",
+          "url": "https://archive.cyprus-mail.com/2007/05/01/seven-work-related-accidents-a-day/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_context",
+          "published_at": "2007-05-01"
+        }
+      ]
     }
   ]
 }

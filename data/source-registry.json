@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 88,
+      "record_count": 89,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2008-04, decremented by one after adding Haris Zachariou's Limassol Port cement-block crush death; current April 2008 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2007-04, decremented by one after adding Panayiotis Prodromou Anastasi's Aglandja school excavation-collapse death; one April 2007 worker from the same incident remains.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -576,6 +576,13 @@
           "added_count": 1,
           "remaining_count": 0,
           "note": "Alexandros Georgiades's Dhekelia desalination-project bulldozer death added from Cyprus Mail archive, with WDD and Global Energy Monitor location context."
+        },
+        {
+          "month": "2007-04",
+          "target_count_from_current_leads": 2,
+          "added_count": 1,
+          "remaining_count": 1,
+          "note": "Panayiotis Prodromou Anastasi added from Cyprus Mail archive; the unnamed 37-year-old Georgian co-worker from the same school excavation-collapse incident remains for a later one-record pass."
         }
       ],
       "priority_sources": [
@@ -957,6 +964,8 @@
         "https://archive.cyprus-mail.com/2008/02/24/worker-killed-in-accident/",
         "https://www.moa.gov.cy/moa/wdd/wdd.nsf/page23_en/page23_en",
         "https://www.gem.wiki/Dhekelia_power_station",
+        "https://archive.cyprus-mail.com/2007/04/21/buried-alive-in-horror-accident/",
+        "https://archive.cyprus-mail.com/2007/05/01/seven-work-related-accidents-a-day/",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
