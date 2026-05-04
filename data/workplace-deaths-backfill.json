@@ -2661,6 +2661,44 @@
           "type": "coordinate_reference"
         }
       ]
+    },
+    {
+      "id": "limassol-port-haris-zachariou-cement-block-crush-april-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Haris Zachariou dies after being crushed by cement blocks near Limassol Port",
+      "summary": "Haris Zachariou, a 70-year-old owner of a lift machinery company, died after being crushed by cement blocks at a construction site near Limassol Port. He was trying to remove a metal bar from an old building and move it to the ground when the machine he was operating broke down.",
+      "worker_name": "Haris Zachariou",
+      "worker_age": 70,
+      "employer": "Self-employed / lift machinery company owner",
+      "sector": "Construction demolition / lift machinery",
+      "cause": "Crushed by cement blocks after demolition vehicle broke down",
+      "death_date": "2008-04-14",
+      "legal_status": "Police officers and labour inspectors visited the scene; labour inspector described it as a fatal labour accident caused by vehicle breakdown",
+      "last_verified_at": "2008-04-15",
+      "locations": [
+        {
+          "id": "limassol-port-construction-site-haris-zachariou",
+          "label": "Construction site near Limassol Port",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol port",
+          "lat": 34.651,
+          "lng": 33.018,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal cement-block crush at a construction site near Limassol Port; port area centroid used pending exact construction-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man killed in work accident",
+          "url": "https://archive.cyprus-mail.com/2008/04/15/man-killed-in-work-accident-2/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-04-15"
+        }
+      ]
     }
   ]
 }
