@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 84,
+      "record_count": 85,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2009-05, decremented by one after adding one unnamed Syrian painter from the Panthea cherry-picker collapse; one May 2009 worker from the same incident remains.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2009-05, decremented by one after adding the second unnamed Syrian painter from the Panthea cherry-picker collapse; current May 2009 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -552,9 +552,9 @@
         {
           "month": "2009-05",
           "target_count_from_current_leads": 2,
-          "added_count": 1,
-          "remaining_count": 1,
-          "note": "One of two unnamed Syrian painters killed in the Panthea cherry-picker collapse added from Cyprus Mail archive; add the second worker in a later one-record pass."
+          "added_count": 2,
+          "remaining_count": 0,
+          "note": "Both unnamed Syrian painters killed in the Panthea cherry-picker collapse added from Cyprus Mail archive as separate worker-death records."
         }
       ],
       "priority_sources": [
