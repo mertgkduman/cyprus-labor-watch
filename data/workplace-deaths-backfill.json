@@ -3163,6 +3163,51 @@
           "published_at": "2005-08-02"
         }
       ]
+    },
+    {
+      "id": "engomi-unnamed-indian-builder-30-staircase-collapse-september-2004",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed 30-year-old Indian builder killed by staircase collapse in Engomi",
+      "summary": "The second of two unnamed Indian builders died instantly when a four-flight cement staircase collapsed on them at a building under construction in Nicosia. The follow-up investigation article placed the site in Engomi and said the collapse was due to deliberate omission and cost-cutting, not error.",
+      "worker_name": "Name not published",
+      "worker_age": 30,
+      "employer": "Householder / building-site employer not named in source",
+      "sector": "Construction",
+      "cause": "Crushed by four-flight cement staircase collapse",
+      "death_date": "2004-09-25",
+      "legal_status": "Building site closed pending Labour Ministry investigation; later investigation blamed deliberate omission, cost-cutting, missing permits and use of unskilled student workers",
+      "last_verified_at": "2005-08-02",
+      "locations": [
+        {
+          "id": "engomi-building-site-staircase-collapse-unnamed-indian-builder-30",
+          "label": "Engomi building site",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Engomi",
+          "lat": 35.159,
+          "lng": 33.318,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Primary source places the fatal staircase collapse on a Nicosia building site; follow-up investigation article places the site in Engomi. Engomi area centroid used pending exact building-site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Two workers killed on construction site",
+          "url": "https://archive.cyprus-mail.com/2004/09/26/two-workers-killed-on-construction-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2004-09-26"
+        },
+        {
+          "title": "Cutting corners led to building site death",
+          "url": "https://archive.cyprus-mail.com/2005/08/02/cutting-corners-led-to-building-site-death/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_context",
+          "published_at": "2005-08-02"
+        }
+      ]
     }
   ]
 }
