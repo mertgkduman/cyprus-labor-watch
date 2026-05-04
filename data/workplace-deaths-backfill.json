@@ -3533,6 +3533,58 @@
           "published_at": "2018-05-21"
         }
       ]
+    },
+    {
+      "id": "kapsalos-dimitris-zinonos-truck-crush-july-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Dimitris Zinonos crushed by truck after brake problem in Kapsalos",
+      "summary": "Dimitris Zinonos, a 56-year-old transport worker, died after being crushed by his truck during work in Kapsalos, Limassol. Reports say the vehicle had a brake or mechanical problem while stopped on a ramp; he got out to inspect or repair it, the truck rolled backwards, and it fatally crushed him.",
+      "worker_name": "Dimitris Zinonos",
+      "worker_age": 56,
+      "employer": "Transport employer not named in sources",
+      "sector": "Transport / truck operation",
+      "cause": "Crushed by truck after brake or mechanical failure while inspecting vehicle",
+      "death_date": "2018-07-12",
+      "legal_status": "Police and competent services investigation reported by sources",
+      "last_verified_at": "2018-07-12",
+      "locations": [
+        {
+          "id": "kapsalos-truck-crush-dimitris-zinonos",
+          "label": "Kapsalos truck worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Kapsalos",
+          "lat": 34.6964,
+          "lng": 33.0303,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Kathimerini places the fatal truck incident in the Kapsalos area of Limassol; Kapsalos area centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nekros 56chronos se ergatiko atychima ston Kapsalo",
+          "url": "https://www.kathimerini.com.cy/gr/-1/poly-sobaro-ergatiko-atyxima-sti-lemeso",
+          "publisher": "Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2018-07-12"
+        },
+        {
+          "title": "Nea tragodia: Nekros o 56chronos pou kataplakothike apo fortigo",
+          "url": "https://www.offsite.com.cy/eidiseis/topika/nea-tragodianekros-o-56hronos-poy-kataplakothike-apo-fortigo",
+          "publisher": "Offsite",
+          "type": "labor_context",
+          "published_at": "2018-07-12"
+        },
+        {
+          "title": "Lemesos: Ta aitia thanatou tou 56chronou metaforea",
+          "url": "https://www.offsite.com.cy/eidiseis/topika/lemesos-ta-aitia-thanatoy-toy-56hronoy-metaforea",
+          "publisher": "Offsite",
+          "type": "labor_context",
+          "published_at": "2018-07-12"
+        }
+      ]
     }
   ]
 }

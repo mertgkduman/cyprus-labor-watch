@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 108,
+      "record_count": 109,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,8 +421,15 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2018-05, decremented by one after adding Odyssea Iacovou's Strovolos restaurant storeroom shelf-crush death; current May 2018 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2018-07, decremented by one after adding Dimitris Zinonos's Kapsalos truck-crush death; current new July 2018 lead is complete.",
       "backfill_month_progress": [
+        {
+          "month": "2018-07",
+          "target_count_from_current_leads": 1,
+          "added_count": 1,
+          "remaining_count": 0,
+          "note": "Dimitris Zinonos's Kapsalos truck-crush death added from Kathimerini Cyprus and Offsite; Giorgos Giorgiou's EAC lift-cage fall was already in the dataset."
+        },
         {
           "month": "2018-05",
           "target_count_from_current_leads": 1,
@@ -1094,6 +1101,9 @@
         "https://archive.cyprus-mail.com/2017/11/17/man-dies-digger-overturns/",
         "https://archive.cyprus-mail.com/2018/05/13/woman-15-dies-after-shelves-topple-over-at-restaurant-storeroom/",
         "https://archive.cyprus-mail.com/2018/05/21/investigation-continues-into-restaurant-workers-death/",
+        "https://www.kathimerini.com.cy/gr/-1/poly-sobaro-ergatiko-atyxima-sti-lemeso",
+        "https://www.offsite.com.cy/eidiseis/topika/nea-tragodianekros-o-56hronos-poy-kataplakothike-apo-fortigo",
+        "https://www.offsite.com.cy/eidiseis/topika/lemesos-ta-aitia-thanatoy-toy-56hronoy-metaforea",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
