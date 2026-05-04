@@ -2903,6 +2903,51 @@
           "published_at": "2007-07-19"
         }
       ]
+    },
+    {
+      "id": "chlorakas-unnamed-syrian-worker-forklift-fall-october-2007",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed Syrian worker killed after forklift fall at Chloraka construction site",
+      "summary": "An unnamed 35-year-old Syrian construction worker died after falling head-first from a forklift at a construction site in Chloraka, Paphos. The source says he had mounted the forklift without adequate protection and that his death left five young children orphaned.",
+      "worker_name": "Name not published",
+      "worker_age": 35,
+      "employer": "Construction contractor not named in source",
+      "sector": "Construction",
+      "cause": "Fall from raised forklift without adequate protection",
+      "death_date": "2007-10-17",
+      "legal_status": "Paphos CID and the labour office investigated; source reported the contractor was abroad and that the worker was on the island without permission",
+      "last_verified_at": "2007-10-20",
+      "locations": [
+        {
+          "id": "chlorakas-construction-forklift-fall-unnamed-syrian-worker",
+          "label": "Chloraka construction site",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Chlorakas",
+          "lat": 34.798,
+          "lng": 32.412,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal forklift fall at a construction site in Chloraka/Chlorakas, Paphos; Chlorakas area point used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Work death orphans five children",
+          "url": "https://archive.cyprus-mail.com/2007/10/18/work-death-orphans-five-children/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2007-10-18"
+        },
+        {
+          "title": "Seventy per cent of work deaths involve foreigners",
+          "url": "https://archive.cyprus-mail.com/2007/10/20/seventy-per-cent-of-work-deaths-involve-foreigners/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_context",
+          "published_at": "2007-10-20"
+        }
+      ]
     }
   ]
 }

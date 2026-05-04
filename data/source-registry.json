@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 93,
+      "record_count": 94,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2007-07, decremented by one after adding Maheid Hussein's Lakatamia plate-compactor crush death; current July 2007 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2007-10, decremented by one after adding the unnamed Syrian worker's Chloraka forklift-fall death; current October 2007 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -576,6 +576,13 @@
           "added_count": 2,
           "remaining_count": 0,
           "note": "Alexandros Georgiades's Dhekelia desalination-project bulldozer death and the unnamed Romanian builder's Larnaca hotel wall-demolition death added from Cyprus Mail archive, with WDD and Global Energy Monitor location context for the Dhekelia record."
+        },
+        {
+          "month": "2007-10",
+          "target_count_from_current_leads": 1,
+          "added_count": 1,
+          "remaining_count": 0,
+          "note": "Unnamed 35-year-old Syrian worker's Chloraka construction-site forklift fall death added from Cyprus Mail archive."
         },
         {
           "month": "2007-07",
@@ -979,6 +986,8 @@
         "https://archive.cyprus-mail.com/2008/02/26/romanian-builder-killed-on-building-site/",
         "https://www.moa.gov.cy/moa/wdd/wdd.nsf/page23_en/page23_en",
         "https://www.gem.wiki/Dhekelia_power_station",
+        "https://archive.cyprus-mail.com/2007/10/18/work-death-orphans-five-children/",
+        "https://archive.cyprus-mail.com/2007/10/20/seventy-per-cent-of-work-deaths-involve-foreigners/",
         "https://archive.cyprus-mail.com/2007/07/19/worker-crushed-to-death-on-building-site/",
         "https://archive.cyprus-mail.com/2007/04/21/buried-alive-in-horror-accident/",
         "https://archive.cyprus-mail.com/2007/05/01/seven-work-related-accidents-a-day/",
