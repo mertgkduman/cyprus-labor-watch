@@ -3322,6 +3322,51 @@
           "published_at": "2019-07-09"
         }
       ]
+    },
+    {
+      "id": "ayios-tychonas-giorgos-georgiou-retaining-wall-earth-collapse-december-2019",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Giorgos Georgiou buried by earth while painting retaining wall in Ayios Tychonas",
+      "summary": "Giorgos Georgiou, a 54-year-old worker, died after piles of earth collapsed and trapped him while he was painting a retaining wall at a private property in Ayios Tychonas. Firefighters, police and labour department officials joined a five-hour rescue effort; a follow-up report said the post-mortem found asphyxiation and quoted labour inspection comments that the soil-slide risk could have been foreseen.",
+      "worker_name": "Giorgos Georgiou",
+      "worker_age": 54,
+      "employer": "Private-property project employer not named in source",
+      "sector": "Construction / painting / retaining-wall work",
+      "cause": "Buried by earth collapse while painting retaining wall",
+      "death_date": "2019-12-16",
+      "legal_status": "Police and labour department attended; follow-up source reported continuing investigation and labour-inspection comments that the accident could have been prevented",
+      "last_verified_at": "2019-12-17",
+      "locations": [
+        {
+          "id": "ayios-tychonas-retaining-wall-earth-collapse-giorgos-georgiou",
+          "label": "Ayios Tychonas retaining-wall worksite",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Ayios Tychonas",
+          "lat": 34.7139,
+          "lng": 33.1246,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Sources place the fatal earth-collapse incident at a private-property retaining wall in a residential hill area of Ayios Tychonas; area centroid used pending exact property coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies after being buried under pile of earth (Updated)",
+          "url": "https://archive.cyprus-mail.com/2019/12/16/man-buried-under-pile-of-earth/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2019-12-16"
+        },
+        {
+          "title": "Labour accident kills man at Vasilikos, second in 24 hours",
+          "url": "https://archive.cyprus-mail.com/2019/12/17/labour-accident-kills-man-at-vasilikos/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_context",
+          "published_at": "2019-12-17"
+        }
+      ]
     }
   ]
 }
