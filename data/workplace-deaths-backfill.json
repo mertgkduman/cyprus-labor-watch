@@ -2102,6 +2102,44 @@
       ]
     },
     {
+      "id": "vrysoules-unnamed-egyptian-greenhouse-worker-22-electrocution-november-2010",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed 22-year-old Egyptian greenhouse worker dies after electrocution in Vrysoules",
+      "summary": "An unnamed 22-year-old Egyptian worker died after being electrocuted while working on the construction of a greenhouse in the Dhekelia sovereign base area near Vrysoules. The source said he and another Egyptian worker were moving the greenhouse's metal frame with a forklift when it contacted high-voltage overhead power lines.",
+      "worker_name": "Name not published",
+      "worker_age": 22,
+      "employer": "Greenhouse construction employer not named in source",
+      "sector": "Greenhouse construction / agriculture infrastructure",
+      "cause": "Electrocution when greenhouse metal frame contacted high-voltage overhead power lines",
+      "death_date": "2010-11-01",
+      "legal_status": "SBA police and the Republic of Cyprus labour office investigating according to source; source said both workers were on the island legally",
+      "last_verified_at": "2010-11-02",
+      "locations": [
+        {
+          "id": "vrysoules-greenhouse-electrocution-unnamed-egyptian-worker-22",
+          "label": "Vrysoules greenhouse construction site",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Vrysoules / Dhekelia SBA",
+          "lat": 35.0757,
+          "lng": 33.8811,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal electrocution at a greenhouse construction site in the area of Vrysoules within the Dhekelia sovereign base area; Vrysoules area centroid used pending exact greenhouse coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Two men electrocuted",
+          "url": "https://archive.cyprus-mail.com/2010/11/02/two-men-electrocuted/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2010-11-02"
+        }
+      ]
+    },
+    {
       "id": "xylofagou-unnamed-indian-student-tractor-repair-death-august-2010",
       "record_type": "worker_death",
       "status": "fatality_recorded",

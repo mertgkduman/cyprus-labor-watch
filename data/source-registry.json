@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 76,
+      "record_count": 77,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-11, decremented by one after adding the unnamed 23-year-old Egyptian greenhouse-worker electrocution death near Vrysoules; one current November 2010 lead remains.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2010-11, decremented by one after adding the unnamed 22-year-old Egyptian greenhouse-worker electrocution death near Vrysoules; current November 2010 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -510,9 +510,9 @@
         {
           "month": "2010-11",
           "target_count_from_current_leads": 2,
-          "added_count": 1,
-          "remaining_count": 1,
-          "note": "Unnamed 23-year-old Egyptian greenhouse-worker electrocution death near Vrysoules added from Cyprus Mail archive. The unnamed 22-year-old Egyptian worker from the same incident remains as the next current lead."
+          "added_count": 2,
+          "remaining_count": 0,
+          "note": "Unnamed 23-year-old and 22-year-old Egyptian greenhouse-worker electrocution deaths near Vrysoules added from Cyprus Mail archive."
         },
         {
           "month": "2010-08",
