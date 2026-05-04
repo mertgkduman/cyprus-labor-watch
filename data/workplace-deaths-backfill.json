@@ -3488,6 +3488,51 @@
           "published_at": "2017-11-17"
         }
       ]
+    },
+    {
+      "id": "strovolos-odyssea-iacovou-restaurant-shelf-crush-may-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Odyssea Iacovou crushed by shelves in Strovolos restaurant storeroom",
+      "summary": "Odyssea Iacovou, a 25-year-old restaurant employee, died after metal shelves holding drinks and water containers toppled onto her in a storeroom at her workplace in Strovolos, Nicosia. Follow-up reporting said police were investigating unnatural death and the labour inspection department was investigating safety and health at work offences; it also reported that the shelf had not been properly screwed into the wall.",
+      "worker_name": "Odyssea Iacovou",
+      "worker_age": 25,
+      "employer": "Restaurant employer not named in sources",
+      "sector": "Restaurant / hospitality",
+      "cause": "Crushed by unsecured metal shelves in workplace storeroom",
+      "death_date": "2018-05-12",
+      "legal_status": "Police unnatural-death investigation and labour inspection safety-and-health investigation reported by sources",
+      "last_verified_at": "2018-05-21",
+      "locations": [
+        {
+          "id": "strovolos-restaurant-storeroom-shelf-crush-odyssea-iacovou",
+          "label": "Strovolos restaurant storeroom",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Strovolos",
+          "lat": 35.15,
+          "lng": 33.3417,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Primary report places the fatal storeroom accident at the worker's restaurant workplace in Strovolos; area centroid used pending exact restaurant coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Woman 25, dies after shelves topple over at restaurant storeroom",
+          "url": "https://archive.cyprus-mail.com/2018/05/13/woman-15-dies-after-shelves-topple-over-at-restaurant-storeroom/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2018-05-13"
+        },
+        {
+          "title": "Investigation continues into restaurant worker's death",
+          "url": "https://archive.cyprus-mail.com/2018/05/21/investigation-continues-into-restaurant-workers-death/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_context",
+          "published_at": "2018-05-21"
+        }
+      ]
     }
   ]
 }
