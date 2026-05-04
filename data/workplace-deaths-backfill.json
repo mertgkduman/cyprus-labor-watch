@@ -1796,6 +1796,44 @@
           "published_at": "2013-09-17"
         }
       ]
+    },
+    {
+      "id": "paphos-unnamed-british-gardening-electric-saw-death-august-2013",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed British man dies after electric-saw injury during gardening work in Paphos",
+      "summary": "An unnamed 69-year-old British man died in Paphos after being fatally injured with an electric saw while carrying out gardening work. Police said he suffered wounds to the groin area and was taken to Paphos General Hospital, where doctors pronounced him dead.",
+      "worker_name": "Name not published",
+      "worker_age": 69,
+      "employer": "Gardening employer or client not named in source",
+      "sector": "Gardening / grounds maintenance",
+      "cause": "Fatal electric-saw injury during gardening work",
+      "death_date": "2013-08-24",
+      "legal_status": "Police investigation reported by source",
+      "last_verified_at": "2013-08-26",
+      "locations": [
+        {
+          "id": "paphos-electric-saw-gardening-unnamed-british-man",
+          "label": "Paphos gardening worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Paphos",
+          "lat": 34.772,
+          "lng": 32.429,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the electric-saw death in Paphos while the man was carrying out gardening work; city centroid used pending exact worksite coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Police investigating electric saw death in Paphos",
+          "url": "https://archive.cyprus-mail.com/2013/08/26/police-look-into-work-death-in-paphos/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2013-08-26"
+        }
+      ]
     }
   ]
 }
