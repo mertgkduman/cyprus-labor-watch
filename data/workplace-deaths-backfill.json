@@ -1758,6 +1758,44 @@
           "published_at": "2013-09-21"
         }
       ]
+    },
+    {
+      "id": "apliki-michalis-kyriacou-tractor-ditch-death-september-2013",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Michalis Kyriacou dies after tractor loaded with wood plunges into ditch near Apliki",
+      "summary": "Michalis Kyriacou, a 77-year-old man from Apliki, died after losing control of a tractor loaded with wood while on his way home. The tractor plunged into a two-metre ditch, and a doctor from Nicosia General Hospital established his death at the scene.",
+      "worker_name": "Michalis Kyriacou",
+      "worker_age": 77,
+      "employer": "Self-employed or employer not named in source",
+      "sector": "Agriculture / wood transport",
+      "cause": "Tractor plunged into ditch while loaded with wood",
+      "death_date": "2013-09-17",
+      "legal_status": "Police investigation and pending post-mortem reported by source; work relation inferred from tractor/wood transport because no employer was named",
+      "last_verified_at": "2013-09-17",
+      "locations": [
+        {
+          "id": "apliki-tractor-ditch-michalis-kyriacou",
+          "label": "Apliki tractor route",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Apliki",
+          "lat": 34.9308,
+          "lng": 33.1172,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source identifies Kyriacou as from Apliki and says the tractor plunged into a ditch while he was on his way home loaded with wood; Apliki village centroid used pending exact road coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Man dies hours after tractor accident",
+          "url": "https://archive.cyprus-mail.com/2013/09/17/man-dies-hours-after-tractor-accident/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2013-09-17"
+        }
+      ]
     }
   ]
 }
