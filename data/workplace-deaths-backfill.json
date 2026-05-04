@@ -2865,6 +2865,44 @@
           "published_at": "2006-07-04"
         }
       ]
+    },
+    {
+      "id": "lakatamia-maheid-hussein-plate-compactor-crush-july-2007",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Maheid Hussein crushed by plate compactor at Lakatamia building site",
+      "summary": "Maheid Hussein, a 30-year-old Syrian political asylum seeker, died while working on a building-site dig on Pompias Street in Lakatamia, Nicosia. The source says nearby co-workers unloading a plate compactor lost their grip, causing the heavy machinery to topple and fall on him.",
+      "worker_name": "Maheid Hussein",
+      "worker_age": 30,
+      "employer": "Cypriot building-site employer not named in source",
+      "sector": "Construction / pipe installation",
+      "cause": "Crushed by plate compactor that toppled during unloading",
+      "death_date": "2007-07-18",
+      "legal_status": "Police arrested the Cypriot employer; labour inspector reported possible scene disturbance after machines were moved",
+      "last_verified_at": "2007-07-19",
+      "locations": [
+        {
+          "id": "lakatamia-pompias-street-plate-compactor-maheid-hussein",
+          "label": "Pompias Street building site, Lakatamia",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Lakatamia",
+          "lat": 35.1139,
+          "lng": 33.3157,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal machinery crush at a building-site dig on Pompias Street in the Lakatamia area of Nicosia; Lakatamia district centroid used pending exact street coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Worker crushed to death on building site",
+          "url": "https://archive.cyprus-mail.com/2007/07/19/worker-crushed-to-death-on-building-site/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2007-07-19"
+        }
+      ]
     }
   ]
 }
