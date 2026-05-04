@@ -44,6 +44,7 @@ const LAYER_ORDER = [
 const DEFAULT_LAYERS = ["worker_death_recent", "strike_ongoing", "action_call_upcoming", "union_arrest_current"];
 const QUICK_LAYERS = ["worker_death_recent", "strike_ongoing", "action_call_upcoming", "union_arrest_current"];
 const DATE_RANGES = ["all", "last_30_days", "last_3_months", "last_6_months"];
+const MAX_YEAR_DATE_RANGE = 2026;
 
 const LAYER_COLORS = {
   worker_death_recent: "#111111",
@@ -1256,8 +1257,8 @@ function isCurrentArrestRecord(record) {
 }
 
 function populateControls() {
-  document.getElementById("date-range-filter").innerHTML = DATE_RANGES
-    .map((range) => `<option value="${range}" ${state.dateRange === range ? "selected" : ""}>${escapeHtml(t(`filters.dateRanges.${range}`))}</option>`)
+  document.getElementById("date-range-filter").innerHTML = availableDateRanges()
+    .map((range) => `<option value="${range}" ${state.dateRange === range ? "selected" : ""}>${escapeHtml(dateRangeLabel(range))}</option>`)
     .join("");
 
   const areaOptions = [`<option value="">${escapeHtml(t("filters.allProvinces"))}</option>`]
@@ -1277,6 +1278,25 @@ function populateControls() {
 
   renderCheckboxGroup("layer-filters", LAYER_ORDER, state.layerFilters, "layer");
   renderCheckboxGroup("action-filters", ACTION_TYPES, state.actionFilters, "actionType");
+}
+
+function availableDateRanges() {
+  return DATE_RANGES.concat(recordYearDateRanges());
+}
+
+function recordYearDateRanges() {
+  const years = state.records
+    .map((record) => parseDate(recordDateValue(record))?.getFullYear())
+    .filter((year) => Number.isInteger(year));
+  if (!years.length) return [];
+  const firstYear = Math.min(...years);
+  const lastYear = Math.max(MAX_YEAR_DATE_RANGE, firstYear);
+  return Array.from({ length: lastYear - firstYear + 1 }, (_, index) => `year_${firstYear + index}`);
+}
+
+function dateRangeLabel(range) {
+  const year = dateRangeYear(range);
+  return year ? String(year) : t(`filters.dateRanges.${range}`);
 }
 
 function renderCheckboxGroup(id, values, selectedSet, labelKey) {
@@ -1993,6 +2013,11 @@ function fatalityWord() {
 }
 
 function recordMatchesDateRange(record) {
+  const selectedYear = dateRangeYear(state.dateRange);
+  if (selectedYear) {
+    const date = parseDate(recordDateValue(record));
+    return Boolean(date && date.getFullYear() === selectedYear);
+  }
   const cutoff = dateRangeCutoff(state.dateRange);
   if (!cutoff) return true;
   if (!recordUsesDateRange(record)) return true;
@@ -2023,6 +2048,11 @@ function dateRangeCutoff(range) {
     return now;
   }
   return null;
+}
+
+function dateRangeYear(range) {
+  const match = String(range || "").match(/^year_(\d{4})$/);
+  return match ? Number(match[1]) : null;
 }
 
 function markerOffset(index, total) {
