@@ -1508,11 +1508,201 @@ function displayLocations(record) {
 }
 
 function localizedRecordValue(record, field) {
-  return localizedValue(record.translations?.[state.lang]?.[field] ?? record[field] ?? "");
+  const explicitValue = record.translations?.[state.lang]?.[field];
+  if (explicitValue) return localizedValue(explicitValue);
+  const generatedValue = generatedLocalizedRecordValue(record, field, state.lang);
+  return generatedValue || localizedValue(record[field] ?? "");
 }
 
 function localizedValue(value) {
   return VALUE_TRANSLATIONS[state.lang]?.[value] || value;
+}
+
+function generatedLocalizedRecordValue(record, field, lang = state.lang) {
+  if (lang === "en" || record.record_type !== "worker_death") return "";
+  const death = workerDeathLocalizationParts(record, lang);
+  if (field === "title") return death.title;
+  if (field === "summary") return death.summary;
+  if (field === "worker_name") return localizedWorkerName(record.worker_name, lang);
+  if (field === "employer") return localizedEmployer(record.employer, lang);
+  if (field === "sector") return localizedSector(record.sector, lang);
+  if (field === "cause") return localizedCause(record.cause, lang, "detail");
+  if (field === "legal_status") return localizedLegalStatus(record.legal_status, lang);
+  return "";
+}
+
+function workerDeathLocalizationParts(record, lang) {
+  const worker = localizedWorkerName(record.worker_name, lang);
+  const age = Number.isFinite(Number(record.worker_age)) ? Number(record.worker_age) : null;
+  const location = displayLocations(record)[0] || record.locations?.[0] || {};
+  const place = localizedWorkerDeathPlace(location, lang);
+  const sector = localizedSector(record.sector, lang);
+  const employer = localizedEmployer(record.employer, lang);
+  const causeTitle = localizedCause(record.cause, lang, "title");
+  const causeSentence = localizedCause(record.cause, lang, "sentence");
+  const legalStatus = localizedLegalStatus(record.legal_status, lang);
+
+  if (lang === "tr") {
+    const workerPhrase = worker === "Adı yayımlanmadı" ? "Adı yayımlanmayan işçi" : worker;
+    const agePhrase = age ? `${age} yaşındaki ` : "";
+    const placePhrase = place ? `${place} bölgesinde ` : "";
+    return {
+      title: `${workerPhrase} ${placePhrase}${causeTitle} hayatını kaybetti`.replace(/\s+/g, " ").trim(),
+      summary: `${agePhrase}${workerPhrase}, ${placePhrase}${sector ? `${sector} işinde ` : ""}${causeSentence} yaşamını yitirdi. ${employer ? `İşveren/kurum: ${employer}. ` : ""}${legalStatus ? `Hukuki süreç: ${legalStatus}.` : "Kaynak, olayın iş kazası olarak kaydedildiğini bildiriyor."}`.replace(/\s+/g, " ").trim(),
+    };
+  }
+
+  const workerPhrase = worker === "Το όνομα δεν δημοσιεύθηκε" ? "Εργάτης του οποίου το όνομα δεν δημοσιεύθηκε" : worker;
+  const agePhrase = age ? `${age}χρονος ` : "";
+  const placePhrase = place ? `στην περιοχή ${place} ` : "";
+  return {
+    title: `${workerPhrase} πέθανε ${placePhrase}${causeTitle}`.replace(/\s+/g, " ").trim(),
+    summary: `${agePhrase}${workerPhrase} πέθανε ${placePhrase}${sector ? `ενώ εργαζόταν στον κλάδο ${sector} ` : ""}${causeSentence}. ${employer ? `Εργοδότης/φορέας: ${employer}. ` : ""}${legalStatus ? `Νομική διαδικασία: ${legalStatus}.` : "Η πηγή καταγράφει το περιστατικό ως εργατικό δυστύχημα."}`.replace(/\s+/g, " ").trim(),
+  };
+}
+
+function localizedWorkerName(value, lang) {
+  if (!value || /name not published|not published|unnamed/i.test(value)) {
+    return lang === "tr" ? "Adı yayımlanmadı" : "Το όνομα δεν δημοσιεύθηκε";
+  }
+  return value;
+}
+
+function localizedWorkerDeathPlace(location, lang) {
+  if (!location) return "";
+  const district = location.district || location.label || "";
+  return district || localizedAreaNameForLang(location.province_key || location.province, lang);
+}
+
+function localizedAreaNameForLang(nameOrKey, lang) {
+  const area = AREA_BY_KEY[nameOrKey] || AREA_BY_NAME[nameOrKey];
+  if (!area) return nameOrKey || "";
+  return area[lang] || area.name;
+}
+
+function localizedSector(value, lang) {
+  if (!value) return "";
+  const text = normalizeAscii(value);
+  const tr = [
+    [/construction|building|plumbing|painting|scaffold|site/, "İnşaat"],
+    [/electric|utilities|telecommunication|installation|power/, "Elektrik / altyapı"],
+    [/agricultur|farm|tractor|vineyard|olive|cattle|greenhouse|landscap/, "Tarım / hayvancılık"],
+    [/factory|manufactur|industrial|warehouse|glass|pack|retail|maintenance/, "Sanayi / depo"],
+    [/port|ship|demining|mine/, "Liman / saha çalışması"],
+    [/domestic|restaurant|municipal|waste/, "Hizmetler"],
+  ];
+  const el = [
+    [/construction|building|plumbing|painting|scaffold|site/, "οικοδομές"],
+    [/electric|utilities|telecommunication|installation|power/, "ηλεκτρισμό / υποδομές"],
+    [/agricultur|farm|tractor|vineyard|olive|cattle|greenhouse|landscap/, "γεωργία / κτηνοτροφία"],
+    [/factory|manufactur|industrial|warehouse|glass|pack|retail|maintenance/, "βιομηχανία / αποθήκες"],
+    [/port|ship|demining|mine/, "λιμάνι / εργασίες πεδίου"],
+    [/domestic|restaurant|municipal|waste/, "υπηρεσίες"],
+  ];
+  const rules = lang === "tr" ? tr : el;
+  return rules.find(([pattern]) => pattern.test(text))?.[1] || (lang === "tr" ? "çalışma" : "εργασία");
+}
+
+function localizedEmployer(value, lang) {
+  if (!value) return "";
+  const text = normalizeAscii(value);
+  if (/not named|not published|not specified|unknown|direct employer not named/.test(text)) {
+    if (/construction/.test(text)) return lang === "tr" ? "Kaynakta adı verilmeyen inşaat işvereni" : "εργοδότης οικοδομής που δεν κατονομάστηκε στην πηγή";
+    if (/factory|warehouse|industrial/.test(text)) return lang === "tr" ? "Kaynakta adı verilmeyen işyeri" : "χώρος εργασίας που δεν κατονομάστηκε στην πηγή";
+    return lang === "tr" ? "Kaynakta adı yayımlanmadı" : "δεν κατονομάστηκε στην πηγή";
+  }
+  return value;
+}
+
+function localizedCause(value, lang, style = "detail") {
+  const text = normalizeAscii(value || "");
+  const tr = causePhrase(text, "tr");
+  const el = causePhrase(text, "el");
+  const phrase = lang === "tr" ? tr : el;
+  if (style === "title") return phrase.title;
+  if (style === "sentence") return phrase.sentence;
+  return phrase.detail;
+}
+
+function causePhrase(text, lang) {
+  const tr = (title, sentence, detail = title) => ({ title, sentence, detail });
+  const el = (title, sentence, detail = title) => ({ title, sentence, detail });
+
+  if (/electrocut|electric/.test(text)) {
+    return lang === "tr"
+      ? tr("elektrik akımına kapılarak", "elektrik akımına kapılması sonucu", "Elektrik akımına kapılma")
+      : el("από ηλεκτροπληξία", "από ηλεκτροπληξία", "Ηλεκτροπληξία");
+  }
+  if (/lift shaft|elevator shaft/.test(text)) {
+    return lang === "tr"
+      ? tr("asansör boşluğuna düşerek", "asansör boşluğuna düşmesi sonucu", "Asansör boşluğuna düşme")
+      : el("μετά από πτώση σε φρεάτιο ανελκυστήρα", "μετά από πτώση σε φρεάτιο ανελκυστήρα", "Πτώση σε φρεάτιο ανελκυστήρα");
+  }
+  if (/scaffold/.test(text)) {
+    return lang === "tr"
+      ? tr("iskeleden düşerek", "iskeleden düşmesi sonucu", "İskeleden düşme")
+      : el("μετά από πτώση από σκαλωσιά", "μετά από πτώση από σκαλωσιά", "Πτώση από σκαλωσιά");
+  }
+  if (/ladder/.test(text)) {
+    return lang === "tr"
+      ? tr("merdivenden düşerek", "merdivenden düşmesi sonucu", "Merdivenden düşme")
+      : el("μετά από πτώση από σκάλα", "μετά από πτώση από σκάλα", "Πτώση από σκάλα");
+  }
+  if (/fall|fell|plung|height|floor|roof|balcony/.test(text)) {
+    return lang === "tr"
+      ? tr("yüksekten düşerek", "yüksekten düşmesi sonucu", "Yüksekten düşme")
+      : el("μετά από πτώση από ύψος", "μετά από πτώση από ύψος", "Πτώση από ύψος");
+  }
+  if (/crush|crushed|falling|struck|hit/.test(text) && /timber|wood|lumber/.test(text)) {
+    return lang === "tr"
+      ? tr("düşen kerestelerin altında kalarak", "düşen kerestelerin altında kalması sonucu", "Düşen kerestelerin altında kalma")
+      : el("αφού καταπλακώθηκε από ξυλεία", "αφού καταπλακώθηκε από ξυλεία", "Καταπλάκωση από ξυλεία");
+  }
+  if (/glass/.test(text)) {
+    return lang === "tr"
+      ? tr("düşen cam plakanın altında kalarak", "düşen cam plakanın altında kalması sonucu", "Düşen cam plaka")
+      : el("αφού καταπλακώθηκε από γυάλινο φύλλο", "αφού καταπλακώθηκε από γυάλινο φύλλο", "Καταπλάκωση από γυάλινο φύλλο");
+  }
+  if (/tractor|harvester|digger|forklift|truck|lorry|garbage truck|machinery|machine|crane|counterweight|pipes|slab|block/.test(text)) {
+    return lang === "tr"
+      ? tr("makine veya ağır ekipman kazasında", "makine veya ağır ekipman kazası sonucu", "Makine / ağır ekipman kazası")
+      : el("σε δυστύχημα με μηχάνημα ή βαρύ εξοπλισμό", "σε δυστύχημα με μηχάνημα ή βαρύ εξοπλισμό", "Δυστύχημα με μηχάνημα / βαρύ εξοπλισμό");
+  }
+  if (/collapse|trench|excavation|earth|sand|hole/.test(text)) {
+    return lang === "tr"
+      ? tr("göçük veya çökme sonucu", "göçük veya çökme sonucu", "Göçük / çökme")
+      : el("σε κατάρρευση ή υποχώρηση εδάφους", "σε κατάρρευση ή υποχώρηση εδάφους", "Κατάρρευση / υποχώρηση εδάφους");
+  }
+  if (/fire|burn|explosion|mine/.test(text)) {
+    return lang === "tr"
+      ? tr("yangın veya patlamada", "yangın veya patlama sonucu", "Yangın / patlama")
+      : el("σε πυρκαγιά ή έκρηξη", "σε πυρκαγιά ή έκρηξη", "Πυρκαγιά / έκρηξη");
+  }
+  if (/drown/.test(text)) {
+    return lang === "tr"
+      ? tr("boğularak", "boğulma sonucu", "Boğulma")
+      : el("από πνιγμό", "από πνιγμό", "Πνιγμός");
+  }
+  if (/bull|animal/.test(text)) {
+    return lang === "tr"
+      ? tr("hayvan saldırısı sonucu", "hayvan saldırısı sonucu", "Hayvan saldırısı")
+      : el("μετά από επίθεση ζώου", "μετά από επίθεση ζώου", "Επίθεση ζώου");
+  }
+  return lang === "tr"
+    ? tr("iş kazasında", "iş sırasında meydana gelen kaza sonucu", "İş kazası")
+    : el("σε εργατικό δυστύχημα", "σε δυστύχημα κατά την εργασία", "Εργατικό δυστύχημα");
+}
+
+function localizedLegalStatus(value, lang) {
+  const text = normalizeAscii(value || "");
+  if (!text) return "";
+  const parts = [];
+  if (/police/.test(text)) parts.push(lang === "tr" ? "polis soruşturması bildirildi" : "αναφέρθηκε αστυνομική έρευνα");
+  if (/labou?r|inspection|department/.test(text)) parts.push(lang === "tr" ? "çalışma teftişi bildirildi" : "αναφέρθηκε έλεγχος από το Τμήμα Επιθεώρησης Εργασίας");
+  if (/arrest|remand|court|trial|suspect/.test(text)) parts.push(lang === "tr" ? "mahkeme veya tutuklama süreci bildirildi" : "αναφέρθηκε δικαστική διαδικασία ή σύλληψη");
+  if (/continu/.test(text)) parts.push(lang === "tr" ? "soruşturma sürüyor" : "η έρευνα συνεχίζεται");
+  if (!parts.length) return lang === "tr" ? "Kaynakta hukuki süreç belirtiliyor" : "η πηγή αναφέρει νομική διαδικασία";
+  return Array.from(new Set(parts)).join(lang === "tr" ? "; " : "; ");
 }
 
 function localizedDemands(record) {
@@ -1520,15 +1710,43 @@ function localizedDemands(record) {
 }
 
 function localizedLocationValue(record, location, field) {
-  return record.translations?.[state.lang]?.locations?.[location.id]?.[field] ?? location[field] ?? "";
+  const explicitValue = record.translations?.[state.lang]?.locations?.[location.id]?.[field];
+  if (explicitValue) return explicitValue;
+  const generatedValue = generatedLocalizedLocationValue(record, location, field, state.lang);
+  return generatedValue || location[field] || "";
 }
 
 function localizedTimelineNote(record, item, index) {
-  return record.translations?.[state.lang]?.timeline?.[index] ?? item.note ?? "";
+  const explicitValue = record.translations?.[state.lang]?.timeline?.[index];
+  if (explicitValue) return explicitValue;
+  const generatedValue = generatedLocalizedTimelineNote(record, item, state.lang);
+  return generatedValue || item.note || "";
 }
 
 function localizedSourceTitle(record, source, index) {
   return record.translations?.[state.lang]?.sources?.[index]?.title || localizedValue(source.title) || t("common.source");
+}
+
+function generatedLocalizedLocationValue(record, location, field, lang) {
+  if (lang === "en" || record.record_type !== "worker_death") return "";
+  const place = localizedWorkerDeathPlace(location, lang);
+  if (field === "label") {
+    const sector = localizedSector(record.sector, lang);
+    if (lang === "tr") return place ? `${place} ${sector ? `${sector} sahası` : "çalışma sahası"}` : "";
+    return place ? `${sector ? `χώρος ${sector}` : "χώρος εργασίας"} ${place}` : "";
+  }
+  if (field === "location_basis") {
+    if (lang === "tr") return `Kaynak olayı ${place || "bu konum"} çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır.`;
+    return `Η πηγή τοποθετεί το περιστατικό στην περιοχή ${place || "αυτής της τοποθεσίας"}. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη.`;
+  }
+  return "";
+}
+
+function generatedLocalizedTimelineNote(record, item, lang) {
+  if (lang === "en" || record.record_type !== "worker_death") return "";
+  const date = item.date || record.death_date || record.start_date || "";
+  if (lang === "tr") return `${date ? `${formatDate(date)}: ` : ""}Ölümcül iş kazası kayda geçirildi.`;
+  return `${date ? `${formatDate(date)}: ` : ""}Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.`;
 }
 
 function localizedAreaName(nameOrKey) {
