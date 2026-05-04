@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03",
+  "updated_at": "2026-05-04",
   "description": "Supplemental northern Cyprus records sourced from Turkish-language public reporting.",
   "records": [
     {
@@ -208,6 +208,126 @@
           "timeline": [
             "Η Tel-Sen ανακοίνωσε την απόφαση για απεργία.",
             "Τα υποκαταστήματα του Τμήματος Τηλεπικοινωνιών επρόκειτο να κλείσουν από τις 08:00 έως τις 13:00 και να γίνει διαμαρτυρία έξω από τη νέα συνέλευση."
+          ]
+        }
+      }
+    },
+    {
+      "id": "gazimagusa-iskele-tax-office-strike-january-2026",
+      "record_type": "strike",
+      "status": "ended",
+      "action_type": "legal_strike",
+      "title": "Gazimagusa and Iskele tax office full-day strike",
+      "summary": "KTAMS, Kamusen and Kamu-Is held a full-day strike at the Gazimagusa and Iskele Revenue and Tax Department offices on 23 January 2026 over severe staff shortages, workload and service delays. The unions made a press statement in front of the Gazimagusa office and demanded that vacant posts be filled immediately.",
+      "employer": "Revenue and Tax Department offices",
+      "labor_organization": "KTAMS, Kamusen, Kamu-Is",
+      "sector": "Public administration / taxation",
+      "decision_date": "2026-01-23",
+      "start_date": "2026-01-23",
+      "end_date": "2026-01-23",
+      "demands": [
+        "Immediate filling of vacant posts",
+        "Adequate staffing in Gazimagusa and Iskele tax offices",
+        "Reduced workload and delays for staff and taxpayers"
+      ],
+      "last_verified_at": "2026-01-23",
+      "locations": [
+        {
+          "id": "gazimagusa-revenue-tax-office-strike",
+          "label": "Gazimagusa Revenue and Tax Department",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Gazimagusa",
+          "lat": 35.125,
+          "lng": 33.95,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources place the strike and press statement at the Gazimagusa Revenue and Tax Department; city/office area centroid used pending exact office coordinates."
+        },
+        {
+          "id": "iskele-revenue-tax-office-strike",
+          "label": "Iskele Revenue and Tax Department",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Iskele",
+          "lat": 35.287,
+          "lng": 33.891,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources report the same full-day strike at the Iskele Revenue and Tax Department; town centroid used pending exact office coordinates."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-01-23",
+          "status": "ended",
+          "note": "KTAMS, Kamusen and Kamu-Is held a full-day strike at the Gazimagusa and Iskele Revenue and Tax Department offices."
+        },
+        {
+          "date": "2026-01-23",
+          "status": "ended",
+          "note": "The unions made a press statement in front of the Gazimagusa office and demanded immediate filling of vacant posts."
+        }
+      ],
+      "sources": [
+        {
+          "title": "KTAMS, KAMUSEN ve KAMU-IS, Gazimagusa ile Iskele Gelir ve Vergi Dairelerinde tam gun greve gitti",
+          "url": "https://www.ktams.org/tr/2026/01/23/ktams-kamusen-ve-kamu-is-gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti/",
+          "publisher": "KTAMS",
+          "type": "union",
+          "published_at": "2026-01-23"
+        },
+        {
+          "title": "KTAMS, KAMUSEN ve KAMU-IS, Gazimagusa ile Iskele Gelir ve Vergi Dairelerinde tam gun greve gitti",
+          "url": "https://tak.gov.ct.tr/haber-detay/ktams--kamusen-ve-kamu-is--gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti",
+          "publisher": "TAK",
+          "type": "public_news_agency",
+          "published_at": "2026-01-23"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Gazimağusa ve İskele vergi dairelerinde tam gün grev",
+          "summary": "KTAMS, Kamusen ve Kamu-İş, 23 Ocak 2026'da Gazimağusa ve İskele Gelir ve Vergi Dairelerinde personel eksikliği, ağır iş yükü ve hizmetlerde yaşanan gecikmeler nedeniyle tam gün grev yaptı. Sendikalar Gazimağusa Gelir ve Vergi Dairesi önünde basın açıklaması yaparak boş kadroların derhal doldurulmasını istedi.",
+          "demands": [
+            "Boş kadroların derhal doldurulması",
+            "Gazimağusa ve İskele vergi dairelerinde yeterli personel",
+            "Çalışanlar ve mükellefler için iş yükü ve gecikmelerin azaltılması"
+          ],
+          "locations": {
+            "gazimagusa-revenue-tax-office-strike": {
+              "label": "Gazimağusa Gelir ve Vergi Dairesi",
+              "location_basis": "Kaynaklar grevi ve basın açıklamasını Gazimağusa Gelir ve Vergi Dairesi'ne yerleştiriyor; kesin ofis koordinatı yayımlanmadığı için kent/ofis bölgesi merkezi kullanıldı."
+            },
+            "iskele-revenue-tax-office-strike": {
+              "label": "İskele Gelir ve Vergi Dairesi",
+              "location_basis": "Kaynaklar aynı tam gün grevin İskele Gelir ve Vergi Dairesi'nde de yapıldığını bildiriyor; kesin ofis koordinatı yayımlanmadığı için İskele kent merkezi kullanıldı."
+            }
+          },
+          "timeline": [
+            "KTAMS, Kamusen ve Kamu-İş, Gazimağusa ve İskele Gelir ve Vergi Dairelerinde tam gün grev yaptı.",
+            "Sendikalar Gazimağusa Gelir ve Vergi Dairesi önünde basın açıklaması yaparak boş kadroların derhal doldurulmasını istedi."
+          ]
+        },
+        "el": {
+          "title": "Ολοήμερη απεργία στα φορολογικά γραφεία Gazimağusa και İskele",
+          "summary": "Η KTAMS, η Kamusen και η Kamu-İş πραγματοποίησαν ολοήμερη απεργία στις 23 Ιανουαρίου 2026 στα γραφεία Εσόδων και Φορολογίας σε Gazimağusa και İskele, λόγω σοβαρών ελλείψεων προσωπικού, μεγάλου φόρτου εργασίας και καθυστερήσεων στην εξυπηρέτηση. Τα συνδικάτα έκαναν δήλωση Τύπου έξω από το γραφείο της Gazimağusa και ζήτησαν την άμεση πλήρωση των κενών θέσεων.",
+          "demands": [
+            "Άμεση πλήρωση των κενών θέσεων",
+            "Επαρκής στελέχωση των φορολογικών γραφείων σε Gazimağusa και İskele",
+            "Μείωση του φόρτου εργασίας και των καθυστερήσεων για εργαζόμενους και φορολογούμενους"
+          ],
+          "locations": {
+            "gazimagusa-revenue-tax-office-strike": {
+              "label": "Γραφείο Εσόδων και Φορολογίας Gazimağusa",
+              "location_basis": "Οι πηγές τοποθετούν την απεργία και τη δήλωση Τύπου στο Γραφείο Εσόδων και Φορολογίας της Gazimağusa. Χρησιμοποιήθηκε κεντρικό σημείο της πόλης/περιοχής γραφείων μέχρι να δημοσιευθούν ακριβείς συντεταγμένες."
+            },
+            "iskele-revenue-tax-office-strike": {
+              "label": "Γραφείο Εσόδων και Φορολογίας İskele",
+              "location_basis": "Οι πηγές αναφέρουν ότι η ίδια ολοήμερη απεργία έγινε και στο Γραφείο Εσόδων και Φορολογίας της İskele. Χρησιμοποιήθηκε κεντρικό σημείο της πόλης μέχρι να δημοσιευθούν ακριβείς συντεταγμένες."
+            }
+          },
+          "timeline": [
+            "Η KTAMS, η Kamusen και η Kamu-İş πραγματοποίησαν ολοήμερη απεργία στα γραφεία Εσόδων και Φορολογίας σε Gazimağusa και İskele.",
+            "Τα συνδικάτα έκαναν δήλωση Τύπου έξω από το γραφείο της Gazimağusa και ζήτησαν την άμεση πλήρωση των κενών θέσεων."
           ]
         }
       }

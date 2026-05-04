@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 55,
+      "record_count": 56,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2016 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -570,7 +570,7 @@
         {
           "record_hint": "Gazimagusa and Iskele tax offices full-day strike by KTAMS, KAMUSEN and KAMU-IS, 23 January 2026",
           "source_url": "https://www.ktams.org/tr/2026/01/23/ktams-kamusen-ve-kamu-is-gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti/",
-          "status": "strong candidate; primary KTAMS source exists, corroborate with KAMU-IS or TAK."
+          "status": "added to data/northern-incidents.json from KTAMS primary statement and TAK public-news corroboration."
         },
         {
           "record_hint": "KTOEOS Lefkosa schools strike/action over fibre infrastructure, 17 February 2026",
@@ -750,6 +750,8 @@
         "https://ajanscyprus.com/2026/03/12/ektam-kibrista-grev-sona-erdi-toplu-is-sozlesmesi-imzalandi/",
         "https://ozgurgazetekibris.com/ekonomi/203084-tel-sen-peskese-gecit-yok.html",
         "https://ozgurgazetekibris.com/kibris/206574-kib-tek-kazanin-personelin-grevde-olmasi-ile-ilgili-hicbir-baglantisi-yok.html",
+        "https://tak.gov.ct.tr/haber-detay/ktams--kamusen-ve-kamu-is--gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti",
+        "https://www.ktams.org/tr/2026/01/23/ktams-kamusen-ve-kamu-is-gazimagusa-ile-iskele-gelir-ve-vergi-dairelerinde-tam-gun-greve-gitti/",
         "https://www.kibrispostasi.com/c87-LEFKOSA/n571177-is-kazasi-narenciye-fabrikasinin-damindan-dusen-isci-hayatini-kaybetti",
         "https://www.yeniduzen.com/bakanlar-kurulu-saglik-alanindaki-grevleri-60-gun-sureyle-erteledi-193870h.htm",
         "https://www.yeniduzen.com/ektamda-suresiz-grev-basladi-191883h.htm",
