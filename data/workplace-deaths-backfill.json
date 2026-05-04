@@ -3637,6 +3637,44 @@
           "published_at": "2018-01-31"
         }
       ]
+    },
+    {
+      "id": "karaoglanoglu-musa-duskun-hotel-construction-fall-january-2018",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Musa Duskun dies after fall at Karaoglanoglu hotel construction site",
+      "summary": "Musa Duskun, a 40-year-old construction worker from Hatay who had arrived in northern Cyprus about 20 days earlier for work, died after losing his balance and falling around four metres at a hotel construction site in Karaoglanoglu. The source says he was taken to Girne Akcicek Hospital but could not be saved.",
+      "worker_name": "Musa Duskun",
+      "worker_age": 40,
+      "employer": "Kaya Hotels group hotel construction site according to source; direct employer not named",
+      "sector": "Construction / hotel construction",
+      "cause": "Fall from approximately four metres after losing balance",
+      "death_date": "2018-01-13",
+      "legal_status": "Police investigation continuing according to source",
+      "last_verified_at": "2018-01-14",
+      "locations": [
+        {
+          "id": "karaoglanoglu-hotel-construction-fall-musa-duskun",
+          "label": "Karaoglanoglu hotel construction site",
+          "province_key": "KYRENIA",
+          "province": "Kyrenia / Girne",
+          "district": "Karaoglanoglu",
+          "lat": 35.3417,
+          "lng": 33.3042,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall at a Kaya Hotels group hotel construction site in Karaoglanoglu; Karaoglanoglu area centroid used pending exact site coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "2018'in ilk olumlu is kazasi",
+          "url": "https://www.diyaloggazetesi.com/kibris/2018in-ilk-olumlu-is-kazasi-h58902.html",
+          "publisher": "Diyalog Gazetesi",
+          "type": "labor_news",
+          "published_at": "2018-01-14"
+        }
+      ]
     }
   ]
 }

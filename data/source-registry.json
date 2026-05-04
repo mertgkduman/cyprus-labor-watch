@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 110,
+      "record_count": 111,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,14 +421,14 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2018-01, decremented by one after adding Dogan Turan's Lefkosa-Dumlupinar construction fall death; current new January 2018 northern lead is complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2018-01, decremented by one after adding Musa Duskun's Karaoglanoglu hotel-construction fall death; current January 2018 northern leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2018-01",
-          "target_count_from_current_leads": 1,
-          "added_count": 1,
+          "target_count_from_current_leads": 2,
+          "added_count": 2,
           "remaining_count": 0,
-          "note": "Dogan Turan's Lefkosa-Dumlupinar White Lotus construction fall death added from Kibris Gazetesi, Ajans Cyprus, and Havadis; Andreas Constantinou's Chlorakas scaffolding fall was already in the dataset."
+          "note": "Dogan Turan's Lefkosa-Dumlupinar White Lotus construction fall death and Musa Duskun's Karaoglanoglu hotel-construction fall death added from Turkish-language sources; Andreas Constantinou's Chlorakas scaffolding fall was already in the dataset."
         },
         {
           "month": "2018-07",
@@ -1114,6 +1114,7 @@
         "https://kibrisgazetesi.com/doan-turan-kaak-ii-kt/",
         "https://ajanscyprus.com/index.php/2018/02/03/dogan-turanin-olumu-kaza-degil-cinayet/",
         "https://www.havadiskibris.com/lefkosada-bir-kisi-insaattan-dustu-agir-yaralandi/",
+        "https://www.diyaloggazetesi.com/kibris/2018in-ilk-olumlu-is-kazasi-h58902.html",
         "https://archive.cyprus-mail.com/2018/01/15/labourer-dies-weeks-fall/",
         "https://archive.cyprus-mail.com/2018/07/02/eac-employee-dies-after-fall/",
         "https://archive.cyprus-mail.com/2019/01/31/painter-dies-after-fall-from-scaffolding/",
