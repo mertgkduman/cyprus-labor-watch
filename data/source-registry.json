@@ -406,7 +406,7 @@
     "launch_dataset": {
       "updated_at": "2026-05-04",
       "data_file": "data/incidents.json + data/northern-incidents.json + data/workplace-deaths-backfill.json",
-      "record_count": 95,
+      "record_count": 96,
       "period_focus": "late 2025 through May 2026 for current individual records, plus individual workplace-death backfill to 2015 and official/research fatality baselines shown as context only",
       "coverage_notes": [
         "Whole-island coverage is represented with neutral district / area labels.",
@@ -421,7 +421,7 @@
       "updated_at": "2026-05-04",
       "focus": "Purpose-specific Turkish-language resources for work-related deaths, using is cinayetleri, olumlu is kazasi, is kazasi hayatini kaybetti, isci olumu, KKTC, Kuzey Kibris, and Guney Kibris search patterns.",
       "coverage_note": "Official/research fatality totals are used as baselines in the app context panel only. Map datasets should contain individual deaths rather than aggregate annual fatality markers.",
-      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2008-05, decremented by one after adding Mohammed Sabani's Polemi building-site electrocution death; current May 2008 leads are complete.",
+      "backfill_progress_note": "Backfill is handled by month buckets and one worker at a time to keep research context small. Latest processed bucket: 2008-12, decremented by one after adding Antonis Adonis's Avgorou straw-bale crush death; current December 2008 leads are complete.",
       "backfill_month_progress": [
         {
           "month": "2015-07",
@@ -562,6 +562,13 @@
           "added_count": 1,
           "remaining_count": 0,
           "note": "Kolcev Tanyo Stoyanov's Paphos air-conditioning removal fall death added from Cyprus Mail archive."
+        },
+        {
+          "month": "2008-12",
+          "target_count_from_current_leads": 1,
+          "added_count": 1,
+          "remaining_count": 0,
+          "note": "Antonis Adonis's Avgorou/Limnes farming-area straw-bale crush death added from Cyprus Mail archive, with Geographic.org/NGA coordinate reference for Avgorou."
         },
         {
           "month": "2008-05",
@@ -988,6 +995,8 @@
         "https://commons.lib.jmu.edu/cisr-journal/vol13/iss3/30/",
         "https://archive.cyprus-mail.com/2009/05/10/two-die-in-construction-site-accident/",
         "https://archive.cyprus-mail.com/2009/01/14/builder-killed-in-site-accident/",
+        "https://archive.cyprus-mail.com/2008/12/30/farmer-crushed-to-death-by-bail-of-straw/",
+        "https://geographic.org/geographic_names/name.php?c=cyprus&fid=1510&uni=-3798408",
         "https://archive.cyprus-mail.com/2008/05/14/man-electrocuted-on-building-site-2/",
         "https://geographic.org/geographic_names/name.php?c=cyprus&fid=1514&uni=-3800282",
         "https://archive.cyprus-mail.com/2008/04/15/man-killed-in-work-accident-2/",

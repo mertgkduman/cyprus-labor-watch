@@ -2992,6 +2992,50 @@
           "type": "coordinate_reference"
         }
       ]
+    },
+    {
+      "id": "avgorou-antonis-adonis-straw-bale-crush-december-2008",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Antonis Adonis crushed by straw bale at Avgorou farm",
+      "summary": "Antonis Adonis, a 60-year-old animal farmer, died after being crushed by a 400-kilo straw bale at his farm in the Limnes farming area of Avgorou, Famagusta district. The source says he was found hours later by a relative and pronounced dead on arrival at Famagusta General Hospital.",
+      "worker_name": "Antonis Adonis",
+      "worker_age": 60,
+      "employer": "Self-employed / family farm",
+      "sector": "Animal farming",
+      "cause": "Crushed by 400-kilo straw bale",
+      "death_date": "2008-12-28",
+      "legal_status": "Famagusta district CID and Xylofagou police investigated; criminal activity ruled out according to source",
+      "last_verified_at": "2008-12-30",
+      "locations": [
+        {
+          "id": "avgorou-limnes-farm-straw-bale-antonis-adonis",
+          "label": "Limnes farming area, Avgorou",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Avgorou",
+          "lat": 35.0375,
+          "lng": 33.8333,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal straw-bale crush at a farm in the Limnes farming area of Avgorou, Famagusta district; Avgorou area centroid used pending exact farm coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Farmer crushed to death by bail of straw",
+          "url": "https://archive.cyprus-mail.com/2008/12/30/farmer-crushed-to-death-by-bail-of-straw/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2008-12-30"
+        },
+        {
+          "title": "Avgorou geographic coordinates",
+          "url": "https://geographic.org/geographic_names/name.php?c=cyprus&fid=1510&uni=-3798408",
+          "publisher": "Geographic.org / NGA GEOnet Names Server",
+          "type": "coordinate_reference"
+        }
+      ]
     }
   ]
 }
