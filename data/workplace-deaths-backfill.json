@@ -1644,6 +1644,44 @@
           "published_at": "2014-07-08"
         }
       ]
+    },
+    {
+      "id": "anogyra-giorgos-kyriakou-quarry-excavator-bucket-crush-july-2014",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Giorgos Kyriakou dies after excavator bucket crushes him at Anogyra quarry",
+      "summary": "Giorgos Kyriakou, a 32-year-old truck driver from Pachna, died in a quarry accident at Anogyra after a tracked excavator's bucket detached from the mechanical arm and crushed him while boulder blocks were being loaded onto his truck.",
+      "worker_name": "Giorgos Kyriakou",
+      "worker_age": 32,
+      "employer": "Quarry employer not named in source",
+      "sector": "Quarrying / transport",
+      "cause": "Crushed by detached excavator bucket during truck loading",
+      "death_date": "2014-07-04",
+      "legal_status": "Department of Labour Inspection and Electromechanical Services re-enactment reported",
+      "last_verified_at": "2014-07-05",
+      "locations": [
+        {
+          "id": "anogyra-quarry-giorgos-kyriakou",
+          "label": "Anogyra quarry",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Anogyra",
+          "lat": 34.7389,
+          "lng": 32.729,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal quarry accident at Anogyra; village/district centroid used pending exact quarry coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Truck driver crushed to death",
+          "url": "https://archive.cyprus-mail.com/2014/07/05/truck-driver-crushed-to-death/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2014-07-05"
+        }
+      ]
     }
   ]
 }
