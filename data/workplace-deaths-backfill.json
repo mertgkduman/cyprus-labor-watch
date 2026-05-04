@@ -1910,6 +1910,44 @@
           "published_at": "2012-03-09"
         }
       ]
+    },
+    {
+      "id": "mandria-unnamed-farmer-tractor-crush-february-2012",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Unnamed farmer dies after being crushed by tractor in Mandria",
+      "summary": "An unnamed 65-year-old farmer died in Mandria, Paphos, after falling from the driver's seat of his tractor and being crushed under its wheels while checking on his olive trees. The report said the tractor was reportedly not fitted with a protective rail.",
+      "worker_name": "Name not published",
+      "worker_age": 65,
+      "employer": "Self-employed farmer or employer not named in source",
+      "sector": "Agriculture",
+      "cause": "Crushed by tractor after falling from driver's seat while checking olive trees",
+      "death_date": "2012-02-23",
+      "legal_status": "Taken to Paphos General Hospital and pronounced dead on arrival according to source",
+      "last_verified_at": "2012-02-24",
+      "locations": [
+        {
+          "id": "mandria-tractor-crush-unnamed-farmer",
+          "label": "Mandria olive-field tractor worksite",
+          "province_key": "PAPHOS",
+          "province": "Paphos / Pafos",
+          "district": "Mandria",
+          "lat": 34.7153,
+          "lng": 32.5317,
+          "geocode_precision": "area_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal tractor accident in Mandria, Paphos, while the farmer was checking olive trees; village area centroid used pending exact field coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Paphos man dies under tractor",
+          "url": "https://archive.cyprus-mail.com/2012/02/24/paphos-man-dies-under-tractor/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2012-02-24"
+        }
+      ]
     }
   ]
 }
