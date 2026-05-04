@@ -2827,6 +2827,44 @@
           "published_at": "2007-05-01"
         }
       ]
+    },
+    {
+      "id": "limassol-hassan-birol-air-shaft-fall-july-2006",
+      "record_type": "worker_death",
+      "status": "fatality_recorded",
+      "title": "Hassan Birol dies after 12-metre fall from Limassol apartment air shaft",
+      "summary": "Hassan Birol, a 46-year-old worker from Limassol, died after falling 12 metres at an apartment-complex construction site in central Limassol. The source says he was working on an air shaft when he lost his balance, and state radio reported there was no scaffolding or protective measures at the site.",
+      "worker_name": "Hassan Birol",
+      "worker_age": 46,
+      "employer": "Apartment-complex construction contractor not named in source",
+      "sector": "Construction",
+      "cause": "Fall from height while working on apartment-complex air shaft",
+      "death_date": "2006-07-03",
+      "legal_status": "Local labour bureau inspector cited lack of safety measures; work was suspended and the contractor and building owner were arrested according to source",
+      "last_verified_at": "2006-07-04",
+      "locations": [
+        {
+          "id": "limassol-apartment-air-shaft-fall-hassan-birol",
+          "label": "Central Limassol apartment-complex construction site",
+          "province_key": "LIMASSOL",
+          "province": "Limassol / Lemesos",
+          "district": "Limassol",
+          "lat": 34.7071,
+          "lng": 33.0226,
+          "geocode_precision": "district_centroid",
+          "fatality_count": 1,
+          "location_basis": "Source places the fatal fall at an apartment-complex construction site in central Limassol; city centroid used pending exact building coordinates."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Builder falls to his death",
+          "url": "https://archive.cyprus-mail.com/2006/07/04/builder-falls-to-his-death/",
+          "publisher": "Cyprus Mail archive",
+          "type": "labor_news",
+          "published_at": "2006-07-04"
+        }
+      ]
     }
   ]
 }
