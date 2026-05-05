@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04",
+  "updated_at": "2026-05-05",
   "description": "Supplemental northern Cyprus records sourced from Turkish-language public reporting.",
   "records": [
     {
@@ -617,6 +617,299 @@
             "Ο εργάτης έπεσε περίπου 6,85 μέτρα από τη στέγη του εργοστασίου κατά την εγκατάσταση φωτοβολταϊκών.",
             "Ο εργάτης πέθανε στη μονάδα εντατικής θεραπείας του κρατικού νοσοκομείου Dr. Burhan Nalbantoglu.",
             "Η Kibris Postasi ανέφερε δύο συλλήψεις και συνεχιζόμενη αστυνομική έρευνα."
+          ]
+        }
+      }
+    },
+    {
+      "id": "ktoeos-full-day-education-school-strikes-may-2026",
+      "record_type": "strike",
+      "status": "ongoing",
+      "action_type": "legal_strike",
+      "title": "KTOEÖS partial school strikes against full-day education imposition",
+      "summary": "KTOEÖS announced and continued partial afternoon strike/action in schools in İskele, Karpaz, Gazimağusa and surrounding areas against the government's full-day education programme. The union said the programme was imposed without making the problems visible or sustainable and linked the action to teachers' rights, working conditions and public education quality.",
+      "employer": "Education authorities in northern Cyprus",
+      "labor_organization": "KTOEÖS",
+      "sector": "Education",
+      "decision_date": "2026-05-03",
+      "start_date": "2026-05-04",
+      "demands": [
+        "Withdrawal or revision of the full-day education implementation",
+        "Protection of teachers' rights and working conditions",
+        "Adequate school infrastructure and planning",
+        "Public, secular and scientific education"
+      ],
+      "last_verified_at": "2026-05-05",
+      "locations": [
+        {
+          "id": "iskele-schools-ktoeos-may-2026",
+          "label": "İskele schools",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "İskele",
+          "lat": 35.286,
+          "lng": 33.891,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources identify İskele-region schools for the afternoon strike/action; İskele area centroid used pending school-by-school coordinates."
+        },
+        {
+          "id": "karpaz-schools-ktoeos-may-2026",
+          "label": "Karpaz schools",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Karpaz",
+          "lat": 35.596,
+          "lng": 34.352,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources identify Karpaz-region schools for the afternoon strike/action; regional centroid used pending school-by-school coordinates."
+        },
+        {
+          "id": "gazimagusa-schools-ktoeos-may-2026",
+          "label": "Gazimağusa schools",
+          "province_key": "FAMAGUSTA",
+          "province": "Famagusta / Ammochostos",
+          "district": "Gazimağusa",
+          "lat": 35.125,
+          "lng": 33.95,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources identify Gazimağusa and surrounding schools for the afternoon strike/action; Famagusta area centroid used pending school-by-school coordinates."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-03",
+          "status": "decision_taken",
+          "note": "Turkish-language reporting said KTOEÖS would strike the next afternoon in İskele, Karpaz, Gazimağusa and surrounding schools."
+        },
+        {
+          "date": "2026-05-04",
+          "status": "ongoing",
+          "note": "KTOEÖS published its notice saying the afternoon partial strike/action would be implemented in the listed regions."
+        },
+        {
+          "date": "2026-05-05",
+          "status": "ongoing",
+          "note": "MHA reported that KTOEÖS was in partial strike/action against full-day education in the relevant regions."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Sahte Tam Gun dayatmasina karsi Iskele, Karpaz, Magusa ve Magusa cevre bolgesi okullarimizda ogleden sonra eylem grevdeyiz",
+          "url": "https://www.ktoeos.org/sahte-tam-gun-mucadelemiz-devam-ediyor-iskele-karpaz-magusa-ve-magusa-cevre-bolgesi-okullarimizda-ogleden-sonra-eylem-grevdeyiz/",
+          "publisher": "KTOEÖS",
+          "type": "union",
+          "published_at": "2026-05-04"
+        },
+        {
+          "title": "KTOEOS, Iskele, Karpaz, Gazimagusa ve cevredeki okullarda grev yapacak",
+          "url": "https://www.gundemkibris.com/ktoeos-iskele-karpaz-gazimagusa-ve-cevredeki-okullarda-grev-yapacak",
+          "publisher": "Gündem Kıbrıs",
+          "type": "labor_news",
+          "published_at": "2026-05-03"
+        },
+        {
+          "title": "KTOEOS, 4 bolgede tam gun egitime karsi grevde",
+          "url": "https://www.mhahaber.com/ktoeos-4-bolgede-tam-gun-egitime-karsi-grevde",
+          "publisher": "MHA Haber",
+          "type": "labor_news",
+          "published_at": "2026-05-05"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "KTOEÖS'ün tam gün eğitim dayatmasına karşı kısmi okul grevleri",
+          "summary": "KTOEÖS, hükümetin tam gün eğitim programına karşı 4-5 Mayıs'ta İskele, Karpaz, Gazimağusa ve çevre okullarında öğleden sonra kısmi grev/eylem duyurdu ve sürdürdü. Sendika, uygulamanın sorunları görünür kılmadan ve sürdürülebilirlik sağlanmadan dayatıldığını belirterek eylemi öğretmen hakları, çalışma koşulları ve kamusal eğitimin niteliğiyle ilişkilendirdi.",
+          "demands": [
+            "Tam gün eğitim uygulamasının geri çekilmesi veya değiştirilmesi",
+            "Öğretmen hakları ve çalışma koşullarının korunması",
+            "Okullarda yeterli altyapı ve planlama",
+            "Kamusal, laik ve bilimsel eğitim"
+          ],
+          "locations": {
+            "iskele-schools-ktoeos-may-2026": {
+              "label": "İskele okulları",
+              "location_basis": "Kaynaklar öğleden sonra grev/eylem için İskele bölgesi okullarını belirtiyor; okul bazında koordinatlar yayımlanmadığı için İskele bölge merkezi kullanıldı."
+            },
+            "karpaz-schools-ktoeos-may-2026": {
+              "label": "Karpaz okulları",
+              "location_basis": "Kaynaklar öğleden sonra grev/eylem için Karpaz bölgesi okullarını belirtiyor; okul bazında koordinatlar yayımlanmadığı için bölge merkezi kullanıldı."
+            },
+            "gazimagusa-schools-ktoeos-may-2026": {
+              "label": "Gazimağusa okulları",
+              "location_basis": "Kaynaklar öğleden sonra grev/eylem için Gazimağusa ve çevre okullarını belirtiyor; okul bazında koordinatlar yayımlanmadığı için Gazimağusa bölge merkezi kullanıldı."
+            }
+          },
+          "timeline": [
+            "Türkçe haberler KTOEÖS'ün ertesi öğleden sonra İskele, Karpaz, Gazimağusa ve çevre okullarında greve gideceğini bildirdi.",
+            "KTOEÖS, belirtilen bölgelerde öğleden sonra kısmi grev/eylem uygulanacağını duyurdu.",
+            "MHA, KTOEÖS'ün ilgili bölgelerde tam gün eğitime karşı kısmi grev/eylemde olduğunu bildirdi."
+          ],
+          "sources": [
+            {
+              "title": "KTOEÖS: Sahte tam gün dayatmasına karşı İskele, Karpaz ve Mağusa bölgesi okullarında grev/eylemdeyiz"
+            },
+            {
+              "title": "Gündem Kıbrıs: KTOEÖS İskele, Karpaz ve Gazimağusa çevresindeki okullarda grev yapacak"
+            },
+            {
+              "title": "MHA Haber: KTOEÖS 4 bölgede tam gün eğitime karşı grevde"
+            }
+          ]
+        },
+        "el": {
+          "title": "Μερικές σχολικές απεργίες της KTOEÖS ενάντια στην επιβολή ολοήμερης εκπαίδευσης",
+          "summary": "Η KTOEÖS ανακοίνωσε και συνέχισε μερική απογευματινή απεργία/δράση στις 4-5 Μαΐου σε σχολεία στην İskele, στην Karpaz, στη Gazimağusa και γύρω περιοχές ενάντια στο κυβερνητικό πρόγραμμα ολοήμερης εκπαίδευσης. Η συντεχνία συνέδεσε τη δράση με τα δικαιώματα των εκπαιδευτικών, τις συνθήκες εργασίας και την ποιότητα της δημόσιας εκπαίδευσης.",
+          "demands": [
+            "Απόσυρση ή αναθεώρηση της εφαρμογής ολοήμερης εκπαίδευσης",
+            "Προστασία των δικαιωμάτων και των συνθηκών εργασίας των εκπαιδευτικών",
+            "Επαρκείς σχολικές υποδομές και σχεδιασμός",
+            "Δημόσια, κοσμική και επιστημονική εκπαίδευση"
+          ],
+          "locations": {
+            "iskele-schools-ktoeos-may-2026": {
+              "label": "Σχολεία στην İskele",
+              "location_basis": "Οι πηγές αναφέρουν σχολεία της περιοχής İskele για την απογευματινή απεργία/δράση. Χρησιμοποιείται κεντρικό σημείο της περιοχής μέχρι να δημοσιευθούν συντεταγμένες ανά σχολείο."
+            },
+            "karpaz-schools-ktoeos-may-2026": {
+              "label": "Σχολεία στην Karpaz",
+              "location_basis": "Οι πηγές αναφέρουν σχολεία της περιοχής Karpaz για την απογευματινή απεργία/δράση. Χρησιμοποιείται κεντρικό σημείο της περιοχής μέχρι να δημοσιευθούν συντεταγμένες ανά σχολείο."
+            },
+            "gazimagusa-schools-ktoeos-may-2026": {
+              "label": "Σχολεία στη Gazimağusa",
+              "location_basis": "Οι πηγές αναφέρουν σχολεία στη Gazimağusa και γύρω περιοχές για την απογευματινή απεργία/δράση. Χρησιμοποιείται κεντρικό σημείο της περιοχής μέχρι να δημοσιευθούν συντεταγμένες ανά σχολείο."
+            }
+          },
+          "timeline": [
+            "Τουρκόφωνες αναφορές μετέδωσαν ότι η KTOEÖS θα απεργούσε το επόμενο απόγευμα σε σχολεία της İskele, της Karpaz, της Gazimağusa και γύρω περιοχών.",
+            "Η KTOEÖS δημοσίευσε ανακοίνωση για απογευματινή μερική απεργία/δράση στις συγκεκριμένες περιοχές.",
+            "Το MHA ανέφερε ότι η KTOEÖS βρισκόταν σε μερική απεργία/δράση ενάντια στην ολοήμερη εκπαίδευση στις σχετικές περιοχές."
+          ],
+          "sources": [
+            {
+              "title": "KTOEÖS: Απεργία/δράση στα σχολεία İskele, Karpaz και Mağusa ενάντια στην επιβολή του «ψεύτικου ολοήμερου»"
+            },
+            {
+              "title": "Gündem Kıbrıs: Η KTOEÖS θα απεργήσει στα σχολεία γύρω από İskele, Karpaz και Gazimağusa"
+            },
+            {
+              "title": "MHA Haber: Η KTOEÖS απεργεί σε τέσσερις περιοχές ενάντια στην ολοήμερη εκπαίδευση"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "kar-is-student-transport-stoppage-call-may-2026",
+      "record_type": "action_call",
+      "status": "action_call_upcoming",
+      "action_type": "bargaining_dispute",
+      "title": "Kar-İş decision to stop student transport over unpaid fees",
+      "summary": "Kar-İş said student transport services would stop from 6 May 2026 until problems are resolved, arguing that the government had not paid student transport fees for about four months and that operators and workers were exhausted by fuel, maintenance and personnel costs.",
+      "employer": "Government-funded student transport services in northern Cyprus",
+      "labor_organization": "Kar-İş",
+      "sector": "Transport / education services",
+      "decision_date": "2026-05-05",
+      "event_date": "2026-05-06",
+      "demands": [
+        "Payment of overdue student transport fees",
+        "Resolution of transport-sector arrears",
+        "Protection of transport operators and employees from insolvency pressure"
+      ],
+      "last_verified_at": "2026-05-05",
+      "locations": [
+        {
+          "id": "north-cyprus-student-transport-kar-is-may-2026",
+          "label": "Northern Cyprus student transport services",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "Northern Cyprus",
+          "lat": 35.1856,
+          "lng": 33.3823,
+          "geocode_precision": "area_centroid",
+          "location_basis": "Sources describe a sector-wide student transport stoppage in northern Cyprus; Nicosia area point used for map placement pending route-level details."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-04",
+          "status": "action_call_upcoming",
+          "note": "Kar-İş warned that student transport could stop because operators had not been paid for several months."
+        },
+        {
+          "date": "2026-05-05",
+          "status": "decision_taken",
+          "note": "Kar-İş announced that student transport would be stopped from the next day until the payment problem is resolved."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Kar-Is Baskani Topaloglu: Ogrenci tasimaciligi durabilir",
+          "url": "https://www.kibrismanset.com/kar-is-baskani-topaloglu-ogrenci-tasimaciligi-durabilir",
+          "publisher": "Kıbrıs Manşet",
+          "type": "labor_news",
+          "published_at": "2026-05-04"
+        },
+        {
+          "title": "Kar-Is ogrenci tasimaciligini durdurma karari aldi",
+          "url": "https://www.kibristurk.com/kar-is-ogrenci-tasimaciligini-durdurma-karari-aldi",
+          "publisher": "Kıbrıs Türk Haber",
+          "type": "labor_news",
+          "published_at": "2026-05-05"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Kar-İş'in ödenmeyen ücretler nedeniyle öğrenci taşımacılığını durdurma kararı",
+          "summary": "Kar-İş, öğrenci taşımacılığı hizmetlerinin 6 Mayıs 2026'dan itibaren sorunlar giderilene kadar durdurulacağını açıkladı. Dernek, hükümetin yaklaşık dört aydır öğrenci taşımacılığı ücretlerini ödemediğini, yakıt, bakım ve personel maliyetleri nedeniyle esnafın ve çalışanların tükendiğini söyledi.",
+          "demands": [
+            "Geciken öğrenci taşımacılığı ücretlerinin ödenmesi",
+            "Taşımacılık sektöründeki ödeme sorununun çözülmesi",
+            "Taşımacılar ve çalışanların iflas baskısından korunması"
+          ],
+          "locations": {
+            "north-cyprus-student-transport-kar-is-may-2026": {
+              "label": "Kuzey Kıbrıs öğrenci taşımacılığı hizmetleri",
+              "location_basis": "Kaynaklar kuzey Kıbrıs'ta sektör genelinde öğrenci taşımacılığının durdurulacağını bildiriyor; güzergah ayrıntıları yayımlanana kadar harita yerleşimi için Lefkoşa bölge noktası kullanıldı."
+            }
+          },
+          "timeline": [
+            "Kar-İş, birkaç aydır ödeme yapılmadığı için öğrenci taşımacılığının durabileceği uyarısında bulundu.",
+            "Kar-İş, ödeme sorunu çözülene kadar öğrenci taşımacılığının ertesi günden itibaren durdurulacağını açıkladı."
+          ],
+          "sources": [
+            {
+              "title": "Kıbrıs Manşet: Kar-İş Başkanı Topaloğlu öğrenci taşımacılığı durabilir dedi"
+            },
+            {
+              "title": "Kıbrıs Türk Haber: Kar-İş öğrenci taşımacılığını durdurma kararı aldı"
+            }
+          ]
+        },
+        "el": {
+          "title": "Απόφαση της Kar-İş για διακοπή μεταφοράς μαθητών λόγω απλήρωτων οφειλών",
+          "summary": "Η Kar-İş ανακοίνωσε ότι οι υπηρεσίες μεταφοράς μαθητών θα σταματήσουν από τις 6 Μαΐου 2026 μέχρι να λυθούν τα προβλήματα. Η οργάνωση υποστήριξε ότι η κυβέρνηση δεν έχει πληρώσει τέλη μεταφοράς μαθητών για περίπου τέσσερις μήνες και ότι οι μεταφορείς και οι εργαζόμενοι εξαντλούνται από τα κόστη καυσίμων, συντήρησης και προσωπικού.",
+          "demands": [
+            "Πληρωμή των καθυστερημένων τελών μεταφοράς μαθητών",
+            "Επίλυση των οφειλών στον κλάδο των μεταφορών",
+            "Προστασία μεταφορέων και εργαζομένων από την πίεση αφερεγγυότητας"
+          ],
+          "locations": {
+            "north-cyprus-student-transport-kar-is-may-2026": {
+              "label": "Υπηρεσίες μεταφοράς μαθητών στη βόρεια Κύπρο",
+              "location_basis": "Οι πηγές περιγράφουν κλαδική διακοπή μεταφοράς μαθητών στη βόρεια Κύπρο. Χρησιμοποιείται σημείο της περιοχής Λευκωσίας για τοποθέτηση στον χάρτη μέχρι να δημοσιευθούν λεπτομέρειες ανά διαδρομή."
+            }
+          },
+          "timeline": [
+            "Η Kar-İş προειδοποίησε ότι η μεταφορά μαθητών μπορεί να σταματήσει επειδή οι μεταφορείς δεν έχουν πληρωθεί για αρκετούς μήνες.",
+            "Η Kar-İş ανακοίνωσε ότι η μεταφορά μαθητών θα σταματήσει από την επόμενη ημέρα μέχρι να λυθεί το πρόβλημα πληρωμών."
+          ],
+          "sources": [
+            {
+              "title": "Kıbrıs Manşet: Ο πρόεδρος της Kar-İş προειδοποίησε ότι η μεταφορά μαθητών μπορεί να σταματήσει"
+            },
+            {
+              "title": "Kıbrıs Türk Haber: Η Kar-İş αποφάσισε τη διακοπή της μεταφοράς μαθητών"
+            }
           ]
         }
       }

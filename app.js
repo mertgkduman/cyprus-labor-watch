@@ -1204,8 +1204,8 @@ function normalizeRecord(raw) {
       note: item.note || "",
     })),
     translations: {
-      ...(raw.translations || {}),
       ...(RECORD_TRANSLATIONS[String(raw.id || raw.public_id || "")] || {}),
+      ...(raw.translations || {}),
     },
   };
 

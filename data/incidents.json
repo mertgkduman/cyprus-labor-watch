@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-03",
+  "updated_at": "2026-05-05",
   "description": "Reviewed Cyprus Labor Watch MVP records. Public records must keep at least one stable public source URL.",
   "records": [
     {
@@ -681,7 +681,7 @@
       "status": "action_call_happened",
       "action_type": "solidarity_action",
       "title": "PEO May Day gatherings and Ledra Palace joint march",
-      "summary": "PEO announced May Day gatherings across Cyprus for 2026, including a central Nicosia gathering at Eleftheria Square and a march to join Turkish Cypriot unions at Ledra Palace in the buffer zone.",
+      "summary": "Workers and trade union members held May Day gatherings across Cyprus in 2026, including a central Nicosia gathering at Eleftheria Square and marches from both sides of the divided capital to Ledra Palace in the buffer zone.",
       "labor_organization": "PEO and Turkish Cypriot unions",
       "sector": "Multi-sector",
       "event_date": "2026-05-01",
@@ -691,7 +691,7 @@
         "Collective action",
         "Bicommunal labour solidarity"
       ],
-      "last_verified_at": "2026-04-27",
+      "last_verified_at": "2026-05-02",
       "locations": [
         {
           "id": "eleftheria-square-may-day-2026",
@@ -712,6 +712,17 @@
           "lat": 35.1746,
           "lng": 33.3548,
           "geocode_precision": "venue_approx"
+        },
+        {
+          "id": "kugulu-park-may-day-2026",
+          "label": "Kugulu Park / Kyrenia Gate",
+          "province_key": "NICOSIA",
+          "province": "Nicosia / Lefkosia",
+          "district": "North Nicosia",
+          "lat": 35.1816,
+          "lng": 33.3599,
+          "geocode_precision": "venue_approx",
+          "location_basis": "Cyprus Inform reported that the Turkish Cypriot march began at Kugulu Park in the northern old-town moat before going to Ledra Palace."
         }
       ],
       "timeline": [
@@ -723,7 +734,7 @@
         {
           "date": "2026-05-01",
           "status": "action_call_happened",
-          "note": "Scheduled date for gatherings and joint march."
+          "note": "Workers and unions held May Day gatherings and marches from Eleftheria Square and Kugulu Park to Ledra Palace."
         }
       ],
       "sources": [
@@ -740,8 +751,104 @@
           "publisher": "Cyprus Mail",
           "type": "labor_news",
           "published_at": "2026-04-27"
+        },
+        {
+          "title": "Workers honoured Labour May Day",
+          "url": "https://peo.org.cy/%CE%BF%CE%B9-%CE%B5%CF%81%CE%B3%CE%B1%CE%B6%CF%8C%CE%BC%CE%B5%CE%BD%CE%BF%CE%B9-%CF%84%CE%AF%CE%BC%CE%B7%CF%83%CE%B1%CE%BD-%CF%84%CE%B7%CE%BD-%CE%B5%CF%81%CE%B3%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CF%80/",
+          "publisher": "PEO",
+          "type": "union",
+          "published_at": "2026-05-02"
+        },
+        {
+          "title": "Cyprus trade unions hold May Day marches to Ledra Palace in Nicosia buffer zone",
+          "url": "https://www.kiprinform.com/en/cyprus_news/cyprus-trade-unions-hold-may-day-marches-to-ledra-palace-in-nicosia-buffer-zone/",
+          "publisher": "Cyprus Inform",
+          "type": "labor_news",
+          "published_at": "2026-05-01"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "PEO 1 Mayıs buluşmaları ve Ledra Palace ortak yürüyüşü",
+          "summary": "İşçiler ve sendika üyeleri 2026'da Kıbrıs genelinde 1 Mayıs buluşmaları düzenledi. Lefkoşa'daki merkezi buluşma Eleftheria Meydanı'nda yapıldı; bölünmüş kentin iki yanından başlayan yürüyüşler ara bölgedeki Ledra Palace'ta birleşti.",
+          "demands": [
+            "İşçi hakları",
+            "Sosyal adalet",
+            "Kolektif eylem",
+            "İki toplumlu emek dayanışması"
+          ],
+          "locations": {
+            "eleftheria-square-may-day-2026": {
+              "label": "Eleftheria Meydanı"
+            },
+            "ledra-palace-may-day-2026": {
+              "label": "Ledra Palace ara bölge buluşma noktası"
+            },
+            "kugulu-park-may-day-2026": {
+              "label": "Kuğulu Park / Girne Kapısı",
+              "location_basis": "Cyprus Inform, Kıbrıslı Türk yürüyüşünün Ledra Palace'a gitmeden önce kuzeydeki eski kent hendeğinde yer alan Kuğulu Park'ta başladığını bildirdi."
+            }
+          },
+          "timeline": [
+            "PEO 1 Mayıs programını yayımladı.",
+            "İşçiler ve sendikalar Eleftheria Meydanı ile Kuğulu Park'tan Ledra Palace'a 1 Mayıs yürüyüşleri düzenledi."
+          ],
+          "sources": [
+            {
+              "title": "PEO'nun Kıbrıs genelindeki 1 Mayıs toplantıları"
+            },
+            {
+              "title": "Cyprus Mail: 1 Mayıs'ta Kıbrıs çözümünün acil gerekliliği vurgulanacak"
+            },
+            {
+              "title": "PEO: İşçiler Emek Bayramı'nı andı"
+            },
+            {
+              "title": "Cyprus Inform: Sendikalar Ledra Palace'a 1 Mayıs yürüyüşleri düzenledi"
+            }
+          ]
+        },
+        "el": {
+          "title": "Πρωτομαγιάτικες συγκεντρώσεις της ΠΕΟ και κοινή πορεία στο Ledra Palace",
+          "summary": "Εργαζόμενοι και μέλη συντεχνιών τίμησαν την Εργατική Πρωτομαγιά του 2026 με εκδηλώσεις σε όλη την Κύπρο. Στη Λευκωσία έγινε κεντρική συγκέντρωση στην πλατεία Ελευθερίας και πορείες από τις δύο πλευρές της διαιρεμένης πόλης προς το Ledra Palace στη νεκρή ζώνη.",
+          "demands": [
+            "Εργατικά δικαιώματα",
+            "Κοινωνική δικαιοσύνη",
+            "Συλλογική δράση",
+            "Δικοινοτική εργατική αλληλεγγύη"
+          ],
+          "locations": {
+            "eleftheria-square-may-day-2026": {
+              "label": "Πλατεία Ελευθερίας"
+            },
+            "ledra-palace-may-day-2026": {
+              "label": "Σημείο συνάντησης Ledra Palace στη νεκρή ζώνη"
+            },
+            "kugulu-park-may-day-2026": {
+              "label": "Πάρκο Kuğulu / Πύλη Κερύνειας",
+              "location_basis": "Το Cyprus Inform ανέφερε ότι η τουρκοκυπριακή πορεία ξεκίνησε από το πάρκο Kuğulu, στην τάφρο της παλιάς πόλης στα βόρεια, πριν κατευθυνθεί προς το Ledra Palace."
+            }
+          },
+          "timeline": [
+            "Η ΠΕΟ δημοσίευσε το πρόγραμμα της Πρωτομαγιάς.",
+            "Εργαζόμενοι και συντεχνίες πραγματοποίησαν πορείες από την πλατεία Ελευθερίας και το πάρκο Kuğulu προς το Ledra Palace."
+          ],
+          "sources": [
+            {
+              "title": "Πρωτομαγιάτικες συγκεντρώσεις της ΠΕΟ σε όλη την Κύπρο"
+            },
+            {
+              "title": "Cyprus Mail: Η επείγουσα ανάγκη για λύση του Κυπριακού θα τονιστεί την Πρωτομαγιά"
+            },
+            {
+              "title": "ΠΕΟ: Οι εργαζόμενοι τίμησαν την Εργατική Πρωτομαγιά"
+            },
+            {
+              "title": "Cyprus Inform: Οι συντεχνίες πορεύτηκαν προς το Ledra Palace την Πρωτομαγιά"
+            }
+          ]
+        }
+      }
     }
   ]
 }
