@@ -116,6 +116,41 @@ a:hover { text-decoration: underline; }
   color: var(--accent-dark);
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang-option {
+  min-width: 42px;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.lang-option:last-child {
+  border-right: 0;
+}
+
+.lang-option:hover {
+  background: var(--surface-strong);
+  color: var(--ink);
+}
+
+.lang-option.active {
+  background: #eef7f7;
+  color: var(--accent-dark);
+}
+
 .primary-btn {
   background: var(--accent);
   border-color: var(--accent);
@@ -889,6 +924,16 @@ input:focus, select:focus, textarea:focus {
     padding: 0 10px;
   }
 
+  .language-switcher {
+    min-height: 36px;
+  }
+
+  .lang-option {
+    min-width: 36px;
+    min-height: 34px;
+    padding: 0 8px;
+  }
+
   #open-submit-btn {
     max-width: 76px;
     overflow: hidden;
@@ -1133,7 +1178,8 @@ input:focus, select:focus, textarea:focus {
     padding: 0 9px;
   }
 
-  #lang-btn {
-    min-width: 42px;
+  .lang-option {
+    min-width: 32px;
+    padding: 0 7px;
   }
 }

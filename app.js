@@ -27,7 +27,7 @@ const AREAS = [
 const AREA_BY_KEY = Object.fromEntries(AREAS.map((item) => [item.key, item]));
 const AREA_BY_NAME = Object.fromEntries(AREAS.map((item) => [item.name, item]));
 
-const LANG_ORDER = ["en", "el", "tr"];
+const LANG_ORDER = ["tr", "en", "el"];
 const RECORD_TYPES = ["worker_death", "strike", "action_call", "union_labor_arrest"];
 const ACTION_TYPES = ["legal_strike", "fiili_wildcat", "protest", "bargaining_dispute", "solidarity_action"];
 const LAYER_ORDER = [
@@ -1347,7 +1347,11 @@ function bindStaticEvents() {
   document.getElementById("list-records-btn").addEventListener("click", () => {
     state.listOpen ? closeRecordList() : renderRecordList();
   });
-  document.getElementById("lang-btn").addEventListener("click", switchLanguage);
+  document.getElementById("language-switcher").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-lang]");
+    if (!button) return;
+    setLanguage(button.dataset.lang);
+  });
   document.getElementById("open-submit-btn").addEventListener("click", () => openModal("submit-modal"));
   document.getElementById("methodology-btn").addEventListener("click", () => openModal("methodology-modal"));
   document.getElementById("sources-btn").addEventListener("click", () => openModal("sources-modal"));
@@ -1366,9 +1370,9 @@ function bindStaticEvents() {
   document.getElementById("submission-form").addEventListener("submit", submitReport);
 }
 
-function switchLanguage() {
-  const currentIndex = LANG_ORDER.indexOf(state.lang);
-  state.lang = LANG_ORDER[(currentIndex + 1) % LANG_ORDER.length];
+function setLanguage(lang) {
+  if (!LANG_ORDER.includes(lang) || lang === state.lang) return;
+  state.lang = lang;
   state.search = document.getElementById("search-input").value.trim().toLocaleLowerCase(localeForLang());
   populateControls();
   applyTranslations();
@@ -1411,10 +1415,11 @@ function applyTranslations() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     node.placeholder = t(node.dataset.i18nPlaceholder);
   });
-  const nextLang = LANG_ORDER[(LANG_ORDER.indexOf(state.lang) + 1) % LANG_ORDER.length].toUpperCase();
-  const langButton = document.getElementById("lang-btn");
-  langButton.textContent = nextLang;
-  langButton.setAttribute("aria-label", `Switch language to ${nextLang}`);
+  document.querySelectorAll("#language-switcher [data-lang]").forEach((button) => {
+    const active = button.dataset.lang === state.lang;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
 }
 
 function applyFilters() {
