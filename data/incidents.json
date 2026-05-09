@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05",
+  "updated_at": "2026-05-08",
   "description": "Reviewed Cyprus Labor Watch MVP records. Public records must keep at least one stable public source URL.",
   "records": [
     {
@@ -845,6 +845,153 @@
             },
             {
               "title": "Cyprus Inform: Οι συντεχνίες πορεύτηκαν προς το Ledra Palace την Πρωτομαγιά"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "rizoelia-livestock-farmers-protest-may-2026",
+      "record_type": "action_call",
+      "status": "action_call_happened",
+      "action_type": "protest",
+      "title": "Livestock farmers' Rizoelia roundabout protest over foot-and-mouth measures",
+      "summary": "The group Voice of Livestock Farmers called a protest for 8 May 2026 at the Rizoelia roundabout over the handling of foot-and-mouth disease measures, culling, losses, and compensation. Public reporting said police would be deployed to maintain public order and traffic flow, while organisers said the action would take place around 11:00 at the roundabout.",
+      "labor_organization": "Voice of Livestock Farmers",
+      "sector": "Livestock farming",
+      "event_date": "2026-05-08",
+      "demands": [
+        "Resolution of foot-and-mouth disease measures affecting livestock farmers",
+        "Compensation and support for livestock farmers' losses",
+        "Dialogue with public authorities"
+      ],
+      "last_verified_at": "2026-05-08",
+      "locations": [
+        {
+          "id": "rizoelia-roundabout-livestock-protest-may-2026",
+          "label": "Rizoelia roundabout",
+          "province_key": "LARNACA",
+          "province": "Larnaca / Larnaka",
+          "district": "Rizoelia / Aradippou",
+          "lat": 34.949,
+          "lng": 33.586,
+          "geocode_precision": "venue_approx",
+          "location_basis": "Sources place the protest at or around the Rizoelia roundabout, including the motorway junction connecting Larnaca with Nicosia and Ayia Napa; approximate interchange point used."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-06",
+          "status": "action_call_upcoming",
+          "note": "Public reporting from CNA/Politis said livestock farmers would gather again at Rizoelia roundabout on 8 May at 11:00."
+        },
+        {
+          "date": "2026-05-07",
+          "status": "action_call_upcoming",
+          "note": "Cyprus Mail reported police would be deployed in the Rizoelia area for the planned protest."
+        },
+        {
+          "date": "2026-05-08",
+          "status": "action_call_happened",
+          "note": "Planned protest date at Rizoelia roundabout over foot-and-mouth disease measures and compensation."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Police presence planned in Rizoelia ahead of farmers' protest",
+          "url": "https://cyprus-mail.com/2026/05/07/police-presence-planned-in-rizoelia-ahead-of-farmers-protest",
+          "publisher": "Cyprus Mail",
+          "type": "labor_news",
+          "published_at": "2026-05-07"
+        },
+        {
+          "title": "Livestock Farmers Decide on Fresh Protest at Rizoelia on Friday",
+          "url": "https://en.politis.com.cy/social-lens/1003093/livestock-farmers-decide-on-fresh-protest-at-rizoelia-on-friday",
+          "publisher": "Politis / CNA",
+          "type": "labor_news",
+          "published_at": "2026-05-06"
+        },
+        {
+          "title": "Livestock farmers plan new protest tomorrow at Rizoelia roundabout",
+          "url": "https://knews.kathimerini.com.cy/en/news/livestock-farmers-plan-new-protest-at-rizoelia-roundabout",
+          "publisher": "KNEWS / Kathimerini Cyprus",
+          "type": "labor_news",
+          "published_at": "2026-05-07"
+        },
+        {
+          "title": "Hayvancılar 8 Mayıs'ta yeni bir protesto düzenleyecek",
+          "url": "https://tr.news.rik.cy/tr/article/2026/5/6/hayvancilar-8-mayista-yeni-bir-protesto-duzenleyecek/",
+          "publisher": "RIK News",
+          "type": "labor_news",
+          "published_at": "2026-05-06"
+        }
+      ],
+      "translations": {
+        "tr": {
+          "title": "Hayvancılardan şap hastalığı önlemleri için Rizoelia kavşağı protestosu",
+          "summary": "Hayvancıların Sesi grubu, şap hastalığına ilişkin önlemler, hayvan itlafları, kayıplar ve tazminat sürecinin ele alınışına karşı 8 Mayıs 2026'da Rizoelia kavşağında protesto çağrısı yaptı. Kamuya açık haberlerde polisin kamu düzenini ve trafik akışını korumak için bölgede olacağı, örgütleyicilerin ise eylemin saat 11:00 civarında kavşakta yapılacağını söylediği aktarıldı.",
+          "demands": [
+            "Hayvancıları etkileyen şap hastalığı önlemlerine çözüm",
+            "Hayvancıların kayıpları için tazminat ve destek",
+            "Kamu makamlarıyla diyalog"
+          ],
+          "locations": {
+            "rizoelia-roundabout-livestock-protest-may-2026": {
+              "label": "Rizoelia kavşağı",
+              "location_basis": "Kaynaklar protestoyu Rizoelia kavşağına ve Larnaka'yı Lefkoşa ile Ayia Napa'ya bağlayan otoyol kavşağı çevresine yerleştiriyor; yaklaşık kavşak noktası kullanıldı."
+            }
+          },
+          "timeline": [
+            "CNA/Politis kaynaklı haberler, hayvancıların 8 Mayıs saat 11:00'de Rizoelia kavşağında yeniden toplanacağını bildirdi.",
+            "Cyprus Mail, planlanan protesto için polisin Rizoelia bölgesinde konuşlandırılacağını bildirdi.",
+            "Şap hastalığı önlemleri ve tazminat talepleri nedeniyle Rizoelia kavşağındaki planlanan protesto tarihi."
+          ],
+          "sources": [
+            {
+              "title": "Cyprus Mail: Hayvancı protestosu öncesinde Rizoelia'da polis varlığı planlandı"
+            },
+            {
+              "title": "Politis / CNA: Hayvancılar cuma günü Rizoelia'da yeni protesto kararı aldı"
+            },
+            {
+              "title": "KNEWS: Hayvancılar Rizoelia kavşağında yeni protesto planlıyor"
+            },
+            {
+              "title": "RIK News: Hayvancılar 8 Mayıs'ta yeni bir protesto düzenleyecek"
+            }
+          ]
+        },
+        "el": {
+          "title": "Διαμαρτυρία κτηνοτρόφων στον κυκλικό κόμβο Ριζοελιάς για τα μέτρα αφθώδους πυρετού",
+          "summary": "Η Φωνή των Κτηνοτρόφων κάλεσε σε διαμαρτυρία στις 8 Μαΐου 2026 στον κυκλικό κόμβο Ριζοελιάς για τον χειρισμό των μέτρων κατά του αφθώδους πυρετού, των θανατώσεων ζώων, των απωλειών και των αποζημιώσεων. Δημόσιες αναφορές ανέφεραν ότι η αστυνομία θα βρισκόταν στην περιοχή για τη διατήρηση της δημόσιας τάξης και της κυκλοφορίας, ενώ οι διοργανωτές είπαν ότι η κινητοποίηση θα γινόταν γύρω στις 11:00 στον κόμβο.",
+          "demands": [
+            "Επίλυση των μέτρων για τον αφθώδη πυρετό που επηρεάζουν τους κτηνοτρόφους",
+            "Αποζημίωση και στήριξη για τις απώλειες των κτηνοτρόφων",
+            "Διάλογος με τις δημόσιες αρχές"
+          ],
+          "locations": {
+            "rizoelia-roundabout-livestock-protest-may-2026": {
+              "label": "Κυκλικός κόμβος Ριζοελιάς",
+              "location_basis": "Οι πηγές τοποθετούν τη διαμαρτυρία στον κυκλικό κόμβο Ριζοελιάς και στον οδικό κόμβο που συνδέει τη Λάρνακα με τη Λευκωσία και την Αγία Νάπα. Χρησιμοποιήθηκε προσεγγιστικό σημείο του κόμβου."
+            }
+          },
+          "timeline": [
+            "Δημόσιες αναφορές από ΚΥΠΕ/Politis ανέφεραν ότι οι κτηνοτρόφοι θα συγκεντρώνονταν ξανά στον κυκλικό κόμβο Ριζοελιάς στις 8 Μαΐου στις 11:00.",
+            "Το Cyprus Mail ανέφερε ότι η αστυνομία θα αναπτυσσόταν στην περιοχή Ριζοελιάς για την προγραμματισμένη διαμαρτυρία.",
+            "Προγραμματισμένη ημερομηνία διαμαρτυρίας στον κυκλικό κόμβο Ριζοελιάς για τα μέτρα αφθώδους πυρετού και τις αποζημιώσεις."
+          ],
+          "sources": [
+            {
+              "title": "Cyprus Mail: Προγραμματίστηκε αστυνομική παρουσία στη Ριζοελιά πριν από τη διαμαρτυρία των κτηνοτρόφων"
+            },
+            {
+              "title": "Politis / ΚΥΠΕ: Οι κτηνοτρόφοι αποφάσισαν νέα διαμαρτυρία στη Ριζοελιά την Παρασκευή"
+            },
+            {
+              "title": "KNEWS: Οι κτηνοτρόφοι σχεδιάζουν νέα διαμαρτυρία στον κυκλικό κόμβο Ριζοελιάς"
+            },
+            {
+              "title": "RIK News: Οι κτηνοτρόφοι θα πραγματοποιήσουν νέα διαμαρτυρία στις 8 Μαΐου"
             }
           ]
         }

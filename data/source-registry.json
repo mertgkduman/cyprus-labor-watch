@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05",
+  "updated_at": "2026-05-08",
   "purpose": "Regular update checklist and archive of source URLs used in Cyprus Labor Watch public data. When a source is used for a public record, keep the exact URL, title, publisher, date, source type, and related data file here.",
   "archive_policy": [
     "Prefer stable article, report, official statement, or union statement URLs over category pages.",
@@ -1013,9 +1013,11 @@
         "https://cyprus-mail.com/2026/03/18/education-support-staff-to-stage-24-hour-strike-on-march-26",
         "https://cyprus-mail.com/2026/03/21/wolt-recruiter-threatens-striking-riders-with-the-sack",
         "https://cyprus-mail.com/2026/04/27/urgent-need-for-cyprus-solution-to-be-highlighted-on-may-day",
+        "https://cyprus-mail.com/2026/05/07/police-presence-planned-in-rizoelia-ahead-of-farmers-protest",
         "https://en.politis.com.cy/politics/997139/strikes-continue-in-the-north-for-another-day",
         "https://en.politis.com.cy/politics/politics-cyprus-divided/996911/calls-grow-for-ruling-coalition-to-step-down-over-cola-cuts",
         "https://en.politis.com.cy/social-lens/998907/eac-workers-to-stage-24-hour-strike-on-april-23",
+        "https://en.politis.com.cy/social-lens/1003093/livestock-farmers-decide-on-fresh-protest-at-rizoelia-on-friday",
         "https://en.sigmalive.com/protests-during-turkish-cypriot-strike-over-cost-of-living-adjustments/",
         "https://in-cyprus.philenews.com/insider/eac-workers-strike-thursday-april-23-2026/",
         "https://in-cyprus.philenews.com/insider/wolt-delivery-riders-limassol-industrial-action-pay-rates-live/",
@@ -1026,7 +1028,9 @@
         "https://peo.org.cy/%CE%BF%CE%B9-%CE%B5%CF%81%CE%B3%CE%B1%CE%B6%CF%8C%CE%BC%CE%B5%CE%BD%CE%BF%CE%B9-%CF%84%CE%AF%CE%BC%CE%B7%CF%83%CE%B1%CE%BD-%CF%84%CE%B7%CE%BD-%CE%B5%CF%81%CE%B3%CE%B1%CF%84%CE%B9%CE%BA%CE%AE-%CF%80/",
         "https://peo.org.cy/%CF%80%CF%81%CF%89%CF%84%CE%BF%CE%BC%CE%B1%CE%B3%CE%B9%CE%AC%CF%84%CE%B9%CE%BA%CE%B5%CF%82-%CF%83%CF%85%CE%B3%CE%BA%CE%B5%CE%BD%CF%84%CF%81%CF%8E%CF%83%CE%B5%CE%B9%CF%82-%CF%84%CE%B7%CF%82-%CF%80/",
         "https://www.cna.org.cy/en/article/9052449/three-hour-general-strike-over-cola-in-cyprus-several-sectors-affected",
-        "https://www.cna.org.cy/press-release/article/10002597/anakoinosi-typoy-sek"
+        "https://www.cna.org.cy/press-release/article/10002597/anakoinosi-typoy-sek",
+        "https://knews.kathimerini.com.cy/en/news/livestock-farmers-plan-new-protest-at-rizoelia-roundabout",
+        "https://tr.news.rik.cy/tr/article/2026/5/6/hayvancilar-8-mayista-yeni-bir-protesto-duzenleyecek/"
       ]
     },
     {
