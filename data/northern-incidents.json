@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-05",
+  "updated_at": "2026-05-08",
   "description": "Supplemental northern Cyprus records sourced from Turkish-language public reporting.",
   "records": [
     {
@@ -96,6 +96,17 @@
             "İşçiler, sendikalaşma ve toplu sözleşme taleplerine işten çıkarma baskısıyla karşılık verilmesi üzerine greve başladı.",
             "Emek-İş grevin süresiz greve dönüştüğünü açıkladı.",
             "Ajans Cyprus, toplu iş sözleşmesi imzalanmasının ardından grevin sona erdiğini bildirdi."
+          ],
+          "sources": [
+            {
+              "title": "Yeniduzen kaynağı"
+            },
+            {
+              "title": "Yeniduzen kaynağı"
+            },
+            {
+              "title": "Ajans Cyprus kaynağı"
+            }
           ]
         },
         "el": {
@@ -117,6 +128,17 @@
             "Οι εργαζόμενοι ξεκίνησαν απεργία μετά από πιέσεις για απολύσεις απέναντι στα αιτήματα συνδικαλισμού και συλλογικής διαπραγμάτευσης.",
             "Η Emek-Is ανακοίνωσε ότι η απεργία έγινε αόριστης διάρκειας.",
             "Το Ajans Cyprus ανέφερε ότι η απεργία έληξε μετά την υπογραφή συλλογικής σύμβασης."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: Yeniduzen"
+            },
+            {
+              "title": "Πηγή: Yeniduzen"
+            },
+            {
+              "title": "Πηγή: Ajans Cyprus"
+            }
           ]
         }
       }
@@ -190,6 +212,11 @@
           "timeline": [
             "Tel-Sen grev kararını açıkladı.",
             "Telekomünikasyon Dairesi şubelerinin 08.00-13.00 arasında kapatılması ve yeni meclis önünde eylem planlandı."
+          ],
+          "sources": [
+            {
+              "title": "Ozgur Gazete Kibris kaynağı"
+            }
           ]
         },
         "el": {
@@ -208,6 +235,11 @@
           "timeline": [
             "Η Tel-Sen ανακοίνωσε την απόφαση για απεργία.",
             "Τα υποκαταστήματα του Τμήματος Τηλεπικοινωνιών επρόκειτο να κλείσουν από τις 08:00 έως τις 13:00 και να γίνει διαμαρτυρία έξω από τη νέα συνέλευση."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: Ozgur Gazete Kibris"
+            }
           ]
         }
       }
@@ -305,6 +337,14 @@
           "timeline": [
             "KTAMS, Kamusen ve Kamu-İş, Gazimağusa ve İskele Gelir ve Vergi Dairelerinde tam gün grev yaptı.",
             "Sendikalar Gazimağusa Gelir ve Vergi Dairesi önünde basın açıklaması yaparak boş kadroların derhal doldurulmasını istedi."
+          ],
+          "sources": [
+            {
+              "title": "KTAMS kaynağı"
+            },
+            {
+              "title": "TAK kaynağı"
+            }
           ]
         },
         "el": {
@@ -328,6 +368,14 @@
           "timeline": [
             "Η KTAMS, η Kamusen και η Kamu-İş πραγματοποίησαν ολοήμερη απεργία στα γραφεία Εσόδων και Φορολογίας σε Gazimağusa και İskele.",
             "Τα συνδικάτα έκαναν δήλωση Τύπου έξω από το γραφείο της Gazimağusa και ζήτησαν την άμεση πλήρωση των κενών θέσεων."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: KTAMS"
+            },
+            {
+              "title": "Πηγή: TAK"
+            }
           ]
         }
       }
@@ -422,6 +470,17 @@
             "Bakanlar Kurulu sağlık alanındaki grevleri 60 gün erteledi.",
             "Sağlık sendikaları kararı tanımadıklarını ve greve devam edeceklerini açıkladı.",
             "Hekimler sendikası grevin askıya alındığını ve hastane ile sağlık merkezlerinde normal hizmete dönüldüğünü duyurdu."
+          ],
+          "sources": [
+            {
+              "title": "Yeniduzen kaynağı"
+            },
+            {
+              "title": "Yeniduzen kaynağı"
+            },
+            {
+              "title": "Yeniduzen kaynağı"
+            }
           ]
         },
         "el": {
@@ -442,6 +501,17 @@
             "Το Υπουργικό Συμβούλιο ανέβαλε τις απεργίες στον τομέα της υγείας για 60 ημέρες.",
             "Οι συντεχνίες υγείας δήλωσαν ότι δεν αναγνωρίζουν την απόφαση και θα συνεχίσουν την απεργία.",
             "Η συντεχνία γιατρών ανακοίνωσε αναστολή της απεργίας και επαναφορά της κανονικής λειτουργίας σε νοσοκομεία και κέντρα υγείας."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: Yeniduzen"
+            },
+            {
+              "title": "Πηγή: Yeniduzen"
+            },
+            {
+              "title": "Πηγή: Yeniduzen"
+            }
           ]
         }
       }
@@ -505,6 +575,11 @@
           },
           "timeline": [
             "Kıb-Tek, özel parselasyon çalışması sırasında elektrik akımına kapılma sonucu ölümü doğruladı."
+          ],
+          "sources": [
+            {
+              "title": "Ozgur Gazete Kibris kaynağı"
+            }
           ]
         },
         "el": {
@@ -523,6 +598,11 @@
           },
           "timeline": [
             "Η Kib-Tek επιβεβαίωσε θάνατο από ηλεκτροπληξία κατά τη διάρκεια ιδιωτικών εργασιών τεμαχισμού γης."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: Ozgur Gazete Kibris"
+            }
           ]
         }
       }
@@ -598,6 +678,11 @@
             "İşçi güneş paneli kurulumu sırasında fabrika damından yaklaşık 6,85 metre düşerek ağır yaralandı.",
             "İşçi Dr. Burhan Nalbantoğlu Devlet Hastanesi yoğun bakım servisinde hayatını kaybetti.",
             "Kıbrıs Postası iki tutuklama ve süren polis soruşturmasını bildirdi."
+          ],
+          "sources": [
+            {
+              "title": "Kibris Postasi kaynağı"
+            }
           ]
         },
         "el": {
@@ -617,6 +702,11 @@
             "Ο εργάτης έπεσε περίπου 6,85 μέτρα από τη στέγη του εργοστασίου κατά την εγκατάσταση φωτοβολταϊκών.",
             "Ο εργάτης πέθανε στη μονάδα εντατικής θεραπείας του κρατικού νοσοκομείου Dr. Burhan Nalbantoglu.",
             "Η Kibris Postasi ανέφερε δύο συλλήψεις και συνεχιζόμενη αστυνομική έρευνα."
+          ],
+          "sources": [
+            {
+              "title": "Πηγή: Kibris Postasi"
+            }
           ]
         }
       }

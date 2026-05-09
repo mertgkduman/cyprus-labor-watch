@@ -61,7 +61,65 @@
           "type": "news",
           "published_at": "2026-04-17"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "EPOPAI, SIDIKEK, SEPAIK, SYVAIK, Free Pancyprian Organisation of EAC Personnel Island-wide EAC strike bölgesinde Yasal grev",
+          "summary": "23 Nis 2026 tarihinde EPOPAI, SIDIKEK, SEPAIK, SYVAIK, Free Pancyprian Organisation of EAC Personnel, Kıbrıs Elektrik Kurumu ile ilgili Island-wide EAC strike bölgesinde Yasal grev kaydıyla izlendi. Talepler/konular: Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri; İşçi sağlığı ve güvenliği önlemleri. Durum: Sona erdi.",
+          "demands": [
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "İşçi sağlığı ve güvenliği önlemleri"
+          ],
+          "timeline": [
+            "17 Nis 2026: Grev kararı alındı kayda geçirildi.",
+            "23 Nis 2026: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "EAC çalışanları ada genelinde 24 saatlik grev yaptı"
+            },
+            {
+              "title": "EAC çalışanları 23 Nisan'da 24 saatlik greve çıkacak"
+            }
+          ],
+          "locations": {
+            "eac-strike-island-wide": {
+              "label": "Island-wide EAC strike grev / eylem konumu",
+              "location_basis": "Kaynak olayı Island-wide EAC strike çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "EPOPAI, SIDIKEK, SEPAIK, SYVAIK, Free Pancyprian Organisation of EAC Personnel στην περιοχή Island-wide EAC strike Νόμιμη απεργία",
+          "summary": "Στις 23 Απρ 2026, EPOPAI, SIDIKEK, SEPAIK, SYVAIK, Free Pancyprian Organisation of EAC Personnel καταγράφηκε στην περιοχή Island-wide EAC strike για Νόμιμη απεργία που αφορά Αρχή Ηλεκτρισμού Κύπρου. Αιτήματα/ζητήματα: εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή; Μέτρα υγείας και ασφάλειας στην εργασία. Κατάσταση: Έληξε.",
+          "demands": [
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "Μέτρα υγείας και ασφάλειας στην εργασία"
+          ],
+          "timeline": [
+            "17 Απρ 2026: Καταγράφηκε Απόφαση απεργίας.",
+            "23 Απρ 2026: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Οι εργαζόμενοι της ΑΗΚ πραγματοποιούν 24ωρη παγκύπρια απεργία"
+            },
+            {
+              "title": "Οι εργαζόμενοι της ΑΗΚ θα πραγματοποιήσουν 24ωρη απεργία στις 23 Απριλίου"
+            }
+          ],
+          "locations": {
+            "eac-strike-island-wide": {
+              "label": "Island-wide EAC strike τόπος απεργίας / δράσης",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή Island-wide EAC strike. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "eac-workers-warning-strike-february-2026",
@@ -109,7 +167,55 @@
           "type": "labor_news",
           "published_at": "2026-02-27"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "EAC trade unions EAC offices and customer service centres bölgesinde Yasal grev",
+          "summary": "27 Şub 2026 tarihinde EAC trade unions, Kıbrıs Elektrik Kurumu ile ilgili EAC offices and customer service centres bölgesinde Yasal grev kaydıyla izlendi. Talepler/konular: Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri. Durum: Sona erdi.",
+          "demands": [
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri"
+          ],
+          "timeline": [
+            "27 Şub 2026: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "EAC çalışanları hükümet politikası ve Cyta'nın enerjiye genişlemesi nedeniyle greve çıktı"
+            }
+          ],
+          "locations": {
+            "eac-warning-nicosia": {
+              "label": "EAC offices and customer service centres grev / eylem konumu",
+              "location_basis": "Kaynak olayı EAC offices and customer service centres çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "EAC trade unions στην περιοχή EAC offices and customer service centres Νόμιμη απεργία",
+          "summary": "Στις 27 Φεβ 2026, EAC trade unions καταγράφηκε στην περιοχή EAC offices and customer service centres για Νόμιμη απεργία που αφορά Αρχή Ηλεκτρισμού Κύπρου. Αιτήματα/ζητήματα: εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή. Κατάσταση: Έληξε.",
+          "demands": [
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή"
+          ],
+          "timeline": [
+            "27 Φεβ 2026: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Απεργία εργαζομένων της ΑΗΚ για την κυβερνητική πολιτική και την επέκταση της Cyta στην ενέργεια"
+            }
+          ],
+          "locations": {
+            "eac-warning-nicosia": {
+              "label": "EAC offices and customer service centres τόπος απεργίας / δράσης",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή EAC offices and customer service centres. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "wolt-delivery-riders-limassol-strike-2026",
@@ -169,7 +275,65 @@
           "type": "labor_news",
           "published_at": "2026-03-21"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Wolt riders' collective; PEO informed Limassol bölgesinde Fiili / kendiliğinden grev",
+          "summary": "20 Mar 2026 tarihinde Wolt riders' collective; PEO informed, Wolt / fleet management contractors ile ilgili Limassol bölgesinde Fiili / kendiliğinden grev kaydıyla izlendi. Talepler/konular: Ücret, ödenek ve hayat pahalılığı düzenlemesi; İşçi sağlığı ve güvenliği önlemleri; Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri. Durum: Sürüyor.",
+          "demands": [
+            "Ücret, ödenek ve hayat pahalılığı düzenlemesi",
+            "İşçi sağlığı ve güvenliği önlemleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri"
+          ],
+          "timeline": [
+            "20 Mar 2026: Sürüyor kayda geçirildi.",
+            "21 Mar 2026: Sürüyor kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Limasol'da Wolt kuryeleri düşen ücretler ve güvenlik sorunları nedeniyle eylem yaptı"
+            },
+            {
+              "title": "Wolt işe alım sorumlusu grevdeki kuryeleri işten atmakla tehdit etti"
+            }
+          ],
+          "locations": {
+            "wolt-limassol": {
+              "label": "Limassol grev / eylem konumu",
+              "location_basis": "Kaynak olayı Limassol çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "Wolt riders' collective; PEO informed στην περιοχή Limassol Άτυπη / αυθόρμητη απεργία",
+          "summary": "Στις 20 Μαρ 2026, Wolt riders' collective; PEO informed καταγράφηκε στην περιοχή Limassol για Άτυπη / αυθόρμητη απεργία που αφορά Wolt / fleet management contractors. Αιτήματα/ζητήματα: Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA; Μέτρα υγείας και ασφάλειας στην εργασία; εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή. Κατάσταση: Σε εξέλιξη.",
+          "demands": [
+            "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA",
+            "Μέτρα υγείας και ασφάλειας στην εργασία",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή"
+          ],
+          "timeline": [
+            "20 Μαρ 2026: Καταγράφηκε Σε εξέλιξη.",
+            "21 Μαρ 2026: Καταγράφηκε Σε εξέλιξη."
+          ],
+          "sources": [
+            {
+              "title": "Διανομείς της Wolt στη Λεμεσό κινητοποιούνται για μειωμένες αμοιβές και ζητήματα ασφάλειας"
+            },
+            {
+              "title": "Υπεύθυνος προσλήψεων της Wolt απειλεί απεργούς διανομείς με απόλυση"
+            }
+          ],
+          "locations": {
+            "wolt-limassol": {
+              "label": "Limassol τόπος απεργίας / δράσης",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή Limassol. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "education-support-programmes-strike-march-2026",
@@ -229,7 +393,63 @@
           "type": "union",
           "published_at": "2026-03-18"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "PASEY-PEO, OEKDY-SEK Nicosia bölgesinde Yasal grev",
+          "summary": "26 Mar 2026 tarihinde PASEY-PEO, OEKDY-SEK, Ministry of Education, Sport and Youth support programmes ile ilgili Nicosia bölgesinde Yasal grev kaydıyla izlendi. Talepler/konular: Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri; Kamu hizmetlerinin ve çalışma koşullarının iyileştirilmesi; Kaynakta belirtilen işçi talepleri. Durum: Sona erdi.",
+          "demands": [
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "Kamu hizmetlerinin ve çalışma koşullarının iyileştirilmesi",
+            "Kaynakta belirtilen işçi talepleri"
+          ],
+          "timeline": [
+            "18 Mar 2026: Grev kararı alındı kayda geçirildi.",
+            "26 Mar 2026: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Eğitim destek personeli 26 Mart'ta 24 saatlik grev yapacak"
+            },
+            {
+              "title": "SEK basın açıklaması"
+            }
+          ],
+          "locations": {
+            "presidential-palace-education-support": {
+              "label": "Nicosia grev / eylem konumu"
+            }
+          }
+        },
+        "el": {
+          "title": "PASEY-PEO, OEKDY-SEK στην περιοχή Nicosia Νόμιμη απεργία",
+          "summary": "Στις 26 Μαρ 2026, PASEY-PEO, OEKDY-SEK καταγράφηκε στην περιοχή Nicosia για Νόμιμη απεργία που αφορά Ministry of Education, Sport and Youth support programmes. Αιτήματα/ζητήματα: εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή; Βελτίωση δημόσιων υπηρεσιών και συνθηκών εργασίας; εργατικά αιτήματα που αναφέρονται στην πηγή. Κατάσταση: Έληξε.",
+          "demands": [
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "Βελτίωση δημόσιων υπηρεσιών και συνθηκών εργασίας",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή"
+          ],
+          "timeline": [
+            "18 Μαρ 2026: Καταγράφηκε Απόφαση απεργίας.",
+            "26 Μαρ 2026: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Προσωπικό υποστήριξης εκπαίδευσης θα πραγματοποιήσει 24ωρη απεργία στις 26 Μαρτίου"
+            },
+            {
+              "title": "Πηγή: Cyprus News Agency"
+            }
+          ],
+          "locations": {
+            "presidential-palace-education-support": {
+              "label": "Nicosia τόπος απεργίας / δράσης"
+            }
+          }
+        }
+      }
     },
     {
       "id": "taxi-drivers-pan-cyprus-strike-january-2026",
@@ -287,7 +507,61 @@
           "type": "labor_news",
           "published_at": "2026-01-20"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Cyprus Urban Taxi Union (POAT) Larnaca bölgesinde Yasal grev",
+          "summary": "20 Oca 2026 tarihinde Cyprus Urban Taxi Union (POAT), Taxi sector ile ilgili Larnaca bölgesinde Yasal grev kaydıyla izlendi. Talepler/konular: Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri; Kaynakta belirtilen işçi talepleri. Durum: Sona erdi.",
+          "demands": [
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri",
+            "Kaynakta belirtilen işçi talepleri"
+          ],
+          "timeline": [
+            "20 Oca 2026: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Taksi şoförleri Kıbrıs genelinde 24 saatlik grev başlattı"
+            }
+          ],
+          "locations": {
+            "larnaca-airport-taxi-strike": {
+              "label": "Larnaca grev / eylem konumu"
+            },
+            "taxi-strike-island-wide": {
+              "label": "Pan-Cypriot taxi strike grev / eylem konumu",
+              "location_basis": "Kaynak olayı Pan-Cypriot taxi strike çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "Cyprus Urban Taxi Union (POAT) στην περιοχή Larnaca Νόμιμη απεργία",
+          "summary": "Στις 20 Ιαν 2026, Cyprus Urban Taxi Union (POAT) καταγράφηκε στην περιοχή Larnaca για Νόμιμη απεργία που αφορά Taxi sector. Αιτήματα/ζητήματα: εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή; εργατικά αιτήματα που αναφέρονται στην πηγή. Κατάσταση: Έληξε.",
+          "demands": [
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή"
+          ],
+          "timeline": [
+            "20 Ιαν 2026: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Οδηγοί ταξί ξεκινούν 24ωρη απεργία σε όλη την Κύπρο"
+            }
+          ],
+          "locations": {
+            "larnaca-airport-taxi-strike": {
+              "label": "Larnaca τόπος απεργίας / δράσης"
+            },
+            "taxi-strike-island-wide": {
+              "label": "Pan-Cypriot taxi strike τόπος απεργίας / δράσης",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή Pan-Cypriot taxi strike. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "cola-general-strike-september-2025",
@@ -358,7 +632,71 @@
           "type": "labor_news",
           "published_at": "2025-09-11"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "PEO, SEK, DEOK, PASYDY and other unions Nicosia bölgesinde Yasal grev",
+          "summary": "11 Eyl 2025 tarihinde PEO, SEK, DEOK, PASYDY and other unions, Multi-sector ile ilgili Nicosia bölgesinde Yasal grev kaydıyla izlendi. Talepler/konular: Ücret, ödenek ve hayat pahalılığı düzenlemesi; Ücret, ödenek ve hayat pahalılığı düzenlemesi; İşçi sağlığı ve güvenliği önlemleri; Toplu iş sözleşmesi ve pazarlık hakkı. Durum: Sona erdi.",
+          "demands": [
+            "Ücret, ödenek ve hayat pahalılığı düzenlemesi",
+            "Ücret, ödenek ve hayat pahalılığı düzenlemesi",
+            "İşçi sağlığı ve güvenliği önlemleri",
+            "Toplu iş sözleşmesi ve pazarlık hakkı"
+          ],
+          "timeline": [
+            "1 Eyl 2025: Grev kararı alındı kayda geçirildi.",
+            "11 Eyl 2025: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Kıbrıs'ta CoLA için üç saatlik genel grev, birçok sektör etkilendi"
+            },
+            {
+              "title": "Hayat pahalılığı ödeneği için ülke geneli grev Kıbrıs'ı durdurdu"
+            }
+          ],
+          "locations": {
+            "cola-finance-ministry-nicosia": {
+              "label": "Nicosia grev / eylem konumu"
+            },
+            "cola-strike-island-wide": {
+              "label": "Nationwide CoLA strike grev / eylem konumu",
+              "location_basis": "Kaynak olayı Nationwide CoLA strike çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "PEO, SEK, DEOK, PASYDY and other unions στην περιοχή Nicosia Νόμιμη απεργία",
+          "summary": "Στις 11 Σεπ 2025, PEO, SEK, DEOK, PASYDY and other unions καταγράφηκε στην περιοχή Nicosia για Νόμιμη απεργία που αφορά Multi-sector. Αιτήματα/ζητήματα: Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA; Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA; Μέτρα υγείας και ασφάλειας στην εργασία; Συλλογική σύμβαση και δικαίωμα διαπραγμάτευσης. Κατάσταση: Έληξε.",
+          "demands": [
+            "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA",
+            "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA",
+            "Μέτρα υγείας και ασφάλειας στην εργασία",
+            "Συλλογική σύμβαση και δικαίωμα διαπραγμάτευσης"
+          ],
+          "timeline": [
+            "1 Σεπ 2025: Καταγράφηκε Απόφαση απεργίας.",
+            "11 Σεπ 2025: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Τρίωρη γενική απεργία για την ΑΤΑ στην Κύπρο, επηρεάστηκαν πολλοί κλάδοι"
+            },
+            {
+              "title": "Παγκύπρια απεργία παραλύει την Κύπρο για την αυτόματη τιμαριθμική αναπροσαρμογή"
+            }
+          ],
+          "locations": {
+            "cola-finance-ministry-nicosia": {
+              "label": "Nicosia τόπος απεργίας / δράσης"
+            },
+            "cola-strike-island-wide": {
+              "label": "Nationwide CoLA strike τόπος απεργίας / δράσης",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή Nationwide CoLA strike. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "turkish-cypriot-cola-strikes-april-2026",
@@ -429,7 +767,69 @@
           "type": "news",
           "published_at": "2026-04-07"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "KTAMS, Türk-Sen, El-Sen and other Turkish Cypriot unions North Nicosia bölgesinde Protesto",
+          "summary": "6 Nis 2026 tarihinde KTAMS, Türk-Sen, El-Sen and other Turkish Cypriot unions, Turkish Cypriot public sector ile ilgili North Nicosia bölgesinde Protesto kaydıyla izlendi. Talepler/konular: Ücret, ödenek ve hayat pahalılığı düzenlemesi; Ücret, ödenek ve hayat pahalılığı düzenlemesi; Kaynakta belirtilen işçi talepleri. Durum: Sona erdi.",
+          "demands": [
+            "Ücret, ödenek ve hayat pahalılığı düzenlemesi",
+            "Ücret, ödenek ve hayat pahalılığı düzenlemesi",
+            "Kaynakta belirtilen işçi talepleri"
+          ],
+          "timeline": [
+            "6 Nis 2026: Sürüyor kayda geçirildi.",
+            "7 Nis 2026: Sürüyor kayda geçirildi.",
+            "8 Nis 2026: Sona erdi kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "CoLA kesintileri nedeniyle iktidar koalisyonunun istifa etmesi çağrıları artıyor"
+            },
+            {
+              "title": "Kuzeyde grevler bir gün daha sürüyor"
+            },
+            {
+              "title": "Kıbrıslı Türklerin hayat pahalılığı ödeneği grevinde protestolar"
+            }
+          ],
+          "locations": {
+            "north-nicosia-assembly-cola": {
+              "label": "North Nicosia grev / eylem konumu"
+            }
+          }
+        },
+        "el": {
+          "title": "KTAMS, Türk-Sen, El-Sen and other Turkish Cypriot unions στην περιοχή North Nicosia Διαμαρτυρία",
+          "summary": "Στις 6 Απρ 2026, KTAMS, Türk-Sen, El-Sen and other Turkish Cypriot unions καταγράφηκε στην περιοχή North Nicosia για Διαμαρτυρία που αφορά Turkish Cypriot public sector. Αιτήματα/ζητήματα: Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA; Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA; εργατικά αιτήματα που αναφέρονται στην πηγή. Κατάσταση: Έληξε.",
+          "demands": [
+            "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA",
+            "Μισθοί, επιδόματα και ρύθμιση της ΑΤΑ / CoLA",
+            "εργατικά αιτήματα που αναφέρονται στην πηγή"
+          ],
+          "timeline": [
+            "6 Απρ 2026: Καταγράφηκε Σε εξέλιξη.",
+            "7 Απρ 2026: Καταγράφηκε Σε εξέλιξη.",
+            "8 Απρ 2026: Καταγράφηκε Έληξε."
+          ],
+          "sources": [
+            {
+              "title": "Πληθαίνουν οι εκκλήσεις για παραίτηση του κυβερνητικού συνασπισμού λόγω περικοπών στην ΑΤΑ"
+            },
+            {
+              "title": "Οι απεργίες συνεχίζονται στον βορρά για άλλη μία ημέρα"
+            },
+            {
+              "title": "Διαμαρτυρίες κατά την τουρκοκυπριακή απεργία για τις τιμαριθμικές αναπροσαρμογές"
+            }
+          ],
+          "locations": {
+            "north-nicosia-assembly-cola": {
+              "label": "North Nicosia τόπος απεργίας / δράσης"
+            }
+          }
+        }
+      }
     },
     {
       "id": "ahmet-tugcu-arrest-release-april-2026",
@@ -485,7 +885,51 @@
           "type": "news",
           "published_at": "2026-04-08"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Ahmet Tugcu için emek hakkı baskısı / gözaltı kaydı",
+          "summary": "7 Nis 2026 tarihinde Ahmet Tugcu (EL-SEN) için North Nicosia bölgesinde emek ve sendika hakkıyla bağlantılı gözaltı, tutuklama veya baskı kaydı izlendi. Suçlama/hukuki durum: sendikal faaliyet veya protestoyla bağlantılı hukuki süreç. Durum: serbest bırakıldı.",
+          "timeline": [
+            "7 Nis 2026: Emek hakkı baskısı, gözaltı veya tutuklama kaydı güncellendi.",
+            "7 Nis 2026: Emek hakkı baskısı, gözaltı veya tutuklama kaydı güncellendi."
+          ],
+          "sources": [
+            {
+              "title": "Kıbrıslı Türklerin hayat pahalılığı ödeneği grevinde protestolar"
+            },
+            {
+              "title": "Ajans Cyprus kaynağı"
+            }
+          ],
+          "locations": {
+            "ahmet-tugcu-north-nicosia-assembly": {
+              "label": "North Nicosia gözaltı / baskı kaydı konumu"
+            }
+          }
+        },
+        "el": {
+          "title": "Καταγραφή εργατικής δίωξης / κράτησης για Ahmet Tugcu",
+          "summary": "Στις 7 Απρ 2026, καταγράφηκε υπόθεση κράτησης, σύλληψης ή πίεσης συνδεδεμένης με εργατικά και συνδικαλιστικά δικαιώματα για Ahmet Tugcu (EL-SEN) στην περιοχή North Nicosia. Κατηγορία/νομική κατάσταση: νομική διαδικασία συνδεδεμένη με συνδικαλιστική δράση ή διαμαρτυρία. Κατάσταση: αφέθηκε ελεύθερος/η.",
+          "timeline": [
+            "7 Απρ 2026: Ενημερώθηκε καταγραφή πίεσης, κράτησης ή σύλληψης συνδεδεμένης με εργατικά δικαιώματα.",
+            "7 Απρ 2026: Ενημερώθηκε καταγραφή πίεσης, κράτησης ή σύλληψης συνδεδεμένης με εργατικά δικαιώματα."
+          ],
+          "sources": [
+            {
+              "title": "Διαμαρτυρίες κατά την τουρκοκυπριακή απεργία για τις τιμαριθμικές αναπροσαρμογές"
+            },
+            {
+              "title": "Ο πρόεδρος της El-Sen Αχμέτ Τουγτζού αφέθηκε ελεύθερος: απορρίπτουμε τις κατηγορίες"
+            }
+          ],
+          "locations": {
+            "ahmet-tugcu-north-nicosia-assembly": {
+              "label": "North Nicosia τόπος κράτησης / πίεσης"
+            }
+          }
+        }
+      }
     },
     {
       "id": "lakatiamia-construction-worker-death-february-2026",
@@ -533,7 +977,45 @@
           "type": "labor_news",
           "published_at": "2026-02-18"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Adı yayımlanmayan işçi Lakatamia bölgesinde yüksekten düşerek hayatını kaybetti",
+          "summary": "43 yaşındaki Adı yayımlanmayan işçi, Lakatamia bölgesinde İnşaat işinde yüksekten düşmesi sonucu yaşamını yitirdi. İşveren/kurum: Kaynakta adı verilmeyen inşaat işvereni. Hukuki süreç: polis soruşturması bildirildi; çalışma teftişi bildirildi.",
+          "timeline": [
+            "17 Şub 2026: Ölümcül iş kazası kayda geçirildi.",
+            "18 Şub 2026: Ölümcül iş kazası kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "PEO: işçinin ölümü 'talihsiz olay' değil"
+            }
+          ],
+          "locations": {
+            "lakatamia-worker-death": {
+              "label": "Lakatamia İnşaat sahası"
+            }
+          }
+        },
+        "el": {
+          "title": "Εργάτης του οποίου το όνομα δεν δημοσιεύθηκε πέθανε στην περιοχή Lakatamia μετά από πτώση από ύψος",
+          "summary": "43χρονος Εργάτης του οποίου το όνομα δεν δημοσιεύθηκε πέθανε στην περιοχή Lakatamia ενώ εργαζόταν στον κλάδο οικοδομές μετά από πτώση από ύψος. Εργοδότης/φορέας: εργοδότης οικοδομής που δεν κατονομάστηκε στην πηγή. Νομική διαδικασία: αναφέρθηκε αστυνομική έρευνα; αναφέρθηκε έλεγχος από το Τμήμα Επιθεώρησης Εργασίας.",
+          "timeline": [
+            "17 Φεβ 2026: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.",
+            "18 Φεβ 2026: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα."
+          ],
+          "sources": [
+            {
+              "title": "ΠΕΟ: ο θάνατος εργάτη δεν είναι 'ατυχές γεγονός'"
+            }
+          ],
+          "locations": {
+            "lakatamia-worker-death": {
+              "label": "χώρος οικοδομές Lakatamia"
+            }
+          }
+        }
+      }
     },
     {
       "id": "kofinou-finis-alexandru-worker-death-january-2026",
@@ -581,7 +1063,45 @@
           "type": "labor_news",
           "published_at": "2026-01-31"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Finis Alexandru Kofinou bölgesinde makine veya ağır ekipman kazasında hayatını kaybetti",
+          "summary": "55 yaşındaki Finis Alexandru, Kofinou bölgesinde İnşaat işinde makine veya ağır ekipman kazası sonucu yaşamını yitirdi. İşveren/kurum: Private pylon assembly contractor for EAC. Hukuki süreç: polis soruşturması bildirildi; çalışma teftişi bildirildi; mahkeme veya tutuklama süreci bildirildi.",
+          "timeline": [
+            "30 Oca 2026: Ölümcül iş kazası kayda geçirildi.",
+            "31 Oca 2026: Ölümcül iş kazası kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Kofinou'da trajik iş kazası 55 yaşındaki işçinin yaşamını aldı"
+            }
+          ],
+          "locations": {
+            "kofinou-counterweight-death": {
+              "label": "Kofinou İnşaat sahası"
+            }
+          }
+        },
+        "el": {
+          "title": "Finis Alexandru πέθανε στην περιοχή Kofinou σε δυστύχημα με μηχάνημα ή βαρύ εξοπλισμό",
+          "summary": "55χρονος Finis Alexandru πέθανε στην περιοχή Kofinou ενώ εργαζόταν στον κλάδο οικοδομές σε δυστύχημα με μηχάνημα ή βαρύ εξοπλισμό. Εργοδότης/φορέας: Private pylon assembly contractor for EAC. Νομική διαδικασία: αναφέρθηκε αστυνομική έρευνα; αναφέρθηκε έλεγχος από το Τμήμα Επιθεώρησης Εργασίας; αναφέρθηκε δικαστική διαδικασία ή σύλληψη.",
+          "timeline": [
+            "30 Ιαν 2026: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.",
+            "31 Ιαν 2026: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα."
+          ],
+          "sources": [
+            {
+              "title": "Τραγικό εργατικό ατύχημα στοιχίζει τη ζωή 55χρονου εργάτη στην Κοφίνου"
+            }
+          ],
+          "locations": {
+            "kofinou-counterweight-death": {
+              "label": "χώρος οικοδομές Kofinou"
+            }
+          }
+        }
+      }
     },
     {
       "id": "peyia-aldahdouh-housain-worker-death-may-2025",
@@ -629,7 +1149,45 @@
           "type": "labor_news",
           "published_at": "2025-05-08"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Aldahdouh Housain Peyia bölgesinde düşen kerestelerin altında kalarak hayatını kaybetti",
+          "summary": "34 yaşındaki Aldahdouh Housain, Peyia bölgesinde İnşaat işinde düşen kerestelerin altında kalması sonucu yaşamını yitirdi. İşveren/kurum: Kaynakta adı verilmeyen inşaat işvereni. Hukuki süreç: polis soruşturması bildirildi.",
+          "timeline": [
+            "7 May 2025: Ölümcül iş kazası kayda geçirildi.",
+            "8 May 2025: Ölümcül iş kazası kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Peyia'da düşen kerestelerin altında kalan işçi öldü"
+            }
+          ],
+          "locations": {
+            "peyia-st-george-worker-death": {
+              "label": "Peyia İnşaat sahası"
+            }
+          }
+        },
+        "el": {
+          "title": "Aldahdouh Housain πέθανε στην περιοχή Peyia αφού καταπλακώθηκε από ξυλεία",
+          "summary": "34χρονος Aldahdouh Housain πέθανε στην περιοχή Peyia ενώ εργαζόταν στον κλάδο οικοδομές αφού καταπλακώθηκε από ξυλεία. Εργοδότης/φορέας: εργοδότης οικοδομής που δεν κατονομάστηκε στην πηγή. Νομική διαδικασία: αναφέρθηκε αστυνομική έρευνα.",
+          "timeline": [
+            "7 Μαΐ 2025: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα.",
+            "8 Μαΐ 2025: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα."
+          ],
+          "sources": [
+            {
+              "title": "Εργάτης πέθανε στην Πέγεια αφού καταπλακώθηκε από ξυλεία"
+            }
+          ],
+          "locations": {
+            "peyia-st-george-worker-death": {
+              "label": "χώρος οικοδομές Peyia"
+            }
+          }
+        }
+      }
     },
     {
       "id": "limassol-gela-kaltsidis-worker-death-june-2025",
@@ -673,7 +1231,45 @@
           "type": "labor_news",
           "published_at": "2025-06-10"
         }
-      ]
+      ],
+      "translations": {
+        "tr": {
+          "title": "Gela Kaltsidis Limassol bölgesinde yüksekten düşerek hayatını kaybetti",
+          "summary": "47 yaşındaki Gela Kaltsidis, Limassol bölgesinde İnşaat işinde yüksekten düşmesi sonucu yaşamını yitirdi. İşveren/kurum: Kaynakta adı verilmeyen inşaat işvereni. Hukuki süreç: polis soruşturması bildirildi; çalışma teftişi bildirildi.",
+          "timeline": [
+            "10 Haz 2025: Ölümcül iş kazası kayda geçirildi."
+          ],
+          "sources": [
+            {
+              "title": "Bir işçi daha inşaat sahasında düşerek öldü"
+            }
+          ],
+          "locations": {
+            "limassol-construction-fall-death": {
+              "label": "Limassol İnşaat sahası",
+              "location_basis": "Kaynak olayı Limassol çevresine yerleştiriyor; kesin nokta yayımlanmadığında harita için yaklaşık konum kullanılır."
+            }
+          }
+        },
+        "el": {
+          "title": "Gela Kaltsidis πέθανε στην περιοχή Limassol μετά από πτώση από ύψος",
+          "summary": "47χρονος Gela Kaltsidis πέθανε στην περιοχή Limassol ενώ εργαζόταν στον κλάδο οικοδομές μετά από πτώση από ύψος. Εργοδότης/φορέας: εργοδότης οικοδομής που δεν κατονομάστηκε στην πηγή. Νομική διαδικασία: αναφέρθηκε αστυνομική έρευνα; αναφέρθηκε έλεγχος από το Τμήμα Επιθεώρησης Εργασίας.",
+          "timeline": [
+            "10 Ιουν 2025: Καταγράφηκε θανατηφόρο εργατικό δυστύχημα."
+          ],
+          "sources": [
+            {
+              "title": "Άλλος ένας εργάτης πέφτει θανάσιμα από εργοτάξιο"
+            }
+          ],
+          "locations": {
+            "limassol-construction-fall-death": {
+              "label": "χώρος οικοδομές Limassol",
+              "location_basis": "Η πηγή τοποθετεί την υπόθεση στην περιοχή Limassol. Όταν δεν δημοσιεύεται ακριβές σημείο, χρησιμοποιείται προσεγγιστική θέση στον χάρτη."
+            }
+          }
+        }
+      }
     },
     {
       "id": "peo-may-day-gatherings-cyprus-2026",
